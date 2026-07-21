@@ -1,7 +1,122 @@
 [
-  {"slug":"radio-escolar","nom":"Radio Industrial Jove","categoria":"Comunicacio i podcast","estat":"produccio","icona":"🎙️","resum":"Plataforma de radio i podcast escolar amb moderacio docent i editor IA.","descripcio":"Radio Industrial Jove es la plataforma de radio escolar de l Institut Escola Industrial de Sabadell. L alumnat publica programes i el professorat els revisa.","funcionalitats":["Pujada de podcasts per l alumnat","Panel de moderacio docent","Editor assistit per IA","Categories i etiquetes"],"seo":{"title":"Radio escolar i podcast per a instituts | aulaia.cat","description":"Plataforma de radio i podcast escolar en funcionament a Sabadell.","keywords":"radio escolar, podcast escolar, app radio institut"},"urlDemo":"https://radio-industrial-jove-production.up.railway.app/","centre":"Institut Escola Industrial de Sabadell"},
-  {"slug":"chefboss","nom":"ChefBoss","categoria":"Gestio de menjador","estat":"presentacio","icona":"👨‍🍳","resum":"Gestio integral de la cuina i el menjador escolar.","descripcio":"ChefBoss gestiona menus, allergies i comunicacio amb families en una sola app.","funcionalitats":["Planificacio de menus","Control d allergies","App per a families","Informes nutricionals"],"seo":{"title":"App gestio menjador escolar | ChefBoss - aulaia.cat","description":"Software de gestio de cuina per a escoles de Catalunya.","keywords":"app menjador escolar, gestio cuina escola"},"urlDemo":null,"centre":null},
-  {"slug":"pla-lector","nom":"Pla de Lectura de Centre","categoria":"Biblioteca escolar","estat":"presentacio","icona":"📚","resum":"Gestio digital del pla lector i biblioteca escolar.","descripcio":"Digitalitza la biblioteca escolar i el seguiment lector de l alumnat.","funcionalitats":["Cataleg digital","Itineraris de lectura","Seguiment lector","Gestio de prestecs"],"seo":{"title":"App pla lector i biblioteca escolar | aulaia.cat","description":"Digitalitza el pla de lectura del teu centre educatiu.","keywords":"pla lector digital, biblioteca escolar app"},"urlDemo":null,"centre":null},
-  {"slug":"aules-sostenibles","nom":"Aules Sostenibles","categoria":"Sostenibilitat","estat":"presentacio","icona":"🌱","resum":"Seguiment del consum energetic i projectes mediambientals.","descripcio":"Monitoritza el consum del centre i implica l alumnat en reptes de sostenibilitat.","funcionalitats":["Registre de consums","Reptes mediambientals","Panels visuals","Informes anuals"],"seo":{"title":"App sostenibilitat per a escoles | aulaia.cat","description":"Monitoritza el consum energetic del teu centre educatiu.","keywords":"escola sostenible, sostenibilitat centre educatiu"},"urlDemo":null,"centre":null},
-  {"slug":"ciutatviva","nom":"CiutatViva","categoria":"Aprenentatge servei","estat":"presentacio","icona":"🏙️","resum":"Plataforma d aprenentatge servei i millora ciutadana.","descripcio":"L alumnat proposa i desenvolupa projectes de millora del seu entorn real.","funcionalitats":["Mapa de propostes","Fitxes de projecte","Votacions","Portafoli d avaluacio"],"seo":{"title":"App aprenentatge servei | CiutatViva - aulaia.cat","description":"Projectes de millora ciutadana per a instituts de Catalunya.","keywords":"aprenentatge servei, projectes ciutadania escola"},"urlDemo":null,"centre":null}
+  {
+    "slug": "radio-escolar",
+    "nom": "Radio Industrial Jove",
+    "categoria": "Comunicacio i podcast",
+    "estat": "produccio",
+    "icona": "🎙️",
+    "resum": "Plataforma de radio i podcast escolar amb pujada de programes per l alumnat, moderacio docent i editor assistit per IA.",
+    "descripcio": "Radio Industrial Jove es la plataforma de radio i podcast escolar creada per a l Institut Escola Industrial de Sabadell. L alumnat de secundaria guionitza, enregistra i publica els seus propis programes, i cada publicacio passa per una revisio del professorat abans de sortir a l antena. La plataforma inclou un editor de continguts assistit per intel·ligencia artificial que ajuda a generar titols, descripcions i etiquetes, accelerant el proces creatiu i millorant la qualitat dels continguts publicats. Es una eina real de comunicacio educativa que desenvolupa competencies digitals, de comunicacio oral i de pensament critic en l alumnat.",
+    "seoLlarg": "La radio escolar i el podcast educatiu son eines potents per desenvolupar la competencia comunicativa de l alumnat. Radio Industrial Jove permet als centres educatius crear la seva propia emissora digital sense cap coneixement tecnic previ. L alumnat aprèn a comunicar, argumentar i expressar-se en public mentre el professorat manté el control editorial de tots els continguts publicats. La integracio de la intel·ligencia artificial com a eina d aprenentatge, i no com a substitut del pensament, ajuda els alumnes a millorar els seus textos i a reflexionar sobre la qualitat comunicativa. Apta per a ESO, Batxillerat i Cicles Formatius.",
+    "funcionalitats": [
+      "Pujada de podcasts per l alumnat (MP3, MP4, WAV)",
+      "Panel de moderacio i revisio docent",
+      "Categories i etiquetes per tematica",
+      "Editor de continguts assistit per IA",
+      "Gestio de privadesa i drets d imatge"
+    ],
+    "seo": {
+      "title": "Radio escolar i podcast educatiu per a instituts | aulaia.cat",
+      "description": "Plataforma de radio i podcast escolar en funcionament a l Institut Escola Industrial de Sabadell. L alumnat publica programes amb supervisio docent i suport d IA.",
+      "keywords": "radio escolar, podcast educatiu, app radio institut, plataforma podcast escola, radio escolar Catalunya"
+    },
+    "urlDemo": "https://radio-industrial-jove-production.up.railway.app/",
+    "centre": "Institut Escola Industrial de Sabadell"
+  },
+  {
+    "slug": "chefboss",
+    "nom": "ChefBoss",
+    "categoria": "Simulacio de negoci",
+    "estat": "presentacio",
+    "icona": "👨‍🍳",
+    "resum": "Simulacio de negoci gamificada on l alumnat de Cicles Formatius aprèn gestio empresarial real creant i gestionant el seu propi restaurant.",
+    "descripcio": "ChefBoss es una simulacio de negoci gamificada dissenyada per a l alumnat de CFGM d Hoteleria i Turisme. Cada equip crea i gestiona el seu propi restaurant durant 10 sessions, prenent decisions reals sobre finances, proveidors i clients. Les decisions correctes sumen punts i l alumnat ascendeix de nivell: des d Aprenent fins a Chef Estrella Michelin. La plataforma incorpora situacions de crisi reals del sector com inspeccions sanitaries, baixes laborals o males ressenyes, i integra la intel·ligencia artificial com a eina d aprenentatge per ajudar a analitzar decisions i millorar estrategies. Resol el problema de l aprenentatge abstracte: costos, marges i pressupostos prenen sentit quan hi ha un negoci real en joc.",
+    "seoLlarg": "L ensenyament de la gestio empresarial als Cicles Formatius d Hoteleria i Turisme sovint es percebut com a abstracte i poc motivador. ChefBoss transforma aquesta realitat posant l alumnat en la pell d un empresari real. La gamificacio, la competicio sana entre equips i la projecció en viu del marcador a l aula generen un nivell de participacio i comprensio molt superior al de les metodologies tradicionals. La integracio de la IA com a assistent d analisi, i no com a atajo, fomenta el pensament critic i la presa de decisions fonamentada. Apta per a CFGM i CFGS d Hoteleria, Turisme i Administracio.",
+    "funcionalitats": [
+      "Simulacio de restaurant per equips durant 10 sessions",
+      "Decisions reals: finances, proveidors, clients i crisi",
+      "Sistema de nivells: d Aprenent a Chef Estrella Michelin",
+      "Marcador en viu per projectar a l aula",
+      "IA integrada com a eina d analisi i aprenentatge"
+    ],
+    "seo": {
+      "title": "ChefBoss: simulacio de negoci gamificada per a Cicles Formatius | aulaia.cat",
+      "description": "App educativa de simulacio de restaurant per a CFGM d Hoteleria i Turisme. L alumnat gestiona un negoci real, pren decisions i aprèn gestio empresarial jugant.",
+      "keywords": "simulacio negoci escola, app gamificada cicles formatius, gestio empresarial alumnat, ChefBoss educacio, app hoteleria turisme"
+    },
+    "urlDemo": null,
+    "centre": null
+  },
+  {
+    "slug": "pla-lector",
+    "nom": "Pla de Lectura de Centre",
+    "categoria": "Competencia lectora",
+    "estat": "presentacio",
+    "icona": "📚",
+    "resum": "Eina digital per gestionar el Pla de Lectura de Centre (PLEC): objectius, metodologia, biblioteca escolar i seguiment lector de l alumnat.",
+    "descripcio": "El Pla de Lectura de Centre (PLEC) es el document de referencia de tota la comunitat educativa per formar lectors competents i despertar el gust per la lectura. Aquesta plataforma digital permet als centres elaborar, gestionar i fer el seguiment del seu PLEC de manera estructurada. Inclou els quatre eixos fonamentals de la competencia lectora: mecanica i comprensio lectora, lectura funcional en totes les arees del curriculum, lectura per plaer i lectura critica. Connecta amb la biblioteca publica, serveis educatius i l entorn del centre. Tota la comunitat educativa, des de l equip directiu fins a les families, hi te acces amb el seu rol corresponent.",
+    "seoLlarg": "La competencia lectora es la base de tot l aprenentatge. Un Pla de Lectura de Centre ben estructurat i digital permet als equips docents compartir metodologia, fer el seguiment individual de cada alumne i connectar la lectura amb totes les arees del curriculum. La plataforma PLEC facilita que la lectura deixi de ser responsabilitat exclusiva del departament de llengua i passi a ser un projecte de centre transversal. Apta per a escoles de primaria, instituts de secundaria i centres d educacio especial de Catalunya.",
+    "funcionalitats": [
+      "Gestio digital del document PLEC del centre",
+      "Quatre eixos: mecanica, funcional, plaer i critica",
+      "Cataleg de biblioteca i gestio de prestecs",
+      "Seguiment lector individual de l alumnat",
+      "Acces per a equip directiu, docents i families"
+    ],
+    "seo": {
+      "title": "Pla de Lectura de Centre digital (PLEC) per a escoles | aulaia.cat",
+      "description": "Plataforma per gestionar el Pla de Lectura de Centre: objectius, metodologia, biblioteca escolar i seguiment de la competencia lectora de l alumnat.",
+      "keywords": "pla de lectura de centre, PLEC digital, biblioteca escolar app, competencia lectora, pla lector escola Catalunya"
+    },
+    "urlDemo": null,
+    "centre": null
+  },
+  {
+    "slug": "aules-sostenibles",
+    "nom": "Aules Sostenibles",
+    "categoria": "Sostenibilitat educativa",
+    "estat": "presentacio",
+    "icona": "🌱",
+    "resum": "Projecte de centre que transforma la sostenibilitat en experiencia educativa real: l alumnat diagnostica, dissenya i implementa millores ambientals al centre.",
+    "descripcio": "Aules Sostenibles neix a l Escola Industrial de Sabadell amb un objectiu doble: reduir l impacte ambiental del centre i desenvolupar competencies cientifiques, tecnologiques, socials i comunicatives en l alumnat. El projecte treballa quatre ambits interconnectats: gestio de residus, consum energetic, biodiversitat i comunicacio amb les families. Cada activitat produeix un resultat real que el centre pot implementar, no un exercici fictici. El projecte segueix el ritme del curs escolar, de la diagnosi inicial fins a l exposicio publica de resultats. Els indicadors d avaluacio son clars: reduccio de residus barrejats, disminucio del consum energetic i nombre d activitats curricuiars i families participants.",
+    "seoLlarg": "La sostenibilitat com a projecte de centre va molt mes enlla de reciclar paper. Aules Sostenibles proposa un marc metodologic complet per treballar l educacio ambiental de manera transversal, amb dades reals del propi centre com a punt de partida. L alumnat deixa de ser receptor d informacio per convertir-se en agent de canvi. Les competencies STEM, la comunicacio i la ciutadania activa s integren de manera natural en un projecte amb impacte real i mesurable. Apta per a primaria i secundaria, especialment interessant per a centres que volen obtenir o renovar el distintiu d Escola Verda de Catalunya.",
+    "funcionalitats": [
+      "Diagnosi ambiental inicial del centre",
+      "Quatre ambits: residus, energia, biodiversitat i comunicacio",
+      "Reptes i activitats curricuiars per a l alumnat",
+      "Panels de seguiment de consums i indicadors",
+      "Exposicio publica de resultats al final de curs"
+    ],
+    "seo": {
+      "title": "Aules Sostenibles: projecte d educacio ambiental per a escoles | aulaia.cat",
+      "description": "Projecte educatiu de sostenibilitat per a centres escolars de Catalunya. L alumnat diagnostica i millora l impacte ambiental del centre amb metodologia real.",
+      "keywords": "educacio ambiental escola, aules sostenibles, escola verda Catalunya, projecte sostenibilitat centre educatiu, STEM sostenibilitat"
+    },
+    "urlDemo": null,
+    "centre": "Escola Industrial de Sabadell"
+  },
+  {
+    "slug": "ciutatviva",
+    "nom": "CiutatViva",
+    "categoria": "Aprenentatge servei",
+    "estat": "presentacio",
+    "icona": "🏙️",
+    "resum": "Plataforma participativa d aprenentatge servei: l alumnat detecta necessitats reals del seu entorn, proposa solucions i en fa el seguiment com a projecte educatiu.",
+    "descripcio": "CiutatViva es una plataforma participativa que connecta l alumnat, les entitats i les administracions locals per construir entorns mes justos i habitables. Neix de la conviccio que les millors solucions urbanes venen de les persones que viuen i coneixen el territori. L alumnat pot reportar una necessitat o oportunitat de millora al seu barri amb geolocalitzacio, la comunitat debat i valida les propostes, i les que tenen prou suport pugen a l agenda municipal amb terminis concrets de resposta. Tot el proces es obert i rendeix comptes: cada participant rep actualitzacions de les seves propostes. Apta per a projectes d aprenentatge servei (ApS) a ESO i Batxillerat.",
+    "seoLlarg": "L aprenentatge servei (ApS) es una de les metodologies mes potents per desenvolupar la competencia ciutadana i el compromis civic de l alumnat. CiutatViva ofereix el marc digital perque els projectes d ApS tinguin impacte real mes enlla de l aula. L alumnat aprèn a identificar problemes complexos, a argumentar propostes i a negociar amb institucions reals, mentre desenvolupa competencies digitals, socials i de pensament crític. La connexio amb els ajuntaments i entitats locals converteix cada projecte en una experiencia de ciutadania activa autentica. Especialment recomanada per a instituts que treballen el Projecte de Recerca o les Competencies Basiques de l ambit de Ciutadania.",
+    "funcionalitats": [
+      "Mapa col·laboratiu de propostes de millora amb geolocalitzacio",
+      "Debat i validacio comunitaria de cada proposta",
+      "Connexio amb ajuntaments i entitats locals",
+      "Seguiment obert i rendicio de comptes",
+      "Portafoli de projecte per a l avaluacio competencial"
+    ],
+    "seo": {
+      "title": "CiutatViva: plataforma d aprenentatge servei per a instituts | aulaia.cat",
+      "description": "Eina digital per a projectes d aprenentatge servei (ApS) a ESO i Batxillerat. L alumnat proposa millores reals al seu entorn i les connecta amb l administracio local.",
+      "keywords": "aprenentatge servei, ApS digital, projecte ciutadania escola, participacio ciutadana alumnat, competencia ciutadana ESO"
+    },
+    "urlDemo": null,
+    "centre": null
+  }
 ]
