@@ -105,3 +105,10 @@ a { color: inherit; text-decoration: none; }
   .footer-inner { grid-template-columns:1fr; }
   .landing { padding:2rem 1.25rem; }
 }
+
+.seo-intro { background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 3rem 2rem; }
+.seo-intro-inner { max-width: 800px; margin: 0 auto; }
+.seo-intro h2 { font-size: 1.3rem; font-weight: 600; color: var(--navy); margin-bottom: 1.25rem; }
+.seo-intro p { font-size: 0.95rem; color: var(--muted); line-height: 1.85; margin-bottom: 1rem; }
+.seo-intro-tags { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1.5rem; }
+.seo-text { font-size: 0.92rem; color: var(--muted); line-height: 1.85; margin-bottom: 2rem; border-left: 3px solid var(--border-accent); padding-left: 1.25rem; }
