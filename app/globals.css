@@ -112,3 +112,14 @@ a { color: inherit; text-decoration: none; }
 .seo-intro p { font-size: 0.95rem; color: var(--muted); line-height: 1.85; margin-bottom: 1rem; }
 .seo-intro-tags { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1.5rem; }
 .seo-text { font-size: 0.92rem; color: var(--muted); line-height: 1.85; margin-bottom: 2rem; border-left: 3px solid var(--border-accent); padding-left: 1.25rem; }
+
+.cookie-banner { position:fixed; bottom:0; left:0; right:0; z-index:999; padding:1rem 1.5rem; background:var(--navy); border-top:2px solid var(--blue); }
+.cookie-inner { max-width:1000px; margin:0 auto; display:flex; align-items:center; gap:1.5rem; flex-wrap:wrap; }
+.cookie-text { flex:1; min-width:260px; }
+.cookie-text strong { display:block; color:#fff; font-size:0.95rem; margin-bottom:0.3rem; }
+.cookie-text p { color:#8DA0AE; font-size:0.82rem; line-height:1.5; margin:0; }
+.cookie-link { color:var(--teal); text-decoration:underline; }
+.cookie-actions { display:flex; gap:0.6rem; flex-shrink:0; }
+.cookie-btn-accept { background:var(--teal); color:#fff; border:none; padding:0.5rem 1.25rem; border-radius:8px; font-size:0.875rem; font-weight:500; cursor:pointer; }
+.cookie-btn-reject { background:transparent; color:#8DA0AE; border:1px solid #2A3E5E; padding:0.5rem 1.25rem; border-radius:8px; font-size:0.875rem; cursor:pointer; }
+.cookie-btn-reject:hover { color:#fff; border-color:#fff; }
