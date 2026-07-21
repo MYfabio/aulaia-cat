@@ -106,11 +106,11 @@ a { color: inherit; text-decoration: none; }
   .landing { padding:2rem 1.25rem; }
 }
 
-.seo-intro { background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 3rem 2rem; }
-.seo-intro-inner { max-width: 800px; margin: 0 auto; }
-.seo-intro h2 { font-size: 1.3rem; font-weight: 600; color: var(--navy); margin-bottom: 1.25rem; }
-.seo-intro p { font-size: 0.95rem; color: var(--muted); line-height: 1.85; margin-bottom: 1rem; }
-.seo-intro-tags { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1.5rem; }
+.seo-intro { background: var(--bg); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 2rem 2rem; }
+.seo-intro-inner { max-width: 720px; margin: 0 auto; text-align: center; }
+.seo-intro h2 { font-size: 1rem; font-weight: 500; color: var(--muted); margin-bottom: 1rem; }
+.seo-intro p { font-size: 0.82rem; color: var(--border-accent); line-height: 1.9; margin-bottom: 0.75rem; color: #B0BAC8; }
+.seo-intro-tags { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-top: 1.25rem; justify-content: center; }
 .seo-text { font-size: 0.92rem; color: var(--muted); line-height: 1.85; margin-bottom: 2rem; border-left: 3px solid var(--border-accent); padding-left: 1.25rem; }
 
 .cookie-banner { position:fixed; bottom:0; left:0; right:0; z-index:999; padding:1rem 1.5rem; background:var(--navy); border-top:2px solid var(--blue); }
