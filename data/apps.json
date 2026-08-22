@@ -1,122 +1,247 @@
 [
   {
     "slug": "radio-escolar",
-    "nom": "Radio Industrial Jove",
-    "categoria": "Comunicacio i podcast",
+    "nom": "Ràdio Escolar",
+    "categoria": "Ràdio i pòdcast escolar",
     "estat": "produccio",
+    "estatText": "En producció i obert a qualsevol escola",
     "icona": "🎙️",
-    "resum": "Plataforma de radio i podcast escolar amb pujada de programes per l alumnat, moderacio docent i editor assistit per IA.",
-    "descripcio": "Radio Industrial Jove es la plataforma de radio i podcast escolar creada per a l Institut Escola Industrial de Sabadell. L alumnat de secundaria guionitza, enregistra i publica els seus propis programes, i cada publicacio passa per una revisio del professorat abans de sortir a l antena. La plataforma inclou un editor de continguts assistit per intel·ligencia artificial que ajuda a generar titols, descripcions i etiquetes, accelerant el proces creatiu i millorant la qualitat dels continguts publicats. Es una eina real de comunicacio educativa que desenvolupa competencies digitals, de comunicacio oral i de pensament critic en l alumnat.",
-    "seoLlarg": "La radio escolar i el podcast educatiu son eines potents per desenvolupar la competencia comunicativa de l alumnat. Radio Industrial Jove permet als centres educatius crear la seva propia emissora digital sense cap coneixement tecnic previ. L alumnat aprèn a comunicar, argumentar i expressar-se en public mentre el professorat manté el control editorial de tots els continguts publicats. La integracio de la intel·ligencia artificial com a eina d aprenentatge, i no com a substitut del pensament, ajuda els alumnes a millorar els seus textos i a reflexionar sobre la qualitat comunicativa. Apta per a ESO, Batxillerat i Cicles Formatius.",
+    "domini": "radioescolar.cat",
+    "url": "https://www.radioescolar.cat",
+    "idiomes": ["Català"],
+    "publics": ["Primària", "Secundària"],
+    "centre": null,
+    "resum": "Estudi de ràdio i pòdcast en línia: l'alumnat grava amb efectes de so, edita amb IA i publica al mur de la classe amb supervisió docent.",
+    "descripcio": "Ràdio Escolar és un estudi de ràdio que funciona directament al navegador, sense instal·lar res ni crear cap compte per començar. L'alumnat tria una plantilla (entrevista, notícies, ficció), segueix una guia pas a pas i grava amb efectes de so en directe. Amb un sol clic, la intel·ligència artificial retalla els silencis, transcriu la veu i proposa un títol, un resum i els capítols del programa. El professorat disposa d'un panell de revisió on escolta cada pòdcast, hi deixa un comentari privat i decideix quan es publica. El resultat surt al mur de la classe amb caràtula pròpia, dins d'un espai que per defecte és privat de l'escola.",
+    "seoLlarg": "La ràdio escolar és una de les activitats més completes que es poden fer a l'aula: treballa l'expressió oral, la comprensió lectora, el treball en equip i el pensament crític alhora. El problema històric ha estat sempre el mateix, la barrera tècnica. Ràdio Escolar elimina aquesta barrera: no cal micròfon professional, ni programa d'edició, ni coneixements de so. Funciona al navegador i l'alumnat pot gravar sense necessitat de crear cap compte, cosa que simplifica enormement la gestió de dades a primària. La intel·ligència artificial s'utilitza com a ajudant d'edició i no com a substitut de la veu de l'alumnat: retalla silencis i proposa metadades, però el contingut és sempre seu. El control editorial del professorat és previ a la publicació, de manera que res no surt al mur sense revisió. Apta per a projectes de llengua, de comunicació audiovisual i de tutoria a Primària i Secundària.",
     "funcionalitats": [
-      "Pujada de podcasts per l alumnat (MP3, MP4, WAV)",
-      "Panel de moderacio i revisio docent",
-      "Categories i etiquetes per tematica",
-      "Editor de continguts assistit per IA",
-      "Gestio de privadesa i drets d imatge"
+      "Gravació al navegador sense instal·lar res ni crear compte",
+      "Plantilles i guions guiats: entrevista, notícies, ficció",
+      "Galeria de sons i efectes compartida amb tota la classe",
+      "Edició automàtica amb IA: retall de silencis, transcripció, títol, resum i capítols",
+      "Panell de revisió docent: escoltar, comentar i aprovar abans de publicar",
+      "Classes amb codi d'invitació i etiquetatge per grup",
+      "Mur privat de l'escola per defecte, amb control de visibilitat",
+      "Caràtules amb plantilla de Canva"
     ],
+    "faq": [
+      { "p": "Cal crear un compte per gravar?", "r": "No. L'alumnat pot gravar i publicar sense cap compte. Només cal iniciar sessió amb Google si es vol tenir una classe pròpia o l'espai personal per gestionar els pòdcasts i els preferits." },
+      { "p": "Qui decideix què es publica?", "r": "El professorat. Cada pòdcast passa per un panell de revisió on es pot escoltar, deixar un comentari privat a l'alumne i aprovar o no la publicació al mur." },
+      { "p": "Cal instal·lar cap programa d'edició?", "r": "No. Tot funciona al navegador, inclosa l'edició amb IA. No cal cap eina externa ni configuració tècnica prèvia." },
+      { "p": "El mur de la classe és públic?", "r": "Per defecte és privat de l'escola. El centre decideix si l'obre a l'exterior o el manté restringit." }
+    ],
+    "relacionats": ["dictats", "pla-lector", "typeedu"],
     "seo": {
-      "title": "Radio escolar i podcast educatiu per a instituts | aulaia.cat",
-      "description": "Plataforma de radio i podcast escolar en funcionament a l Institut Escola Industrial de Sabadell. L alumnat publica programes amb supervisio docent i suport d IA.",
-      "keywords": "radio escolar, podcast educatiu, app radio institut, plataforma podcast escola, radio escolar Catalunya"
-    },
-    "urlDemo": "https://radio-industrial-jove-production.up.railway.app/",
-    "centre": "Institut Escola Industrial de Sabadell"
+      "title": "Ràdio escolar i pòdcast educatiu per a escoles",
+      "description": "Estudi de ràdio i pòdcast escolar al navegador. L'alumnat grava amb efectes de so, edita amb IA i publica amb supervisió docent. Gratuït i sense instal·lar res.",
+      "keywords": "ràdio escolar, pòdcast educatiu, ràdio escolar Catalunya, estudi de ràdio per a escoles, pòdcast a l'aula, radioescolar.cat"
+    }
   },
   {
-    "slug": "chefboss",
-    "nom": "ChefBoss",
-    "categoria": "Simulacio de negoci",
-    "estat": "presentacio",
-    "icona": "👨‍🍳",
-    "resum": "Simulacio de negoci gamificada on l alumnat de Cicles Formatius aprèn gestio empresarial real creant i gestionant el seu propi restaurant.",
-    "descripcio": "ChefBoss es una simulacio de negoci gamificada dissenyada per a l alumnat de CFGM d Hoteleria i Turisme. Cada equip crea i gestiona el seu propi restaurant durant 10 sessions, prenent decisions reals sobre finances, proveidors i clients. Les decisions correctes sumen punts i l alumnat ascendeix de nivell: des d Aprenent fins a Chef Estrella Michelin. La plataforma incorpora situacions de crisi reals del sector com inspeccions sanitaries, baixes laborals o males ressenyes, i integra la intel·ligencia artificial com a eina d aprenentatge per ajudar a analitzar decisions i millorar estrategies. Resol el problema de l aprenentatge abstracte: costos, marges i pressupostos prenen sentit quan hi ha un negoci real en joc.",
-    "seoLlarg": "L ensenyament de la gestio empresarial als Cicles Formatius d Hoteleria i Turisme sovint es percebut com a abstracte i poc motivador. ChefBoss transforma aquesta realitat posant l alumnat en la pell d un empresari real. La gamificacio, la competicio sana entre equips i la projecció en viu del marcador a l aula generen un nivell de participacio i comprensio molt superior al de les metodologies tradicionals. La integracio de la IA com a assistent d analisi, i no com a atajo, fomenta el pensament critic i la presa de decisions fonamentada. Apta per a CFGM i CFGS d Hoteleria, Turisme i Administracio.",
+    "slug": "dictats",
+    "nom": "dictats.cat",
+    "categoria": "Ortografia i llengua catalana",
+    "estat": "produccio",
+    "estatText": "En producció, amb pla gratuït",
+    "icona": "✍️",
+    "domini": "dictats.cat",
+    "url": "https://www.dictats.cat",
+    "idiomes": ["Català"],
+    "publics": ["Primària", "Secundària", "Adults"],
+    "centre": null,
+    "resum": "Dictats en català generats amb IA i adaptats al nivell, del A1 al C2, amb correcció automàtica que explica cada falta i adaptacions NEE.",
+    "descripcio": "dictats.cat converteix una de les tasques docents més costoses, la correcció manual de dictats, en un diagnòstic instantani. La plataforma genera dictats nous cada setmana ajustats a una regla ortogràfica concreta (l·l, b/v, dièresi i moltes més) i al curs de l'alumnat. L'alumne escolta el dictat amb veu catalana, l'escriu al teclat o a mà, i en aquest segon cas en fa una fotografia: l'OCR el transcriu i la IA el corregeix automàticament. Cada falta ve explicada, i els dictats següents es generen a partir dels errors comesos. El professorat disposa de panells amb els errors ortogràfics més freqüents de cada classe i l'evolució individual de cada alumne al llarg del curs.",
+    "seoLlarg": "L'ortografia catalana s'aprèn amb pràctica constant i correcció immediata, però la correcció manual de dictats consumeix hores de feina docent i arriba tard perquè l'alumne pugui aprendre de l'error. dictats.cat resol les dues coses alhora. La generació per IA permet treballar una regla ortogràfica exacta amb material nou i adaptat, en comptes de materials genèrics repetits any rere any. L'escaneig OCR fa que el dictat pugui continuar sent manuscrit, cosa pedagògicament rellevant a primària, sense que això impliqui feina manual de correcció. Les adaptacions per a necessitats educatives especials estan integrades de sèrie: tipografia OpenDyslexic, alt contrast i fragmentació del text en frases curtes per facilitar el ritme de lectura a l'alumnat amb TDAH. El contingut segueix el currículum de Catalunya i cobreix els nivells del A1 al C2, cosa que el fa útil tant per a l'aula com per a la preparació dels certificats oficials de català.",
     "funcionalitats": [
-      "Simulacio de restaurant per equips durant 10 sessions",
-      "Decisions reals: finances, proveidors, clients i crisi",
-      "Sistema de nivells: d Aprenent a Chef Estrella Michelin",
-      "Marcador en viu per projectar a l aula",
-      "IA integrada com a eina d analisi i aprenentatge"
+      "Generació de dictats amb IA per curs i regla ortogràfica concreta",
+      "Nivells del A1 al C2 segons el currículum de Catalunya",
+      "Escaneig OCR: fotografia del dictat manuscrit i correcció automàtica",
+      "Correcció que explica cada falta, no només la marca",
+      "Dictats adaptatius generats a partir dels errors previs de l'alumne",
+      "Adaptacions NEE: OpenDyslexic, alt contrast i ritme per a TDAH",
+      "Panell docent amb errors més freqüents per classe i evolució individual",
+      "Veu catalana per escoltar els dictats"
     ],
-    "seo": {
-      "title": "ChefBoss: simulacio de negoci gamificada per a Cicles Formatius | aulaia.cat",
-      "description": "App educativa de simulacio de restaurant per a CFGM d Hoteleria i Turisme. L alumnat gestiona un negoci real, pren decisions i aprèn gestio empresarial jugant.",
-      "keywords": "simulacio negoci escola, app gamificada cicles formatius, gestio empresarial alumnat, ChefBoss educacio, app hoteleria turisme"
-    },
-    "urlDemo": null,
-    "centre": null
-  },
-  {
-    "slug": "pla-lector",
-    "nom": "Pla de Lectura de Centre",
-    "categoria": "Competencia lectora",
-    "estat": "presentacio",
-    "icona": "📚",
-    "resum": "Eina digital per gestionar el Pla de Lectura de Centre (PLEC): objectius, metodologia, biblioteca escolar i seguiment lector de l alumnat.",
-    "descripcio": "El Pla de Lectura de Centre (PLEC) es el document de referencia de tota la comunitat educativa per formar lectors competents i despertar el gust per la lectura. Aquesta plataforma digital permet als centres elaborar, gestionar i fer el seguiment del seu PLEC de manera estructurada. Inclou els quatre eixos fonamentals de la competencia lectora: mecanica i comprensio lectora, lectura funcional en totes les arees del curriculum, lectura per plaer i lectura critica. Connecta amb la biblioteca publica, serveis educatius i l entorn del centre. Tota la comunitat educativa, des de l equip directiu fins a les families, hi te acces amb el seu rol corresponent.",
-    "seoLlarg": "La competencia lectora es la base de tot l aprenentatge. Un Pla de Lectura de Centre ben estructurat i digital permet als equips docents compartir metodologia, fer el seguiment individual de cada alumne i connectar la lectura amb totes les arees del curriculum. La plataforma PLEC facilita que la lectura deixi de ser responsabilitat exclusiva del departament de llengua i passi a ser un projecte de centre transversal. Apta per a escoles de primaria, instituts de secundaria i centres d educacio especial de Catalunya.",
-    "funcionalitats": [
-      "Gestio digital del document PLEC del centre",
-      "Quatre eixos: mecanica, funcional, plaer i critica",
-      "Cataleg de biblioteca i gestio de prestecs",
-      "Seguiment lector individual de l alumnat",
-      "Acces per a equip directiu, docents i families"
+    "faq": [
+      { "p": "Les dades de l'alumnat estan protegides?", "r": "Sí. La plataforma segueix el RGPD educatiu i no comparteix dades de l'alumnat amb tercers." },
+      { "p": "Com funciona la correcció per foto?", "r": "L'alumne fa el dictat a mà, el fotografia i el sistema en transcriu el text amb OCR. La IA el compara amb l'original i n'explica cada falta, sense feina manual del docent." },
+      { "p": "Quines adaptacions NEE inclou?", "r": "Tipografia OpenDyslexic, alt contrast i fragmentació del text en frases curtes per adaptar el ritme de lectura a l'alumnat amb TDAH o dislèxia." },
+      { "p": "Hi ha una versió per a centres?", "r": "Sí. Per a escoles i instituts hi ha panell de coordinació, grups classe, adaptacions NEE i facturació a nom del centre." }
     ],
+    "relacionats": ["pla-lector", "radio-escolar", "typeedu"],
     "seo": {
-      "title": "Pla de Lectura de Centre digital (PLEC) per a escoles | aulaia.cat",
-      "description": "Plataforma per gestionar el Pla de Lectura de Centre: objectius, metodologia, biblioteca escolar i seguiment de la competencia lectora de l alumnat.",
-      "keywords": "pla de lectura de centre, PLEC digital, biblioteca escolar app, competencia lectora, pla lector escola Catalunya"
-    },
-    "urlDemo": null,
-    "centre": null
+      "title": "Dictats en català amb IA i correcció automàtica per a escoles",
+      "description": "Dictats en català del A1 al C2 generats amb IA per regla ortogràfica. Correcció automàtica per foto que explica cada falta, amb adaptacions per a dislèxia i TDAH.",
+      "keywords": "dictats en català, dictats català online, ortografia catalana, exercicis ortografia catalana, dictats amb IA, nivell C1 català, dictats.cat"
+    }
   },
   {
     "slug": "aules-sostenibles",
     "nom": "Aules Sostenibles",
-    "categoria": "Sostenibilitat educativa",
-    "estat": "presentacio",
+    "categoria": "Educació ambiental",
+    "estat": "produccio",
+    "estatText": "En producció, accés de llançament gratuït",
     "icona": "🌱",
-    "resum": "Projecte de centre que transforma la sostenibilitat en experiencia educativa real: l alumnat diagnostica, dissenya i implementa millores ambientals al centre.",
-    "descripcio": "Aules Sostenibles neix a l Escola Industrial de Sabadell amb un objectiu doble: reduir l impacte ambiental del centre i desenvolupar competencies cientifiques, tecnologiques, socials i comunicatives en l alumnat. El projecte treballa quatre ambits interconnectats: gestio de residus, consum energetic, biodiversitat i comunicacio amb les families. Cada activitat produeix un resultat real que el centre pot implementar, no un exercici fictici. El projecte segueix el ritme del curs escolar, de la diagnosi inicial fins a l exposicio publica de resultats. Els indicadors d avaluacio son clars: reduccio de residus barrejats, disminucio del consum energetic i nombre d activitats curricuiars i families participants.",
-    "seoLlarg": "La sostenibilitat com a projecte de centre va molt mes enlla de reciclar paper. Aules Sostenibles proposa un marc metodologic complet per treballar l educacio ambiental de manera transversal, amb dades reals del propi centre com a punt de partida. L alumnat deixa de ser receptor d informacio per convertir-se en agent de canvi. Les competencies STEM, la comunicacio i la ciutadania activa s integren de manera natural en un projecte amb impacte real i mesurable. Apta per a primaria i secundaria, especialment interessant per a centres que volen obtenir o renovar el distintiu d Escola Verda de Catalunya.",
+    "domini": "aulessostenibles.cat",
+    "url": "https://www.aulessostenibles.cat",
+    "idiomes": ["Català", "Castellà"],
+    "publics": ["Primària", "Secundària"],
+    "centre": null,
+    "resum": "Tallers, auditories i recursos d'educació ambiental perquè docents i centres passin de les idees a resultats ambientals mesurables.",
+    "descripcio": "Aules Sostenibles connecta el currículum amb els reptes ambientals quotidians i converteix cada activitat en una millora visible al centre. La plataforma treballa en dos nivells complementaris: l'aula, amb tallers i recursos pedagògics llestos per utilitzar que porten els ODS a classe sense començar de zero; i el centre, amb un panell global de sostenibilitat, auditories i indicadors ambientals que permeten coordinar accions i explicar l'impacte de tota l'escola. El cicle és sempre el mateix: es tria un repte, l'alumnat observa, proposa millores i documenta les accions, i finalment es mesura l'evolució i es comparteixen els resultats amb equips, famílies i comunitat.",
+    "seoLlarg": "L'educació ambiental deixa de ser una declaració d'intencions quan es pot mesurar. Aules Sostenibles proposa un marc complet per treballar la sostenibilitat de manera transversal, amb dades reals del propi centre com a punt de partida i amb un resultat tangible al final de cada activitat. Les auditories guiades cobreixen energia, residus, aigua i hàbits, i generen la diagnosi que dona sentit a tot el que ve després. El registre d'evidències permet documentar accions i aprenentatges sense recollir dades sensibles de l'alumnat. Els rànquings positius i les insígnies fan visible el progrés i reconeixen la constància, en comptes de premiar només el resultat final. Els informes surten preparats per compartir amb l'equip directiu, les famílies i la comunitat, cosa especialment útil per a centres que volen obtenir o renovar el distintiu d'Escola Verda de Catalunya. Alineat amb els Objectius de Desenvolupament Sostenible i disponible en català i castellà.",
     "funcionalitats": [
-      "Diagnosi ambiental inicial del centre",
-      "Quatre ambits: residus, energia, biodiversitat i comunicacio",
-      "Reptes i activitats curricuiars per a l alumnat",
-      "Panels de seguiment de consums i indicadors",
-      "Exposicio publica de resultats al final de curs"
+      "Reptes d'aula amb objectiu ambiental clar i resultat tangible",
+      "Auditories guiades d'energia, residus, aigua i hàbits",
+      "Registre d'evidències sense dades sensibles de l'alumnat",
+      "Rànquings positius i insígnies per fer visible el progrés",
+      "Panell global de sostenibilitat per a la coordinació del centre",
+      "Informes preparats per compartir amb famílies i comunitat",
+      "Recursos pedagògics llestos per utilitzar, per nivell",
+      "Alineat amb els ODS i disponible en català i castellà"
     ],
+    "faq": [
+      { "p": "És realment gratuït?", "r": "Durant la fase de llançament l'accés és gratuït i no requereix targeta ni permanència. Més endavant hi haurà un Pla Docent i un Pla Centre amb condicions explicades amb claredat." },
+      { "p": "Per a quins nivells està pensat?", "r": "Per a Primària i Secundària, amb activitats aplicables a diferents nivells i àrees del currículum." },
+      { "p": "Cal ser Escola Verda per utilitzar-lo?", "r": "No. És útil per a qualsevol centre, però encaixa especialment bé amb els centres que volen obtenir o renovar el distintiu d'Escola Verda." },
+      { "p": "Es recullen dades de l'alumnat?", "r": "El registre d'evidències està dissenyat per documentar accions i aprenentatges sense recollir dades sensibles de l'alumnat." }
+    ],
+    "relacionats": ["ciutatviva", "radio-escolar", "pla-lector"],
     "seo": {
-      "title": "Aules Sostenibles: projecte d educacio ambiental per a escoles | aulaia.cat",
-      "description": "Projecte educatiu de sostenibilitat per a centres escolars de Catalunya. L alumnat diagnostica i millora l impacte ambiental del centre amb metodologia real.",
-      "keywords": "educacio ambiental escola, aules sostenibles, escola verda Catalunya, projecte sostenibilitat centre educatiu, STEM sostenibilitat"
-    },
-    "urlDemo": null,
-    "centre": "Escola Industrial de Sabadell"
+      "title": "Educació ambiental i sostenibilitat per a escoles i instituts",
+      "description": "Tallers, auditories i recursos de sostenibilitat per a Primària i Secundària. L'alumnat diagnostica, actua i mesura l'impacte ambiental real del centre.",
+      "keywords": "educació ambiental escola, aules sostenibles, escola verda Catalunya, ODS a l'aula, auditoria ambiental centre educatiu, aulessostenibles.cat"
+    }
+  },
+  {
+    "slug": "pla-lector",
+    "nom": "El Pla Lector",
+    "categoria": "Competència lectora",
+    "estat": "desenvolupament",
+    "estatText": "En desenvolupament · properament a elplalector.cat",
+    "icona": "📚",
+    "domini": "elplalector.cat",
+    "url": null,
+    "idiomes": ["Català"],
+    "publics": ["Primària", "Secundària"],
+    "centre": null,
+    "resum": "Eina digital per gestionar el Pla de Lectura de Centre (PLEC): objectius, metodologia, biblioteca escolar i seguiment lector de l'alumnat.",
+    "descripcio": "El Pla de Lectura de Centre (PLEC) és el document de referència de tota la comunitat educativa per formar lectors competents i despertar el gust per la lectura. Aquesta plataforma permet als centres elaborar, gestionar i fer el seguiment del seu PLEC de manera estructurada, amb els quatre eixos fonamentals de la competència lectora: mecànica i comprensió lectora, lectura funcional en totes les àrees del currículum, lectura per plaer i lectura crítica. Connecta amb la biblioteca del centre, els serveis educatius i l'entorn, i dona accés a tota la comunitat educativa amb el rol corresponent, des de l'equip directiu fins a les famílies.",
+    "seoLlarg": "La competència lectora és la base de tot l'aprenentatge, i un Pla de Lectura de Centre ben estructurat és l'instrument que fa que deixi de ser responsabilitat exclusiva del departament de llengua. Digitalitzar el PLEC permet als equips docents compartir metodologia, fer el seguiment individual de cada alumne i connectar la lectura amb totes les àrees del currículum, en comptes de tenir un document estàtic que ningú no consulta. La plataforma cobreix el cicle complet: definició d'objectius, planificació d'activitats per eix, gestió del catàleg i els préstecs de la biblioteca escolar, i seguiment lector individual. Pensada per a escoles de primària, instituts de secundària i centres d'educació especial de Catalunya.",
+    "funcionalitats": [
+      "Gestió digital del document PLEC del centre",
+      "Quatre eixos: mecànica, funcional, plaer i lectura crítica",
+      "Catàleg de biblioteca escolar i gestió de préstecs",
+      "Seguiment lector individual de l'alumnat",
+      "Accés per rols: equip directiu, docents i famílies",
+      "Connexió amb la biblioteca pública i els serveis educatius"
+    ],
+    "faq": [
+      { "p": "Quan estarà disponible?", "r": "El projecte està en desenvolupament i es publicarà a elplalector.cat. Si vols provar-lo al teu centre quan s'obri, escriu-nos i t'avisarem." },
+      { "p": "Substitueix el document PLEC del centre?", "r": "No el substitueix: el digitalitza i el fa operatiu, de manera que deixi de ser un document estàtic i passi a ser una eina de seguiment del dia a dia." }
+    ],
+    "relacionats": ["dictats", "radio-escolar", "aules-sostenibles"],
+    "seo": {
+      "title": "Pla de Lectura de Centre digital (PLEC) per a escoles",
+      "description": "Plataforma per gestionar el Pla de Lectura de Centre: objectius, metodologia, biblioteca escolar i seguiment de la competència lectora de l'alumnat.",
+      "keywords": "pla de lectura de centre, PLEC digital, biblioteca escolar app, competència lectora, pla lector escola Catalunya, elplalector.cat"
+    }
+  },
+  {
+    "slug": "typeedu",
+    "nom": "TypeEdu",
+    "categoria": "Mecanografia educativa",
+    "estat": "produccio",
+    "estatText": "En producció, multiidioma",
+    "icona": "⌨️",
+    "domini": "typeedu.com",
+    "url": "https://www.typeedu.com",
+    "idiomes": ["Castellà", "Català", "Anglès", "Èuscar"],
+    "publics": ["Primària", "Secundària", "Cicles Formatius"],
+    "centre": null,
+    "resum": "Mecanografia educativa i accessible: pràctica guiada amb teclat ISO, feedback immediat i adaptacions per a l'aula.",
+    "descripcio": "TypeEdu acompanya l'alumnat a dominar el teclat físic amb pràctica guiada, feedback immediat i objectius adaptats al seu ritme. Mostra tecles, mans i dits a la pantalla perquè s'aprengui a escriure sense mirar el teclat, i tradueix el progrés en mètriques que s'entenen: precisió, velocitat i una recomanació clara sobre quin és el pas següent. Està pensat des del principi per a centres educatius, amb eines diferenciades per a alumnat, professorat i coordinació, i amb privacitat per disseny. La capa d'accessibilitat inclou lectura més llegible, mode focus, micropràctiques i controls visuals configurables: el centre pot proposar ajustos i cada alumne manté el control de les seves preferències.",
+    "seoLlarg": "La mecanografia continua sent una competència digital de base i sovint la gran oblidada: s'assumeix que l'alumnat aprendrà a escriure sol, i el resultat és una escriptura lenta que llastra la resta de tasques digitals durant tota l'escolaritat. TypeEdu la treballa de manera explícita i estructurada, amb teclat ISO espanyol i pràctica guiada visual. La diferència principal respecte de les eines genèriques de mecanografia és l'enfocament educatiu i inclusiu: el disseny contempla adaptacions per a alumnat amb necessitats diferents (lectura més llegible, mode focus, micropràctiques i suport al ritme) i dona al centre eines de coordinació, no només exercicis individuals. Disponible en castellà, català, anglès i èuscar, cosa que el fa utilitzable en centres de tot l'estat i en programes plurilingües.",
+    "funcionalitats": [
+      "Pràctica guiada amb tecles, mans i dits visibles",
+      "Teclat ISO espanyol i feedback immediat",
+      "Progrés comprensible: precisió, velocitat i recomanació següent",
+      "Eines diferenciades per a alumnat, professorat i coordinació",
+      "Accessibilitat: lectura llegible, mode focus i micropràctiques",
+      "Ajustos proposats pel centre i controlats per cada alumne",
+      "Privacitat per disseny",
+      "Disponible en castellà, català, anglès i èuscar"
+    ],
+    "faq": [
+      { "p": "En quins idiomes està disponible?", "r": "En castellà, català, anglès i èuscar, amb teclat ISO espanyol." },
+      { "p": "Serveix per a alumnat amb necessitats educatives especials?", "r": "Sí. Incorpora lectura més llegible, mode focus, micropràctiques i controls visuals configurables. El centre pot proposar ajustos i cada alumne manté el control de les seves preferències." },
+      { "p": "Què veu el professorat?", "r": "Hi ha eines diferenciades per a alumnat, professorat i coordinació, amb el progrés de precisió i velocitat i recomanacions de pas següent." }
+    ],
+    "relacionats": ["dictats", "radio-escolar", "pla-lector"],
+    "seo": {
+      "title": "TypeEdu: mecanografia educativa i accessible per a centres",
+      "description": "Aprenentatge de mecanografia amb pràctica guiada, teclat ISO, feedback immediat i adaptacions per a l'aula. En castellà, català, anglès i èuscar.",
+      "keywords": "mecanografia educativa, aprendre a escriure a teclat, mecanografia escola, mecanografía educativa accesible, competència digital teclat, typeedu.com"
+    }
+  },
+  {
+    "slug": "chefboss",
+    "nom": "ChefBoss",
+    "categoria": "Simulació de negoci",
+    "estat": "presentacio",
+    "estatText": "En presentació a centres",
+    "icona": "👨‍🍳",
+    "domini": null,
+    "url": null,
+    "idiomes": ["Català"],
+    "publics": ["Cicles Formatius"],
+    "centre": null,
+    "resum": "Simulació de negoci gamificada on l'alumnat de Cicles Formatius aprèn gestió empresarial creant i gestionant el seu propi restaurant.",
+    "descripcio": "ChefBoss és una simulació de negoci gamificada dissenyada per a l'alumnat de CFGM d'Hoteleria i Turisme. Cada equip crea i gestiona el seu propi restaurant durant 10 sessions, prenent decisions reals sobre finances, proveïdors i clients. Les decisions correctes sumen punts i l'alumnat ascendeix de nivell, des d'Aprenent fins a Chef Estrella Michelin. La plataforma incorpora situacions de crisi reals del sector com inspeccions sanitàries, baixes laborals o males ressenyes, i integra la intel·ligència artificial com a eina d'anàlisi. Resol el problema de l'aprenentatge abstracte: costos, marges i pressupostos prenen sentit quan hi ha un negoci real en joc.",
+    "seoLlarg": "L'ensenyament de la gestió empresarial als Cicles Formatius d'Hoteleria i Turisme sovint es percep com a abstracte i poc motivador. ChefBoss posa l'alumnat en la pell d'un empresari real. La gamificació, la competició sana entre equips i la projecció en viu del marcador a l'aula generen un nivell de participació i comprensió molt superior al de les metodologies tradicionals. La integració de la IA com a assistent d'anàlisi, i no com a drecera, fomenta el pensament crític i la presa de decisions fonamentada. Apta per a CFGM i CFGS d'Hoteleria, Turisme i Administració.",
+    "funcionalitats": [
+      "Simulació de restaurant per equips durant 10 sessions",
+      "Decisions reals: finances, proveïdors, clients i crisi",
+      "Sistema de nivells: d'Aprenent a Chef Estrella Michelin",
+      "Marcador en viu per projectar a l'aula",
+      "IA integrada com a eina d'anàlisi i aprenentatge"
+    ],
+    "faq": [],
+    "relacionats": ["ciutatviva", "typeedu"],
+    "seo": {
+      "title": "ChefBoss: simulació de negoci gamificada per a Cicles Formatius",
+      "description": "App educativa de simulació de restaurant per a CFGM d'Hoteleria i Turisme. L'alumnat gestiona un negoci real, pren decisions i aprèn gestió empresarial jugant.",
+      "keywords": "simulació negoci escola, app gamificada cicles formatius, gestió empresarial alumnat, ChefBoss educació, app hoteleria turisme"
+    }
   },
   {
     "slug": "ciutatviva",
     "nom": "CiutatViva",
     "categoria": "Aprenentatge servei",
     "estat": "presentacio",
+    "estatText": "En presentació a centres",
     "icona": "🏙️",
-    "resum": "Plataforma participativa d aprenentatge servei: l alumnat detecta necessitats reals del seu entorn, proposa solucions i en fa el seguiment com a projecte educatiu.",
-    "descripcio": "CiutatViva es una plataforma participativa que connecta l alumnat, les entitats i les administracions locals per construir entorns mes justos i habitables. Neix de la conviccio que les millors solucions urbanes venen de les persones que viuen i coneixen el territori. L alumnat pot reportar una necessitat o oportunitat de millora al seu barri amb geolocalitzacio, la comunitat debat i valida les propostes, i les que tenen prou suport pugen a l agenda municipal amb terminis concrets de resposta. Tot el proces es obert i rendeix comptes: cada participant rep actualitzacions de les seves propostes. Apta per a projectes d aprenentatge servei (ApS) a ESO i Batxillerat.",
-    "seoLlarg": "L aprenentatge servei (ApS) es una de les metodologies mes potents per desenvolupar la competencia ciutadana i el compromis civic de l alumnat. CiutatViva ofereix el marc digital perque els projectes d ApS tinguin impacte real mes enlla de l aula. L alumnat aprèn a identificar problemes complexos, a argumentar propostes i a negociar amb institucions reals, mentre desenvolupa competencies digitals, socials i de pensament crític. La connexio amb els ajuntaments i entitats locals converteix cada projecte en una experiencia de ciutadania activa autentica. Especialment recomanada per a instituts que treballen el Projecte de Recerca o les Competencies Basiques de l ambit de Ciutadania.",
+    "domini": null,
+    "url": null,
+    "idiomes": ["Català"],
+    "publics": ["Secundària", "Batxillerat"],
+    "centre": null,
+    "resum": "Plataforma d'aprenentatge servei: l'alumnat detecta necessitats reals del seu entorn, proposa solucions i en fa el seguiment com a projecte educatiu.",
+    "descripcio": "CiutatViva és una plataforma participativa que connecta l'alumnat, les entitats i les administracions locals per construir entorns més justos i habitables. L'alumnat pot reportar una necessitat o oportunitat de millora al seu barri amb geolocalització, la comunitat debat i valida les propostes, i les que tenen prou suport pugen a l'agenda municipal amb terminis concrets de resposta. Tot el procés és obert i ret comptes: cada participant rep actualitzacions de les seves propostes. Apta per a projectes d'aprenentatge servei (ApS) a ESO i Batxillerat.",
+    "seoLlarg": "L'aprenentatge servei (ApS) és una de les metodologies més potents per desenvolupar la competència ciutadana i el compromís cívic de l'alumnat. CiutatViva ofereix el marc digital perquè els projectes d'ApS tinguin impacte real més enllà de l'aula. L'alumnat aprèn a identificar problemes complexos, a argumentar propostes i a negociar amb institucions reals, mentre desenvolupa competències digitals, socials i de pensament crític. La connexió amb els ajuntaments i entitats locals converteix cada projecte en una experiència de ciutadania activa autèntica.",
     "funcionalitats": [
-      "Mapa col·laboratiu de propostes de millora amb geolocalitzacio",
-      "Debat i validacio comunitaria de cada proposta",
-      "Connexio amb ajuntaments i entitats locals",
-      "Seguiment obert i rendicio de comptes",
-      "Portafoli de projecte per a l avaluacio competencial"
+      "Mapa col·laboratiu de propostes de millora amb geolocalització",
+      "Debat i validació comunitària de cada proposta",
+      "Connexió amb ajuntaments i entitats locals",
+      "Seguiment obert i rendició de comptes",
+      "Portafoli de projecte per a l'avaluació competencial"
     ],
+    "faq": [],
+    "relacionats": ["aules-sostenibles", "chefboss"],
     "seo": {
-      "title": "CiutatViva: plataforma d aprenentatge servei per a instituts | aulaia.cat",
-      "description": "Eina digital per a projectes d aprenentatge servei (ApS) a ESO i Batxillerat. L alumnat proposa millores reals al seu entorn i les connecta amb l administracio local.",
-      "keywords": "aprenentatge servei, ApS digital, projecte ciutadania escola, participacio ciutadana alumnat, competencia ciutadana ESO"
-    },
-    "urlDemo": null,
-    "centre": null
+      "title": "CiutatViva: plataforma d'aprenentatge servei per a instituts",
+      "description": "Eina digital per a projectes d'aprenentatge servei (ApS) a ESO i Batxillerat. L'alumnat proposa millores reals al seu entorn i les connecta amb l'administració local.",
+      "keywords": "aprenentatge servei, ApS digital, projecte ciutadania escola, participació ciutadana alumnat, competència ciutadana ESO"
+    }
   }
 ]

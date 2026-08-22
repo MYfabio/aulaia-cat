@@ -3,16 +3,37 @@ import Logo from "../components/Logo";
 import CookieBanner from "../components/CookieBanner";
 import "./globals.css";
 export const metadata = {
-  metadataBase: new URL("https://aulaia.cat"),
+  metadataBase: new URL("https://www.aulaia.cat"),
   title: { default: "aulaia.cat - Apps educatives per a escoles de Catalunya", template: "%s | aulaia.cat" },
   description: "Cataleg d aplicacions i projectes de software per a escoles, instituts i centres educatius de Catalunya.",
   icons: { icon: "/favicon.svg", shortcut: "/favicon.svg", apple: "/favicon.svg" },
   robots: { index: true, follow: true },
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    locale: "ca_ES",
+    siteName: "aulaia.cat",
+    url: "https://www.aulaia.cat",
+    title: "aulaia.cat - Apps educatives per a escoles de Catalunya",
+    description: "Cataleg d aplicacions i projectes de software per a escoles, instituts i centres educatius de Catalunya.",
+  },
+};
+
+const orgJsonld = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "aulaia.cat",
+  url: "https://www.aulaia.cat",
+  email: "hola@aulaia.cat",
+  description: "Apps i projectes de software educatiu per a escoles i instituts de Catalunya.",
+  address: { "@type": "PostalAddress", addressLocality: "Sabadell", addressRegion: "Catalunya", addressCountry: "ES" },
+  brand: ["radioescolar.cat", "dictats.cat", "aulessostenibles.cat", "elplalector.cat", "typeedu.com"],
 };
 export default function RootLayout({ children }) {
   return (
     <html lang="ca">
       <body>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(orgJsonld)}} />
         <header className="nav">
           <Link href="/" aria-label="aulaia.cat - inici"><Logo size={34} /></Link>
           <nav className="nav-links">

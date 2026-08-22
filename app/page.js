@@ -1,10 +1,33 @@
 import Link from "next/link";
 import apps from "../data/apps.json";
+
 export const metadata = {
   title: "Apps i software educatiu per a escoles de Catalunya",
-  description: "Cataleg d aplicacions i projectes digitals per a centres educatius de Catalunya. Eines per aprofitar la tecnologia a favor de l aprenentatge real de l alumnat.",
+  description: "Cataleg d aplicacions i projectes digitals per a centres educatius de Catalunya. Radio escolar, dictats amb IA, sostenibilitat, pla lector i mecanografia.",
+  alternates: { canonical: "/" },
 };
+
+function AppCard({ app }) {
+  return (
+    <Link href={"/apps/"+app.slug} className="app-card">
+      <div className="app-card-icon">{app.icona}</div>
+      <div className="app-card-cat">{app.categoria}</div>
+      <div className="app-card-name">{app.nom}</div>
+      <div className="app-card-desc">{app.resum}</div>
+      {app.domini && <div className="app-card-domain">{app.domini}</div>}
+      <div className="app-card-footer">
+        {app.estat==="produccio" && <span className="app-card-live">En produccio</span>}
+        {app.estat==="desenvolupament" && <span className="app-card-soon">Properament</span>}
+        <span className="btn btn-ghost">Veure detall</span>
+      </div>
+    </Link>
+  );
+}
+
 export default function Home() {
+  const enLinia = apps.filter(a=>a.domini);
+  const enPreparacio = apps.filter(a=>!a.domini);
+
   return (
     <>
       <section className="hero">
@@ -26,8 +49,8 @@ export default function Home() {
         <div className="seo-intro-inner">
           <h2>Software educatiu per aprofitar la tecnologia a les aules de Catalunya</h2>
           <p>A aulaia.cat dissenyem i desenvolupem aplicacions digitals pensades especificament per a la realitat dels centres educatius catalans. No adaptem eines generals: creem solucions que neixen de les necessitats reals dels docents, dels equips directius i, sobretot, de l alumnat.</p>
-          <p>La tecnologia, per si sola, no transforma l educacio. El que la transforma es posar-la al servei d un proposit pedagogic clar. Cada projecte d aulaia.cat neix d una pregunta concreta que es fa un docent o un equip directiu: com puc fer que l alumnat entengui de veritat la gestio empresarial? Com podem convertir la sostenibilitat en un projecte real i no en un exercici fictici? Com donem veu a l alumnat mes enlla de l aula?</p>
-          <p>Les nostres apps per a escoles cobreixen des de la simulacio de negoci gamificada per a Cicles Formatius fins a la radio escolar amb suport d intel·ligencia artificial, passant per la gestio digital del Pla de Lectura de Centre o els projectes d aprenentatge servei connectats amb els ajuntaments. Totes comparteixen el mateix principi: la tecnologia ha de ser invisible. El que ha de brillar es l aprenentatge.</p>
+          <p>La tecnologia, per si sola, no transforma l educacio. El que la transforma es posar-la al servei d un proposit pedagogic clar. Cada projecte d aulaia.cat neix d una pregunta concreta que es fa un docent o un equip directiu: com fem que l alumnat millori l ortografia sense hores de correccio manual? Com donem veu a l alumnat mes enlla de l aula? Com convertim la sostenibilitat en un projecte real i no en un exercici fictici?</p>
+          <p>Cada projecte te el seu propi domini i la seva propia web, i des d aqui pots veure que fa cadascun abans d entrar-hi. Totes comparteixen el mateix principi: la tecnologia ha de ser invisible. El que ha de brillar es l aprenentatge.</p>
           <div className="seo-intro-tags">
             {["Apps per a ESO","Cicles Formatius","Primaria","Batxillerat","Escola Verda","Aprenentatge Servei","Competencia Digital","STEM"].map(t=>(
               <span key={t} className="badge">{t}</span>
@@ -40,24 +63,25 @@ export default function Home() {
 
       <section className="section" id="apps">
         <div className="section-header">
-          <h2>Les nostres aplicacions per a centres educatius</h2>
-          <p>Cada app neix d una necessitat real detectada a les escoles. Fes clic per veure el detall de cada projecte.</p>
+          <h2>Els nostres projectes en linia</h2>
+          <p>Cada projecte te el seu domini propi. Fes clic per veure el detall abans de visitar-lo.</p>
         </div>
         <div className="apps-grid">
-          {apps.map(app=>(
-            <Link href={"/apps/"+app.slug} key={app.slug} className="app-card">
-              <div className="app-card-icon">{app.icona}</div>
-              <div className="app-card-cat">{app.categoria}</div>
-              <div className="app-card-name">{app.nom}</div>
-              <div className="app-card-desc">{app.resum}</div>
-              <div className="app-card-footer">
-                {app.estat==="produccio"&&<span className="app-card-live">En produccio</span>}
-                <span className="btn btn-ghost">Veure detall</span>
-              </div>
-            </Link>
-          ))}
+          {enLinia.map(app=><AppCard key={app.slug} app={app} />)}
         </div>
       </section>
+
+      {enPreparacio.length>0 && (
+        <section className="section" id="en-preparacio">
+          <div className="section-header">
+            <h2>En preparacio</h2>
+            <p>Projectes que estem presentant als centres i encara no tenen web publica.</p>
+          </div>
+          <div className="apps-grid">
+            {enPreparacio.map(app=><AppCard key={app.slug} app={app} />)}
+          </div>
+        </section>
+      )}
 
       <hr className="divider"/>
 
