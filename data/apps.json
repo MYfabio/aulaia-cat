@@ -185,6 +185,44 @@
     }
   },
   {
+    "slug": "kipuk",
+    "nom": "KIPUK",
+    "categoria": "Educació física i cohesió",
+    "estat": "construccio",
+    "estatText": "En construcció · especificació tancada, MVP en desenvolupament",
+    "icona": "🤾",
+    "domini": "kipuk.es",
+    "url": null,
+    "idiomes": ["Castellà"],
+    "publics": ["Primària", "Secundària"],
+    "centre": null,
+    "resum": "Plataforma de centre per organitzar activitat física, lligues, equips i reptes cooperatius al pati, sense dependre dels mòbils de l'alumnat.",
+    "descripcio": "KIPUK converteix el pati i l'Educació Física en un sistema inclusiu, visible i fàcil d'operar per al professorat. Està dissenyat per a dos contextos que han de conviure: la preparació des de l'aula amb ordinador, i l'operació ràpida al pati amb un únic iPad docent, targetes físiques i rols rotatius. L'alumnat no necessita telèfon propi en cap moment. El docent prepara una jornada en menys de deu minuts, crea equips amb regles pedagògiques explicables i valida resultats en pocs tocs; l'alumnat sap on anar, amb qui està i quin rol té sense mirar cap pantalla.",
+    "seoLlarg": "La gestió d'una jornada d'Educació Física acostuma a repartir-se entre paper, memòria i missatges: fer grups, passar llista, controlar pistes i registrar resultats. KIPUK recull tot aquest flux en una sola eina pensada per funcionar al pati, no en un despatx. La diferència de fons és el criteri pedagògic: la classificació combina resultat, assistència, cooperació, fair play i esforç amb regles visibles i revisables, de manera que no només compti guanyar. El sorteig d'equips genera una proposta explicable que el docent pot ajustar, i mai infereix atributs sensibles: no classifica per gènere, capacitat, origen ni nivell. La intel·ligència artificial pot proposar, però mai decidir ni sancionar; tot resultat o reconeixement requereix validació humana. Les dades de l'alumnat no es publiquen ni s'envien a cap model d'IA, i el panell de projecció no mostra mai informació sensible. Inclou un creador de tornejos escolars amb plantilles, fases, calendari, pistes i panell de recinte imprimible.",
+    "funcionalitats": [
+      "Sorteig pedagògic d'equips amb proposta explicable i ajustable pel docent",
+      "Jornada de pati amb un sol iPad: assistència, control de pista, marcador i validació",
+      "Creador de tornejos: lliga, copa amb consolació, grups i festival cooperatiu",
+      "Panell de projecció i targetes imprimibles, sense dades sensibles",
+      "Reconeixements de fair play, participació, cura i cohesió",
+      "Importació controlada de grups des de Google Classroom",
+      "Rols rotatius i punts de trobada perquè l'alumnat no necessiti dispositiu",
+      "Informes de participació agregada, amb auditoria de qui accedeix i quan"
+    ],
+    "faq": [
+      { "p": "L'alumnat necessita mòbil?", "r": "No. El flux principal de pati funciona amb colors, targetes, punts de trobada i rols. L'iPad del docent coordina, però cap alumne necessita telèfon, compte ni registre propi." },
+      { "p": "Com es fan els equips?", "r": "El docent tria els paràmetres (nombre d'equips, evitar repeticions, barrejar aules, parelles de suport) i el sistema genera una proposta explicable que es pot modificar abans de confirmar. No classifica per gènere, capacitat, origen ni nivell." },
+      { "p": "Què passa amb les dades de l'alumnat?", "r": "No es publiquen ni s'envien a cap model d'IA. L'accés és per rol, les llistes no són públiques i queda registre de cada acció sensible, amb retenció definida." },
+      { "p": "Quan estarà disponible?", "r": "L'especificació de producte està tancada i el MVP està en desenvolupament. Si vols que el teu centre participi al pilot, escriu-nos." }
+    ],
+    "relacionats": ["aules-sostenibles", "ciutatviva", "radio-escolar"],
+    "seo": {
+      "title": "KIPUK: activitat física, jocs i cohesió al pati per a escoles",
+      "description": "Plataforma de centre per organitzar Educació Física, lligues, equips i reptes cooperatius. Funciona al pati sense mòbils de l'alumnat, amb criteris d'inclusió i privacitat.",
+      "keywords": "educació física escola, tornejos escolars, cohesió al pati, app educació física, jocs cooperatius escola, KIPUK"
+    }
+  },
+  {
     "slug": "chefboss",
     "nom": "ChefBoss",
     "categoria": "Simulació de negoci",

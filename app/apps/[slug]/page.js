@@ -51,18 +51,25 @@ export default async function AppLanding({ params }) {
   return (
     <div className="landing">
       <Jsonld app={app} />
-      <Link href="/#apps" className="landing-back">← Torna al cataleg</Link>
-      <span className="landing-tag">{app.icona} {app.categoria}</span>
+      <Link href="/#apps" className="landing-back">← Tots els projectes</Link>
+      <span className="landing-tag">{app.categoria}</span>
       <h1>{app.nom}</h1>
       <p className="landing-desc">{app.descripcio}</p>
 
       {app.url && (
         <div className="live-banner">
           <div className="live-banner-text">
-            <strong>Projecte en produccio</strong>
+            <strong>Web del projecte</strong>
             <span>{app.domini}{app.centre ? " · "+app.centre : ""}</span>
           </div>
           <a href={app.url} target="_blank" rel="noopener" className="btn btn-primary">Visita {app.domini}</a>
+        </div>
+      )}
+
+      {!app.url && (
+        <div className="wip-banner">
+          <span className="wip-label">En construcció</span>
+          <p>{app.estatText}{app.domini ? ". El projecte es publicarà a "+app.domini+"." : "."} Si vols que el teu centre hi participi, escriu-nos i t'avisarem.</p>
         </div>
       )}
 
@@ -73,8 +80,8 @@ export default async function AppLanding({ params }) {
       </div>
 
       <div className="landing-cta-bar">
-        <Link href={"/contacte?app="+encodeURIComponent(app.nom)} className="btn btn-primary">M interessa per a la meva escola</Link>
-        <Link href={"/contacte?app="+encodeURIComponent(app.nom)} className="btn btn-outline">Demana una demo gratuita</Link>
+        <Link href={"/contacte?app="+encodeURIComponent(app.nom)} className="btn btn-primary">M'interessa per a la meva escola</Link>
+        <Link href={"/contacte?app="+encodeURIComponent(app.nom)} className="btn btn-outline">Demana una demo gratuïta</Link>
       </div>
 
       <h2>Funcionalitats principals</h2>
@@ -86,14 +93,14 @@ export default async function AppLanding({ params }) {
 
       {app.seoLlarg && (
         <>
-          <h2>Mes informacio sobre {app.nom}</h2>
+          <h2>Més informació sobre {app.nom}</h2>
           <p className="seo-text">{app.seoLlarg}</p>
         </>
       )}
 
       {app.faq?.length>0 && (
         <>
-          <h2>Preguntes frequents</h2>
+          <h2>Preguntes freqüents</h2>
           <div className="faq-list">
             {app.faq.map(f=>(
               <details key={f.p} className="faq-item">
@@ -111,11 +118,10 @@ export default async function AppLanding({ params }) {
 
       {relacionats.length>0 && (
         <>
-          <h2>Altres projectes d aulaia.cat</h2>
+          <h2>Altres projectes d'aulaia.cat</h2>
           <div className="rel-grid">
             {relacionats.map(r=>(
               <Link key={r.slug} href={"/apps/"+r.slug} className="rel-card">
-                <span className="rel-icon">{r.icona}</span>
                 <span className="rel-name">{r.nom}</span>
                 <span className="rel-desc">{r.resum}</span>
               </Link>
@@ -126,8 +132,8 @@ export default async function AppLanding({ params }) {
 
       <div className="landing-final-cta">
         <p className="landing-final-title">Vols veure {app.nom} al teu centre?</p>
-        <p className="landing-final-sub">Demo gratuita sense compromis. T expliquem com s adapta a la teva realitat.</p>
-        <Link href={"/contacte?app="+encodeURIComponent(app.nom)} className="btn btn-primary" style={{fontSize:"1rem",padding:".75rem 2rem"}}>Contactans sobre {app.nom}</Link>
+        <p className="landing-final-sub">Demo gratuïta sense compromís. T'expliquem com s'adapta a la teva realitat.</p>
+        <Link href={"/contacte?app="+encodeURIComponent(app.nom)} className="btn btn-primary" style={{fontSize:"1rem",padding:".75rem 2rem"}}>Contacta'ns sobre {app.nom}</Link>
       </div>
     </div>
   );

@@ -3,114 +3,131 @@ import apps from "../data/apps.json";
 
 export const metadata = {
   title: "Apps i software educatiu per a escoles de Catalunya",
-  description: "Cataleg d aplicacions i projectes digitals per a centres educatius de Catalunya. Radio escolar, dictats amb IA, sostenibilitat, pla lector i mecanografia.",
+  description: "Catàleg d'aplicacions i projectes digitals per a centres educatius de Catalunya. Ràdio escolar, dictats amb IA, sostenibilitat, pla lector i mecanografia.",
   alternates: { canonical: "/" },
 };
 
-function AppCard({ app }) {
+const ESTATS = {
+  produccio: "En línia",
+  construccio: "En construcció",
+  desenvolupament: "Properament",
+  presentacio: "En presentació",
+};
+
+function ProjectRow({ app, num }) {
   return (
-    <Link href={"/apps/"+app.slug} className="app-card">
-      <div className="app-card-icon">{app.icona}</div>
-      <div className="app-card-cat">{app.categoria}</div>
-      <div className="app-card-name">{app.nom}</div>
-      <div className="app-card-desc">{app.resum}</div>
-      {app.domini && <div className="app-card-domain">{app.domini}</div>}
-      <div className="app-card-footer">
-        {app.estat==="produccio" && <span className="app-card-live">En produccio</span>}
-        {app.estat==="desenvolupament" && <span className="app-card-soon">Properament</span>}
-        <span className="btn btn-ghost">Veure detall</span>
-      </div>
+    <Link href={"/apps/"+app.slug} className="proj-row">
+      <span className="proj-num">{String(num).padStart(2,"0")}</span>
+      <span className="proj-main">
+        <span className="proj-cat">{app.categoria}</span>
+        <span className="proj-name">{app.nom}</span>
+        <span className="proj-desc">{app.resum}</span>
+      </span>
+      <span className="proj-meta">
+        {app.domini && <span className="proj-domain">{app.domini}</span>}
+        <span className={"proj-state" + (app.estat==="produccio" ? " is-live" : "")}>
+          {ESTATS[app.estat] || "En preparació"}
+        </span>
+      </span>
     </Link>
   );
 }
 
 export default function Home() {
-  const enLinia = apps.filter(a=>a.domini);
-  const enPreparacio = apps.filter(a=>!a.domini);
+  const enLinia = apps.filter(a=>a.estat==="produccio");
+  const enConstruccio = apps.filter(a=>a.estat==="construccio"||a.estat==="desenvolupament");
+  const enPreparacio = apps.filter(a=>a.estat==="presentacio");
 
   return (
     <>
       <section className="hero">
-        <span className="hero-tag">Apps educatives · Catalunya</span>
-        <h1>Aprofitem la tecnologia<br/>per als nostres <span>alumnes</span></h1>
-        <p>Projectes digitals per a centres escolars i instituts de Catalunya. Cada app neix d una necessitat real de l aula i posa la tecnologia al servei de l aprenentatge.</p>
+        <span className="hero-tag">Software educatiu · Catalunya</span>
+        <h1>Apps educatives fetes <span>a Catalunya</span></h1>
+        <p>Cada projecte neix d'una necessitat real d'un centre i té la seva pròpia web. Aquí pots veure què fa cadascun abans d'entrar-hi.</p>
         <div className="hero-actions">
-          <Link href="#apps" className="btn btn-primary">Descobreix les apps</Link>
+          <Link href="#apps" className="btn btn-primary">Veure els projectes</Link>
           <Link href="/contacte" className="btn btn-outline">Demana una demo</Link>
         </div>
         <div className="hero-badges">
-          {["Projectes reals en us","Per a escoles i instituts","Fet a Catalunya","Amb suport d IA"].map(b=>(
+          {[enLinia.length+" projectes en línia","Per a escoles i instituts","De Sabadell","Amb suport d'IA"].map(b=>(
             <span key={b} className="badge">{b}</span>
           ))}
         </div>
       </section>
 
+      <section className="section" id="apps">
+        <div className="section-header">
+          <h2>Projectes en línia</h2>
+          <p>Cadascun té el seu domini propi i funciona de manera independent.</p>
+        </div>
+        <div className="proj-list">
+          {enLinia.map((app,i)=><ProjectRow key={app.slug} app={app} num={i+1} />)}
+        </div>
+      </section>
+
+      {enConstruccio.length>0 && (
+        <section className="section" id="en-construccio" style={{paddingTop:0}}>
+          <div className="section-header">
+            <h2>En construcció</h2>
+            <p>Projectes amb l'abast ja definit que estem desenvolupant ara mateix.</p>
+          </div>
+          <div className="proj-list">
+            {enConstruccio.map((app,i)=><ProjectRow key={app.slug} app={app} num={enLinia.length+i+1} />)}
+          </div>
+        </section>
+      )}
+
+      {enPreparacio.length>0 && (
+        <section className="section" id="en-preparacio" style={{paddingTop:0}}>
+          <div className="section-header">
+            <h2>En preparació</h2>
+            <p>Els estem presentant als centres. Encara no tenen web pública.</p>
+          </div>
+          <div className="proj-list">
+            {enPreparacio.map((app,i)=><ProjectRow key={app.slug} app={app} num={enLinia.length+enConstruccio.length+i+1} />)}
+          </div>
+        </section>
+      )}
+
       <section className="seo-intro">
         <div className="seo-intro-inner">
-          <h2>Software educatiu per aprofitar la tecnologia a les aules de Catalunya</h2>
-          <p>A aulaia.cat dissenyem i desenvolupem aplicacions digitals pensades especificament per a la realitat dels centres educatius catalans. No adaptem eines generals: creem solucions que neixen de les necessitats reals dels docents, dels equips directius i, sobretot, de l alumnat.</p>
-          <p>La tecnologia, per si sola, no transforma l educacio. El que la transforma es posar-la al servei d un proposit pedagogic clar. Cada projecte d aulaia.cat neix d una pregunta concreta que es fa un docent o un equip directiu: com fem que l alumnat millori l ortografia sense hores de correccio manual? Com donem veu a l alumnat mes enlla de l aula? Com convertim la sostenibilitat en un projecte real i no en un exercici fictici?</p>
-          <p>Cada projecte te el seu propi domini i la seva propia web, i des d aqui pots veure que fa cadascun abans d entrar-hi. Totes comparteixen el mateix principi: la tecnologia ha de ser invisible. El que ha de brillar es l aprenentatge.</p>
+          <h2>La tecnologia ha de ser invisible. El que ha de brillar és l'aprenentatge.</h2>
+          <p>A aulaia.cat dissenyem i desenvolupem aplicacions digitals pensades específicament per a la realitat dels centres educatius catalans. No adaptem eines generals: creem solucions que neixen de les necessitats reals dels docents, dels equips directius i, sobretot, de l'alumnat.</p>
+          <p>La tecnologia, per si sola, no transforma l'educació. El que la transforma és posar-la al servei d'un propòsit pedagògic clar. Cada projecte neix d'una pregunta concreta que es fa un docent o un equip directiu: com fem que l'alumnat millori l'ortografia sense hores de correcció manual? Com donem veu a l'alumnat més enllà de l'aula? Com convertim la sostenibilitat en un projecte real i no en un exercici fictici?</p>
           <div className="seo-intro-tags">
-            {["Apps per a ESO","Cicles Formatius","Primaria","Batxillerat","Escola Verda","Aprenentatge Servei","Competencia Digital","STEM"].map(t=>(
+            {["ESO","Cicles Formatius","Primària","Batxillerat","Escola Verda","Aprenentatge Servei","Competència Digital","STEM"].map(t=>(
               <span key={t} className="badge">{t}</span>
             ))}
           </div>
         </div>
       </section>
 
-      <hr className="divider"/>
-
-      <section className="section" id="apps">
-        <div className="section-header">
-          <h2>Els nostres projectes en linia</h2>
-          <p>Cada projecte te el seu domini propi. Fes clic per veure el detall abans de visitar-lo.</p>
-        </div>
-        <div className="apps-grid">
-          {enLinia.map(app=><AppCard key={app.slug} app={app} />)}
-        </div>
-      </section>
-
-      {enPreparacio.length>0 && (
-        <section className="section" id="en-preparacio">
-          <div className="section-header">
-            <h2>En preparacio</h2>
-            <p>Projectes que estem presentant als centres i encara no tenen web publica.</p>
-          </div>
-          <div className="apps-grid">
-            {enPreparacio.map(app=><AppCard key={app.slug} app={app} />)}
-          </div>
-        </section>
-      )}
-
-      <hr className="divider"/>
-
       <section className="section" id="per-a-qui">
         <div className="section-header">
-          <h2>Per a qui es aulaia.cat?</h2>
-          <p>Dissenyem per als professionals que fan possible la transformacio digital dels centres educatius.</p>
+          <h2>Per a qui treballem</h2>
+          <p>Dissenyem per als professionals que fan possible la transformació digital dels centres.</p>
         </div>
         <div className="who-grid">
           {[
-            {icon:"👩‍💼",title:"Equips directius",desc:"Eines per prendre decisions agils amb dades reals del centre."},
-            {icon:"💻",title:"Coordinadors digitals",desc:"Apps facils d integrar sense trencar la rutina del claustre."},
-            {icon:"✏️",title:"Docents innovadors",desc:"Projectes que amplien les possibilitats de l aprenentatge a l aula."},
-            {icon:"🏢",title:"Escoles i instituts",desc:"Solucions adaptades a la realitat dels centres publics i concertats."},
+            {n:"01",title:"Equips directius",desc:"Eines per prendre decisions àgils amb dades reals del centre."},
+            {n:"02",title:"Coordinadors digitals",desc:"Apps fàcils d'integrar sense trencar la rutina del claustre."},
+            {n:"03",title:"Docents",desc:"Projectes que amplien les possibilitats de l'aprenentatge a l'aula."},
+            {n:"04",title:"Escoles i instituts",desc:"Solucions adaptades als centres públics i concertats."},
           ].map(w=>(
             <div key={w.title} className="who-card">
-              <div className="who-card-icon">{w.icon}</div>
+              <div className="who-card-icon">{w.n}</div>
               <h3>{w.title}</h3><p>{w.desc}</p>
             </div>
           ))}
         </div>
       </section>
 
-      <hr className="divider"/>
-
-      <section className="section" style={{textAlign:"center"}}>
-        <h2 style={{fontSize:"1.6rem",fontWeight:600,marginBottom:".75rem",color:"var(--navy)"}}>Vols veure alguna app en accio?</h2>
-        <p style={{color:"var(--muted)",marginBottom:"1.5rem",maxWidth:"480px",margin:"0 auto 1.5rem"}}>Demana una demo gratuita i t expliquem com s adapta al teu centre. Sense compromis.</p>
-        <Link href="/contacte" className="btn btn-primary" style={{fontSize:"1rem",padding:".75rem 2rem"}}>Contactans</Link>
+      <section className="section" style={{paddingTop:0}}>
+        <div className="landing-final-cta">
+          <p className="landing-final-title">Vols veure algun projecte en acció?</p>
+          <p className="landing-final-sub">Demana una demo gratuïta i t'expliquem com s'adapta al teu centre. Sense compromís.</p>
+          <Link href="/contacte" className="btn btn-primary">Contacta'ns</Link>
+        </div>
       </section>
     </>
   );
