@@ -10,9 +10,23 @@ function safeEqual(a, b) {
   return diff === 0;
 }
 
+/**
+ * URL publica real de la peticio.
+ * Dins del contenidor, request.url apunta a localhost: si la fem servir per
+ * redirigir, el navegador acaba a localhost i no al domini public.
+ */
+function baseUrl(request) {
+  const h = request.headers;
+  const host = h.get("x-forwarded-host") || h.get("host");
+  if (!host) return new URL(request.url).origin;
+  const proto = h.get("x-forwarded-proto") || (host.startsWith("localhost") ? "http" : "https");
+  return `${proto}://${host}`;
+}
+
 export async function POST(request) {
   const expected = process.env.PANEL_PASSWORD;
   const secret = process.env.PANEL_SECRET;
+  const base = baseUrl(request);
 
   if (!expected || !secret) {
     return NextResponse.json(
@@ -34,13 +48,13 @@ export async function POST(request) {
   }
 
   if (!safeEqual(password, expected)) {
-    const url = new URL("/panel/entrar", request.url);
+    const url = new URL("/panel/entrar", base);
     url.searchParams.set("error", "1");
     if (seguent !== "/panel") url.searchParams.set("seguent", seguent);
     return NextResponse.redirect(url, { status: 303 });
   }
 
-  const response = NextResponse.redirect(new URL(seguent, request.url), { status: 303 });
+  const response = NextResponse.redirect(new URL(seguent, base), { status: 303 });
   response.cookies.set(COOKIE_NAME, await createSessionValue(secret), {
     httpOnly: true,
     secure: process.env.NODE_ENV === "production",
