@@ -263,3 +263,62 @@ a { color: inherit; text-decoration: none; }
 .wip-banner { border: 1px solid var(--ink); border-left-width: 4px; padding: 1.35rem 1.6rem; margin-bottom: 2rem; background: var(--paper-2); }
 .wip-label { display: block; font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.16em; color: var(--deep); margin-bottom: 0.5rem; }
 .wip-banner p { font-size: 0.95rem; color: var(--muted); max-width: var(--measure); }
+
+/* ---------- Panell de control (zona privada) ---------- */
+.panel { max-width: 1120px; margin: 0 auto; padding: clamp(2rem, 5vw, 3.5rem) var(--pad) 5rem; }
+.panel-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 2rem; }
+.panel h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 800; letter-spacing: -0.04em; }
+.panel-sub { font-size: 0.85rem; color: var(--muted); margin-top: 0.3rem; }
+
+.panel-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 0; border: 1px solid var(--rule); margin-bottom: 2rem; }
+.pstat { padding: 1rem 1.15rem; border-right: 1px solid var(--rule); }
+.pstat:last-child { border-right: none; }
+.pstat-n { display: block; font-size: 1.7rem; font-weight: 700; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; color: var(--ink); }
+.pstat-k { display: block; font-size: 0.68rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted); margin-top: 0.2rem; }
+.pstat.is-bad .pstat-n { color: #94382F; }
+.pstat.is-wait .pstat-n { color: #8E6417; }
+
+.panel-avis { border: 1px solid #8E6417; background: #F5EEDF; padding: 1rem 1.25rem; margin-bottom: 2rem; }
+.panel-avis strong { display: block; font-size: 0.85rem; margin-bottom: 0.5rem; color: #6B4B10; }
+.panel-avis ul { margin: 0; padding-left: 1.1rem; font-size: 0.88rem; color: var(--ink-soft, #3D4551); }
+
+.panel-list { display: grid; gap: 1rem; }
+.papp { border: 1px solid var(--rule); padding: 1.25rem 1.4rem; background: var(--surface); }
+.papp-head { display: flex; align-items: baseline; gap: 0.75rem; }
+.papp h2 { font-size: 1.15rem; font-weight: 700; letter-spacing: -0.02em; }
+.papp-db { font-size: 0.68rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); }
+.papp-desc { font-size: 0.82rem; color: var(--muted); margin-top: 0.35rem; }
+.papp-buit { font-size: 0.85rem; color: var(--muted); margin-top: 0.75rem; font-style: italic; }
+
+.psvc { margin-top: 0.9rem; padding-top: 0.9rem; border-top: 1px solid var(--rule-soft); }
+.psvc-top { display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap; }
+.psvc-name { font-weight: 600; font-size: 0.95rem; }
+.psvc-when { font-size: 0.78rem; color: var(--muted); margin-left: auto; }
+.psvc-commit { font-size: 0.82rem; color: var(--muted); margin-top: 0.35rem; }
+.psvc-doms { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; margin-top: 0.55rem; }
+.pdom { display: inline-flex; align-items: center; gap: 0.45rem; font-size: 0.83rem; }
+.pdom a { border-bottom: 1px solid var(--rule); }
+.pdom a:hover { border-bottom-color: var(--ink); }
+.pdom-railway a { color: var(--muted); }
+
+.pbadge { font-size: 0.65rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; padding: 0.15em 0.5em; border-radius: 2px; white-space: nowrap; }
+.pbadge.ok   { background: #E1EBE4; color: #3A6349; }
+.pbadge.wait { background: #F2EADA; color: #8E6417; }
+.pbadge.bad  { background: #F3E2E0; color: #94382F; }
+.pbadge.off  { background: var(--surface-alt, #EAECF0); color: var(--muted); }
+
+.papp-usage { display: flex; flex-wrap: wrap; gap: 1.5rem; margin: 1rem 0 0; padding-top: 0.85rem; border-top: 1px solid var(--rule-soft); }
+.papp-usage div { display: flex; gap: 0.4rem; align-items: baseline; }
+.papp-usage dt { font-size: 0.68rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); }
+.papp-usage dd { margin: 0; font-size: 0.85rem; font-weight: 600; font-variant-numeric: tabular-nums; }
+
+.panel-error-box { border: 1px solid #94382F; background: #F5E5E3; padding: 1.5rem 1.75rem; margin-top: 1.5rem; }
+.panel-error-box strong { display: block; color: #94382F; margin-bottom: 0.5rem; }
+.panel-error-box p { font-size: 0.9rem; margin-bottom: 0.6rem; }
+.panel-hint { color: var(--muted); font-size: 0.85rem !important; }
+
+.panel-entrar { max-width: 380px; margin: 0 auto; padding: clamp(4rem, 12vw, 8rem) var(--pad) 5rem; }
+.panel-entrar h1 { font-size: 1.9rem; font-weight: 800; letter-spacing: -0.04em; }
+.panel-entrar-sub { font-size: 0.85rem; color: var(--muted); margin: 0.3rem 0 2rem; }
+.panel-entrar-form { display: block; }
+.panel-error { color: #94382F; font-size: 0.85rem; margin: 0.6rem 0 0.9rem; }
