@@ -116,35 +116,40 @@
   {
     "slug": "pla-lector",
     "nom": "El Pla Lector",
-    "categoria": "Competència lectora",
-    "estat": "desenvolupament",
-    "estatText": "En desenvolupament · properament a elplalector.cat",
+    "categoria": "Biblioteca escolar i competència lectora",
+    "estat": "produccio",
+    "estatText": "En producció, amb demostració gratuïta per a centres",
     "icona": "📚",
     "domini": "elplalector.cat",
-    "url": null,
+    "url": "https://www.elplalector.cat",
     "idiomes": ["Català"],
     "publics": ["Primària", "Secundària"],
     "centre": null,
-    "resum": "Eina digital per gestionar el Pla de Lectura de Centre (PLEC): objectius, metodologia, biblioteca escolar i seguiment lector de l'alumnat.",
-    "descripcio": "El Pla de Lectura de Centre (PLEC) és el document de referència de tota la comunitat educativa per formar lectors competents i despertar el gust per la lectura. Aquesta plataforma permet als centres elaborar, gestionar i fer el seguiment del seu PLEC de manera estructurada, amb els quatre eixos fonamentals de la competència lectora: mecànica i comprensió lectora, lectura funcional en totes les àrees del currículum, lectura per plaer i lectura crítica. Connecta amb la biblioteca del centre, els serveis educatius i l'entorn, i dona accés a tota la comunitat educativa amb el rol corresponent, des de l'equip directiu fins a les famílies.",
-    "seoLlarg": "La competència lectora és la base de tot l'aprenentatge, i un Pla de Lectura de Centre ben estructurat és l'instrument que fa que deixi de ser responsabilitat exclusiva del departament de llengua. Digitalitzar el PLEC permet als equips docents compartir metodologia, fer el seguiment individual de cada alumne i connectar la lectura amb totes les àrees del currículum, en comptes de tenir un document estàtic que ningú no consulta. La plataforma cobreix el cicle complet: definició d'objectius, planificació d'activitats per eix, gestió del catàleg i els préstecs de la biblioteca escolar, i seguiment lector individual. Pensada per a escoles de primària, instituts de secundària i centres d'educació especial de Catalunya.",
+    "resum": "Programari de biblioteca escolar i seguiment lector: catàleg de les biblioteques d'aula, historial de lectura de cada alumne i estadístiques per al claustre.",
+    "descripcio": "El Pla Lector cobreix la part pràctica del pla lector de centre: quins llibres hi ha, qui llegeix què i com evoluciona la competència lectora de l'alumnat. Cada exemplar es cataloga amb el grup o l'aula on és físicament, de manera que l'alumnat troba els llibres que té a tocar i no només els de la biblioteca central. L'accés es fa amb el compte de Google del centre, sense crear contrasenyes noves, i només hi entren les persones donades d'alta prèviament. El fons i les llistes d'usuaris s'importen des d'un full de càlcul amb una plantilla, així que un centre amb l'inventari en Excel pot tenir el catàleg carregat el mateix dia.",
+    "seoLlarg": "La competència lectora és la base de tot l'aprenentatge, però el pla lector d'un centre sovint es queda en un document que ningú no consulta. El Pla Lector ataca la part operativa: el catàleg real, els préstecs reals i les dades reals de lectura. La decisió de disseny que més el defineix és què veu el professorat i què no: pot consultar quants llibres ha acabat cada alumne, però no les valoracions ni les opinions personals que hi escriu. És una tria deliberada perquè llegir no es visqui com una avaluació encoberta. En privadesa, cada centre té la seva pròpia instal·lació i la seva pròpia base de dades, i l'accés queda restringit al domini de correu del centre: les dades d'un centre no es barregen amb les d'un altre. Pensat per a escoles de primària, instituts de secundària i equips de biblioteca escolar.",
     "funcionalitats": [
-      "Gestió digital del document PLEC del centre",
-      "Quatre eixos: mecànica, funcional, plaer i lectura crítica",
-      "Catàleg de biblioteca escolar i gestió de préstecs",
-      "Seguiment lector individual de l'alumnat",
-      "Accés per rols: equip directiu, docents i famílies",
-      "Connexió amb la biblioteca pública i els serveis educatius"
+      "Catàleg de les biblioteques d'aula, no només de la biblioteca central",
+      "Cada exemplar associat al grup o aula on és físicament",
+      "Historial de lectura individual de cada alumne",
+      "Estadístiques de lectura per al claustre",
+      "Accés amb el compte de Google del centre, sense contrasenyes noves",
+      "Importació del fons i dels usuaris des d'un full de càlcul",
+      "Les valoracions de l'alumnat són privades: el professorat no les veu",
+      "Instal·lació i base de dades independents per a cada centre"
     ],
     "faq": [
-      { "p": "Quan estarà disponible?", "r": "El projecte està en desenvolupament i es publicarà a elplalector.cat. Si vols provar-lo al teu centre quan s'obri, escriu-nos i t'avisarem." },
-      { "p": "Substitueix el document PLEC del centre?", "r": "No el substitueix: el digitalitza i el fa operatiu, de manera que deixi de ser un document estàtic i passi a ser una eina de seguiment del dia a dia." }
+      { "p": "Serveix per a les biblioteques d'aula, no només per a la del centre?", "r": "Sí. Cada exemplar es cataloga amb el grup o aula on és físicament, de manera que l'alumnat troba els llibres que té a tocar." },
+      { "p": "Com hi entra l'alumnat?", "r": "Amb el compte de Google del centre. No es creen contrasenyes noves i només hi accedeixen les persones donades d'alta prèviament pel centre." },
+      { "p": "Qui pot veure què ha llegit un alumne?", "r": "El professorat veu quants llibres ha acabat cada alumne, però no les valoracions ni les opinions personals que hi escriu. És una decisió deliberada perquè llegir no es visqui com una avaluació." },
+      { "p": "Quant es triga a posar-lo en marxa?", "r": "El fons i les llistes d'usuaris s'importen des d'un full de càlcul amb la plantilla que us donem. Un centre amb el seu inventari en Excel pot tenir el catàleg carregat el mateix dia." },
+      { "p": "Les dades del meu centre es barregen amb les d'altres?", "r": "No. Cada centre té la seva pròpia instal·lació i la seva pròpia base de dades, i l'accés queda restringit al domini de correu del centre." }
     ],
-    "relacionats": ["dictats", "radio-escolar", "aules-sostenibles"],
+    "relacionats": ["dictats", "radio-escolar", "eltaulell"],
     "seo": {
-      "title": "Pla de Lectura de Centre digital (PLEC) per a escoles",
-      "description": "Plataforma per gestionar el Pla de Lectura de Centre: objectius, metodologia, biblioteca escolar i seguiment de la competència lectora de l'alumnat.",
-      "keywords": "pla de lectura de centre, PLEC digital, biblioteca escolar app, competència lectora, pla lector escola Catalunya, elplalector.cat"
+      "title": "Biblioteca escolar digital i seguiment lector per a centres",
+      "description": "Programari de biblioteca escolar per a escoles i instituts: catàleg de les biblioteques d'aula, seguiment lector de cada alumne i estadístiques per al claustre.",
+      "keywords": "biblioteca escolar digital, programari biblioteca escola, seguiment lector alumnat, pla lector de centre, catàleg biblioteca d'aula, elplalector.cat"
     }
   },
   {
@@ -182,6 +187,76 @@
       "title": "TypeEdu: mecanografia educativa i accessible per a centres",
       "description": "Aprenentatge de mecanografia amb pràctica guiada, teclat ISO, feedback immediat i adaptacions per a l'aula. En castellà, català, anglès i èuscar.",
       "keywords": "mecanografia educativa, aprendre a escriure a teclat, mecanografia escola, mecanografía educativa accesible, competència digital teclat, typeedu.com"
+    }
+  },
+  {
+    "slug": "eltaulell",
+    "nom": "El Taulell",
+    "categoria": "Comunicació i acció tutorial",
+    "estat": "construccio",
+    "estatText": "En construcció · versió de proves a eltaulell.aulaia.cat",
+    "icona": "📌",
+    "domini": "eltaulell.aulaia.cat",
+    "url": null,
+    "idiomes": ["Català"],
+    "publics": ["Primària", "Secundària"],
+    "centre": null,
+    "resum": "Plataforma multi-centre per comunicar, escoltar l'alumnat i millorar l'acompanyament tutorial: un punt de trobada per a tota la comunitat educativa.",
+    "descripcio": "El Taulell recull la vida del centre en un sol lloc i la fa accessible a tota la comunitat educativa. Neix d'una constatació senzilla: la informació d'un centre viu dispersa entre grups de missatgeria, circulars en paper, correus i taulers d'anunci que ningú no mira. El resultat és soroll per a les famílies i informació que no arriba a qui l'ha de rebre. La plataforma ordena aquesta comunicació per grup i per rol, i hi afegeix una capa d'escolta de l'alumnat pensada per a l'acció tutorial: detectar abans per acompanyar millor. Cada perfil de la comunitat —alumnat, famílies, tutories, equip directiu— hi té una experiència diferent segons què li toca veure i què li toca fer.",
+    "seoLlarg": "L'acció tutorial es juga en gran part en la informació que arriba a temps. Un tutor que sap com va un grup abans que el problema esclati pot acompanyar; un que s'assabenta tard, només pot reaccionar. El Taulell treballa aquest terreny amb dues potes: comunicació ordenada per grup i rol, que redueix el soroll de les famílies i evita que els avisos es perdin entre canals; i escolta de l'alumnat, que dona a les tutories senyals per detectar situacions abans. Al ser multi-centre, permet que cada centre mantingui la seva realitat i el seu projecte educatiu sense compartir dades amb els altres. Pensat per sumar al projecte de centre existent, no per substituir-lo.",
+    "funcionalitats": [
+      "Taulell de centre amb la informació ordenada per grup i per rol",
+      "Comunicació amb les famílies sense dependre de grups de missatgeria",
+      "Escolta de l'alumnat orientada a l'acció tutorial",
+      "Senyals per detectar situacions abans i acompanyar millor",
+      "Experiències diferenciades per a alumnat, famílies, tutories i direcció",
+      "Arquitectura multi-centre: cada centre manté la seva realitat"
+    ],
+    "faq": [
+      { "p": "En quin punt està?", "r": "Hi ha una versió de proves accessible a eltaulell.aulaia.cat, però el producte encara està en construcció i pendent de domini propi. Si vols provar-lo al teu centre, escriu-nos." },
+      { "p": "Substitueix els grups de missatgeria de les famílies?", "r": "Aquest és precisament l'objectiu: ordenar la comunicació per grup i rol perquè la informació arribi a qui toca sense el soroll dels grups oberts." }
+    ],
+    "relacionats": ["pla-lector", "ciutatviva", "kipuk"],
+    "seo": {
+      "title": "El Taulell: comunicació de centre i acció tutorial",
+      "description": "Plataforma educativa multi-centre per comunicar amb les famílies, escoltar l'alumnat i millorar l'acompanyament tutorial. Menys soroll, més acompanyament.",
+      "keywords": "comunicació centre educatiu, acció tutorial, plataforma famílies escola, taulell de centre, acompanyament tutorial, escolta alumnat"
+    }
+  },
+  {
+    "slug": "la-cantiana",
+    "nom": "La Cantiana",
+    "categoria": "Emprenedoria i vida al centre",
+    "estat": "construccio",
+    "estatText": "En construcció · proposta educativa en desenvolupament",
+    "icona": "🥪",
+    "domini": null,
+    "url": null,
+    "idiomes": ["Català"],
+    "publics": ["Secundària", "Cicles Formatius"],
+    "centre": null,
+    "resum": "Proposta educativa perquè sigui el mateix alumnat qui gestioni el bar escolar del centre, i que aquesta gestió compti com a aprenentatge.",
+    "descripcio": "La Cantiana converteix el bar del centre en un projecte d'aula. En comptes de ser un servei extern que l'alumnat només consumeix, passa a ser un negoci real que l'alumnat planifica, gestiona i avalua: què s'ofereix, a quin preu, amb quins proveïdors, amb quins torns i amb quin marge. La diferència amb una simulació és que aquí les decisions tenen conseqüències immediates i visibles —si el preu no cobreix costos, es nota; si l'oferta no encaixa amb el que vol el centre, no es ven— i això és exactament el que fa que l'aprenentatge s'aguanti. La proposta està en desenvolupament i inclourà el marc metodològic, els rols i les eines de seguiment perquè el professorat pugui portar-la sense muntar-ho tot de zero.",
+    "seoLlarg": "Els projectes d'emprenedoria escolar solen quedar-se en l'exercici fictici: un pla d'empresa que ningú no executa i uns números que no arriben a passar per caixa. La Cantiana parteix d'un servei que el centre ja té i que l'alumnat ja utilitza cada dia, i el converteix en l'objecte d'aprenentatge. Aquest ancoratge en el real és el que permet treballar competències que sovint es queden en teoria: la matemàtica aplicada de preus, marges i canvi; l'alimentació saludable quan cal decidir què s'ofereix; la seguretat i la higiene alimentària com a requisit, no com a tema; l'atenció al públic i la gestió de conflictes amb companys que també són clients; i la sostenibilitat quan es decideix sobre envasos, residus i proveïment de proximitat. Especialment adequada per a projectes transversals a Secundària i per a Cicles Formatius de les famílies d'Hoteleria, Comerç i Administració.",
+    "funcionalitats": [
+      "Marc metodològic per portar el bar escolar com a projecte d'aula",
+      "Rols rotatius: compres, caixa, atenció, inventari i comunicació",
+      "Matemàtica aplicada: preus, marges, canvi i tancament de caixa",
+      "Decisions sobre alimentació saludable i oferta del centre",
+      "Higiene i seguretat alimentària com a requisit del projecte",
+      "Sostenibilitat: envasos, residus i proveïment de proximitat",
+      "Seguiment docent i evidències per a l'avaluació competencial"
+    ],
+    "faq": [
+      { "p": "En quin punt està?", "r": "És una proposta educativa en desenvolupament. Encara no hi ha plataforma pública. Si al teu centre us interessa participar en la definició, escriu-nos." },
+      { "p": "Cal que el centre tingui bar propi?", "r": "La proposta està pensada per a centres que gestionen el seu propi servei o que poden cedir-ne la gestió a l'alumnat dins d'un marc educatiu i amb supervisió docent." },
+      { "p": "Qui assumeix la responsabilitat legal i sanitària?", "r": "El centre, sempre. La proposta és pedagògica: organitza l'aprenentatge al voltant del servei, però la titularitat i les obligacions legals continuen sent del centre." }
+    ],
+    "relacionats": ["chefboss", "aules-sostenibles", "ciutatviva"],
+    "seo": {
+      "title": "La Cantiana: el bar escolar gestionat per l'alumnat",
+      "description": "Proposta educativa perquè l'alumnat gestioni el bar del centre com a projecte d'aula: preus, marges, alimentació saludable, higiene i sostenibilitat.",
+      "keywords": "bar escolar alumnat, emprenedoria escolar, projecte d'aula cantina, aprenentatge servei institut, alimentació saludable centre educatiu"
     }
   },
   {
