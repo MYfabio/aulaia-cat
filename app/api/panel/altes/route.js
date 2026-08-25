@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { canviarEstat } from "../../../../lib/db";
+import { canviarEstat, esborrarSolicitud } from "../../../../lib/db";
 import { enviarCorreuValidacio } from "../../../../lib/correu";
 
 function baseUrl(request) {
@@ -31,8 +31,19 @@ export async function POST(request) {
 
   const id = Number(f.get("id"));
   const accio = String(f.get("accio") || "");
-  if (!Number.isInteger(id) || !["validar", "rebutjar"].includes(accio)) {
+  if (!Number.isInteger(id) || !["validar", "rebutjar", "esborrar"].includes(accio)) {
     return tornar({ error: "peticio" });
+  }
+
+  if (accio === "esborrar") {
+    try {
+      const fora = await esborrarSolicitud(id);
+      if (!fora) return tornar({ error: "nofound" });
+    } catch (e) {
+      console.error("No s ha pogut esborrar la sol·licitud:", e.message);
+      return tornar({ error: "desar" });
+    }
+    return tornar({ fet: "esborrar" });
   }
 
   let fila;

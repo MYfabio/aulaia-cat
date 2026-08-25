@@ -133,6 +133,13 @@ export default async function AltesPage({ searchParams }) {
               {s.estat !== "pendent" && s.resolta_el && (
                 <p className="alta-resolta">Resolta {quan(s.resolta_el)}</p>
               )}
+
+              <form method="POST" action="/api/panel/altes" className="alta-esborrar">
+                <input type="hidden" name="id" value={s.id} />
+                <button type="submit" name="accio" value="esborrar">
+                  Esborrar de la safata
+                </button>
+              </form>
             </article>
           );
         })}
