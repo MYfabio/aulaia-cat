@@ -62,7 +62,10 @@ export default function RootLayout({ children }) {
             </div>
             <div className="footer-links"><strong>Contacte</strong><a href="mailto:hola@aulaia.cat">hola@aulaia.cat</a><span>Sabadell · Catalunya</span></div>
           </div>
-          <p className="footer-copy">© {new Date().getFullYear()} aulaia.cat · Sabadell, Catalunya</p>
+          <p className="footer-copy">
+            © {new Date().getFullYear()} aulaia.cat · Sabadell, Catalunya
+            <Link href="/panel" className="footer-panel" rel="nofollow">Panell</Link>
+          </p>
         </footer>
         <CookieBanner />
       </body>
