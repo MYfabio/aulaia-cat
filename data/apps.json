@@ -191,7 +191,7 @@
     "estat": "construccio",
     "estatText": "En construcció · especificació tancada, MVP en desenvolupament",
     "icona": "🤾",
-    "domini": "kipuk.es",
+    "domini": "kipuk.cat",
     "url": null,
     "idiomes": ["Castellà"],
     "publics": ["Primària", "Secundària"],
@@ -213,43 +213,50 @@
       { "p": "L'alumnat necessita mòbil?", "r": "No. El flux principal de pati funciona amb colors, targetes, punts de trobada i rols. L'iPad del docent coordina, però cap alumne necessita telèfon, compte ni registre propi." },
       { "p": "Com es fan els equips?", "r": "El docent tria els paràmetres (nombre d'equips, evitar repeticions, barrejar aules, parelles de suport) i el sistema genera una proposta explicable que es pot modificar abans de confirmar. No classifica per gènere, capacitat, origen ni nivell." },
       { "p": "Què passa amb les dades de l'alumnat?", "r": "No es publiquen ni s'envien a cap model d'IA. L'accés és per rol, les llistes no són públiques i queda registre de cada acció sensible, amb retenció definida." },
-      { "p": "Quan estarà disponible?", "r": "L'especificació de producte està tancada i el MVP està en desenvolupament. Si vols que el teu centre participi al pilot, escriu-nos." }
+      { "p": "Quan estarà disponible?", "r": "L'especificació de producte està tancada i el MVP està en desenvolupament. Es publicarà a kipuk.cat. Si vols que el teu centre participi al pilot, escriu-nos." }
     ],
     "relacionats": ["aules-sostenibles", "ciutatviva", "radio-escolar"],
     "seo": {
       "title": "KIPUK: activitat física, jocs i cohesió al pati per a escoles",
       "description": "Plataforma de centre per organitzar Educació Física, lligues, equips i reptes cooperatius. Funciona al pati sense mòbils de l'alumnat, amb criteris d'inclusió i privacitat.",
-      "keywords": "educació física escola, tornejos escolars, cohesió al pati, app educació física, jocs cooperatius escola, KIPUK"
+      "keywords": "educació física escola, tornejos escolars, cohesió al pati, app educació física, jocs cooperatius escola, KIPUK, kipuk.cat"
     }
   },
   {
     "slug": "chefboss",
-    "nom": "ChefBoss",
+    "nom": "Chef Boss",
     "categoria": "Simulació de negoci",
-    "estat": "presentacio",
-    "estatText": "En presentació a centres",
+    "estat": "produccio",
+    "estatText": "En producció i obert a centres de Formació Professional",
     "icona": "👨‍🍳",
-    "domini": null,
-    "url": null,
+    "domini": "chefboss.es",
+    "url": "https://www.chefboss.es",
     "idiomes": ["Català"],
     "publics": ["Cicles Formatius"],
     "centre": null,
-    "resum": "Simulació de negoci gamificada on l'alumnat de Cicles Formatius aprèn gestió empresarial creant i gestionant el seu propi restaurant.",
-    "descripcio": "ChefBoss és una simulació de negoci gamificada dissenyada per a l'alumnat de CFGM d'Hoteleria i Turisme. Cada equip crea i gestiona el seu propi restaurant durant 10 sessions, prenent decisions reals sobre finances, proveïdors i clients. Les decisions correctes sumen punts i l'alumnat ascendeix de nivell, des d'Aprenent fins a Chef Estrella Michelin. La plataforma incorpora situacions de crisi reals del sector com inspeccions sanitàries, baixes laborals o males ressenyes, i integra la intel·ligència artificial com a eina d'anàlisi. Resol el problema de l'aprenentatge abstracte: costos, marges i pressupostos prenen sentit quan hi ha un negoci real en joc.",
+    "resum": "Simulador educatiu de restauració per a Formació Professional: 10 sessions per crear i gestionar un restaurant, prendre decisions i assolir objectius d'aprenentatge.",
+    "descripcio": "Chef Boss és un simulador educatiu de gestió de restaurants pensat per a Formació Professional. Cada equip obre el seu restaurant i el gestiona durant 10 sessions, prenent decisions reals sobre escandalls, costos, proveïdors i clients. La plataforma incorpora situacions del sector com inspeccions sanitàries, baixes laborals o males ressenyes, i integra la intel·ligència artificial com a eina d'anàlisi. Resol el problema de l'aprenentatge abstracte: costos, marges i pressupostos prenen sentit quan hi ha un negoci en joc. L'alumnat hi accedeix amb un codi d'aula i un pseudònim d'equip, sense introduir dades personals.",
     "seoLlarg": "L'ensenyament de la gestió empresarial als Cicles Formatius d'Hoteleria i Turisme sovint es percep com a abstracte i poc motivador. ChefBoss posa l'alumnat en la pell d'un empresari real. La gamificació, la competició sana entre equips i la projecció en viu del marcador a l'aula generen un nivell de participació i comprensió molt superior al de les metodologies tradicionals. La integració de la IA com a assistent d'anàlisi, i no com a drecera, fomenta el pensament crític i la presa de decisions fonamentada. Apta per a CFGM i CFGS d'Hoteleria, Turisme i Administració.",
     "funcionalitats": [
       "Simulació de restaurant per equips durant 10 sessions",
-      "Decisions reals: finances, proveïdors, clients i crisi",
-      "Sistema de nivells: d'Aprenent a Chef Estrella Michelin",
+      "Escandalls i costos: el marge deixa de ser un concepte abstracte",
+      "Decisions reals sobre proveïdors, clients i situacions de crisi",
+      "Treballa emprenedoria, treball en equip i seguretat alimentària",
+      "Accés amb codi d'aula i pseudònim d'equip, sense dades personals",
+      "Adaptacions NESE: text gran, alt contrast, tipografia llegible i moviment reduït",
       "Marcador en viu per projectar a l'aula",
-      "IA integrada com a eina d'anàlisi i aprenentatge"
+      "IA integrada com a eina d'anàlisi, mai per posar notes"
     ],
-    "faq": [],
-    "relacionats": ["ciutatviva", "typeedu"],
+    "faq": [
+      { "p": "Chef Boss posa notes automàticament?", "r": "No. Organitza evidències i pot oferir una proposta explicable, però el professorat conserva la interpretació del procés i la decisió final." },
+      { "p": "Com facilita la participació d'alumnat amb NESE?", "r": "Ofereix objectius visibles, tasques segmentades, ritme docent i preferències de text gran, contrast alt, tipografia llegible i moviment reduït." },
+      { "p": "Cal introduir dades personals?", "r": "No. L'alumnat accedeix amb un codi d'aula i un pseudònim d'equip." }
+    ],
+    "relacionats": ["ciutatviva", "typeedu", "kipuk"],
     "seo": {
-      "title": "ChefBoss: simulació de negoci gamificada per a Cicles Formatius",
-      "description": "App educativa de simulació de restaurant per a CFGM d'Hoteleria i Turisme. L'alumnat gestiona un negoci real, pren decisions i aprèn gestió empresarial jugant.",
-      "keywords": "simulació negoci escola, app gamificada cicles formatius, gestió empresarial alumnat, ChefBoss educació, app hoteleria turisme"
+      "title": "Chef Boss: simulador educatiu de restauració per a FP",
+      "description": "Simulador educatiu de gestió de restaurants per a Formació Professional. 10 sessions per obrir un restaurant, treballar escandalls i costos i prendre decisions reals.",
+      "keywords": "simulador restauració FP, simulació negoci escola, escandalls i costos, gestió restaurants formació professional, Chef Boss, chefboss.es"
     }
   },
   {
