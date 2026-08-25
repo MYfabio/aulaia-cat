@@ -80,8 +80,8 @@ export default async function AppLanding({ params }) {
       </div>
 
       <div className="landing-cta-bar">
-        <Link href={"/contacte?app="+encodeURIComponent(app.nom)} className="btn btn-primary">M'interessa per a la meva escola</Link>
-        <Link href={"/contacte?app="+encodeURIComponent(app.nom)} className="btn btn-outline">Demana una demo gratuïta</Link>
+        <Link href={"/alta?app="+app.slug} className="btn btn-primary">Demana l'alta del teu centre</Link>
+        <Link href={"/contacte?app="+encodeURIComponent(app.nom)} className="btn btn-outline">Tens dubtes? Escriu-nos</Link>
       </div>
 
       <h2>Funcionalitats principals</h2>
@@ -132,8 +132,8 @@ export default async function AppLanding({ params }) {
 
       <div className="landing-final-cta">
         <p className="landing-final-title">Vols veure {app.nom} al teu centre?</p>
-        <p className="landing-final-sub">Demo gratuïta sense compromís. T'expliquem com s'adapta a la teva realitat.</p>
-        <Link href={"/contacte?app="+encodeURIComponent(app.nom)} className="btn btn-primary" style={{fontSize:"1rem",padding:".75rem 2rem"}}>Contacta'ns sobre {app.nom}</Link>
+        <p className="landing-final-sub">Ens dius qui sou, ho validem nosaltres i rebreu un correu amb els passos. Sense compromís.</p>
+        <Link href={"/alta?app="+app.slug} className="btn btn-primary" style={{fontSize:"1rem",padding:".75rem 2rem"}}>Demana l'alta per a {app.nom}</Link>
       </div>
     </div>
   );
