@@ -345,3 +345,27 @@ a { color: inherit; text-decoration: none; }
 .footer-panel { float: right; color: rgba(247,243,232,0.4); border-bottom: 1px solid transparent; transition: color .15s, border-color .15s; }
 .footer-panel:hover { color: rgba(247,243,232,0.85); border-bottom-color: rgba(247,243,232,0.4); }
 @media (max-width: 600px) { .footer-panel { float: none; display: block; margin-top: 0.6rem; } }
+
+/* ---------- Panell: trafic ---------- */
+.periodes { display: flex; gap: 0.5rem; margin-bottom: 1.5rem; }
+.periode { font-size: 0.8rem; font-weight: 600; padding: 0.35rem 0.9rem; border: 1px solid var(--rule); border-radius: 2px; color: var(--muted); }
+.periode:hover { border-color: var(--ink); color: var(--ink); }
+.periode.is-actiu { background: var(--deep); border-color: var(--deep); color: var(--paper); }
+
+.graf { position: relative; margin-top: 0.5rem; padding-left: 3.2rem; }
+.graf svg { width: 100%; height: 200px; display: block; border-bottom: 1px solid var(--rule); }
+.graf-area { fill: color-mix(in srgb, var(--deep) 18%, transparent); }
+.graf-area-err { fill: color-mix(in srgb, #94382F 45%, transparent); }
+.graf-linia { fill: none; stroke: var(--deep); stroke-width: 1.5; vector-effect: non-scaling-stroke; }
+.graf-y { position: absolute; left: 0; top: 0; height: 200px; display: flex; flex-direction: column; justify-content: space-between; font-size: 0.7rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.graf-x { display: flex; justify-content: space-between; font-size: 0.7rem; color: var(--muted); margin-top: 0.4rem; }
+.graf-llegenda { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.75rem; color: var(--muted); }
+.ll { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
+.ll-ok { background: color-mix(in srgb, var(--deep) 35%, transparent); }
+.ll-err { background: color-mix(in srgb, #94382F 55%, transparent); }
+.ll-err { margin-left: 0.6rem; }
+
+.pics { display: flex; align-items: flex-end; gap: 1px; height: 24px; }
+.pic { flex: 1; background: color-mix(in srgb, var(--deep) 40%, transparent); border-radius: 1px; min-width: 2px; }
+
+.panel-accions { display: flex; gap: 0.6rem; flex-wrap: wrap; }

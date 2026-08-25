@@ -111,7 +111,10 @@ export default async function PanellPage() {
             {workspace} · actualitzat {new Date(generatedAt).toLocaleTimeString("ca-ES")}
           </p>
         </div>
-        <a href="/panel" className="btn btn-outline">Actualitzar</a>
+        <div className="panel-accions">
+          <a href="/panel/trafic" className="btn btn-primary">Veure el trafic</a>
+          <a href="/panel" className="btn btn-outline">Actualitzar</a>
+        </div>
       </div>
 
       <div className="panel-stats">
