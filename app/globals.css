@@ -369,3 +369,34 @@ a { color: inherit; text-decoration: none; }
 .pic { flex: 1; background: color-mix(in srgb, var(--deep) 40%, transparent); border-radius: 1px; min-width: 2px; }
 
 .panel-accions { display: flex; gap: 0.6rem; flex-wrap: wrap; }
+
+/* ---------- Formulari d alta ---------- */
+.alta { max-width: 680px; margin: 0 auto; padding: clamp(2.5rem, 6vw, 4.5rem) var(--pad) 5rem; }
+.alta-head { margin-bottom: 2.5rem; }
+.alta-eyebrow { display: block; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.16em; color: var(--muted); margin-bottom: 1rem; }
+.alta-head h1 { font-size: clamp(2rem, 5vw, 2.9rem); font-weight: 800; letter-spacing: -0.045em; line-height: 1.05; margin-bottom: 1rem; }
+.alta-head p { color: var(--muted); max-width: 56ch; }
+.alta-form fieldset { border: none; padding: 0; margin: 0 0 2rem; }
+.alta-form legend { font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.14em; color: var(--muted); padding: 0 0 0.8rem; border-bottom: 1px solid var(--rule); width: 100%; margin-bottom: 1.1rem; }
+.alta-error { background: #F3E2E0; border: 1px solid #94382F; color: #7A2E26; padding: 0.9rem 1.1rem; font-size: 0.9rem; margin-bottom: 1.5rem; }
+.alta-ok { text-align: center; padding: clamp(3rem, 10vw, 6rem) 0; }
+.alta-ok h1 { font-size: clamp(1.9rem, 4.5vw, 2.6rem); font-weight: 800; letter-spacing: -0.04em; margin-bottom: 1.2rem; }
+.alta-ok p { color: var(--muted); max-width: 52ch; margin: 0 auto 1rem; }
+.alta-ok-sub { font-size: 0.9rem; margin-bottom: 2rem !important; }
+
+/* ---------- Panell: fitxes d alta ---------- */
+.alta-fitxa { border: 1px solid var(--rule); background: var(--surface); padding: 1.35rem 1.5rem; }
+.alta-fitxa-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; margin-bottom: 1rem; }
+.alta-fitxa h2 { font-size: 1.15rem; font-weight: 700; letter-spacing: -0.02em; }
+.alta-fitxa-sub { font-size: 0.8rem; color: var(--muted); margin-top: 0.25rem; }
+.alta-dades { display: flex; flex-wrap: wrap; gap: 0.4rem 2rem; margin: 0 0 0.9rem; }
+.alta-dades div { display: flex; gap: 0.5rem; align-items: baseline; }
+.alta-dades dt { font-size: 0.68rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); }
+.alta-dades dd { margin: 0; font-size: 0.9rem; }
+.alta-dades a { border-bottom: 1px solid var(--rule); }
+.alta-missatge { font-size: 0.9rem; color: var(--muted); background: var(--surface-alt); padding: 0.8rem 1rem; margin-bottom: 1rem; border-left: 2px solid var(--rule); }
+.alta-accions { display: flex; gap: 0.6rem; flex-wrap: wrap; padding-top: 0.9rem; border-top: 1px solid var(--rule-soft); }
+.alta-resolta { font-size: 0.8rem; color: var(--muted); padding-top: 0.8rem; border-top: 1px solid var(--rule-soft); }
+.panel-buit { border: 1px dashed var(--rule); padding: 2rem; text-align: center; color: var(--muted); }
+.panel-buit p { margin-bottom: 0.5rem; }
+.panel-buit strong { color: var(--ink); }
