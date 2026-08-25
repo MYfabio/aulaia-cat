@@ -113,7 +113,9 @@ export default async function PanellPage() {
         </div>
         <div className="panel-accions">
           <a href="/panel/altes" className="btn btn-primary">Altes de centres</a>
+          <a href="/panel/accessos" className="btn btn-outline">Accessos</a>
           <a href="/panel/trafic" className="btn btn-outline">Trafic</a>
+          <a href="/panel/seo" className="btn btn-outline">Cerca a Google</a>
           <a href="/panel" className="btn btn-outline">Actualitzar</a>
         </div>
       </div>
