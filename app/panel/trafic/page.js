@@ -124,6 +124,18 @@ export default async function TraficPage({ searchParams }) {
         </div>
       )}
 
+      {d.incomplet && (
+        <div className="panel-avis">
+          <strong>Falten dades d algun servei</strong>
+          <ul>
+            <li>
+              Railway nomes deixa consultar el registre HTTP de 19 serveis alhora. Les xifres
+              d aquesta pagina son les dels serveis que han respost, aixi que el total es queda curt.
+            </li>
+          </ul>
+        </div>
+      )}
+
       <div className="panel-stats">
         <div className="pstat"><span className="pstat-n">{fmt(d.total)}</span><span className="pstat-k">Peticions</span></div>
         <div className={"pstat" + (d.servidor > 0 ? " is-bad" : "")}>
