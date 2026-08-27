@@ -47,6 +47,7 @@ export default function RootLayout({ children }) {
           <nav className="nav-links">
             <Link href="/#apps">Projectes</Link>
             <Link href="/#per-a-qui">Per a qui</Link>
+            <Link href="/blog">Blog</Link>
             <Link href="/contacte">Contacte</Link>
           </nav>
         </header>
@@ -57,6 +58,7 @@ export default function RootLayout({ children }) {
             <div className="footer-links">
               <strong>Navegació</strong>
               <Link href="/#apps">Projectes</Link>
+              <Link href="/blog">Blog</Link>
               <Link href="/contacte">Demana una demo</Link>
               <Link href="/privacitat">Privacitat i cookies</Link>
             </div>
