@@ -317,6 +317,75 @@
     }
   },
   {
+    "slug": "diedric3d",
+    "nom": "Diedric3D",
+    "categoria": "Dibuix tècnic i visió espacial",
+    "estat": "construccio",
+    "estatText": "En proves · l'editor i els reptes ja funcionen, s'hi està afegint el generador de reptes",
+    "icona": "📐",
+    "domini": "diedric3d.com",
+    "url": "https://www.diedric3d.com",
+    "idiomes": [
+      "Català",
+      "Castellà",
+      "Anglès"
+    ],
+    "publics": [
+      "Secundària",
+      "Batxillerat"
+    ],
+    "centre": null,
+    "resum": "Editor de peces amb blocs on l'alumnat veu l'alçat, la planta i el perfil canviar en temps real mentre construeix.",
+    "descripcio": "Diedric3D ataca el moment on encalla molta gent amb el sistema dièdric: passar del dibuix pla a imaginar el volum que representa. En lloc d'explicar-ho, deixa construir. L'alumnat munta una peça amb blocs i veu les tres vistes actualitzar-se al costat mentre ho fa, així que la relació entre el cos i les seves projeccions deixa de ser una regla que s'aprèn de memòria i passa a ser una cosa que s'ha vist passar. Els reptes van del reconeixement al dibuix, i cada un té una solució comprovable: el validador és determinista i sempre diu per què una resposta no encaixa.",
+    "seoLlarg": "El sistema dièdric és una de les parts del dibuix tècnic on més alumnat es queda pel camí, i gairebé sempre pel mateix motiu: se li demana que dedueixi un volum a partir de tres dibuixos plans sense haver-lo pogut girar mai. Diedric3D inverteix l'ordre. Primer es construeix la peça amb blocs, i l'alçat, la planta i el perfil es dibuixen sols al costat mentre es col·loca cada cub. Quan després toca fer el camí invers —del dibuix al volum— ja s'ha vist la relació desenes de vegades.\n\nEls reptes cobreixen des de reconèixer quina peça correspon a unes vistes fins a dibuixar-les a partir del cos, passant per les cunyes rampa. Cada repte té una comprovació determinista: no hi ha una intel·ligència artificial decidint si una resposta és bona. Quan una peça no encaixa, l'aplicació diu exactament què falla.\n\nPer al professorat, l'objectiu és que no generi feina. Els grups s'importen de Google Classroom amb un clic, o es reparteix un codi de sis caràcters. El seguiment mostra el mateix que veu cada alumne, i no hi ha rànquings ni notes automàtiques: la valoració es queda al centre. També es pot imprimir un full amb un codi QR que porta directament a un repte concret, per fer-lo servir en paper.\n\nLes adaptacions per a alumnat amb necessitats específiques —temps extra, treballar sense cronòmetre, més intents, pistes que no penalitzen— es configuren per alumne, són privades i no deixen cap marca a la seva feina. Es desa el paràmetre, mai el motiu.\n\nPensat per a l'ESO i el Batxillerat, i disponible en català, castellà i anglès.",
+    "funcionalitats": [
+      "Editor de peces amb blocs, amb l'alçat, la planta i el perfil en temps real",
+      "Reptes de reconeixement i de dibuix, amb cunyes rampa",
+      "Validació determinista: quan una resposta no encaixa, diu per què",
+      "Importació de grups des de Google Classroom, o codi d'aula de sis caràcters",
+      "Seguiment que mostra el mateix que veu l'alumne, sense rànquings",
+      "Adaptacions per alumne, privades i sense marca a la feina",
+      "Full imprimible amb codi QR cap a un repte concret",
+      "Disponible en català, castellà i anglès"
+    ],
+    "faq": [
+      {
+        "p": "Per a quins cursos està pensat?",
+        "r": "Per a l'ESO i el Batxillerat, allà on es treballa el sistema dièdric i les vistes. També encaixa a cicles de dibuix tècnic."
+      },
+      {
+        "p": "La intel·ligència artificial corregeix els exercicis?",
+        "r": "No. La comprovació és determinista i sempre dona el mateix resultat. La intel·ligència artificial serveix per proposar reptes nous, que el professorat aprova abans que arribin a l'aula."
+      },
+      {
+        "p": "Quanta feina suposa per al docent?",
+        "r": "Importar el grup de Google Classroom és un clic. Si no feu servir Classroom, es reparteix un codi de sis caràcters i ja està."
+      },
+      {
+        "p": "Hi ha rànquings o notes automàtiques?",
+        "r": "No, i és una decisió, no una mancança. El seguiment mostra al docent el mateix que veu cada alumne, i la valoració es queda al centre."
+      },
+      {
+        "p": "Com funcionen les adaptacions per a alumnat amb NESE?",
+        "r": "Es configuren per alumne: temps extra, treballar sense cronòmetre, més intents o pistes que no penalitzen. Són privades i no deixen cap marca a la feina. Es desa el paràmetre, mai el motiu ni cap diagnòstic."
+      },
+      {
+        "p": "Es pot fer servir sense ordinadors per a tothom?",
+        "r": "Sí. Hi ha un full imprimible amb un codi QR que porta a un repte concret, així que es pot treballar en paper i deixar els dispositius per al moment de construir."
+      }
+    ],
+    "relacionats": [
+      "typeedu",
+      "chefboss",
+      "pla-lector"
+    ],
+    "seo": {
+      "title": "Diedric3D: sistema dièdric i vistes amb blocs per a ESO i Batxillerat",
+      "description": "Construeix peces amb blocs i mira com canvien l'alçat, la planta i el perfil en temps real. Reptes amb correcció determinista, importació de Google Classroom i adaptacions per alumne.",
+      "keywords": "sistema dièdric, vistes alçat planta perfil, dibuix tècnic ESO, visió espacial, diedric3d, geometria descriptiva batxillerat, projeccions ortogonals"
+    }
+  },
+  {
     "slug": "eltaulell",
     "nom": "El Taulell",
     "categoria": "Comunicació i acció tutorial",
