@@ -52,6 +52,11 @@ export default function BlogIndex() {
         <div className="blog-llista">
           {articles.map(a => (
             <article key={a.slug} className="blog-fitxa">
+              {a.imatge && (
+                <Link href={"/blog/" + a.slug} className="blog-fitxa-imatge" tabIndex={-1} aria-hidden="true">
+                  <img src={a.imatge} alt="" width={1200} height={630} loading="lazy" />
+                </Link>
+              )}
               <p className="blog-meta">
                 <time dateTime={a.data}>{dataLlegible(a.data)}</time>
                 <span aria-hidden="true"> · </span>

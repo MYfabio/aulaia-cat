@@ -26,6 +26,9 @@ export async function generateMetadata({ params }) {
       type: "article",
       publishedTime: a.data,
       authors: [a.autor],
+      ...(a.imatge
+        ? { images: [{ url: "https://www.aulaia.cat" + a.imatge, width: 1200, height: 630, alt: a.imatgeAlt }] }
+        : {}),
     },
   };
 }
@@ -50,6 +53,7 @@ function Jsonld({ a }) {
       "@type": "WebPage",
       "@id": "https://www.aulaia.cat/blog/" + a.slug,
     },
+    ...(a.imatge ? { image: "https://www.aulaia.cat" + a.imatge } : {}),
     ...(a.etiquetes.length ? { keywords: a.etiquetes.join(", ") } : {}),
   };
   return (
@@ -92,6 +96,19 @@ export default async function Article({ params }) {
         <h1>{a.titol}</h1>
         <p className="blog-lede">{a.resum}</p>
       </header>
+
+      {a.imatge && (
+        /* Porta l alt que hi hagi a la capçalera del fitxer, perque la imatge
+           diu una cosa que el titol no diu. A l index si que va buit: alli el
+           titol es al costat i llegir-ho dues vegades nomes fa nosa. */
+        <img
+          className="blog-imatge"
+          src={a.imatge}
+          alt={a.imatgeAlt}
+          width={1200}
+          height={630}
+        />
+      )}
 
       <div className="blog-cos" dangerouslySetInnerHTML={{ __html: a.html }} />
 
