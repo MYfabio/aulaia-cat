@@ -8,6 +8,8 @@ export default function sitemap() {
 
   return [
     { url: base, lastModified: now, changeFrequency: "weekly", priority: 1 },
+    // Pagina d entrada de setembre: es el que s enllaça als grups de docents.
+    { url: base + "/primera-setmana", lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: base + "/contacte", lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: base + "/privacitat", lastModified: now, changeFrequency: "yearly", priority: 0.3 },
     ...(articles.length
