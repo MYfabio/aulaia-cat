@@ -1,0 +1,58 @@
+[
+  {
+    "slug": "radio-escolar",
+    "url": "https://www.radioescolar.cat/superadmin",
+    "tipus": "ruta",
+    "acces": "Google",
+    "nota": "Ruta pròpia de superadministració."
+  },
+  {
+    "slug": "dictats",
+    "url": "https://www.dictats.cat/admin",
+    "tipus": "ruta",
+    "acces": "Google, Microsoft o enllaç al correu",
+    "nota": "Ruta pròpia. Hi ha el rol SUPERADMIN i el panell de creixement."
+  },
+  {
+    "slug": "aules-sostenibles",
+    "url": "https://www.aulessostenibles.cat",
+    "tipus": "dins",
+    "acces": "Google",
+    "nota": "Les pestanyes «Usuaris» i «Inspecció» surten només si el compte hi té permís."
+  },
+  {
+    "slug": "pla-lector",
+    "url": "https://biblioteca-pla-lector-production.up.railway.app",
+    "tipus": "dins",
+    "acces": "Google corporatiu @escolaindustrial.org",
+    "nota": "L'app no té domini propi: elplalector.cat és només la pàgina de presentació."
+  },
+  {
+    "slug": "typeedu",
+    "url": "https://www.typeedu.com",
+    "tipus": "dins",
+    "acces": "Google o enllaç al correu",
+    "nota": "El panell global de superadministració surt segons el rol del compte."
+  },
+  {
+    "slug": "chefboss",
+    "url": "https://www.chefboss.es",
+    "tipus": "dins",
+    "acces": "Accés de professorat",
+    "nota": "No hi ha panell separat: el rol de docent obre la gestió de l'aula."
+  },
+  {
+    "slug": "eltaulell",
+    "url": "https://eltaulell.aulaia.cat",
+    "tipus": "construccio",
+    "acces": "Encara sense definir",
+    "nota": "En construcció."
+  },
+  {
+    "slug": "kipuk",
+    "url": "https://kipuk-production.up.railway.app",
+    "tipus": "construccio",
+    "acces": "Encara sense definir",
+    "nota": "En construcció i encara sense domini propi."
+  }
+]

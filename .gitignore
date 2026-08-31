@@ -1,0 +1,16 @@
+node_modules/
+.next/
+out/
+
+# Entorn: els secrets viuen a Railway, mai al repositori
+.env
+.env.*
+!.env.example
+
+# Local de l'eina, no del projecte
+.claude/settings.local.json
+
+# Registres i temporals
+*.log
+npm-debug.log*
+.DS_Store

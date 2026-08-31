@@ -1,0 +1,61 @@
+ZONA DNS DE aulaia.cat — copia tomada el 27 d'agost de 2026
+Registrador: Arsys (pdc.arsys.es) · Servidors de noms: dns97/dns98.servidoresdns.net
+Estat: Actiu, protegit contra trasllat · Caduca 20/07/2027 · Gestio lliure
+
+Es guarda abans de tocar la redireccio de l'apex. Si Arsys esborra registres en
+canviar el "comportament del domini" —com va passar a cdmon amb diedric3d.com—,
+aixo es el que cal tornar a crear.
+
+TIPUS  NOM                        VALOR                                                                       TTL
+-----  -------------------------  --------------------------------------------------------------------------  -----
+CNAME  www                        5uv5kx6t.up.railway.app                                                     3600
+CNAME  eltaulell                  ly506qgs.up.railway.app                                                     3600
+NS     @                          dns97.servidoresdns.net                                                     86400
+NS     @                          dns98.servidoresdns.net                                                     86400
+SOA    @                          dns97.servidoresdns.net hostmaster.servidoresdns.net 2025100819 21600 3600 2419200 600   86400
+TXT    _railway-verify.www        "railway-verify=acc0f30fdece05979edc6f926a414ea20ef2e08e146694caf548fcdfb38b38fd"   3600
+TXT    @                          "railway-verify=acc0f30fdece05979edc6f926a414ea20ef2e08e146694caf548fcdfb38b38fd"   3600
+TXT    @                          "google-site-verification=KcFSv3BpTN-j_RCadX5CdZ2Ex7pBeMSerEaqyxbgMgo"       3600
+TXT    _railway-verify.eltaulell  "railway-verify=4fd87598591efe54a73abbf4328614eb0bafde926bbab6803381b028f3808cf9"   3600
+
+QUE FA CADA COSA
+  www                        la web d'aulaia.cat, a Railway. SI AIXO CAU, LA WEB CAU.
+  eltaulell                  el subdomini d'El Taulell, tambe a Railway.
+  _railway-verify.*          proven a Railway que el domini es teu. Sense aixo, no emet el certificat.
+  google-site-verification   verifica la propietat a Google Search Console.
+
+QUE NO HI HA
+  Cap registre A ni CNAME a l'apex: per aixo aulaia.cat sense www no resol.
+  Arsys no ofereix ALIAS ni ANAME, i Railway dona un nom, no una IP.
+  Cap registre DS: no hi ha DNSSEC, aixi que moure els DNS a Cloudflare no
+  deixaria el domini fora de servei.
+
+────────────────────────────────────────────────────────────────────────────
+CANVI FET EL 27 D'AGOST DE 2026
+
+Els servidors de noms d'aulaia.cat han passat d'Arsys a Cloudflare:
+
+   abans:  dns97.servidoresdns.net · dns98.servidoresdns.net
+   ara:    brynne.ns.cloudflare.com · viddy.ns.cloudflare.com
+
+Per que: Arsys no ofereix ALIAS ni ANAME, i Railway dona un nom i no una IP,
+aixi que l'apex aulaia.cat no podia apuntar enlloc. Cloudflare fa CNAME
+flattening i el resol. La seva redireccio de pagament nomes funciona en HTTP,
+i els navegadors ja demanen HTTPS.
+
+La zona de Cloudflare te els mateixos registres MES el nou CNAME de l'apex:
+
+   CNAME  @          -> 2rch3xlg.up.railway.app   (Solo DNS)
+   CNAME  www        -> 5uv5kx6t.up.railway.app   (Solo DNS)
+   CNAME  eltaulell  -> ly506qgs.up.railway.app   (Solo DNS)
+   + els quatre TXT de verificacio
+
+TOTS en "Solo DNS", sense el proxy de Cloudflare: Railway necessita veure el
+transit directe per emetre i servir els seus certificats. Cloudflare avisa que
+"no esta totalment protegit"; es deliberat, no un descuit.
+
+L'apex es va donar d'alta a Railway com a domini propi del servei aulaia-cat,
+i per aixo Railway va donar el nom 2rch3xlg.up.railway.app.
+
+PER DESFER-HO: tornar a posar dns97 i dns98.servidoresdns.net aqui dalt. La
+zona d'Arsys segueix intacta amb els seus nou registres.

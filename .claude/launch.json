@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "ava",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--prefix", "C:/Users/super/Desktop/APPS/AULADE~1/aula_acollida_pack_20260829/ava"],
+      "port": 3000
+    },
+    {
+      "name": "diedric3d-web-3212",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": ["-C", "C:/Users/super/Desktop/APPS/diedrico/diedric3d/apps/web", "exec", "next", "dev", "-p", "3212"],
+      "port": 3212
+    }
+  ]
+}
