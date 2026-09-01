@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
-import { canviarEstat, esborrarSolicitud } from "../../../../lib/db";
+import { canviarEstat, esborrarSolicitud, llistarSolicituds } from "../../../../lib/db";
 import { enviarCorreuValidacio } from "../../../../lib/correu";
+import { crearUsuariAlApp, registrarProvisioning } from "../../../../lib/provisioning";
 
 function baseUrl(request) {
   const h = request.headers;
@@ -55,8 +56,23 @@ export async function POST(request) {
   }
   if (!fila) return tornar({ error: "nofound" });
 
-  // El correu no ha de fer fallar la validacio: si no surt, l estat ja ha canviat.
+  // El correu i el provisioning no han de fer fallar la validacio:
+  // si no surten, l estat ja ha canviat i la solicitud es a la base.
   if (accio === "validar") {
+    // Intentar crear usuari a l app
+    try {
+      const resultProvisioning = await crearUsuariAlApp(fila);
+      await registrarProvisioning(id, fila.app, resultProvisioning);
+      if (!resultProvisioning.ok) {
+        console.warn(
+          `No s ha creat usuari a ${fila.app}: ${resultProvisioning.motiu}`
+        );
+      }
+    } catch (e) {
+      console.error("Error en provisioning:", e.message);
+    }
+
+    // Enviar email de confirmacio
     try {
       await enviarCorreuValidacio(fila);
     } catch (e) {

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { llistarSolicituds, comptarPerEstat } from "../../../lib/db";
+import { BotoEnviarResum } from "./client";
 import apps from "../../../data/apps.json";
 
 export const metadata = {
@@ -30,13 +31,23 @@ function quan(iso) {
 
 export default async function AltesPage({ searchParams }) {
   const sp = await searchParams;
-  const filtre = ["pendent", "validada", "rebutjada"].includes(sp?.estat) ? sp.estat : null;
+  const filtreEstat = ["pendent", "validada", "rebutjada"].includes(sp?.estat) ? sp.estat : null;
+  const filtreApp = sp?.app && apps.find(a => a.slug === sp.app) ? sp.app : null;
 
   let solicituds = [];
   let comptes = { pendent: 0, validada: 0, rebutjada: 0 };
+  let comptesApp = {};
   let error = null;
   try {
-    [solicituds, comptes] = await Promise.all([llistarSolicituds(filtre), comptarPerEstat()]);
+    [solicituds, comptes] = await Promise.all([
+      llistarSolicituds(filtreEstat, filtreApp),
+      comptarPerEstat()
+    ]);
+    // Contar por app
+    for (const app of apps) {
+      const result = await llistarSolicituds(null, app.slug);
+      comptesApp[app.slug] = result.length;
+    }
   } catch (e) {
     error = e.message;
   }
@@ -63,7 +74,10 @@ export default async function AltesPage({ searchParams }) {
           <h1>Altes de centres</h1>
           <p className="panel-sub">Sol·licituds rebudes des del formulari únic</p>
         </div>
-        <Link href="/panel" className="btn btn-outline">Tornar al panell</Link>
+        <div style={{ display: "flex", gap: "0.5rem" }}>
+          <BotoEnviarResum comptesPendent={comptes.pendent} />
+          <Link href="/panel" className="btn btn-outline">Tornar al panell</Link>
+        </div>
       </div>
 
       <div className="panel-stats">
@@ -75,15 +89,29 @@ export default async function AltesPage({ searchParams }) {
       </div>
 
       <div className="periodes">
-        <Link href="/panel/altes" className={"periode" + (!filtre ? " is-actiu" : "")}>Totes</Link>
-        <Link href="/panel/altes?estat=pendent" className={"periode" + (filtre === "pendent" ? " is-actiu" : "")}>Pendents</Link>
-        <Link href="/panel/altes?estat=validada" className={"periode" + (filtre === "validada" ? " is-actiu" : "")}>Validades</Link>
-        <Link href="/panel/altes?estat=rebutjada" className={"periode" + (filtre === "rebutjada" ? " is-actiu" : "")}>Rebutjades</Link>
+        <Link href="/panel/altes" className={"periode" + (!filtreEstat && !filtreApp ? " is-actiu" : "")}>Totes</Link>
+        <Link href="/panel/altes?estat=pendent" className={"periode" + (filtreEstat === "pendent" ? " is-actiu" : "")}>Pendents</Link>
+        <Link href="/panel/altes?estat=validada" className={"periode" + (filtreEstat === "validada" ? " is-actiu" : "")}>Validades</Link>
+        <Link href="/panel/altes?estat=rebutjada" className={"periode" + (filtreEstat === "rebutjada" ? " is-actiu" : "")}>Rebutjades</Link>
+      </div>
+
+      <div className="periodes">
+        <strong style={{ paddingRight: "1rem" }}>Per app:</strong>
+        <Link href="/panel/altes" className={"periode" + (!filtreApp ? " is-actiu" : "")}>Totes</Link>
+        {apps.map(app => (
+          <Link
+            key={app.slug}
+            href={`/panel/altes?app=${app.slug}`}
+            className={"periode" + (filtreApp === app.slug ? " is-actiu" : "")}
+          >
+            {app.nom} <span style={{ opacity: 0.6, fontSize: "0.85em" }}>({comptesApp[app.slug] || 0})</span>
+          </Link>
+        ))}
       </div>
 
       {solicituds.length === 0 && (
         <div className="panel-buit">
-          <p><strong>Encara no hi ha cap sol·licitud{filtre ? ` ${filtre}` : ""}.</strong></p>
+          <p><strong>Encara no hi ha cap sol·licitud{filtreEstat ? ` en estat "${filtreEstat}"` : filtreApp ? ` per a ${nomApp(filtreApp)}` : ""}.</strong></p>
           <p>
             El formulari està a <Link href="/alta">aulaia.cat/alta</Link>. Enllaça-hi des del botó
             de «demana accés» de cada app amb <code>?app=el-slug</code> perquè arribi ja triada.

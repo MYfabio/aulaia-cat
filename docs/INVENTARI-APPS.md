@@ -94,3 +94,14 @@ Railway.**
    `pla_lector`/`plalector-landing`/`recursos-pla-lector`.
 6. Desplegar l'arreglada dels avisos d'alta i fer una prova real del formulari.
 7. `aulaia-cat` no té repositori git: tot el paraigua viu en una sola còpia al disc.
+
+## Tasques programades
+
+- **Informe diari** (dilluns a divendres, 7:30): salut de les webs, feina sense
+  commitejar i pendents oberts. Només lectura.
+- **Revisió de seguretat setmanal** (dilluns, 8:00): secrets exposats,
+  dependències vulnerables, autorització a les rutes noves, higiene de
+  `.gitignore` i exposició pública (robots). Només lectura, sense proves
+  intrusives.
+
+Totes dues arriben per avís al mòbil i per correu.
