@@ -93,12 +93,32 @@ export default function Home() {
         <div className="seo-intro-inner">
           <h2>Un centre, un model de projectes, moltes apps.</h2>
           <p>L'Institut Escola Industrial de Sabadell ha fet una aposta clara: treballar per projectes i integrar-hi aplicacions digitals com a part natural de l'aprenentatge. aulaia.cat recull les propostes d'apps que han nascut en aquest entorn. No són eines generals adaptades: són solucions creades a peu d'aula, a partir de les necessitats dels docents, dels equips directius i, sobretot, de l'alumnat.</p>
-          <p>La tecnologia, per si sola, no transforma l'educació. El que la transforma és posar-la al servei d'un projecte amb un propòsit pedagògic clar. Cada proposta neix d'una pregunta concreta que es fa algú del centre: com fem que l'alumnat millori l'ortografia sense hores de correcció manual? Com donem veu a l'alumnat més enllà de l'aula? Com convertim la sostenibilitat en un projecte real i no en un exercici fictici? Les apps que funcionen a l'Escola Industrial es comparteixen aquí perquè altres escoles i instituts de Catalunya les puguin conèixer i adoptar.</p>
+          <p>La tecnologia, per si sola, no transforma l'educació. El que la transforma és posar-la al servei d'un projecte amb un propòsit pedagògic clar. Cada proposta neix d'una pregunta concreta que es fa algú del centre: com fem que l'alumnat millori l'ortografia sense hores de correcció manual? Com donem veu a l'alumnat més enllà de l'aula? Com convertim la sostenibilitat en un projecte real i no en un exercici fictici? Les apps que funcionen a l'Escola Industrial es comparteixen aquí perquè altres escoles i instituts de Catalunya les puguin conèixer i adoptar, sempre com a part d'un projecte i mai com a substitut del que passa a l'aula.</p>
           <div className="seo-intro-tags">
             {["ESO","Cicles Formatius","Primària","Batxillerat","Escola Verda","Aprenentatge Servei","Competència Digital","STEM"].map(t=>(
               <span key={t} className="badge">{t}</span>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="section" id="pantalles">
+        <div className="section-header">
+          <h2>I les pantalles?</h2>
+          <p>Compartim la preocupació de moltes famílies i docents. Per això aquestes propostes segueixen uns criteris clars.</p>
+        </div>
+        <div className="who-grid">
+          {[
+            {n:"01",title:"Amb un propòsit",desc:"Cap app s'usa per usar-la. Cadascuna respon a una necessitat concreta d'un projecte d'aula."},
+            {n:"02",title:"El docent decideix",desc:"Quan, quant de temps i per a què. L'eina s'adapta a la programació, no al revés."},
+            {n:"03",title:"Pantalla curta, activitat llarga",desc:"Moltes propostes acaben fora de la pantalla: un programa de ràdio, una acció de sostenibilitat, un llibre a les mans."},
+            {n:"04",title:"Sense contrasenyes ni dades innecessàries",desc:"Dissenyades per a menors: mínima recollida de dades i cap perfil personal que calgui mantenir."},
+          ].map(w=>(
+            <div key={w.title} className="who-card">
+              <div className="who-card-icon">{w.n}</div>
+              <h3>{w.title}</h3><p>{w.desc}</p>
+            </div>
+          ))}
         </div>
       </section>
 
