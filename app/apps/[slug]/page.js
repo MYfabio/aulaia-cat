@@ -51,7 +51,7 @@ export default async function AppLanding({ params }) {
   return (
     <div className="landing">
       <Jsonld app={app} />
-      <Link href="/#apps" className="landing-back">← Tots els projectes</Link>
+      <Link href="/#apps" className="landing-back">← Totes les propostes</Link>
       <span className="landing-tag">{app.categoria}</span>
       <h1>{app.nom}</h1>
       <p className="landing-desc">{app.descripcio}</p>
@@ -72,6 +72,11 @@ export default async function AppLanding({ params }) {
           <p>{app.estatText}{app.domini ? ". El projecte es publicarà a "+app.domini+"." : "."} Si vols que el teu centre hi participi, escriu-nos i t'avisarem.</p>
         </div>
       )}
+
+      <div className="origin-box">
+        <span className="origin-label">Origen de la proposta</span>
+        <p>Aquesta app ha nascut a l'entorn de l'<strong>Institut Escola Industrial de Sabadell</strong>, dins del seu model de treball per projectes. No és una pantalla més: és una eina concreta al servei d'un projecte d'aula, que el docent decideix quan, quant i per a què s'utilitza.</p>
+      </div>
 
       <div className="fact-grid">
         {app.publics?.length>0 && <div className="fact"><span className="fact-k">Etapes</span><span className="fact-v">{app.publics.join(" · ")}</span></div>}
@@ -118,7 +123,7 @@ export default async function AppLanding({ params }) {
 
       {relacionats.length>0 && (
         <>
-          <h2>Altres projectes d'aulaia.cat</h2>
+          <h2>Altres propostes d'aulaia.cat</h2>
           <div className="rel-grid">
             {relacionats.map(r=>(
               <Link key={r.slug} href={"/apps/"+r.slug} className="rel-card">
