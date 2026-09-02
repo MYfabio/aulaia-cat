@@ -46,7 +46,7 @@ export default function RootLayout({ children }) {
           <Link href="/" aria-label="aulaia.cat - inici"><Logo size={34} /></Link>
           <nav className="nav-links">
             <Link href="/#apps">Propostes</Link>
-            <Link href="/#per-a-qui">Per a qui</Link>
+            <Link href="/#pantalles">I les pantalles?</Link>
             <Link href="/blog">Blog</Link>
             <Link href="/contacte">Contacte</Link>
           </nav>
