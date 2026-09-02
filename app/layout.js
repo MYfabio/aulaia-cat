@@ -12,8 +12,8 @@ const inter = Inter({
 });
 export const metadata = {
   metadataBase: new URL("https://www.aulaia.cat"),
-  title: { default: "aulaia.cat - Apps educatives per a escoles de Catalunya", template: "%s | aulaia.cat" },
-  description: "Catàleg d'aplicacions i projectes de software per a escoles, instituts i centres educatius de Catalunya.",
+  title: { default: "aulaia.cat - Propostes d'apps educatives · Escola Industrial de Sabadell", template: "%s | aulaia.cat" },
+  description: "Espai de propostes d'apps educatives nascudes a l'entorn de l'Institut Escola Industrial de Sabadell, un centre que aposta per un model de projectes que integra apps per millorar l'aprenentatge.",
   icons: { icon: "/favicon.svg", shortcut: "/favicon.svg", apple: "/favicon.svg" },
   robots: { index: true, follow: true },
   alternates: { canonical: "/" },
@@ -22,8 +22,8 @@ export const metadata = {
     locale: "ca_ES",
     siteName: "aulaia.cat",
     url: "https://www.aulaia.cat",
-    title: "aulaia.cat - Apps educatives per a escoles de Catalunya",
-    description: "Catàleg d'aplicacions i projectes de software per a escoles, instituts i centres educatius de Catalunya.",
+    title: "aulaia.cat - Propostes d'apps educatives · Escola Industrial de Sabadell",
+    description: "Espai de propostes d'apps educatives nascudes a l'entorn de l'Institut Escola Industrial de Sabadell, un centre que aposta per un model de projectes que integra apps per millorar l'aprenentatge.",
   },
 };
 
@@ -33,7 +33,7 @@ const orgJsonld = {
   name: "aulaia.cat",
   url: "https://www.aulaia.cat",
   email: "hola@aulaia.cat",
-  description: "Apps i projectes de software educatiu per a escoles i instituts de Catalunya.",
+  description: "Espai de propostes d'apps educatives creades a l'entorn de l'Institut Escola Industrial de Sabadell i obertes a escoles i instituts de Catalunya.",
   address: { "@type": "PostalAddress", addressLocality: "Sabadell", addressRegion: "Catalunya", addressCountry: "ES" },
   brand: ["radioescolar.cat", "dictats.cat", "aulessostenibles.cat", "elplalector.cat", "typeedu.com"],
 };
@@ -45,7 +45,7 @@ export default function RootLayout({ children }) {
         <header className="nav">
           <Link href="/" aria-label="aulaia.cat - inici"><Logo size={34} /></Link>
           <nav className="nav-links">
-            <Link href="/#apps">Projectes</Link>
+            <Link href="/#apps">Propostes</Link>
             <Link href="/#per-a-qui">Per a qui</Link>
             <Link href="/blog">Blog</Link>
             <Link href="/contacte">Contacte</Link>
@@ -54,10 +54,10 @@ export default function RootLayout({ children }) {
         <main>{children}</main>
         <footer className="footer">
           <div className="footer-inner">
-            <div><Logo size={28} dark={true} /><p className="footer-text">Apps de software educatiu per a escoles de Catalunya.</p></div>
+            <div><Logo size={28} dark={true} /><p className="footer-text">Propostes d'apps educatives nascudes a l'Escola Industrial de Sabadell, obertes a les escoles de Catalunya.</p></div>
             <div className="footer-links">
               <strong>Navegació</strong>
-              <Link href="/#apps">Projectes</Link>
+              <Link href="/#apps">Propostes</Link>
               <Link href="/blog">Blog</Link>
               <Link href="/contacte">Demana una demo</Link>
               <Link href="/privacitat">Privacitat i cookies</Link>
