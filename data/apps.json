@@ -559,11 +559,11 @@
     "slug": "kipuk",
     "nom": "KIPUK",
     "categoria": "Educació física i cohesió",
-    "estat": "construccio",
-    "estatText": "En construcció · especificació tancada, MVP en desenvolupament",
+    "estat": "presentacio",
+    "estatText": "En presentació · proposta de piloto per a centres",
     "icona": "🤾",
-    "domini": "kipuk.cat",
-    "url": null,
+    "domini": "kipuk.aulaia.cat",
+    "url": "https://kipuk.aulaia.cat",
     "idiomes": [
       "Castellà"
     ],
