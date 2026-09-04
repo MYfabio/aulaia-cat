@@ -119,6 +119,73 @@
     }
   },
   {
+    "slug": "matescac",
+    "nom": "MatEscac",
+    "categoria": "Escacs 3D i matemàtiques",
+    "estat": "produccio",
+    "estatText": "En producció, accessible per a l'Escola Industrial",
+    "icona": "♞️",
+    "domini": "matescac.aulaia.cat",
+    "url": "https://matescac.aulaia.cat",
+    "idiomes": [
+      "Català",
+      "Castellà",
+      "Anglès"
+    ],
+    "publics": [
+      "Primària",
+      "Secundària"
+    ],
+    "centre": null,
+    "resum": "Plataforma escolar d'escacs 3D, pensament computacional i competència matemàtica alineada amb el Decret 175/2022.",
+    "descripcio": "MatEscac uneix el tauler d'escacs amb el currículum de matemàtiques de la Generalitat: vectors, algorismes, invariants i pensament computacional, jugant. L'alumnat juga en 3D, aprèn notació algebraica com a coordenades cartesianes, programa bots amb lògica de blocs i depura partides com si fessin codi. Els docents crean liguilles, miren competències per índex i exporten informes de groupe i individuals. Accessible per a l'Escola Industrial amb compte de Google Classroom.",
+    "seoLlarg": "L'escacs és una eina clàssica per desenvolupar el pensament lògic, però rarament s'integra al currículum acadèmic de manera estructurada. MatEscac canvia aquesta premissa connectant el joc directament amb les competències matemàtiques de la Generalitat. El tauler és un pla cartesià (64 caselles = 8x8), cada moviment és un vector, i la lògica del joc s'ensenya com si fos programació. Això permet treballar tres competències en paral·lel: geometria i vectors, pensament computacional i àlgebra amb invariants. La interfície 3D és una eina de comprensió profunda, no només una cosmètica. Els docents disposen d'un panell per crear liguilles automàtiques entre grups, mesurar competències amb índexs 0-100 i exportar informes acadèmics. Pensat especialment per a centres amb compromise amb l'exigència matemàtica i el joc com a eina pedagògica.",
+    "funcionalitats": [
+      "Tauler 3D interactiu amb ombres, càmera orbital i selecció de pieces",
+      "Notació algebraica com a sistema de coordenades cartesianes",
+      "Programació de bots amb blocs: condicionals, seqüències i bucles",
+      "Depuració de partides per identificar imprecisions i estratègia",
+      "Liguilles automàtiques de tots contra tots per grup",
+      "Índexs 0-100 per competència: pensament computacional, geometria i àlgebra",
+      "Medalles i classificacions per participació, precisió i velocitat",
+      "Espectadors: docents i admins observen partides en viu",
+      "Informes de grup i individuals en CSV per a l'avaluació acadèmica",
+      "Accés amb codi d'aula o compte de Google Classroom"
+    ],
+    "faq": [
+      {
+        "p": "Per a quins cursos està pensat?",
+        "r": "Per a primària i secundària, especialment allà on es treballa geometria, vectors i pensament computacional. Alineat amb el Decret 175/2022 de la Generalitat."
+      },
+      {
+        "p": "Cal saber jugar a escacs prèviament?",
+        "r": "No. MatEscac té un centre d'aprenentatge on es pot aprendre el moviment de cada peça, la notació i els conceptes tàctics en 3D."
+      },
+      {
+        "p": "Podem fer tornejos entre escoles?",
+        "r": "De moment, els tornejos són per grup dins de cada centre. La futura arquitectura permetrà liguilles entre escoles."
+      },
+      {
+        "p": "Com es connecta amb Google Classroom?",
+        "r": "L'alumnat entra amb la seva comptes @escolaindustrial.org (o equivalent) i es pot importar grups de Google Classroom automàticament."
+      },
+      {
+        "p": "Hi ha adaptacions NESE?",
+        "r": "Sí. Temps extra, nivells de dificultats configurables per alumne i més intents sense penalització. Les adaptacions es fan per alumne i no deixen marca a la feina."
+      }
+    ],
+    "relacionats": [
+      "diedric3d",
+      "typeedu",
+      "chefboss"
+    ],
+    "seo": {
+      "title": "MatEscac: escacs 3D, vectors i pensament computacional per a escoles",
+      "description": "Plataforma educativa d'escacs 3D que treballa vectors, algorismes, invariants i pensament computacional del Decret 175/2022. Tauler 3D, bots programables i liguilles automàtiques.",
+      "keywords": "escacs educatiu, vectors matemàtiques, pensament computacional escola, programació bots, escacs 3D, matescac.aulaia.cat"
+    }
+  },
+  {
     "slug": "aules-sostenibles",
     "nom": "Aules Sostenibles",
     "categoria": "Educació ambiental",
