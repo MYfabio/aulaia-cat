@@ -19,6 +19,7 @@ nova de Claude Code.
 | Chef Boss | `Chefboss` | MYfabio/chefboss | chefboss.es | producció (1.9.0), 1.10.0 en local |
 | Aules Sostenibles | `aules-sostenibles` | MYfabio/aules-sostenibles | aulessostenibles.cat | MVP en curs (fase 4, iteració I1) |
 | KIPUK.ES | `kipuk-es` | — (local, sense remot) | kipuk.es (previst) | MVP amb dades sintètiques |
+| MatEscac | `Matescac` | MYfabio/matescac | matescac.aulaia.cat | producció · Railway `matescac` (web + Postgres), desplega per GitHub `main` |
 | Pantalles | `Pantallas_web` | MYfabio/pantalles | — | **pendent de desplegar** |
 | Kipuk (demo antiga) | `Kipuk` | MYfabio/kipuk | — | obsolet, no s'hi treballa |
 
@@ -92,8 +93,19 @@ Railway.**
    s'executa sol).
 5. Consolidar carpetes duplicades: `Kipuk`/`kipuk-es`, `Radio`/`modulo radio`,
    `pla_lector`/`plalector-landing`/`recursos-pla-lector`.
-6. Desplegar l'arreglada dels avisos d'alta i fer una prova real del formulari.
-7. `aulaia-cat` no té repositori git: tot el paraigua viu en una sola còpia al disc.
+6. Fer una prova real del formulari d'alta. (L'arreglada es va desplegar el
+   04/09/2026 amb `railway up`; `RESEND_FROM` encara no és a Railway, així que
+   els correus surten des de `onboarding@resend.dev` fins que s'afegeixi.)
+7. `aulaia-cat` té git local però cap remot: cal crear-lo **privat** a GitHub
+   (conté `data/accessos.json`).
+
+## Feina feta el 04/09/2026
+
+- Railway CLI instal·lada i enllaçada a `aulaia-cat` (servei `aulaia-cat`).
+  aulaia.cat es desplega amb `railway up` (no té remot git).
+- MatEscac: secció de lligues i torneigs a la landing (ca/es/en), desplegada
+  per push a `main`; afegida al catàleg `data/apps.json`.
+- KIPUK passa de "construcció" a "presentació" al catàleg, amb kipuk.cat en línia.
 
 ## Tasques programades
 
