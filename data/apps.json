@@ -502,6 +502,69 @@
     }
   },
   {
+    "slug": "aulaacull",
+    "nom": "AulaAcull.cat",
+    "categoria": "Aula d'acollida i català per a nouvinguts",
+    "estat": "construccio",
+    "estatText": "En construcció · versió de proves a aulaacull.aulaia.cat, amb centre de demostració",
+    "icona": "🗣️",
+    "domini": "aulaacull.aulaia.cat",
+    "url": "https://aulaacull.aulaia.cat",
+    "idiomes": [
+      "Català"
+    ],
+    "publics": [
+      "Secundària"
+    ],
+    "centre": null,
+    "resum": "Aula virtual d'acollida per a alumnat nouvingut d'ESO que aprèn català: itinerari d'unitats amb instruccions locutades en la llengua pont de cada alumne i seguiment per al docent d'acollida.",
+    "descripcio": "AulaAcull.cat té dues zones. L'alumne entra amb el compte de Google del centre i veu el seu itinerari: les unitats que el docent ha assignat al grup, en ordre, amb activitats de lèxic, relacionar, classificar, escoltar i triar, omplir buits, lectura, dictat, gravar la veu o joc de rol, entre vint-i-dos tipus. Cada instrucció és en català, amb pictograma i botó per escoltar-la, i també es pot escoltar en la llengua pont de l'alumne (castellà, àrab, amazic, anglès, francès, romanès, ucraïnès, urdú, panjabi o xinès); el contingut és sempre en català. El docent d'aula d'acollida veu el seu grup amb un semàfor d'alerta per alumne (inactivitat, caiguda d'encert, temps, reintents, evidències pendents), assigna unitats al grup, consulta la fitxa de cada alumne i corregeix les tasques obertes i de veu amb una rúbrica de tres nivells: en procés, assolit, consolidat. No hi ha nota numèrica ni cap rànquing.",
+    "seoLlarg": "L'aula d'acollida rep alumnat que arriba a mig curs, amb llengües d'origen diverses i nivells d'alfabetització diferents, i el docent ha d'atendre'ls alhora amb material sovint en paper. AulaAcull.cat porta aquesta feina a un itinerari digital que l'alumne pot seguir sol des del primer dia: la instrucció li arriba en català i, si ho necessita, locutada en la seva llengua pont, però la resposta és sempre en català, que és la llengua meta. Les vint unitats actuals cobreixen els nivells A0 i A1 amb dues-centes activitats, pictogrames d'ARASAAC i locucions pròpies.\n\nL'accessibilitat és una regla de disseny, no una opció: tot el que es pot arrossegar també es pot fer amb dos tocs, tot funciona amb teclat i lector de pantalla, el color no és mai l'únic indicador i el vermell no vol dir mai «malament». Les activitats de veu no es corregeixen soles: l'alumne es grava, s'escolta i decideix si repeteix; l'àudio no surt del seu navegador.\n\nPer al docent, el semàfor d'alerta ordena el grup per urgència a partir de senyals concrets i visibles, i les observacions que hi escriu són text lliure que no entra en cap automatisme. Cada centre només veu les seves dades, es guarda el mínim (nom, inicial del cognom, correu del centre, llengua pont, curs i intents) i no hi ha cap etiqueta de procedència. L'aplicació no crea comptes sola: l'alta la fa el centre.",
+    "funcionalitats": [
+      "Itinerari per alumne amb les unitats que el docent assigna al grup",
+      "Vint-i-dos tipus d'activitat: lèxic, relacionar, classificar, escoltar, omplir buits, lectura, dictat, veu, joc de rol i més",
+      "Instruccions en català amb pictograma i locució, i també locutades en la llengua pont de l'alumne",
+      "Deu llengües pont: castellà, àrab, amazic, anglès, francès, romanès, ucraïnès, urdú, panjabi i xinès",
+      "Semàfor d'alerta per alumne: inactivitat, caiguda d'encert, temps, reintents i evidències pendents",
+      "Cua de correcció amb rúbrica en procés / assolit / consolidat, sense nota numèrica",
+      "Accessibilitat WCAG 2.2 AA: teclat, lector de pantalla, alternativa d'un toc a tot arrossegament",
+      "Entrada amb el compte de Google Workspace del centre; cap contrasenya pròpia",
+      "Dades mínimes per centre, sense rànquings ni etiquetes de procedència; la veu no es desa"
+    ],
+    "faq": [
+      {
+        "p": "En quin punt està?",
+        "r": "Hi ha una versió de proves a aulaacull.aulaia.cat amb un centre de demostració i dades fictícies. Encara no hi ha alta d'usuaris ni gestió de grups des de l'aplicació, ni diagnòstic inicial, ni el nivell A2. Si vols provar-lo al teu centre, escriu-nos."
+      },
+      {
+        "p": "En quina llengua treballa l'alumne?",
+        "r": "Sempre en català. La llengua pont només acompanya les instruccions i l'ajuda, en text i en àudio, perquè l'alumne entengui què ha de fer."
+      },
+      {
+        "p": "Posa notes?",
+        "r": "No. El docent corregeix les tasques obertes i de veu amb tres nivells (en procés, assolit, consolidat) i pot deixar un comentari. No hi ha nota numèrica, ni rànquing, ni comparació entre alumnes."
+      },
+      {
+        "p": "Com hi entra l'alumnat?",
+        "r": "Amb el compte de Google del Workspace del centre. L'aplicació no crea comptes: el centre dona d'alta cada usuari amb el seu correu."
+      },
+      {
+        "p": "Què passa amb la veu que grava l'alumne?",
+        "r": "No es desa. L'alumne es grava, s'escolta i lliura; el docent només veu que ho ha fet."
+      }
+    ],
+    "relacionats": [
+      "dictats",
+      "eltaulell",
+      "pla-lector"
+    ],
+    "seo": {
+      "title": "AulaAcull.cat: aula virtual d'acollida per a alumnat nouvingut d'ESO",
+      "description": "Aula virtual d'acollida per aprendre català: itinerari d'unitats A0-A1, instruccions locutades en deu llengües pont, activitats accessibles i seguiment per al docent d'aula d'acollida.",
+      "keywords": "aula d'acollida, alumnat nouvingut, aprendre català ESO, català per a nouvinguts, aula acollida digital, llengua pont, aulaacull.aulaia.cat"
+    }
+  },
+  {
     "slug": "la-cantiana",
     "nom": "La Cantiana",
     "categoria": "Emprenedoria i vida al centre",
