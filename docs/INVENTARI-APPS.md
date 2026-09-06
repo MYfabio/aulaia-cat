@@ -20,6 +20,7 @@ nova de Claude Code.
 | Aules Sostenibles | `aules-sostenibles` | MYfabio/aules-sostenibles | aulessostenibles.cat | MVP en curs (fase 4, iteració I1) |
 | KIPUK.ES | `kipuk-es` | — (local, sense remot) | kipuk.es (previst) | MVP amb dades sintètiques |
 | MatEscac | `Matescac` | MYfabio/matescac | matescac.aulaia.cat | producció · Railway `matescac` (web + Postgres), desplega per GitHub `main` |
+| AulaAcull.cat | `Aula de acollida/aula_acollida_pack_20260829/ava` | MYfabio/aulaacull | aulaacull.aulaia.cat | construcció · Railway `aulaacull` (web), desplega per `main`; centre de demostració |
 | Pantalles | `Pantallas_web` | MYfabio/pantalles | — | **pendent de desplegar** |
 | Kipuk (demo antiga) | `Kipuk` | MYfabio/kipuk | — | obsolet, no s'hi treballa |
 
