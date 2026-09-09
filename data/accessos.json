@@ -50,9 +50,16 @@
   },
   {
     "slug": "kipuk",
-    "url": "https://kipuk-production.up.railway.app",
-    "tipus": "construccio",
-    "acces": "Encara sense definir",
-    "nota": "En construcció i encara sense domini propi."
+    "url": "https://kipuk.cat/admin/usuaris",
+    "tipus": "ruta",
+    "acces": "Google Workspace del centre",
+    "nota": "Qui entra amb un compte del domini registrat es dona d'alta sol com a alumne. Els rols de docent i coordinació s'assignen des d'aquesta ruta."
+  },
+  {
+    "slug": "aulaacull",
+    "url": "https://aulaacull.aulaia.cat/docent",
+    "tipus": "dins",
+    "acces": "Google Workspace del centre",
+    "nota": "No hi ha pantalla d'administració: l'alta del centre, del docent i de l'alumnat es fa a la base de dades. Qui no hi consta no pot entrar."
   }
 ]
