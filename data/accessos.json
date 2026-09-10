@@ -42,6 +42,13 @@
     "nota": "No hi ha panell separat: el rol de docent obre la gestió de l'aula."
   },
   {
+    "slug": "kiosko",
+    "url": "https://kiosko.aulaia.cat/dashboard",
+    "tipus": "ruta",
+    "acces": "Correu i contrasenya propis de Kiosko",
+    "nota": "L'única app que no va amb el compte de Google: les pantalles no estan lligades a cap persona. Els usuaris del centre es gestionen al mateix tauler."
+  },
+  {
     "slug": "eltaulell",
     "url": "https://eltaulell.aulaia.cat",
     "tipus": "construccio",

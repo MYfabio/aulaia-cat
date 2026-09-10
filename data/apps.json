@@ -453,6 +453,76 @@
     }
   },
   {
+    "slug": "kiosko",
+    "nom": "Kiosko",
+    "categoria": "Cartelleria digital de centre",
+    "estat": "produccio",
+    "estatText": "En producció, gratuït per a centres educatius",
+    "icona": "📺",
+    "domini": "kiosko.aulaia.cat",
+    "url": "https://kiosko.aulaia.cat",
+    "idiomes": [
+      "Català"
+    ],
+    "publics": [
+      "Primària",
+      "Secundària",
+      "Cicles Formatius"
+    ],
+    "centre": null,
+    "resum": "Converteix qualsevol monitor del centre en un tauler d'anuncis digital que s'actualitza sol, gestionat des del navegador per secretaria, departaments i direcció.",
+    "descripcio": "El problema de les pantalles d'un centre no acostuma a ser tècnic: és que acaben ensenyant el mateix cartell durant setmanes perquè actualitzar-les costa massa. Kiosko ho resol amb panells que s'editen des de qualsevol ordinador del centre. Un panell és una disposició completa de pantalla, amb capçalera i blocs, i cada pantalla n'apunta un: el vestíbul, el taller i la sala de professorat poden compartir-ne un o mostrar-ne un de diferent. Cada bloc admet una finestra de publicació amb data d'inici i de fi, de manera que un avís apareix i caduca sol sense que ningú hi hagi de tornar. A més del panell propi, cada pantalla pot rotar qualsevol altra web del centre amb els segons que se li assignin. El reproductor consulta el servidor cada pocs minuts i no guarda res.",
+    "seoLlarg": "La cartelleria digital d'un centre educatiu sol acabar en un dels dos extrems: pantalles apagades, o pantalles que fa tres setmanes que mostren el mateix perquè actualitzar-les demana baixar al vestíbul amb un llapis de memòria. Kiosko ataca exactament aquest punt. Publicar és qüestió d'un minut des del navegador, i la publicació programada fa la resta: es prepara la setmana el dilluns i cada avís apareix i desapareix a la data que li toca.\n\nEl model de panells separa el contingut de la pantalla física. Secretaria publica terminis de matrícula, els departaments pengen les seves sortides i sessions d'orientació sense demanar torn a ningú, i direcció veu d'una ullada què mostra cada pantalla i quan es va actualitzar. La redacció assistida reescriu un text perquè es llegeixi de lluny i porta comptador de caràcters, perquè ningú publiqui un paràgraf en un monitor que es mira de pas.\n\nNo cal comprar maquinari especial: serveix qualsevol monitor o televisor amb Android 8.0 o superior, i si el que hi ha no en porta, un reproductor Android connectat per HDMI fa la feina. L'aplicació s'instal·la des d'un fitxer descarregable, també amb un llapis USB per a pantalles sense navegador ni botiga d'aplicacions, i en obrir-la només demana l'adreça de la pantalla. La capçalera pot mostrar comptadors d'aigua, reciclatge, energia, arbres i CO₂, cosa que dona visibilitat diària al projecte ambiental del centre.",
+    "funcionalitats": [
+      "Panells editables des del navegador: capçalera i blocs amb títol, text i imatge",
+      "Un panell per pantalla, o el mateix compartit entre diverses",
+      "Publicació programada: cada bloc apareix i caduca sol per data d'inici i de fi",
+      "Rotació de continguts: alterna el panell amb qualsevol altra web del centre, amb els segons de cadascuna",
+      "Redacció assistida que reescriu el text perquè es llegeixi de lluny, amb comptador de caràcters",
+      "Indicadors de sostenibilitat a la capçalera: aigua, reciclatge, energia, arbres i CO₂",
+      "Vista prèvia a mida real abans de publicar",
+      "Funciona en qualsevol monitor o televisor amb Android 8.0 o superior",
+      "Instal·lació per fitxer descarregable, també amb un llapis USB",
+      "Usuaris propis del centre amb gestió des del mateix tauler"
+    ],
+    "faq": [
+      {
+        "p": "Cal comprar maquinari especial?",
+        "r": "No. Serveix qualsevol monitor o televisor amb Android 8.0 o superior. Si el que teniu no en porta, un reproductor Android connectat per HDMI ja fa la feina. Els panells estan pensats per a pantalla vertical, però també funcionen en horitzontal."
+      },
+      {
+        "p": "Qui pot publicar?",
+        "r": "Els usuaris que el centre doni d'alta al tauler. La idea és que secretaria, cada departament i direcció publiquin el que els toca sense demanar torn a ningú."
+      },
+      {
+        "p": "Cal anar a la pantalla per actualitzar-la?",
+        "r": "No. El reproductor consulta el servidor cada pocs minuts i es refresca sol. Un cop instal·lat, no cal tornar-hi mai."
+      },
+      {
+        "p": "Es pot mostrar una altra web a la mateixa pantalla?",
+        "r": "Sí. Cada pantalla té una llista ordenada d'adreces amb els segons de cadascuna, i pot barrejar el panell de Kiosko amb qualsevol altra web del centre."
+      },
+      {
+        "p": "Com comença un centre?",
+        "r": "Demana l'alta des d'aquesta web. Us creem el compte del centre al gestor i, a partir d'aquí, vosaltres mateixos hi doneu d'alta la resta d'usuaris i configureu les pantalles."
+      },
+      {
+        "p": "Té cost?",
+        "r": "No. És gratuït per a centres educatius."
+      }
+    ],
+    "relacionats": [
+      "eltaulell",
+      "aules-sostenibles",
+      "radio-escolar"
+    ],
+    "seo": {
+      "title": "Kiosko: cartelleria digital per a escoles i instituts",
+      "description": "Converteix els monitors del centre en taulers d'anuncis digitals gestionats des del navegador. Publicació programada, rotació de webs i instal·lació en qualsevol pantalla Android.",
+      "keywords": "cartelleria digital escola, pantalles informatives centre educatiu, tauler d'anuncis digital, digital signage escola, kiosko.aulaia.cat"
+    }
+  },
+  {
     "slug": "eltaulell",
     "nom": "El Taulell",
     "categoria": "Comunicació i acció tutorial",

@@ -34,12 +34,12 @@ export default function AccessosPage() {
       </div>
 
       <div className="panel-avis panel-avis-info">
-        <strong>Per què no cal cap contrasenya</strong>
+        <strong>Com s&apos;hi entra</strong>
         <p>
-          Cap de les apps demana contrasenya: totes identifiquen amb el compte de Google o amb un
-          enllaç enviat al correu. Si ja tens la sessió de Google oberta al navegador, aquests
-          enllaços entren directament. Si no la tens, et demanarà el compte una vegada i les altres
-          apps ja no.
+          Gairebé totes les apps identifiquen amb el compte de Google o amb un enllaç enviat al
+          correu: si ja tens la sessió de Google oberta al navegador, entren directament, i si no,
+          et demanarà el compte una vegada i les altres apps ja no. L&apos;excepció és Kiosko, que té
+          usuari i contrasenya propis perquè les pantalles no van lligades a cap compte personal.
         </p>
       </div>
 

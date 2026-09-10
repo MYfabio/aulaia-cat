@@ -21,7 +21,7 @@ nova de Claude Code.
 | KIPUK.ES | `kipuk-es` | — (local, sense remot) | kipuk.es (previst) | MVP amb dades sintètiques |
 | MatEscac | `Matescac` | MYfabio/matescac | matescac.aulaia.cat | producció · Railway `matescac` (web + Postgres), desplega per GitHub `main` |
 | AulaAcull.cat | `Aula de acollida/aula_acollida_pack_20260829/ava` | MYfabio/aulaacull | aulaacull.aulaia.cat | construcció · Railway `aulaacull` (web), desplega per `main`; centre de demostració |
-| Pantalles | `Pantallas_web` | MYfabio/pantalles | — | **pendent de desplegar** |
+| Kiosko (abans «Pantalles») | `Pantallas_web` | MYfabio/pantalles | kiosko.aulaia.cat | producció · Railway `pantalles`, desplega per `main`; login propi amb contrasenya |
 | Kipuk (demo antiga) | `Kipuk` | MYfabio/kipuk | — | obsolet, no s'hi treballa |
 
 Altres carpetes a `APPS` sense fitxa encara: `Aula de acollida`, `diedrico`,
