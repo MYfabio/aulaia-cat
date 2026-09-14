@@ -4,14 +4,100 @@
     {
       "name": "ava",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "dev", "--prefix", "C:/Users/super/Desktop/APPS/AULADE~1/aula_acollida_pack_20260829/ava"],
+      "runtimeArgs": [
+        "run",
+        "dev",
+        "--prefix",
+        "C:/Users/super/Desktop/APPS/AULADE~1/aula_acollida_pack_20260829/ava"
+      ],
       "port": 3000
     },
     {
       "name": "diedric3d-web-3212",
       "runtimeExecutable": "pnpm",
-      "runtimeArgs": ["-C", "C:/Users/super/Desktop/APPS/diedrico/diedric3d/apps/web", "exec", "next", "dev", "-p", "3212"],
+      "runtimeArgs": [
+        "-C",
+        "C:/Users/super/Desktop/APPS/diedrico/diedric3d/apps/web",
+        "exec",
+        "next",
+        "dev",
+        "-p",
+        "3212"
+      ],
       "port": 3212
+    },
+    {
+      "name": "dictatsia",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev",
+        "--prefix",
+        "C:/Users/super/Desktop/APPS/ditat",
+        "--",
+        "-p",
+        "3210"
+      ],
+      "port": 3210
+    },
+    {
+      "name": "dictatsia-3216",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev",
+        "--prefix",
+        "C:/Users/super/Desktop/APPS/ditat",
+        "--",
+        "-p",
+        "3216"
+      ],
+      "port": 3216
+    },
+    {
+      "name": "matescac",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev",
+        "--prefix",
+        "C:/Users/super/Desktop/APPS/Matescac"
+      ],
+      "port": 3214
+    },
+    {
+      "name": "typeedu",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev",
+        "--prefix",
+        "C:/Users/super/Desktop/APPS/mecanografia/typeedu",
+        "--",
+        "--port",
+        "3220"
+      ],
+      "port": 3220
+    },
+    {
+      "name": "chefboss-api",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "--env-file=C:/Users/super/Desktop/APPS/Chefboss/backend/.env.local",
+        "C:/Users/super/Desktop/APPS/Chefboss/backend/src/server.js"
+      ],
+      "port": 3100
+    },
+    {
+      "name": "chefboss-web",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev",
+        "--prefix",
+        "C:/Users/super/Desktop/APPS/Chefboss/frontend"
+      ],
+      "port": 5173
     }
   ]
 }

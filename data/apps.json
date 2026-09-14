@@ -864,13 +864,13 @@
   },
   {
     "slug": "undirlaflota",
-    "nom": "Undirlaflota",
+    "nom": "Enfonsar la flota 3D",
     "categoria": "Matemàtiques i dibuix tècnic",
     "estat": "desenvolupament",
     "estatText": "En desenvolupament, en proves a l'Escola Industrial",
     "icona": "🫧",
-    "domini": "undirlaflota.cat",
-    "url": "https://undirlaflota.cat",
+    "domini": "enfonsarlaflota.aulaia.cat",
+    "url": "https://enfonsarlaflota.aulaia.cat",
     "idiomes": [
       "Català",
       "Castellà",
@@ -925,7 +925,7 @@
     "seo": {
       "title": "Undirlaflota: batalla naval 3D per aprendre coordenades i sistema dièdric a l'ESO",
       "description": "Joc educatiu de batalla naval en 3D: coordenades cartesianes (x, y, z), sistema dièdric i estratègia per a 3r i 4t d'ESO. Accés amb codi de classe.",
-      "keywords": "batalla naval 3D, coordenades cartesianes, sistema dièdric, dibuix tècnic ESO, matemàtiques 3D, undirlaflota.cat"
+      "keywords": "batalla naval 3D, coordenades cartesianes, sistema dièdric, dibuix tècnic ESO, matemàtiques 3D, enfonsarlaflota.aulaia.cat"
     }
   }
 ]
