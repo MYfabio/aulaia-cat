@@ -872,26 +872,29 @@
     "domini": "undirlaflota.cat",
     "url": "https://undirlaflota.cat",
     "idiomes": [
-      "Català"
+      "Català",
+      "Castellà",
+      "Anglès"
     ],
     "publics": [
       "Secundària"
     ],
     "centre": null,
-    "resum": "Joc de batalla naval 3D per aprendre coordenades cartesianes i sistema dièdric a l'ESO: la guerra submarina en 3D.",
-    "descripcio": "Undirlaflota és un joc d'enfonsar la flota en tres dimensions. El mar és un grid de 10 × 10 × 5 cel·les on els portaavions i les fragates naveguen a la superfície i els submarins s'amaguen a dos nivells de profunditat. Cada tret és una coordenada (x, y, z) i cada arma té un abast diferent: el torpede arriba a qualsevol profunditat i l'atac aeri només toca la superfície. La pantalla té dos visors 3D simètrics, la flota pròpia i el grid d'atac, amb un panell de vistes dièdriques (planta, alçat i perfil) que ajuda a visualitzar la cel·la apuntada. Es pot jugar contra l'ordinador, a dos en el mateix dispositiu o en línia amb la classe, i l'accés és amb codi de classe, sense contrasenyes. En acabar, l'app analitza la precisió, els nivells explorats i el patró d'atac de cada alumne.",
+    "resum": "Joc de batalla naval 3D amb vaixells, submarins i avions per aprendre coordenades cartesianes i sistema dièdric a l'ESO.",
+    "descripcio": "Undirlaflota és un joc d'enfonsar la flota en tres dimensions. El mar és un grid de 10 × 10 × 5 cel·les on els portaavions i les fragates naveguen a la superfície, els submarins s'amaguen a dos nivells de profunditat i els caces i bombarders volen a dos nivells d'altura. Cada tret és una coordenada (x, y, z) i cada arma té un abast diferent: el torpede toca la superfície i el fons marí, i l'atac aeri toca la superfície i l'aire. La pantalla té dos visors 3D simètrics, la flota pròpia i el grid d'atac, amb un panell de vistes dièdriques (planta, alçat i perfil) que ajuda a visualitzar la cel·la apuntada. Es pot jugar contra l'ordinador, a dos en el mateix dispositiu o en línia amb la classe, i l'accés és amb codi de classe, sense contrasenyes. En acabar, l'app analitza la precisió, els nivells explorats i el patró d'atac de cada alumne.",
     "seoLlarg": "La batalla naval clàssica ja és un exercici de coordenades en dues dimensions; Undirlaflota hi afegeix la profunditat i converteix cada partida en una pràctica de geometria a l'espai. L'alumnat de 3r i 4t d'ESO treballa coordenades cartesianes (x, y, z), distàncies entre punts, plans paral·lels i el sistema dièdric del dibuix tècnic: planta, alçat i perfil apareixen en viu mentre s'apunta. Les restriccions del joc (submarins només sota l'aigua, atacs aeris només a la superfície, 26 trets per a 500 cel·les) obliguen a triar quin pla explorar i amb quina arma, la mateixa decisió que es pren en dibuix tècnic en escollir una vista. L'app està alineada amb el Decret 175/2022 en els sabers de geometria de Matemàtiques i de sistemes de representació d'Educació Visual i Plàstica, i inclou una seqüència didàctica de tres sessions, rúbrica i adaptacions.",
     "funcionalitats": [
-      "Grid 3D de 10 × 10 × 5 amb superfície, profunditat i aire",
+      "Grid 3D de 10 × 10 × 5 amb tres capes: aire, superfície i profunditat",
       "Dos visors 3D isomètrics: flota pròpia i grid d'atac",
       "Vistes dièdriques (planta, alçat, perfil) de la cel·la apuntada",
-      "7 vaixells: portaavions, fragates i submarins amb vida per cel·la",
+      "10 unitats: portaavions, fragates, submarins, caces i bombarder amb vida per cel·la",
       "Dues armes amb abast diferent: torpedes i atacs aeris",
       "Modes: contra l'ordinador, dos jugadors al mateix dispositiu i en línia per classe",
       "Accés amb codi de classe, sense contrasenyes",
       "Pantalla final amb precisió, nivells explorats, patró d'atac i replay",
       "Tutorial interactiu amb explorador de coordenades i calculadora de distàncies",
-      "Rànquing per classe i partides memorables"
+      "Rànquing per classe i partides memorables",
+      "Interfície en català, castellà i anglès"
     ],
     "faq": [
       {
