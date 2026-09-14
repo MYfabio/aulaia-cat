@@ -525,6 +525,80 @@
     }
   },
   {
+    "slug": "enfonsar-la-flota",
+    "nom": "Enfonsar la flota",
+    "categoria": "Geometria a l'espai i dibuix tècnic",
+    "estat": "produccio",
+    "estatText": "En producció, per a 3r i 4t d'ESO",
+    "icona": "🚢",
+    "domini": "enfonsarlaflota.aulaia.cat",
+    "url": "https://enfonsarlaflota.aulaia.cat",
+    "idiomes": [
+      "Català",
+      "Castellà",
+      "Anglès"
+    ],
+    "publics": [
+      "Secundària",
+      "Batxillerat"
+    ],
+    "centre": null,
+    "altaManual": true,
+    "resum": "El joc de batalla naval de tota la vida, amb profunditat: cada tret és un punt (x, y, z), i les vistes del sistema dièdric apareixen en viu mentre s'apunta.",
+    "descripcio": "Undirlaflota, l'aplicació que hi ha darrere, converteix la quadrícula clàssica en un bloc de 10 per 10 per 5 nivells. Els avions volen als nivells de sobre, els vaixells naveguen a la superfície i els submarins s'amaguen a sota; els torpedes arriben a la superfície i avall, els atacs aeris a la superfície i amunt. Amb vint torpedes i deu atacs aeris per a cinc-centes cel·les, disparar a l'atzar és perdre, i la partida es converteix en un problema de patrons de cerca i de probabilitat. Dos visors en tres dimensions mostren la flota pròpia amb els impactes rebuts i el bloc d'atac amb les coordenades en viu; al costat, la planta, l'alçat i el perfil de la cel·la apuntada. Es juga contra l'ordinador, a dos en un mateix dispositiu o en línia amb la classe, i hi ha un tutorial que no guarda res. L'alumnat entra amb un codi de classe i un nom, sense contrasenya.",
+    "seoLlarg": "A 3r d'ESO la quadrícula ja se sap. El que costa és el salt a l'espai: acceptar que un punt té tres coordenades, que una vista d'un objecte en perd una i que amb dues vistes es reconstrueix el que no es veu. Enfonsar la flota en 3D fa que aquest salt tingui conseqüències dins d'un joc que tothom coneix. La tercera coordenada no és decorativa: decideix quina arma serveix, quin nivell val la pena explorar i quina hipòtesi cal tenir sobre el que hi ha a sota. Mentre l'alumne apunta, les tres projeccions del sistema dièdric es dibuixen soles, així que la planta, l'alçat i el perfil deixen de ser una convenció dels plànols i passen a ser la manera de trobar el submarí.\n\nLa munició limitada fa la resta. Un portaavions ocupa cinc cel·les en línia, i un patró que dispari una de cada cinc columnes el troba segur; les unitats de tres i de dues cel·les demanen patrons més densos. Quants trets calen per cobrir un pla, quina probabilitat té el primer tret: són preguntes de recompte i de probabilitat que surten de voler guanyar, no d'un enunciat. La pantalla final diu la precisió, les columnes explorades, els nivells usats i si el patró ha estat sistemàtic, exploratori o mixt.\n\nEl projecte inclou una seqüència de tres sessions per a Matemàtiques i Educació Visual i Plàstica, amb consignes de llibreta (anotar cada tret com a punt, dibuixar planta i alçat a mà, deduir coordenades a partir de dues vistes) i una rúbrica de quatre nivells. Les evidències automàtiques es guarden per codi de classe; la nota surt del treball de l'alumne. Alineat amb el Decret 175/2022 de Catalunya i disponible en català, castellà i anglès.",
+    "funcionalitats": [
+      "Bloc de 10 × 10 × 5 amb tres capes: avions a l'aire, vaixells a la superfície, submarins sota l'aigua",
+      "Deu unitats per flota: portaavions, fragates, submarins, bombarder i caces",
+      "Cada tret és un punt (x, y, z); els torpedes i els atacs aeris arriben a nivells diferents",
+      "Munició limitada: vint torpedes i deu atacs aeris per partida",
+      "Dos visors 3D: la flota pròpia amb els impactes rebuts i el bloc d'atac amb coordenades en viu",
+      "Planta, alçat i perfil de la cel·la apuntada, en viu, com al dibuix tècnic",
+      "Modes: contra l'ordinador, dos jugadors al mateix dispositiu, en línia amb la classe i tutorial",
+      "Pantalla de resultats amb precisió, columnes explorades, nivells usats i tipus de patró d'atac",
+      "Rànquing de la classe per codi",
+      "Accés amb codi de classe i nom, sense contrasenya; el tutorial no guarda res",
+      "Seqüència didàctica de tres sessions i rúbrica per a Matemàtiques i Dibuix tècnic",
+      "Interfície en català, castellà i anglès"
+    ],
+    "faq": [
+      {
+        "p": "Per a quins cursos està pensat?",
+        "r": "Per a 3r i 4t d'ESO, on es treballen les coordenades a l'espai i el sistema dièdric. També serveix a 2n d'ESO com a primera aproximació i a 1r de batxillerat tecnològic com a repàs."
+      },
+      {
+        "p": "Cal crear comptes a l'alumnat?",
+        "r": "No. S'hi entra amb un codi de classe i un nom, sense contrasenya. El tutorial s'obre sense res i no guarda cap dada."
+      },
+      {
+        "p": "Com comença un centre?",
+        "r": "Demana l'alta des d'aquesta web. Avui el codi de classe del vostre grup el creem nosaltres i t'avisem quan estigui llest. Mentrestant, el tutorial i les partides contra l'ordinador funcionen sense codi."
+      },
+      {
+        "p": "Què guarda de cada partida?",
+        "r": "Per codi de classe: precisió, trets, unitats enfonsades, nivells usats i tipus de patró d'atac. Res més. La nota surt de la llibreta, de la fitxa de coordenades i de la reflexió escrita, no del joc."
+      },
+      {
+        "p": "Quant de temps demana?",
+        "r": "La seqüència proposada són tres sessions: tutorial i partida contra l'ordinador, partida a dos amb vistes dièdriques a la llibreta, i anàlisi de resultats amb un repte d'estratègia."
+      },
+      {
+        "p": "Hi ha adaptacions?",
+        "r": "Per a reforç: tutorial sense límit de partides, vistes dièdriques sempre visibles i començar amb l'altura fixada a zero. Per a ampliació: calcular la probabilitat d'encert del primer tret o justificar per què el patró de cada cinc columnes és el mínim per a un portaavions."
+      }
+    ],
+    "relacionats": [
+      "diedric3d",
+      "matescac",
+      "typeedu"
+    ],
+    "seo": {
+      "title": "Enfonsar la flota en 3D: coordenades a l'espai i sistema dièdric per a l'ESO",
+      "description": "Joc de batalla naval en tres dimensions per a 3r i 4t d'ESO. Cada tret és un punt (x, y, z), les vistes dièdriques apareixen en viu i la munició limitada converteix la partida en un problema de patrons i probabilitat.",
+      "keywords": "enfonsar la flota 3D, coordenades a l'espai ESO, sistema dièdric joc, batalla naval educativa, geometria a l'espai, dibuix tècnic ESO, enfonsarlaflota.aulaia.cat"
+    }
+  },
+  {
     "slug": "eltaulell",
     "nom": "El Taulell",
     "categoria": "Comunicació i acció tutorial",

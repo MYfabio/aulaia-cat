@@ -49,6 +49,13 @@
     "nota": "L'única app que no va amb el compte de Google: les pantalles no estan lligades a cap persona. Els usuaris del centre es gestionen al mateix tauler."
   },
   {
+    "slug": "enfonsar-la-flota",
+    "url": "https://enfonsarlaflota.aulaia.cat/login",
+    "tipus": "dins",
+    "acces": "Codi de classe i nom, sense contrasenya",
+    "nota": "No hi ha panell de docent. Els codis de classe es creen a la taula classroom_codes de Postgres o a la variable DEMO_CLASS_CODES del servei web a Railway (projecte undirlaflota). L'entrada amb Google no està activada a producció."
+  },
+  {
     "slug": "eltaulell",
     "url": "https://eltaulell.aulaia.cat",
     "tipus": "construccio",

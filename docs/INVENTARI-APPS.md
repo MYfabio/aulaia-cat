@@ -22,6 +22,7 @@ nova de Claude Code.
 | MatEscac | `Matescac` | MYfabio/matescac | matescac.aulaia.cat | producció · Railway `matescac` (web + Postgres), desplega per GitHub `main` |
 | AulaAcull.cat | `Aula de acollida/aula_acollida_pack_20260829/ava` | MYfabio/aulaacull | aulaacull.aulaia.cat | construcció · Railway `aulaacull` (web), desplega per `main`; centre de demostració |
 | Kiosko (abans «Pantalles») | `Pantallas_web` | MYfabio/pantalles | kiosko.aulaia.cat | producció · Railway `pantalles`, desplega per `main`; login propi amb contrasenya |
+| Enfonsar la flota (Undirlaflota) | `Undirlaflota` | MYfabio/undirlaflota | enfonsarlaflota.aulaia.cat | producció · Railway `undirlaflota`, desplega per `main`; codis de classe a la BD o a DEMO_CLASS_CODES; undirlaflota.cat no resol |
 | Kipuk (demo antiga) | `Kipuk` | MYfabio/kipuk | — | obsolet, no s'hi treballa |
 
 Altres carpetes a `APPS` sense fitxa encara: `Aula de acollida`, `diedrico`,
