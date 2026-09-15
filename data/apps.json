@@ -599,6 +599,78 @@
     }
   },
   {
+    "slug": "poetes-vives",
+    "nom": "El Club de les Poetes Vives",
+    "categoria": "Poesia i escriptura creativa",
+    "estat": "produccio",
+    "estatText": "En producció · una instal·lació per centre, avui a l'Escola Industrial",
+    "icona": "🪶",
+    "domini": "poetes.aulaia.cat",
+    "url": "https://web-production-531662.up.railway.app",
+    "idiomes": [
+      "Català"
+    ],
+    "publics": [
+      "Secundària",
+      "Batxillerat"
+    ],
+    "centre": null,
+    "altaManual": true,
+    "resum": "Club de lectura i escriptura de poesia per a instituts: l'alumnat escriu, publica sense signar entre iguals i escolta el poema llegit en veu alta. El professorat revisa abans que res surti al mur.",
+    "descripcio": "El Club de les Poetes Vives parteix d'una constatació: a quinze anys, signar un poema sincer davant de la classe és car. Per això el mur del centre publica amb pseudònim, mai amb el nom, i és privat del centre. L'alumnat escriu en un editor net, amb tipografia i disposició a triar, començant d'una forma clàssica (haiku, sonet, romanç, acròstic, dècima, cal·ligrama) o de zero. Una lectora atenta, feta amb intel·ligència artificial, fa preguntes al marge: no reescriu ni corregeix mai, i la decisió és sempre de qui escriu. Després es tria veu i ritme de lectura, perquè decidir on respira un poema és entendre'l. El professorat llegeix cada poema abans que surti al mur; si cal una conversa, es fa amb discreció. Al mur, el poema surt com a peça gràfica amb pseudònim i reproductor, i qui l'ha escrit el pot retirar quan vulgui. En aquest club el femení és el genèric: quan es diu «les poetes», hi és tothom.",
+    "seoLlarg": "Un taller de poesia a l'institut topa sempre amb el mateix mur: l'alumnat no escriu de veritat si sap que ho llegirà la classe amb el seu nom al costat. El Club de les Poetes Vives resol la tensió separant dues coses que solen anar juntes. Entre iguals, l'anonimat és total: al mur només hi ha el pseudònim, i cap pantalla pública no diu mai qui ha escrit què. Per al sistema, en canvi, l'autoria existeix sempre: el professorat pot consultar-la quan cal, i cada consulta queda registrada. És la diferència entre protegir qui escriu i deixar-lo sol.\n\nLa intel·ligència artificial hi té un paper deliberadament petit. Actua com una lectora que fa preguntes al marge sobre la mètrica, les repeticions o la veu del poema, i no reescriu, no proposa versions ni corregeix. Abans de la revisió, marca i ordena els poemes segons el que hi veu, però qui aprova és sempre una docent. Si detecta un risc alt, el poema no es rebutja en silenci: s'escala a tutoria o orientació, i qui escriu només veu «en revisió». La poesia fosca segueix el camí normal. Rebutjar un poema exigeix una nota a qui l'ha escrit. A la IA només hi va el text del poema: cap nom, cap correu, cap dada de la persona, i amb un límit d'ús per persona i dia. El comptador de síl·labes mètriques és local i no passa per cap model.\n\nEl temari de formes poètiques inclou el haiku, el sonet, el romanç, l'acròstic, la dècima, el cal·ligrama i el vers lliure, i els exemples que cita són tots de domini públic: Horaci, Whitman, Thoreau, Verdaguer, Maragall, Salvat-Papasseit. La resta de la poesia la posa l'alumnat. Cada centre té la seva pròpia instal·lació, lligada al domini de Google Workspace del centre: cap altre compte hi entra, i el mur no es comparteix amb ningú més.",
+    "funcionalitats": [
+      "Editor de poemes amb tipografia, mida i disposició a triar; set formes com a punt de partida o vers lliure",
+      "Temari de formes poètiques: haiku, sonet, romanç, acròstic, dècima, cal·ligrama i vers lliure",
+      "Comptador de síl·labes mètriques, local i sense IA",
+      "Una lectora amb IA que només fa preguntes al marge: mai reescriu, proposa versions ni corregeix",
+      "Veu i ritme de lectura a triar; el poema s'escolta al mur",
+      "Revisió del professorat abans de publicar, amb registre de qui aprova què i quan",
+      "Escalació a tutoria o orientació quan hi ha risc alt; rebutjar exigeix una nota a qui escriu",
+      "Mur privat del centre amb pseudònim i reproductor, mai amb el nom; el poema es pot retirar quan es vulgui",
+      "Cap dada personal a la IA: només el text del poema, amb límit d'ús per persona i dia",
+      "Entrada amb el compte de Google del centre; rols de docent, tutoria i orientació des de coordinació",
+      "Preferències d'accessibilitat aplicades al servidor",
+      "Exemples de poesia només de domini públic"
+    ],
+    "faq": [
+      {
+        "p": "Els poemes són anònims?",
+        "r": "Entre iguals, sí: al mur només hi ha el pseudònim. Per al sistema, no: l'autoria existeix sempre, el professorat pot consultar-la quan cal, i cada consulta queda registrada."
+      },
+      {
+        "p": "La intel·ligència artificial reescriu els poemes?",
+        "r": "No. Només fa preguntes al marge. Abans de la revisió marca i ordena els poemes, però qui aprova és sempre una docent."
+      },
+      {
+        "p": "Què passa amb un poema que preocupa?",
+        "r": "Si la IA hi veu un risc alt, s'escala a tutoria o orientació, mai es rebutja en silenci. Qui escriu veu «en revisió», com amb qualsevol altre poema. La poesia fosca segueix el camí normal."
+      },
+      {
+        "p": "Quines dades van a la IA?",
+        "r": "Només el text del poema. Cap nom, cap correu, cap dada de la persona. Hi ha un límit d'ús per persona i dia."
+      },
+      {
+        "p": "Com comença un centre?",
+        "r": "Cada centre té la seva pròpia instal·lació, lligada al seu domini de Google Workspace. Demana l'alta des d'aquesta web i la preparem; t'avisem quan estigui a punt. Avui la instal·lació en marxa és la de l'Escola Industrial."
+      },
+      {
+        "p": "Per què «les poetes»?",
+        "r": "En aquest club el femení és el genèric. Quan es diu «les poetes», hi som totes, tots i tothom."
+      }
+    ],
+    "relacionats": [
+      "dictats",
+      "radio-escolar",
+      "pla-lector"
+    ],
+    "seo": {
+      "title": "El Club de les Poetes Vives: escriure i publicar poesia a l'institut sense signar",
+      "description": "Club de lectura i escriptura de poesia per a instituts. L'alumnat escriu, una IA només fa preguntes, el professorat revisa i el poema surt al mur del centre amb pseudònim i veu.",
+      "keywords": "poesia a l'institut, escriptura creativa ESO, club de lectura poesia, taller de poesia secundària, formes poètiques, poetes vives, aulaia.cat"
+    }
+  },
+  {
     "slug": "eltaulell",
     "nom": "El Taulell",
     "categoria": "Comunicació i acció tutorial",

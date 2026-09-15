@@ -56,6 +56,13 @@
     "nota": "No hi ha panell de docent. Els codis de classe es creen a la taula classroom_codes de Postgres o a la variable DEMO_CLASS_CODES del servei web a Railway (projecte undirlaflota). L'entrada amb Google no està activada a producció."
   },
   {
+    "slug": "poetes-vives",
+    "url": "https://web-production-531662.up.railway.app/coordinacio",
+    "tipus": "ruta",
+    "acces": "Google Workspace del centre (només escolaindustrial.org) o correu de SUPERADMIN_EMAILS",
+    "nota": "Una instal·lació per centre: el domini de Google és a src/lib/siteConfig.ts. La coordinació dona els rols de docent, tutoria i orientació a /coordinacio. poetes.aulaia.cat és el domini del servei a Railway però no té CNAME a Cloudflare: de moment només respon l'adreça de Railway."
+  },
+  {
     "slug": "eltaulell",
     "url": "https://eltaulell.aulaia.cat",
     "tipus": "construccio",

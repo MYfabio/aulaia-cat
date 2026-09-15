@@ -23,6 +23,7 @@ nova de Claude Code.
 | AulaAcull.cat | `Aula de acollida/aula_acollida_pack_20260829/ava` | MYfabio/aulaacull | aulaacull.aulaia.cat | construcció · Railway `aulaacull` (web), desplega per `main`; centre de demostració |
 | Kiosko (abans «Pantalles») | `Pantallas_web` | MYfabio/pantalles | kiosko.aulaia.cat | producció · Railway `pantalles`, desplega per `main`; login propi amb contrasenya |
 | Enfonsar la flota (Undirlaflota) | `Undirlaflota` | MYfabio/undirlaflota | enfonsarlaflota.aulaia.cat | producció · Railway `undirlaflota`, desplega per `main`; codis de classe a la BD o a DEMO_CLASS_CODES; undirlaflota.cat no resol |
+| El Club de les Poetes Vives | `clubpoetasvius` | **— (sense git)** | poetes.aulaia.cat (a Railway, sense DNS); viu a web-production-531662.up.railway.app | producció · Railway `clubpoetesvives` (web + Postgres), desplega amb `railway up`; una instal·lació per centre (domini a siteConfig.ts) |
 | Kipuk (demo antiga) | `Kipuk` | MYfabio/kipuk | — | obsolet, no s'hi treballa |
 
 Altres carpetes a `APPS` sense fitxa encara: `Aula de acollida`, `diedrico`,
@@ -100,6 +101,8 @@ Railway.**
    els correus surten des de `onboarding@resend.dev` fins que s'afegeixi.)
 7. `aulaia-cat` té git local però cap remot: cal crear-lo **privat** a GitHub
    (conté `data/accessos.json`).
+8. `clubpoetasvius` no té git: cal `git init` i repositori **privat** a GitHub. Codi en una sola còpia.
+9. Crear el CNAME `poetes` → Railway a Cloudflare (DNS only) i el TXT de verificació; després canviar `AUTH_URL`, el redirect URI de Google i la `url` de la fitxa al catàleg.
 
 ## Feina feta el 04/09/2026
 
