@@ -281,7 +281,7 @@
     "altaManual": true,
     "resum": "Programari de biblioteca escolar i seguiment lector: catàleg de les biblioteques d'aula, historial de lectura de cada alumne i estadístiques per al claustre.",
     "descripcio": "El Pla Lector cobreix la part pràctica del pla lector de centre: quins llibres hi ha, qui llegeix què i com evoluciona la competència lectora de l'alumnat. Cada exemplar es cataloga amb el grup o l'aula on és físicament, de manera que l'alumnat troba els llibres que té a tocar i no només els de la biblioteca central. L'accés es fa amb el compte de Google del centre, sense crear contrasenyes noves, i només hi entren les persones donades d'alta prèviament. El fons i les llistes d'usuaris s'importen des d'un full de càlcul amb una plantilla, així que un centre amb l'inventari en Excel pot tenir el catàleg carregat el mateix dia.",
-    "seoLlarg": "La competència lectora és la base de tot l'aprenentatge, però el pla lector d'un centre sovint es queda en un document que ningú no consulta. El Pla Lector ataca la part operativa: el catàleg real, els préstecs reals i les dades reals de lectura. La decisió de disseny que més el defineix és què veu el professorat i què no: pot consultar quants llibres ha acabat cada alumne, però no les valoracions ni les opinions personals que hi escriu. És una tria deliberada perquè llegir no es visqui com una avaluació encoberta. En privadesa, cada centre té la seva pròpia instal·lació i la seva pròpia base de dades, i l'accés queda restringit al domini de correu del centre: les dades d'un centre no es barregen amb les d'un altre. Pensat per a escoles de primària, instituts de secundària i equips de biblioteca escolar.",
+    "seoLlarg": "La competència lectora és la base de tot l'aprenentatge, però el pla lector d'un centre sovint es queda en un document que ningú no consulta. El Pla Lector ataca la part operativa: el catàleg real, els préstecs reals i les dades reals de lectura. La decisió de disseny que més el defineix és què veu el professorat i què no: pot consultar què ha llegit cada alumne, la valoració i l'opinió que n'ha escrit, i l'alumne ho sap quan l'escriu; els companys no la veuen mai. És una tria deliberada perquè l'opinió sigui una conversa amb el docent i no una exposició davant del grup. En privadesa, cada centre té la seva pròpia instal·lació i la seva pròpia base de dades, i l'accés queda restringit al domini de correu del centre: les dades d'un centre no es barregen amb les d'un altre. Pensat per a escoles de primària, instituts de secundària i equips de biblioteca escolar.",
     "funcionalitats": [
       "Catàleg de les biblioteques d'aula, no només de la biblioteca central",
       "Cada exemplar associat al grup o aula on és físicament",
@@ -289,7 +289,7 @@
       "Estadístiques de lectura per al claustre",
       "Accés amb el compte de Google del centre, sense contrasenyes noves",
       "Importació del fons i dels usuaris des d'un full de càlcul",
-      "Les valoracions de l'alumnat són privades: el professorat no les veu",
+      "Les opinions de l'alumnat les llegeix el professorat, i l'alumne ho sap en escriure-les; els companys no les veuen",
       "Instal·lació i base de dades independents per a cada centre"
     ],
     "faq": [
@@ -303,7 +303,7 @@
       },
       {
         "p": "Qui pot veure què ha llegit un alumne?",
-        "r": "El professorat veu quants llibres ha acabat cada alumne, però no les valoracions ni les opinions personals que hi escriu. És una decisió deliberada perquè llegir no es visqui com una avaluació."
+        "r": "El professorat veu què ha llegit cada alumne, la valoració i l'opinió que n'ha escrit, i l'alumne ho sap quan escriu: el formulari ho diu. Els companys no veuen mai les opinions dels altres."
       },
       {
         "p": "Quant es triga a posar-lo en marxa?",
