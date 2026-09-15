@@ -7,6 +7,7 @@ etiquetes: [Matemàtiques, Escacs, Pensament computacional, ESO]
 apps: [matescac, enfonsar-la-flota, diedric3d]
 imatge: /blog/el-tauler-es-un-pla-cartesia.jpg
 imatgeAlt: Una aula d'institut amb l'alumnat jugant partides d'escacs per parelles; sobre el tauler del primer pla s'hi projecten eixos de coordenades i figures geomètriques
+imatgeCredit: Imatge generada amb intel·ligència artificial
 ---
 
 A Catalunya fa més de deu anys que hi ha escacs a l'escola, i l'argument és sempre el mateix: desenvolupa el raonament, la concentració, el pensament lògic. És veritat. També és el tipus d'afirmació que no es pot portar a una sessió d'avaluació, perquè no diu què ha après ningú ni com es comprova.

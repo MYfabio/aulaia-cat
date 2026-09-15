@@ -488,6 +488,9 @@ a { color: inherit; text-decoration: none; }
 .blog-relacionades h2 { font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin: 0 0 1rem; }
 
 /* La capçalera dels articles */
+.blog-figura { margin: 0 0 2.2rem; max-width: 44rem; }
+.blog-figura .blog-imatge { margin: 0; }
+.blog-peu { margin: 0.55rem 0 0; font-size: 0.8rem; color: var(--muted, #6b6b6b); }
 .blog-imatge { display: block; width: 100%; height: auto; max-width: 44rem; margin: 0 0 2.2rem; border: 1px solid var(--rule); }
 .blog-fitxa-imatge { display: block; margin: 0 0 1rem; border: 1px solid var(--rule); line-height: 0; }
 .blog-fitxa-imatge img { display: block; width: 100%; height: auto; }

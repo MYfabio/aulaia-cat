@@ -7,6 +7,7 @@ etiquetes: [Educació Física, Cohesió, Inclusió, Google Classroom]
 apps: [kipuk, aules-sostenibles, matescac]
 imatge: /blog/equips-amb-targetes-de-colors.jpg
 imatgeAlt: Un partit de bàsquet al pati d'un institut, amb cinc jugadors en acció i la resta del grup mirant des de la tanca
+imatgeCredit: Imatge generada amb intel·ligència artificial
 ---
 
 Qui ha portat una jornada esportiva al pati sap que la feina de debò no és el partit. És abans: passar llista, fer els equips, repartir les pistes, saber qui juga on, apuntar resultats en un paper que es mulla. I dins d'aquest abans, hi ha un minut que ho decideix tot: el moment de fer els equips. És on algú queda fora, on algú tria i algú és triat l'últim, i on el docent perd el control del grup abans que comenci res.

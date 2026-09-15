@@ -100,14 +100,18 @@ export default async function Article({ params }) {
       {a.imatge && (
         /* Porta l alt que hi hagi a la capçalera del fitxer, perque la imatge
            diu una cosa que el titol no diu. A l index si que va buit: alli el
-           titol es al costat i llegir-ho dues vegades nomes fa nosa. */
-        <img
-          className="blog-imatge"
-          src={a.imatge}
-          alt={a.imatgeAlt}
-          width={1200}
-          height={630}
-        />
+           titol es al costat i llegir-ho dues vegades nomes fa nosa.
+           El peu de foto diu d on surt la imatge: si es generada amb IA, es diu. */
+        <figure className="blog-figura">
+          <img
+            className="blog-imatge"
+            src={a.imatge}
+            alt={a.imatgeAlt}
+            width={1200}
+            height={630}
+          />
+          {a.imatgeCredit && <figcaption className="blog-peu">{a.imatgeCredit}</figcaption>}
+        </figure>
       )}
 
       <div className="blog-cos" dangerouslySetInnerHTML={{ __html: a.html }} />

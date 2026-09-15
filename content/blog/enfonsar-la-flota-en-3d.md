@@ -7,6 +7,7 @@ etiquetes: [Matemàtiques, Dibuix tècnic, Geometria a l'espai, ESO]
 apps: [enfonsar-la-flota, diedric3d, matescac]
 imatge: /blog/enfonsar-la-flota-en-3d.jpg
 imatgeAlt: Una flota en combat sota un cel de tempesta: destructors, un portaavions i un submarí que emergeix en primer pla
+imatgeCredit: Imatge generada amb intel·ligència artificial
 ---
 
 Enfonsar la flota és probablement el primer exercici de coordenades que fa tothom, molt abans que ningú li digui que allò són coordenades. Dius «B-7», l'altre mira la quadrícula, i la lletra i el número han fet la feina d'un parell d'eixos sense que calgui explicar res.

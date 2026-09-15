@@ -7,6 +7,7 @@ etiquetes: [Llengua i literatura, Escriptura creativa, Privacitat, ESO]
 apps: [poetes-vives, dictats, pla-lector]
 imatge: /blog/poesia-sense-signar.jpg
 imatgeAlt: Una fulla de roure seca amb una fulla pintada en aquarel·la lila al centre i un vers cal·ligrafiat al voltant, amb una ploma i un tinter al costat
+imatgeCredit: Imatge generada amb intel·ligència artificial
 ---
 
 Qui ha fet escriure poesia a una classe de 3r d'ESO sap com acaba. Es proposa un tema, es dona una forma, es deixa temps. I el que arriba és impecable i buit: catorze versos que no diuen res perquè qui els ha escrit sabia perfectament que la classe els llegiria amb el seu nom al costat. A quinze anys, signar un poema sincer davant dels companys és car. Massa car. Així que no es paga.
