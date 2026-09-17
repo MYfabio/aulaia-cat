@@ -1073,5 +1073,76 @@
       "description": "Joc educatiu de batalla naval en 3D: coordenades cartesianes (x, y, z), sistema dièdric i estratègia per a 3r i 4t d'ESO. Accés amb codi de classe.",
       "keywords": "batalla naval 3D, coordenades cartesianes, sistema dièdric, dibuix tècnic ESO, matemàtiques 3D, enfonsarlaflota.aulaia.cat"
     }
+  },
+  {
+    "slug": "museu-apagat",
+    "nom": "El Museu Apagat",
+    "categoria": "Educació visual i plàstica",
+    "estat": "produccio",
+    "estatText": "En producció · 1r d'ESO, en ús a l'Escola Industrial de Sabadell",
+    "icona": "🏛️",
+    "domini": "museu.aulaia.cat",
+    "url": "https://museu.aulaia.cat",
+    "idiomes": [
+      "Català"
+    ],
+    "publics": [
+      "Secundària"
+    ],
+    "centre": null,
+    "altaManual": true,
+    "resum": "Catorze missions per aprendre els elements del llenguatge visual (punt, línia, forma, textura, color i composició) amb apps de dibuix que es corregeixen soles. Sense comptes ni servidor: tot queda al navegador de cada alumne.",
+    "descripcio": "El Museu de la ciutat ha patit un apagat visual: les obres han perdut els contorns, les llums, els colors i les textures. ARCA, un petit robot restaurador, recluta la classe com a aprenents i aprenentes de restauració. Cada sessió és una missió amb nom propi: recompondre una silueta amb punts, aconseguir un gris variant la densitat, donar volum a una esfera amb trames, recrear una composició geomètrica, construir figures amb formes bàsiques, classificar textures, crear un patró sense costures, mesclar llums RGB i pigments CMY, col·locar els colors al cercle cromàtic o descobrir els enganys de la percepció. Totes les apps donen resposta immediata amb text i icona, mai només amb color. Cada missió acaba amb un qüestionari curt autocorregit, una autoavaluació i un segell al Carnet de Restaurador/a. A la missió final l'alumnat crea una obra amb un element de cada categoria, la penja a la Galeria del museu i s'emporta el dossier en PDF com a diploma. El professorat importa aquest PDF, rep una proposta de rúbrica de quatre nivells per criteri amb l'evidència trobada, la revisa, la confirma i genera el document d'avaluació. Cada sessió porta una pista recuperada del museu: una obra de domini públic (Seurat, Van Gogh, Mondrian, Kandinsky, Cézanne, Morris, Gauguin) amb una biografia breu.",
+    "seoLlarg": "Els elements del llenguatge visual són el primer bloc de Visual i Plàstica a l'ESO i, alhora, el més difícil de fer tangible: es pot explicar què és la densitat d'un punt o el contrast simultani, però costa que l'alumnat ho experimenti. El Museu Apagat converteix cada concepte en una eina de dibuix amb un repte concret i una correcció automàtica que diu què falta («la zona de llum té massa trama», «més verd, menys blau»). Els reptes tècnics es corregeixen sols; els expressius i el projecte final només comproven requisits, i el judici estètic queda sempre en mans del docent.\n\nLa privacitat hi és de sèrie: no hi ha servidor, ni comptes, ni cap dada que surti del navegador. El progrés de cada alumne es guarda al seu dispositiu i viatja cap al docent dins d'un PDF que l'app sap tornar a llegir. El professorat pot decidir, missió a missió, si el repte obligatori es fa dins l'app o en paper, i en aquest cas el valora des d'una graella o important un CSV. La vista d'evolució del grup mostra el completat per missió, la distribució de nivells per criteri, qui va per sota del ritme i si cada alumne es sobrevalora o s'infravalora respecte del que realment fa. Les notes orientatives de tot el grup s'exporten en CSV i s'aboquen al full de càlcul del centre.\n\nPensada per a catorze sessions de 55 minuts a 1r d'ESO, funciona en ordinador, Chromebook i tauleta, amb tipografia gran, contrast AA i cap estat comunicat només amb color. Cada sessió té un botó per compartir-la a Google Classroom i enllaços a plantilles de Canva per a la portada del dossier i el diploma.",
+    "funcionalitats": [
+      "Catorze missions amb fil narratiu i Carnet de Restaurador/a amb segells",
+      "Tretze apps de dibuix amb autocorrecció: punts, densitat, línia expressiva, trames, composició, formes, detectiu de formes, textures, patró seamless, RGB, CMY i cercle cromàtic, contrastos",
+      "Editor de composició final amb llista de comprovació dels sis elements i Galeria del museu",
+      "Qüestionari autocorregit i autoavaluació estructurada a cada sessió",
+      "Reptes en paper valorables pel docent, amb foto d'evidència",
+      "Dossier de l'alumne en PDF que el docent importa per avaluar",
+      "Rúbrica de quatre nivells per criteri amb evidència, comentari i aspecte a millorar, nota orientativa i confirmació manual",
+      "Evolució del grup amb gràfics, alumnes per sota del ritme i autopercepció vs rendiment",
+      "Exportació de notes orientatives del grup en CSV",
+      "Tretze obres d'art de domini públic com a pistes recuperades",
+      "Botó «Comparteix a Classroom» i plantilles de Canva",
+      "Sense servidor ni comptes: totes les dades es queden al navegador"
+    ],
+    "faq": [
+      {
+        "p": "Cal crear comptes?",
+        "r": "No. L'app no té servidor ni registre. Cada alumne treballa al seu navegador i lliura el dossier en PDF al docent."
+      },
+      {
+        "p": "Com avalua el docent?",
+        "r": "Importa el PDF de cada alumne al Mode Docent. L'app detecta el nom, proposa un nivell per criteri amb l'evidència trobada i una nota orientativa; el docent la revisa i la confirma."
+      },
+      {
+        "p": "L'app avalua la qualitat artística?",
+        "r": "No. Només corregeix reptes tècnics (cobertura, densitat, posicions, colors). Els reptes expressius i l'obra final només comproven requisits; l'estètica la valora el docent."
+      },
+      {
+        "p": "Es pot fer part del treball en paper?",
+        "r": "Sí. Cada missió té una versió manual. El docent tria quines es fan en paper i les valora des d'una graella o important un CSV."
+      },
+      {
+        "p": "On són les dades dels alumnes?",
+        "r": "Al navegador de cada alumne i al del docent. Cap dada s'envia a cap servidor; convé fer còpies de seguretat des de l'app."
+      },
+      {
+        "p": "Per a quin curs és?",
+        "r": "Està adaptada a 1r d'ESO (14 sessions de 55 minuts), però els continguts serveixen per a tota l'ESO."
+      }
+    ],
+    "relacionats": [
+      "diedric3d",
+      "aules-sostenibles",
+      "poetes-vives"
+    ],
+    "seo": {
+      "title": "El Museu Apagat: els elements del llenguatge visual a 1r d'ESO amb apps que es corregeixen soles",
+      "description": "Catorze missions de Visual i Plàstica: punt, línia, forma, textura, color i composició amb apps de dibuix autocorregides, dossier en PDF i avaluació per rúbrica. Sense comptes ni servidor.",
+      "keywords": "llenguatge visual ESO, visual i plàstica 1r ESO, punt línia forma textura color, puntillisme app, cercle cromàtic interactiu, rúbrica visual i plàstica, aulaia.cat"
+    }
   }
 ]

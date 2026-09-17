@@ -59,3 +59,31 @@ i per aixo Railway va donar el nom 2rch3xlg.up.railway.app.
 
 PER DESFER-HO: tornar a posar dns97 i dns98.servidoresdns.net aqui dalt. La
 zona d'Arsys segueix intacta amb els seus nou registres.
+
+────────────────────────────────────────────────────────────────────────────
+FET: SUBDOMINI DEL CLUB DE LES POETES VIVES (creat a Cloudflare el 15 de setembre de 2026)
+
+Servei a Railway (projecte clubpoetesvives, servei web). Registres creats a Cloudflare,
+zona aulaia.cat, amb el proxy DESACTIVAT (nuvol gris, "DNS only"), com els altres
+subdominis de Railway:
+
+TIPUS  NOM                      VALOR                                                                       TTL
+CNAME  poetes                   3ohhwjuk.up.railway.app                                                     Auto
+TXT    _railway-verify.poetes   "railway-verify=b80ff3f7fcf11c1c6c0bc7c7b64bb1017b0ff1f29aa8355e0f1df1cd8a12ffc2"   Auto
+
+Despres: railway domain status 98173cab-6641-404d-8b25-4a85e35c4452 (des de la
+carpeta clubpoetasvius) fins que digui Verified, i canviar AUTH_URL a
+https://poetes.aulaia.cat.
+
+────────────────────────────────────────────────────────────────────────────
+PENDENT: SUBDOMINI D'EL MUSEU APAGAT (domini demanat a Railway el 17 de setembre de 2026)
+
+Servei a Railway (projecte museu-apagat, servei museu-apagat). Cal crear a Cloudflare,
+zona aulaia.cat, amb el proxy DESACTIVAT (nuvol gris, "DNS only"):
+
+TIPUS  NOM                     VALOR                                                                             TTL
+CNAME  museu                   g39i3vt8.up.railway.app                                                           Auto
+TXT    _railway-verify.museu   "railway-verify=0046489fe241d4b22ebf4a5cc624f2dd97cde6cb3f2c3566ff9db6ec988c8f8f"   Auto
+
+Despres: railway domain status (railway domain list --service museu-apagat) (des de la carpeta
+APPS/VIP) fins que digui Verified.
