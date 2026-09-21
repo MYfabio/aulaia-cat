@@ -24,6 +24,7 @@ nova de Claude Code.
 | Kiosko (abans «Pantalles») | `Pantallas_web` | MYfabio/pantalles | kiosko.aulaia.cat | producció · Railway `pantalles`, desplega per `main`; login propi amb contrasenya |
 | Enfonsar la flota (Undirlaflota) | `Undirlaflota` | MYfabio/undirlaflota | enfonsarlaflota.aulaia.cat | producció · Railway `undirlaflota`, desplega per `main`; codis de classe a la BD o a DEMO_CLASS_CODES; undirlaflota.cat no resol |
 | El Club de les Poetes Vives | `clubpoetasvius` | **— (sense git)** | poetes.aulaia.cat (a Railway, sense DNS); viu a web-production-531662.up.railway.app | producció · Railway `clubpoetesvives` (web + Postgres), desplega amb `railway up`; una instal·lació per centre (domini a siteConfig.ts) |
+| El Museu Apagat | `VIP` | **— (sense git)** | museu.aulaia.cat | producció · Railway `museu-apagat` (web + Postgres), desplega amb `railway up`; una instal·lació per centre |
 | Kipuk (demo antiga) | `Kipuk` | MYfabio/kipuk | — | obsolet, no s'hi treballa |
 
 Altres carpetes a `APPS` sense fitxa encara: `Aula de acollida`, `diedrico`,

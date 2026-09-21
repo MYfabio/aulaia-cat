@@ -63,6 +63,13 @@
     "nota": "Una instal·lació per centre: el domini de Google és a src/lib/siteConfig.ts. La coordinació dona els rols de docent, tutoria i orientació a /coordinacio. poetes.aulaia.cat és el domini del servei a Railway però no té CNAME a Cloudflare: de moment només respon l'adreça de Railway."
   },
   {
+    "slug": "museu-apagat",
+    "url": "https://museu.aulaia.cat/docent",
+    "tipus": "ruta",
+    "acces": "Google Workspace del centre (escolaindustrial.org); docents pels correus de TEACHER_EMAILS",
+    "nota": "Una instal·lació per centre: domini i correus de docents a les variables del servei a Railway (projecte museu-apagat). La correcció d'escanejats amb IA només funciona si hi ha ANTHROPIC_API_KEY. La carpeta local es diu VIP i no té git."
+  },
+  {
     "slug": "eltaulell",
     "url": "https://eltaulell.aulaia.cat",
     "tipus": "construccio",
