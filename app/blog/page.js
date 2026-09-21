@@ -31,7 +31,7 @@ export default function BlogIndex() {
   const nomApp = slug => apps.find(a => a.slug === slug)?.nom;
 
   return (
-    <div className="landing">
+    <div className="landing landing-ample">
       <Link href="/" className="landing-back">← Tornar a l&apos;inici</Link>
 
       <header className="blog-head">
@@ -57,6 +57,9 @@ export default function BlogIndex() {
                   <img src={a.imatge} alt="" width={1200} height={630} loading="lazy" />
                 </Link>
               )}
+              {a.etiquetes.length > 0 && (
+                <p className="blog-categoria"><span>{a.etiquetes[0]}</span></p>
+              )}
               <p className="blog-meta">
                 <time dateTime={a.data}>{dataLlegible(a.data)}</time>
                 <span aria-hidden="true"> · </span>
@@ -66,13 +69,6 @@ export default function BlogIndex() {
                 <Link href={"/blog/" + a.slug}>{a.titol}</Link>
               </h2>
               <p className="blog-resum">{a.resum}</p>
-              {a.etiquetes.length > 0 && (
-                <p className="blog-etiquetes">
-                  {a.etiquetes.map(e => (
-                    <span key={e} className="blog-etiqueta">{e}</span>
-                  ))}
-                </p>
-              )}
               {a.apps.length > 0 && (
                 <p className="blog-apps">
                   Hi surten:{" "}
@@ -84,6 +80,9 @@ export default function BlogIndex() {
                   ))}
                 </p>
               )}
+              <p className="blog-llegir">
+                <Link href={"/blog/" + a.slug}>Llegeix l&apos;article</Link>
+              </p>
             </article>
           ))}
         </div>
