@@ -113,6 +113,18 @@ Railway.**
   per push a `main`; afegida al catàleg `data/apps.json`.
 - KIPUK passa de "construcció" a "presentació" al catàleg, amb kipuk.cat en línia.
 
+## Feina feta el 22/09/2026
+
+- Kiosko (`Pantallas_web`): el text dels blocs es pinta línia a línia; model de
+  Gemini actualitzat (`gemini-3.6-flash`, sobreescrivible amb `GEMINI_MODEL`);
+  editor refet en mòduls plegables amb previsualització fixa; aparença per
+  panell (`themePrimary`, `themeDark`, `fontScale`, migració additiva); vídeo
+  curt als blocs (`videoUrl`, `/api/upload-video`, `/api/media/<id>` amb Range).
+  Tot provat a la BD local `kiosko_dev` i fusionat a `main`. **Pendent humà:**
+  comprovar al monitor Android que el vídeo arrenca; canviar la contrasenya
+  d'admin (el seed la porta escrita) i el secret de sessió de NextAuth.
+- Proposta de disseny de l'editor (maqueta): https://claude.ai/artifact/T1WE4nYpNYAePFCNRkYBmd
+
 ## Tasques programades
 
 - **Informe diari** (dilluns a divendres, 7:30): salut de les webs, feina sense

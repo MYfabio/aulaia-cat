@@ -2,6 +2,20 @@
   "version": "0.0.1",
   "configurations": [
     {
+      "name": "kiosko",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev",
+        "--prefix",
+        "C:/Users/super/Desktop/APPS/Pantallas_web",
+        "--",
+        "-p",
+        "3240"
+      ],
+      "port": 3240
+    },
+    {
       "name": "aulaia",
       "runtimeExecutable": "npm",
       "runtimeArgs": [
