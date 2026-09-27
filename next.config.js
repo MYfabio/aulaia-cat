@@ -27,6 +27,12 @@ const capçaleresSeguretat = [
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // /apps/undirlaflota va ser una fitxa duplicada del mateix joc: porta a la bona.
+  async redirects() {
+    return [
+      { source: "/apps/undirlaflota", destination: "/apps/enfonsar-la-flota", permanent: true },
+    ];
+  },
   async headers() {
     return [
       { source: "/:path*", headers: capçaleresSeguretat },
