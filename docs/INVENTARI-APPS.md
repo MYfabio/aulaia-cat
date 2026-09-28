@@ -18,14 +18,13 @@ nova de Claude Code.
 | Landing Pla Lector | `plalector-landing` | — | elplalector.cat | producció |
 | Chef Boss | `Chefboss` | MYfabio/chefboss | chefboss.es | producció (1.9.0), 1.10.0 en local |
 | Aules Sostenibles | `aules-sostenibles` | MYfabio/aules-sostenibles | aulessostenibles.cat | MVP en curs (fase 4, iteració I1) |
-| KIPUK.ES | `kipuk-es` | — (local, sense remot) | kipuk.es (previst) | MVP amb dades sintètiques |
 | MatEscac | `Matescac` | MYfabio/matescac | matescac.aulaia.cat | producció · Railway `matescac` (web + Postgres), desplega per GitHub `main` |
 | AulaAcull.cat | `Aula de acollida/aula_acollida_pack_20260829/ava` | MYfabio/aulaacull | aulaacull.aulaia.cat | construcció · Railway `aulaacull` (web), desplega per `main`; centre de demostració |
 | Kiosko (abans «Pantalles») | `Pantallas_web` | MYfabio/pantalles | kiosko.aulaia.cat | producció · Railway `pantalles`, desplega per `main`; login propi amb contrasenya |
 | Enfonsar la flota (Undirlaflota) | `Undirlaflota` | MYfabio/undirlaflota | enfonsarlaflota.aulaia.cat | producció · Railway `undirlaflota`, desplega per `main`; codis de classe a la BD o a DEMO_CLASS_CODES; undirlaflota.cat no resol |
 | El Club de les Poetes Vives | `clubpoetasvius` | **— (sense git)** | poetes.aulaia.cat (a Railway, sense DNS); viu a web-production-531662.up.railway.app | producció · Railway `clubpoetesvives` (web + Postgres), desplega amb `railway up`; una instal·lació per centre (domini a siteConfig.ts) |
 | El Museu Apagat | `VIP` | **— (sense git)** | museu.aulaia.cat | producció · Railway `museu-apagat` (web + Postgres), desplega amb `railway up`; una instal·lació per centre |
-| Kipuk (demo antiga) | `Kipuk` | MYfabio/kipuk | — | obsolet, no s'hi treballa |
+| KIPUK | `Kipuk` | MYfabio/kipuk | kipuk.cat (serveix per www.kipuk.cat) | producció · Railway `kipuk`/servei `kipuk`; **corregit 28/09/2026: aquesta és l'app real, no una demo obsoleta** (kipuk-es ja no existeix al disc) |
 
 Altres carpetes a `APPS` sense fitxa encara: `Aula de acollida`, `diedrico`,
 `Ecool`, `mecanografia`, `modulo radio`, `recursos-pla-lector`, `tetris3d`.
@@ -88,15 +87,15 @@ Railway.**
 
 ## Pendent
 
-1. Crear el repositori de `kipuk-es` a GitHub i pujar-hi la feina.
+1. ~~Crear el repositori de `kipuk-es` a GitHub~~ — la carpeta ja no existeix al disc; l'app real és `Kipuk` (repo MYfabio/kipuk, ja amb remot).
 2. Revocar el token de GitHub exposat i canviar la contrasenya d'admin de Pantalles.
 3. Registre operatiu a aulaia.cat: repositori, servei de Railway, entorns,
    variables crítiques, estat i última revisió per app — el que demana
    `docs/rol-agent-gestor.md` i que `apps.json` no conté.
 4. Tasca programada per a l'informe diari (avui el document l'assumeix però no
    s'executa sol).
-5. Consolidar carpetes duplicades: `Kipuk`/`kipuk-es`, `Radio`/`modulo radio`,
-   `pla_lector`/`plalector-landing`/`recursos-pla-lector`.
+5. Consolidar carpetes duplicades: `Radio`/`modulo radio`,
+   `pla_lector`/`plalector-landing`/`recursos-pla-lector`. (`Kipuk`/`kipuk-es` ja consolidat: `kipuk-es` no existeix.)
 6. Fer una prova real del formulari d'alta. (L'arreglada es va desplegar el
    04/09/2026 amb `railway up`; `RESEND_FROM` encara no és a Railway, així que
    els correus surten des de `onboarding@resend.dev` fins que s'afegeixi.)
@@ -124,6 +123,11 @@ Railway.**
   comprovar al monitor Android que el vídeo arrenca; canviar la contrasenya
   d'admin (el seed la porta escrita) i el secret de sessió de NextAuth.
 - Proposta de disseny de l'editor (maqueta): https://claude.ai/artifact/T1WE4nYpNYAePFCNRkYBmd
+
+## Feina feta el 28/09/2026
+
+- Search Console: verificades i donades d'alta les dues propietats que faltaven, diedric3d.com (https://www.diedric3d.com) i kipuk.cat (https://www.kipuk.cat, no https://kipuk.cat: aquest no respon per HTTPS, només redirigeix per HTTP). Etiqueta HTML (`verification.google` a `metadata` de Next.js), no fitxer ni DNS. Compte de servei `aulaia-panell-seo@...` afegit com a usuari a totes dues; el panell `/panel/seo` d'aulaia.cat ja hauria de mostrar-les a la propera consulta.
+- **Correcció d'inventari:** la carpeta `Kipuk` (repo MYfabio/kipuk, servei Railway `kipuk`) és l'app real que serveix kipuk.cat, no una demo obsoleta com deia aquest document. La carpeta `kipuk-es` que hi havia com a pendent ja no existeix al disc.
 
 ## Tasques programades
 
