@@ -5,6 +5,9 @@ data: 2026-09-27
 autor: Fabio Martínez
 etiquetes: [Formació Professional, PFI, Gestió d'empreses, Simulació educativa]
 apps: [chefboss, kiosko, typeedu]
+imatge: /blog/un-restaurant-per-aprendre-a-gestionar.jpg
+imatgeAlt: Il·lustració d'una aula amb alumnat en grups davant d'ordinadors portàtils i una docent amb una tauleta; a la pantalla del fons, un restaurant simulat amb les icones de caixa, arxiu i correu
+imatgeCredit: Imatge generada amb intel·ligència artificial
 ---
 
 Un Programa de Formació i Inserció (PFI) acull joves que han sortit de l'ESO sense el títol i que volen tornar a formar-se amb un ofici a l'horitzó. A l'Escola Industrial en tenim un d'Administració d'empresa, i la pregunta de cada curs és la mateixa: com s'explica què és un marge, un pressupost o un proveïdor a qui l'escola tradicional ja ha dit massa vegades que allò no era per a ell.
