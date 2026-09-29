@@ -585,3 +585,17 @@ a { color: inherit; text-decoration: none; }
 .app-fitxa-nivells span { font-size: 0.7rem; font-weight: 600; color: var(--deep); background: var(--paper); border: 1px solid var(--rule); border-radius: 999px; padding: 0.2em 0.65em; }
 .app-fitxa-peu { display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; margin-top: auto; padding-top: 0.7rem; border-top: 1px solid var(--rule-soft); }
 .app-fitxa-domini { font-size: 0.78rem; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+/* ---- Fitxa d'app: captura petita i relacionats ---- */
+.live-banner.amb-captura { justify-content: flex-start; }
+.live-banner.amb-captura .btn { margin-left: auto; }
+.live-banner-captura { display: block; width: 220px; flex-shrink: 0; line-height: 0; border-radius: 6px; overflow: hidden; box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25); transition: transform .15s ease; }
+.live-banner-captura:hover { transform: scale(1.03); }
+.live-banner-captura img { width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; }
+@media (max-width: 600px) {
+  .live-banner-captura { width: 100%; }
+  .live-banner.amb-captura .btn { margin-left: 0; }
+}
+.rel-graella { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-bottom: 2.5rem; }
+@media (max-width: 760px) { .rel-graella { grid-template-columns: 1fr; } }
+.rel-graella .app-fitxa-nom { font-size: 1.05rem; }

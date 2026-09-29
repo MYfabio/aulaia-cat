@@ -1,8 +1,7 @@
 import Link from "next/link";
-import fs from "node:fs";
-import path from "node:path";
 import apps from "../data/apps.json";
 import CatalegApps from "../components/CatalegApps";
+import { mapaCaptures } from "../lib/captures";
 
 export const metadata = {
   title: "Apps i software educatiu per a escoles de Catalunya",
@@ -10,12 +9,7 @@ export const metadata = {
   alternates: { canonical: "/" },
 };
 
-// Les captures es generen a mà (public/captures/<slug>.jpg); sense captura, la fitxa mostra la icona.
-const captures = Object.fromEntries(
-  apps
-    .filter(a => fs.existsSync(path.join(process.cwd(), "public", "captures", a.slug + ".jpg")))
-    .map(a => [a.slug, "/captures/" + a.slug + ".jpg"])
-);
+const captures = mapaCaptures(apps);
 
 export default function Home() {
   const enLinia = apps.filter(a=>a.estat==="produccio");

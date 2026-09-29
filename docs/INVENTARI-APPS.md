@@ -25,6 +25,7 @@ nova de Claude Code.
 | El Club de les Poetes Vives | `clubpoetasvius` | **— (sense git)** | poetes.aulaia.cat (a Railway, sense DNS); viu a web-production-531662.up.railway.app | producció · Railway `clubpoetesvives` (web + Postgres), desplega amb `railway up`; una instal·lació per centre (domini a siteConfig.ts) |
 | El Museu Apagat | `VIP` | **— (sense git)** | museu.aulaia.cat | producció · Railway `museu-apagat` (web + Postgres), desplega amb `railway up`; una instal·lació per centre |
 | KIPUK | `Kipuk` | MYfabio/kipuk | kipuk.cat (serveix per www.kipuk.cat) | producció · Railway `kipuk`/servei `kipuk`; **corregit 28/09/2026: aquesta és l'app real, no una demo obsoleta** (kipuk-es ja no existeix al disc) |
+| El Taulell | `eltaulell` (mogut de `Documents\Codex` el 29/09/2026) | MYfabio/eltaulell | eltaulell.aulaia.cat | en línia amb demo pública · Railway `eltaulell` (web + Postgres + bucket `eltaulell-files`), desplega per `main`; fet amb Codex, ~20 branques `agent/*`, algunes sense fusionar (p. ex. `agent/vertex-gemini-cookies`) |
 | La Claqueta | `claqueta` (treball a `claqueta-wt`, branca `assets-v2`) | MYfabio/claqueta | laclaqueta.aulaia.cat | producció (amb alumnat) · Railway `laclaqueta`; Google OAuth propi, superadmins per `SUPERADMIN_EMAILS` |
 
 Altres carpetes a `APPS` sense fitxa encara: `Aula de acollida`, `diedrico`,
@@ -136,6 +137,8 @@ Railway.**
 - Portada: el llistat de projectes passa a targetes amb captura (`public/captures/<slug>.jpg`, fetes amb Chrome headless a 1280×800) i filtres per etapa i matèria. Camps nous a `apps.json`: `nivells` (Primària, ESO, Batxillerat, FP, Centre) i `materies`. Per refer una captura, tornar a fer-la i desar-la amb el mateix nom.
 - Catàleg: alta de La Claqueta (producció, ja amb alumnat).
 - Blog: article de l'expedició «La maledicció del sarcòfag» del Museu Apagat.
+- El Taulell: carpeta moguda a `APPS\eltaulell`; `main` al dia i les branques locals de la còpia de Codex (`Documents\Codex\2026-07-28\...\eltaulell-implementation`) importades com a `codex-local/*`. Aquella còpia no s'ha esborrat.
+- Avís per a totes les apps: Railway deixa d'acceptar `railway.toml`/`railway.json` el 01/12/2026 (cal `railway config migrate`).
 
 ## Tasques programades
 

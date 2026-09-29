@@ -6,7 +6,7 @@ autor: Fabio Martínez
 etiquetes: [Visual i Plàstica, Llenguatge visual, Avaluació, ESO]
 apps: [museu-apagat, diedric3d, poetes-vives]
 imatge: /blog/el-museu-apagat.jpg
-imatgeAlt: ARCA, el robot restaurador del Museu Apagat, amb un pinzell per antena, un davantal tacat de pintura, un llibre obert a la mà i el dit alçat com qui té una idea
+imatgeAlt: ARCA, el robot restaurador del Museu Apagat, amb cara preocupada assenyala una galeria de museu on tots els marcs daurats són buits
 imatgeCredit: Imatge generada amb intel·ligència artificial
 ---
 

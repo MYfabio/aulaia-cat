@@ -18,7 +18,7 @@ const SECCIONS = [
   { id: "en-preparacio", titol: "En preparació", text: "Els estem presentant als centres. Encara no tenen web pública.", estats: ["presentacio"] },
 ];
 
-function Fitxa({ app, captura }) {
+export function Fitxa({ app, captura }) {
   return (
     <Link href={"/apps/" + app.slug} className="app-fitxa">
       <span className="app-fitxa-imatge">

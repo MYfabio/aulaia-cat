@@ -1,6 +1,21 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import apps from "../../../data/apps.json";
+import { Fitxa } from "../../../components/CatalegApps";
+import { capturaDe } from "../../../lib/captures";
+
+// Relacionats triats a mà; si en falten, es completa amb els que comparteixen més etapes i matèries.
+function relacionatsDe(app) {
+  const triats = (app.relacionats || []).map(s => apps.find(a => a.slug === s)).filter(Boolean);
+  if (triats.length >= 3) return triats.slice(0, 3);
+  const comuns = a =>
+    (a.nivells || []).filter(n => (app.nivells || []).includes(n)).length +
+    2 * (a.materies || []).filter(m => (app.materies || []).includes(m)).length;
+  const resta = apps
+    .filter(a => a.slug !== app.slug && !triats.includes(a))
+    .sort((a, b) => comuns(b) - comuns(a) || (b.estat === "produccio") - (a.estat === "produccio"));
+  return [...triats, ...resta].slice(0, 3);
+}
 
 export function generateStaticParams() { return apps.map(a=>({slug:a.slug})); }
 
@@ -46,7 +61,8 @@ export default async function AppLanding({ params }) {
   const { slug } = await params;
   const app = apps.find(a=>a.slug===slug);
   if(!app) notFound();
-  const relacionats = (app.relacionats||[]).map(s=>apps.find(a=>a.slug===s)).filter(Boolean);
+  const relacionats = relacionatsDe(app);
+  const captura = capturaDe(app.slug);
 
   return (
     <div className="landing">
@@ -57,7 +73,12 @@ export default async function AppLanding({ params }) {
       <p className="landing-desc">{app.descripcio}</p>
 
       {app.url && (
-        <div className="live-banner">
+        <div className={"live-banner" + (captura ? " amb-captura" : "")}>
+          {captura && (
+            <a href={app.url} target="_blank" rel="noopener" className="live-banner-captura" aria-hidden="true" tabIndex={-1}>
+              <img src={captura} alt="" width="800" height="500" />
+            </a>
+          )}
           <div className="live-banner-text">
             <strong>Web del projecte</strong>
             <span>{app.domini}{app.centre ? " · "+app.centre : ""}</span>
@@ -74,7 +95,8 @@ export default async function AppLanding({ params }) {
       )}
 
       <div className="fact-grid">
-        {app.publics?.length>0 && <div className="fact"><span className="fact-k">Etapes</span><span className="fact-v">{app.publics.join(" · ")}</span></div>}
+        {app.nivells?.length>0 && <div className="fact"><span className="fact-k">Etapes</span><span className="fact-v">{app.nivells.join(" · ")}</span></div>}
+        {app.materies?.length>0 && <div className="fact"><span className="fact-k">Matèries</span><span className="fact-v">{app.materies.join(" · ")}</span></div>}
         {app.idiomes?.length>0 && <div className="fact"><span className="fact-k">Idiomes</span><span className="fact-v">{app.idiomes.join(" · ")}</span></div>}
         <div className="fact"><span className="fact-k">Estat</span><span className="fact-v">{app.estatText}</span></div>
       </div>
@@ -119,13 +141,8 @@ export default async function AppLanding({ params }) {
       {relacionats.length>0 && (
         <>
           <h2>Altres projectes d'aulaia.cat</h2>
-          <div className="rel-grid">
-            {relacionats.map(r=>(
-              <Link key={r.slug} href={"/apps/"+r.slug} className="rel-card">
-                <span className="rel-name">{r.nom}</span>
-                <span className="rel-desc">{r.resum}</span>
-              </Link>
-            ))}
+          <div className="app-graella rel-graella">
+            {relacionats.map(r => <Fitxa key={r.slug} app={r} captura={capturaDe(r.slug)} />)}
           </div>
         </>
       )}
