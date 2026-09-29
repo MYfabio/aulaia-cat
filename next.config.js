@@ -31,6 +31,7 @@ const nextConfig = {
   async redirects() {
     return [
       { source: "/apps/undirlaflota", destination: "/apps/enfonsar-la-flota", permanent: true },
+      { source: "/apps/la-cantiana", destination: "/apps/la-cantina", permanent: true },
     ];
   },
   async headers() {

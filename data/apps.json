@@ -873,8 +873,8 @@
     ]
   },
   {
-    "slug": "la-cantiana",
-    "nom": "La Cantiana",
+    "slug": "la-cantina",
+    "nom": "La Cantina",
     "categoria": "Emprenedoria i vida al centre",
     "estat": "construccio",
     "estatText": "En construcció · proposta educativa en desenvolupament",
@@ -890,8 +890,8 @@
     ],
     "centre": null,
     "resum": "Proposta educativa perquè sigui el mateix alumnat qui gestioni el bar escolar del centre, i que aquesta gestió compti com a aprenentatge.",
-    "descripcio": "La Cantiana converteix el bar del centre en un projecte d'aula. En comptes de ser un servei extern que l'alumnat només consumeix, passa a ser un negoci real que l'alumnat planifica, gestiona i avalua: què s'ofereix, a quin preu, amb quins proveïdors, amb quins torns i amb quin marge. La diferència amb una simulació és que aquí les decisions tenen conseqüències immediates i visibles —si el preu no cobreix costos, es nota; si l'oferta no encaixa amb el que vol el centre, no es ven— i això és exactament el que fa que l'aprenentatge s'aguanti. La proposta està en desenvolupament i inclourà el marc metodològic, els rols i les eines de seguiment perquè el professorat pugui portar-la sense muntar-ho tot de zero.",
-    "seoLlarg": "Els projectes d'emprenedoria escolar solen quedar-se en l'exercici fictici: un pla d'empresa que ningú no executa i uns números que no arriben a passar per caixa. La Cantiana parteix d'un servei que el centre ja té i que l'alumnat ja utilitza cada dia, i el converteix en l'objecte d'aprenentatge. Aquest ancoratge en el real és el que permet treballar competències que sovint es queden en teoria: la matemàtica aplicada de preus, marges i canvi; l'alimentació saludable quan cal decidir què s'ofereix; la seguretat i la higiene alimentària com a requisit, no com a tema; l'atenció al públic i la gestió de conflictes amb companys que també són clients; i la sostenibilitat quan es decideix sobre envasos, residus i proveïment de proximitat. Especialment adequada per a projectes transversals a Secundària i per a Cicles Formatius de les famílies d'Hoteleria, Comerç i Administració.",
+    "descripcio": "La Cantina converteix el bar del centre en un projecte d'aula. En comptes de ser un servei extern que l'alumnat només consumeix, passa a ser un negoci real que l'alumnat planifica, gestiona i avalua: què s'ofereix, a quin preu, amb quins proveïdors, amb quins torns i amb quin marge. La diferència amb una simulació és que aquí les decisions tenen conseqüències immediates i visibles —si el preu no cobreix costos, es nota; si l'oferta no encaixa amb el que vol el centre, no es ven— i això és exactament el que fa que l'aprenentatge s'aguanti. La proposta està en desenvolupament i inclourà el marc metodològic, els rols i les eines de seguiment perquè el professorat pugui portar-la sense muntar-ho tot de zero.",
+    "seoLlarg": "Els projectes d'emprenedoria escolar solen quedar-se en l'exercici fictici: un pla d'empresa que ningú no executa i uns números que no arriben a passar per caixa. La Cantina parteix d'un servei que el centre ja té i que l'alumnat ja utilitza cada dia, i el converteix en l'objecte d'aprenentatge. Aquest ancoratge en el real és el que permet treballar competències que sovint es queden en teoria: la matemàtica aplicada de preus, marges i canvi; l'alimentació saludable quan cal decidir què s'ofereix; la seguretat i la higiene alimentària com a requisit, no com a tema; l'atenció al públic i la gestió de conflictes amb companys que també són clients; i la sostenibilitat quan es decideix sobre envasos, residus i proveïment de proximitat. Especialment adequada per a projectes transversals a Secundària i per a Cicles Formatius de les famílies d'Hoteleria, Comerç i Administració.",
     "funcionalitats": [
       "Marc metodològic per portar el bar escolar com a projecte d'aula",
       "Rols rotatius: compres, caixa, atenció, inventari i comunicació",
@@ -921,7 +921,7 @@
       "ciutatviva"
     ],
     "seo": {
-      "title": "La Cantiana: el bar escolar gestionat per l'alumnat",
+      "title": "La Cantina: el bar escolar gestionat per l'alumnat",
       "description": "Proposta educativa perquè l'alumnat gestioni el bar del centre com a projecte d'aula: preus, marges, alimentació saludable, higiene i sostenibilitat.",
       "keywords": "bar escolar alumnat, emprenedoria escolar, projecte d'aula cantina, aprenentatge servei institut, alimentació saludable centre educatiu"
     },
