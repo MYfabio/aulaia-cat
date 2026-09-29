@@ -25,7 +25,7 @@ nova de Claude Code.
 | El Club de les Poetes Vives | `clubpoetasvius` | **— (sense git)** | poetes.aulaia.cat (a Railway, sense DNS); viu a web-production-531662.up.railway.app | producció · Railway `clubpoetesvives` (web + Postgres), desplega amb `railway up`; una instal·lació per centre (domini a siteConfig.ts) |
 | El Museu Apagat | `VIP` | **— (sense git)** | museu.aulaia.cat | producció · Railway `museu-apagat` (web + Postgres), desplega amb `railway up`; una instal·lació per centre |
 | KIPUK | `Kipuk` | MYfabio/kipuk | kipuk.cat (serveix per www.kipuk.cat) | producció · Railway `kipuk`/servei `kipuk`; **corregit 28/09/2026: aquesta és l'app real, no una demo obsoleta** (kipuk-es ja no existeix al disc) |
-| La Claqueta | `claqueta` (treball a `claqueta-wt`, branca `assets-v2`) | MYfabio/claqueta | laclaqueta.aulaia.cat | construcció · Railway `laclaqueta`; Google OAuth propi, superadmins per `SUPERADMIN_EMAILS` |
+| La Claqueta | `claqueta` (treball a `claqueta-wt`, branca `assets-v2`) | MYfabio/claqueta | laclaqueta.aulaia.cat | producció (amb alumnat) · Railway `laclaqueta`; Google OAuth propi, superadmins per `SUPERADMIN_EMAILS` |
 
 Altres carpetes a `APPS` sense fitxa encara: `Aula de acollida`, `diedrico`,
 `Ecool`, `mecanografia`, `modulo radio`, `recursos-pla-lector`, `tetris3d`.
@@ -134,7 +134,7 @@ Railway.**
 
 - Panell: la consulta de serveis de Railway passava del límit d'amplada (500) i el panell no carregava; ara es demana per lots de 10.
 - Portada: el llistat de projectes passa a targetes amb captura (`public/captures/<slug>.jpg`, fetes amb Chrome headless a 1280×800) i filtres per etapa i matèria. Camps nous a `apps.json`: `nivells` (Primària, ESO, Batxillerat, FP, Centre) i `materies`. Per refer una captura, tornar a fer-la i desar-la amb el mateix nom.
-- Catàleg: alta de La Claqueta (construcció).
+- Catàleg: alta de La Claqueta (producció, ja amb alumnat).
 - Blog: article de l'expedició «La maledicció del sarcòfag» del Museu Apagat.
 
 ## Tasques programades
