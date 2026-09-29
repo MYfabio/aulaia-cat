@@ -89,5 +89,12 @@
     "tipus": "dins",
     "acces": "Google Workspace del centre",
     "nota": "No hi ha pantalla d'administració: l'alta del centre, del docent i de l'alumnat es fa a la base de dades. Qui no hi consta no pot entrar."
+  },
+  {
+    "slug": "la-claqueta",
+    "url": "https://laclaqueta.aulaia.cat",
+    "tipus": "dins",
+    "acces": "Google Workspace del centre",
+    "nota": "Superadmins per la variable SUPERADMIN_EMAILS de Railway (projecte laclaqueta). Un usuari nou d un domini conegut entra com a lector; docent i alumnat els dona la importació de Classroom/CSV o l admin de centre."
   }
 ]

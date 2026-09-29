@@ -559,3 +559,29 @@ a { color: inherit; text-decoration: none; }
   .nav-links::-webkit-scrollbar { display: none; }
   .nav-links a { font-size: 0.8rem; white-space: nowrap; }
 }
+
+/* ---- Catàleg de projectes en targetes ---- */
+.cataleg-filtres { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; padding-bottom: 0; }
+.cataleg-nivells { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.cataleg-nivells button { font: inherit; font-size: 0.85rem; color: var(--ink); background: var(--surface); border: 1px solid var(--rule); border-radius: 999px; padding: 0.45em 1em; cursor: pointer; }
+.cataleg-nivells button:hover { border-color: var(--deep); }
+.cataleg-nivells button[aria-pressed="true"] { background: var(--deep); border-color: var(--deep); color: var(--paper); }
+.cataleg-materia { display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; color: var(--muted); }
+.cataleg-materia select { font: inherit; color: var(--ink); background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; padding: 0.4em 0.6em; }
+.cataleg-buit { color: var(--muted); }
+.app-graella { display: grid; gap: 1.5rem; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+@media (max-width: 960px) { .app-graella { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .app-graella { grid-template-columns: 1fr; } }
+.app-fitxa { display: flex; flex-direction: column; color: inherit; text-decoration: none; background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; overflow: hidden; transition: transform .15s ease, box-shadow .15s ease; }
+.app-fitxa:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(24, 49, 41, 0.08); }
+.app-fitxa-imatge { display: flex; align-items: center; justify-content: center; aspect-ratio: 16 / 10; background: var(--paper-2); border-bottom: 1px solid var(--rule); overflow: hidden; }
+.app-fitxa-imatge img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
+.app-fitxa-icona { font-size: 3rem; }
+.app-fitxa-cos { display: flex; flex-direction: column; gap: 0.45rem; padding: 1.1rem 1.2rem 1.2rem; flex: 1; }
+.app-fitxa-cat { font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; color: var(--muted); }
+.app-fitxa-nom { font-size: 1.2rem; font-weight: 700; color: var(--ink); }
+.app-fitxa-resum { font-size: 0.9rem; line-height: 1.55; color: var(--muted); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.app-fitxa-nivells { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.2rem; }
+.app-fitxa-nivells span { font-size: 0.7rem; font-weight: 600; color: var(--deep); background: var(--paper); border: 1px solid var(--rule); border-radius: 999px; padding: 0.2em 0.65em; }
+.app-fitxa-peu { display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; margin-top: auto; padding-top: 0.7rem; border-top: 1px solid var(--rule-soft); }
+.app-fitxa-domini { font-size: 0.78rem; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }

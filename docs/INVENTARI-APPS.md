@@ -25,6 +25,7 @@ nova de Claude Code.
 | El Club de les Poetes Vives | `clubpoetasvius` | **— (sense git)** | poetes.aulaia.cat (a Railway, sense DNS); viu a web-production-531662.up.railway.app | producció · Railway `clubpoetesvives` (web + Postgres), desplega amb `railway up`; una instal·lació per centre (domini a siteConfig.ts) |
 | El Museu Apagat | `VIP` | **— (sense git)** | museu.aulaia.cat | producció · Railway `museu-apagat` (web + Postgres), desplega amb `railway up`; una instal·lació per centre |
 | KIPUK | `Kipuk` | MYfabio/kipuk | kipuk.cat (serveix per www.kipuk.cat) | producció · Railway `kipuk`/servei `kipuk`; **corregit 28/09/2026: aquesta és l'app real, no una demo obsoleta** (kipuk-es ja no existeix al disc) |
+| La Claqueta | `claqueta` (treball a `claqueta-wt`, branca `assets-v2`) | MYfabio/claqueta | laclaqueta.aulaia.cat | construcció · Railway `laclaqueta`; Google OAuth propi, superadmins per `SUPERADMIN_EMAILS` |
 
 Altres carpetes a `APPS` sense fitxa encara: `Aula de acollida`, `diedrico`,
 `Ecool`, `mecanografia`, `modulo radio`, `recursos-pla-lector`, `tetris3d`.
@@ -128,6 +129,13 @@ Railway.**
 
 - Search Console: verificades i donades d'alta les dues propietats que faltaven, diedric3d.com (https://www.diedric3d.com) i kipuk.cat (https://www.kipuk.cat, no https://kipuk.cat: aquest no respon per HTTPS, només redirigeix per HTTP). Etiqueta HTML (`verification.google` a `metadata` de Next.js), no fitxer ni DNS. Compte de servei `aulaia-panell-seo@...` afegit com a usuari a totes dues; el panell `/panel/seo` d'aulaia.cat ja hauria de mostrar-les a la propera consulta.
 - **Correcció d'inventari:** la carpeta `Kipuk` (repo MYfabio/kipuk, servei Railway `kipuk`) és l'app real que serveix kipuk.cat, no una demo obsoleta com deia aquest document. La carpeta `kipuk-es` que hi havia com a pendent ja no existeix al disc.
+
+## Feina feta el 29/09/2026
+
+- Panell: la consulta de serveis de Railway passava del límit d'amplada (500) i el panell no carregava; ara es demana per lots de 10.
+- Portada: el llistat de projectes passa a targetes amb captura (`public/captures/<slug>.jpg`, fetes amb Chrome headless a 1280×800) i filtres per etapa i matèria. Camps nous a `apps.json`: `nivells` (Primària, ESO, Batxillerat, FP, Centre) i `materies`. Per refer una captura, tornar a fer-la i desar-la amb el mateix nom.
+- Catàleg: alta de La Claqueta (construcció).
+- Blog: article de l'expedició «La maledicció del sarcòfag» del Museu Apagat.
 
 ## Tasques programades
 

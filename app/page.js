@@ -1,5 +1,8 @@
 import Link from "next/link";
+import fs from "node:fs";
+import path from "node:path";
 import apps from "../data/apps.json";
+import CatalegApps from "../components/CatalegApps";
 
 export const metadata = {
   title: "Apps i software educatiu per a escoles de Catalunya",
@@ -7,36 +10,15 @@ export const metadata = {
   alternates: { canonical: "/" },
 };
 
-const ESTATS = {
-  produccio: "En línia",
-  construccio: "En construcció",
-  desenvolupament: "Properament",
-  presentacio: "En presentació",
-};
-
-function ProjectRow({ app, num }) {
-  return (
-    <Link href={"/apps/"+app.slug} className="proj-row">
-      <span className="proj-num">{String(num).padStart(2,"0")}</span>
-      <span className="proj-main">
-        <span className="proj-cat">{app.categoria}</span>
-        <span className="proj-name">{app.nom}</span>
-        <span className="proj-desc">{app.resum}</span>
-      </span>
-      <span className="proj-meta">
-        {app.domini && <span className="proj-domain">{app.domini}</span>}
-        <span className={"proj-state" + (app.estat==="produccio" ? " is-live" : "")}>
-          {ESTATS[app.estat] || "En preparació"}
-        </span>
-      </span>
-    </Link>
-  );
-}
+// Les captures es generen a mà (public/captures/<slug>.jpg); sense captura, la fitxa mostra la icona.
+const captures = Object.fromEntries(
+  apps
+    .filter(a => fs.existsSync(path.join(process.cwd(), "public", "captures", a.slug + ".jpg")))
+    .map(a => [a.slug, "/captures/" + a.slug + ".jpg"])
+);
 
 export default function Home() {
   const enLinia = apps.filter(a=>a.estat==="produccio");
-  const enConstruccio = apps.filter(a=>a.estat==="construccio"||a.estat==="desenvolupament");
-  const enPreparacio = apps.filter(a=>a.estat==="presentacio");
 
   return (
     <>
@@ -55,39 +37,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section" id="apps">
-        <div className="section-header">
-          <h2>Projectes en línia</h2>
-          <p>Cadascun té el seu domini propi i funciona de manera independent.</p>
-        </div>
-        <div className="proj-list">
-          {enLinia.map((app,i)=><ProjectRow key={app.slug} app={app} num={i+1} />)}
-        </div>
-      </section>
-
-      {enConstruccio.length>0 && (
-        <section className="section" id="en-construccio" style={{paddingTop:0}}>
-          <div className="section-header">
-            <h2>En construcció</h2>
-            <p>Projectes amb l'abast ja definit que estem desenvolupant ara mateix.</p>
-          </div>
-          <div className="proj-list">
-            {enConstruccio.map((app,i)=><ProjectRow key={app.slug} app={app} num={enLinia.length+i+1} />)}
-          </div>
-        </section>
-      )}
-
-      {enPreparacio.length>0 && (
-        <section className="section" id="en-preparacio" style={{paddingTop:0}}>
-          <div className="section-header">
-            <h2>En preparació</h2>
-            <p>Els estem presentant als centres. Encara no tenen web pública.</p>
-          </div>
-          <div className="proj-list">
-            {enPreparacio.map((app,i)=><ProjectRow key={app.slug} app={app} num={enLinia.length+enConstruccio.length+i+1} />)}
-          </div>
-        </section>
-      )}
+      <CatalegApps apps={apps} captures={captures} />
 
       <section className="seo-intro">
         <div className="seo-intro-inner">

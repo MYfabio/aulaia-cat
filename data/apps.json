@@ -56,7 +56,15 @@
       "title": "Ràdio escolar i pòdcast educatiu per a escoles",
       "description": "Estudi de ràdio i pòdcast escolar al navegador. L'alumnat grava amb efectes de so, edita amb IA i publica amb supervisió docent. Gratuït i sense instal·lar res.",
       "keywords": "ràdio escolar, pòdcast educatiu, ràdio escolar Catalunya, estudi de ràdio per a escoles, pòdcast a l'aula, radioescolar.cat"
-    }
+    },
+    "nivells": [
+      "Primària",
+      "ESO"
+    ],
+    "materies": [
+      "Llengua",
+      "Comunicació oral"
+    ]
   },
   {
     "slug": "dictats",
@@ -116,7 +124,14 @@
       "title": "Dictats en català amb IA i correcció automàtica per a escoles",
       "description": "Dictats en català del A1 al C2 generats amb IA per regla ortogràfica. Correcció automàtica per foto que explica cada falta, amb adaptacions per a dislèxia i TDAH.",
       "keywords": "dictats en català, dictats català online, ortografia catalana, exercicis ortografia catalana, dictats amb IA, nivell C1 català, dictats.cat"
-    }
+    },
+    "nivells": [
+      "Primària",
+      "ESO"
+    ],
+    "materies": [
+      "Llengua catalana"
+    ]
   },
   {
     "slug": "matescac",
@@ -183,7 +198,14 @@
       "title": "MatEscac: escacs 3D, vectors i pensament computacional per a escoles",
       "description": "Plataforma educativa d'escacs 3D que treballa vectors, algorismes, invariants i pensament computacional del Decret 175/2022. Tauler 3D, bots programables i liguilles automàtiques.",
       "keywords": "escacs educatiu, vectors matemàtiques, pensament computacional escola, programació bots, escacs 3D, matescac.aulaia.cat"
-    }
+    },
+    "nivells": [
+      "Primària",
+      "ESO"
+    ],
+    "materies": [
+      "Matemàtiques"
+    ]
   },
   {
     "slug": "aules-sostenibles",
@@ -259,7 +281,15 @@
       "title": "Educació ambiental i sostenibilitat per a escoles i instituts",
       "description": "Tallers, auditories i recursos de sostenibilitat per a Primària i Secundària. L'alumnat diagnostica, actua i mesura l'impacte ambiental real del centre.",
       "keywords": "educació ambiental escola, aules sostenibles, escola verda Catalunya, ODS a l'aula, auditoria ambiental centre educatiu, aulessostenibles.cat"
-    }
+    },
+    "nivells": [
+      "Primària",
+      "ESO"
+    ],
+    "materies": [
+      "Ciències",
+      "Sostenibilitat"
+    ]
   },
   {
     "slug": "pla-lector",
@@ -323,7 +353,16 @@
       "title": "Biblioteca escolar digital i seguiment lector per a centres",
       "description": "Programari de biblioteca escolar per a escoles i instituts: catàleg de les biblioteques d'aula, seguiment lector de cada alumne i estadístiques per al claustre.",
       "keywords": "biblioteca escolar digital, programari biblioteca escola, seguiment lector alumnat, pla lector de centre, catàleg biblioteca d'aula, elplalector.cat"
-    }
+    },
+    "nivells": [
+      "Primària",
+      "ESO",
+      "Centre"
+    ],
+    "materies": [
+      "Llengua",
+      "Biblioteca"
+    ]
   },
   {
     "slug": "typeedu",
@@ -382,7 +421,15 @@
       "title": "TypeEdu: mecanografia educativa i accessible per a centres",
       "description": "Aprenentatge de mecanografia amb pràctica guiada, teclat ISO, feedback immediat i adaptacions per a l'aula. En castellà, català, anglès i èuscar.",
       "keywords": "mecanografia educativa, aprendre a escriure a teclat, mecanografia escola, mecanografía educativa accesible, competència digital teclat, typeedu.com"
-    }
+    },
+    "nivells": [
+      "Primària",
+      "ESO",
+      "FP"
+    ],
+    "materies": [
+      "Competència digital"
+    ]
   },
   {
     "slug": "diedric3d",
@@ -451,7 +498,14 @@
       "title": "Diedric3D: sistema dièdric i vistes amb blocs per a ESO i Batxillerat",
       "description": "Construeix peces amb blocs i mira com canvien l'alçat, la planta i el perfil en temps real. Reptes amb correcció determinista, importació de Google Classroom i adaptacions per alumne.",
       "keywords": "sistema dièdric, vistes alçat planta perfil, dibuix tècnic ESO, visió espacial, diedric3d, geometria descriptiva batxillerat, projeccions ortogonals"
-    }
+    },
+    "nivells": [
+      "ESO",
+      "Batxillerat"
+    ],
+    "materies": [
+      "Dibuix tècnic"
+    ]
   },
   {
     "slug": "kiosko",
@@ -522,7 +576,13 @@
       "title": "Kiosko: cartelleria digital per a escoles i instituts",
       "description": "Converteix els monitors del centre en taulers d'anuncis digitals gestionats des del navegador. Publicació programada, rotació de webs i instal·lació en qualsevol pantalla Android.",
       "keywords": "cartelleria digital escola, pantalles informatives centre educatiu, tauler d'anuncis digital, digital signage escola, kiosko.aulaia.cat"
-    }
+    },
+    "nivells": [
+      "Centre"
+    ],
+    "materies": [
+      "Gestió del centre"
+    ]
   },
   {
     "slug": "enfonsar-la-flota",
@@ -596,7 +656,15 @@
       "title": "Enfonsar la flota en 3D: coordenades a l'espai i sistema dièdric per a l'ESO",
       "description": "Joc de batalla naval en tres dimensions per a 3r i 4t d'ESO. Cada tret és un punt (x, y, z), les vistes dièdriques apareixen en viu i la munició limitada converteix la partida en un problema de patrons i probabilitat.",
       "keywords": "enfonsar la flota 3D, coordenades a l'espai ESO, sistema dièdric joc, batalla naval educativa, geometria a l'espai, dibuix tècnic ESO, enfonsarlaflota.aulaia.cat"
-    }
+    },
+    "nivells": [
+      "ESO",
+      "Batxillerat"
+    ],
+    "materies": [
+      "Matemàtiques",
+      "Dibuix tècnic"
+    ]
   },
   {
     "slug": "poetes-vives",
@@ -668,7 +736,14 @@
       "title": "El Club de les Poetes Vives: escriure i publicar poesia a l'institut sense signar",
       "description": "Club de lectura i escriptura de poesia per a instituts. L'alumnat escriu, una IA només fa preguntes, el professorat revisa i el poema surt al mur del centre amb pseudònim i veu.",
       "keywords": "poesia a l'institut, escriptura creativa ESO, club de lectura poesia, taller de poesia secundària, formes poètiques, poetes vives, aulaia.cat"
-    }
+    },
+    "nivells": [
+      "ESO",
+      "Batxillerat"
+    ],
+    "materies": [
+      "Llengua i literatura"
+    ]
   },
   {
     "slug": "eltaulell",
@@ -717,7 +792,14 @@
       "title": "El Taulell: comunicació de centre i acció tutorial",
       "description": "Plataforma educativa multi-centre per comunicar amb les famílies, escoltar l'alumnat i millorar l'acompanyament tutorial. Menys soroll, més acompanyament.",
       "keywords": "comunicació centre educatiu, acció tutorial, plataforma famílies escola, taulell de centre, acompanyament tutorial, escolta alumnat"
-    }
+    },
+    "nivells": [
+      "Primària",
+      "ESO"
+    ],
+    "materies": [
+      "Tutoria"
+    ]
   },
   {
     "slug": "aulaacull",
@@ -781,7 +863,14 @@
       "title": "AulaAcull.cat: aula virtual d'acollida per a alumnat nouvingut d'ESO",
       "description": "Aula virtual d'acollida per aprendre català: itinerari d'unitats A0-A1, instruccions locutades en deu llengües pont, activitats accessibles i seguiment per al docent d'aula d'acollida.",
       "keywords": "aula d'acollida, alumnat nouvingut, aprendre català ESO, català per a nouvinguts, aula acollida digital, llengua pont, aulaacull.aulaia.cat"
-    }
+    },
+    "nivells": [
+      "ESO"
+    ],
+    "materies": [
+      "Aula d'acollida",
+      "Llengua catalana"
+    ]
   },
   {
     "slug": "la-cantiana",
@@ -835,7 +924,14 @@
       "title": "La Cantiana: el bar escolar gestionat per l'alumnat",
       "description": "Proposta educativa perquè l'alumnat gestioni el bar del centre com a projecte d'aula: preus, marges, alimentació saludable, higiene i sostenibilitat.",
       "keywords": "bar escolar alumnat, emprenedoria escolar, projecte d'aula cantina, aprenentatge servei institut, alimentació saludable centre educatiu"
-    }
+    },
+    "nivells": [
+      "ESO",
+      "FP"
+    ],
+    "materies": [
+      "Emprenedoria"
+    ]
   },
   {
     "slug": "kipuk",
@@ -894,7 +990,14 @@
       "title": "KIPUK: activitat física, jocs i cohesió al pati per a escoles",
       "description": "Plataforma de centre per organitzar Educació Física, lligues, equips i reptes cooperatius. Funciona al pati sense mòbils de l'alumnat, amb criteris d'inclusió i privacitat.",
       "keywords": "educació física escola, tornejos escolars, cohesió al pati, app educació física, jocs cooperatius escola, KIPUK, kipuk.cat"
-    }
+    },
+    "nivells": [
+      "Primària",
+      "ESO"
+    ],
+    "materies": [
+      "Educació física"
+    ]
   },
   {
     "slug": "chefboss",
@@ -968,7 +1071,13 @@
       "title": "Chef Boss: simulador educatiu de restauració per a FP",
       "description": "Simulador educatiu de gestió de restaurants per a Formació Professional. 10 sessions per obrir un restaurant, treballar escandalls i costos i prendre decisions reals.",
       "keywords": "simulador restauració FP, simulació negoci escola, escandalls i costos, gestió restaurants formació professional, Chef Boss, chefboss.es"
-    }
+    },
+    "nivells": [
+      "FP"
+    ],
+    "materies": [
+      "Economia i empresa"
+    ]
   },
   {
     "slug": "ciutatviva",
@@ -1006,7 +1115,14 @@
       "title": "CiutatViva: plataforma d'aprenentatge servei per a instituts",
       "description": "Eina digital per a projectes d'aprenentatge servei (ApS) a ESO i Batxillerat. L'alumnat proposa millores reals al seu entorn i les connecta amb l'administració local.",
       "keywords": "aprenentatge servei, ApS digital, projecte ciutadania escola, participació ciutadana alumnat, competència ciutadana ESO"
-    }
+    },
+    "nivells": [
+      "ESO",
+      "Batxillerat"
+    ],
+    "materies": [
+      "Aprenentatge servei"
+    ]
   },
   {
     "slug": "museu-apagat",
@@ -1077,6 +1193,64 @@
       "title": "El Museu Apagat: els elements del llenguatge visual a 1r d'ESO amb apps que es corregeixen soles",
       "description": "Catorze missions de Visual i Plàstica: punt, línia, forma, textura, color i composició amb apps de dibuix autocorregides, dossier en PDF i avaluació per rúbrica. Sense comptes ni servidor.",
       "keywords": "llenguatge visual ESO, visual i plàstica 1r ESO, punt línia forma textura color, puntillisme app, cercle cromàtic interactiu, rúbrica visual i plàstica, aulaia.cat"
-    }
+    },
+    "nivells": [
+      "ESO"
+    ],
+    "materies": [
+      "Educació visual i plàstica"
+    ]
+  },
+  {
+    "slug": "la-claqueta",
+    "nom": "La Claqueta",
+    "categoria": "Cultura audiovisual i revista escolar",
+    "estat": "construccio",
+    "estatText": "En construcció: primer centre, l'Institut Escola Industrial",
+    "icona": "🎬",
+    "domini": "laclaqueta.aulaia.cat",
+    "url": "https://laclaqueta.aulaia.cat",
+    "idiomes": [
+      "Català",
+      "Castellà"
+    ],
+    "publics": [
+      "Secundària",
+      "Batxillerat"
+    ],
+    "centre": "Institut Escola Industrial de Sabadell",
+    "altaManual": true,
+    "resum": "La redacció del teu institut: l'alumnat de Cultura Audiovisual de batxillerat fa la revista i el pòdcast del centre, i el docent programa, avalua amb rúbrica i segueix l'aula.",
+    "descripcio": "La Claqueta converteix l'alumnat de Cultura Audiovisual de batxillerat en la redacció de l'institut. Publiquen una revista escolar que explica la vida del centre i porten un canal de ràdio a radioescolar.cat, pensats per a lectors d'ESO i batxillerat. Tot el que publiquen compta com a evidència de la matèria: no és feina afegida. El professorat programa les setmanes, avalua amb rúbrica i segueix el treball de cada grup. S'entra amb el compte de Google del centre i els grups es poden importar de Google Classroom.",
+    "funcionalitats": [
+      "Revista escolar publicada per l'alumnat, en català i castellà",
+      "Canal de pòdcast a radioescolar.cat",
+      "Programació de la matèria i avaluació amb rúbrica",
+      "Enquestes i bústia per als lectors del centre",
+      "Importació de grups des de Google Classroom"
+    ],
+    "relacionats": [
+      "radio-escolar",
+      "pla-lector",
+      "museu-apagat"
+    ],
+    "seo": {
+      "title": "La Claqueta · Revista escolar i Cultura Audiovisual de batxillerat",
+      "description": "Plataforma de Cultura Audiovisual: l'alumnat de batxillerat fa la revista i el pòdcast de l'institut i el docent avalua amb rúbrica.",
+      "keywords": [
+        "revista escolar",
+        "cultura audiovisual",
+        "batxillerat",
+        "pòdcast escolar",
+        "periodisme escolar"
+      ]
+    },
+    "nivells": [
+      "ESO",
+      "Batxillerat"
+    ],
+    "materies": [
+      "Cultura audiovisual"
+    ]
   }
 ]
