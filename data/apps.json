@@ -1253,5 +1253,66 @@
     "materies": [
       "Cultura audiovisual"
     ]
+  },
+  {
+    "slug": "pauta",
+    "nom": "Pauta",
+    "categoria": "Seguretat i aprenentatge al taller",
+    "estat": "produccio",
+    "estatText": "En producció, en fase pilot a l'Institut Escola Industrial de Sabadell",
+    "icona": "🦺",
+    "domini": "pauta.aulaia.cat",
+    "url": "https://fpsegura-production.up.railway.app",
+    "idiomes": [
+      "Català"
+    ],
+    "publics": [
+      "Cicles Formatius"
+    ],
+    "centre": "Institut Escola Industrial de Sabadell",
+    "altaManual": true,
+    "nivells": [
+      "FP",
+      "Centre"
+    ],
+    "materies": [
+      "Seguretat i prevenció",
+      "Tallers i laboratoris"
+    ],
+    "resum": "La seguretat del taller d'FP i PFI sense paperassa: comprovacions d'equips, incidències fins al tancament, activitats lligades al currículum i evidències de l'alumnat, des del mòbil.",
+    "descripcio": "Pauta és per als docents de tallers i laboratoris d'FP i PFI. Les comprovacions d'equips es fan en un minut des del mòbil (conforme, no conforme o no aplicable), amb foto i mesura correctora. Les incidències es registren al taller i se segueixen fins que es resolen, amb evidència. No cal tenir l'inventari fet per començar: s'arrenca amb equips genèrics i la marca i el model s'afegeixen quan es vol. Les activitats es lliguen als resultats d'aprenentatge i criteris de cada grup, i l'alumnat només veu les seves activitats i evidències, que poden ser digitals o fitxes en paper que tornen a l'activitat amb autoria i data. Pauta ajuda a fer el seguiment, però no substitueix una avaluació professional de riscos, i cap indicador promet un «compliment del 100 %».",
+    "funcionalitats": [
+      "Comprovacions d'equips en un minut: conforme, no conforme o no aplicable, amb foto i mesura correctora",
+      "Incidències registrades al taller i seguides fins al tancament, amb evidència",
+      "Equips genèrics per començar sense inventari previ",
+      "Activitats lligades als resultats d'aprenentatge i criteris de cada grup",
+      "Espai propi per a cada alumne amb les seves activitats i evidències",
+      "Fitxes PDF imprimibles que tornen a l'activitat amb autoria i data",
+      "Propostes d'IA que sempre revisa una persona"
+    ],
+    "faq": [
+      {
+        "p": "Substitueix l'avaluació de riscos del centre?",
+        "r": "No. Pauta ajuda a fer el seguiment de comprovacions i incidències, però l'avaluació de riscos la fa qui és competent per fer-la."
+      },
+      {
+        "p": "Cal tenir l'inventari del taller fet?",
+        "r": "No. Es pot començar amb equips genèrics i afegir la marca i el model més endavant."
+      },
+      {
+        "p": "Què veu l'alumnat?",
+        "r": "Només les seves activitats i les seves evidències."
+      }
+    ],
+    "relacionats": [
+      "chefboss",
+      "typeedu",
+      "kiosko"
+    ],
+    "seo": {
+      "title": "Pauta · Seguretat i aprenentatge als tallers d'FP i PFI",
+      "description": "Comprovacions d'equips, incidències, activitats i evidències dels tallers d'FP i PFI en un sol lloc, des del mòbil i sense paperassa.",
+      "keywords": "seguretat taller FP, prevenció riscos taller, comprovacions equips, incidències taller, PFI, evidències alumnat FP"
+    }
   }
 ]

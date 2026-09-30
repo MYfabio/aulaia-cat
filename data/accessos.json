@@ -96,5 +96,12 @@
     "tipus": "dins",
     "acces": "Google Workspace del centre",
     "nota": "Superadmins per la variable SUPERADMIN_EMAILS de Railway (projecte laclaqueta). Un usuari nou d un domini conegut entra com a lector; docent i alumnat els dona la importació de Classroom/CSV o l admin de centre."
+  },
+  {
+    "slug": "pauta",
+    "url": "https://fpsegura-production.up.railway.app/entrar",
+    "tipus": "dins",
+    "acces": "Correu i contrasenya (pilot)",
+    "nota": "Repo MYfabio/FPSegura, carpeta APPS/FPSegura. Pilot amb dades de demostració. pauta.aulaia.cat encara no té DNS."
   }
 ]
