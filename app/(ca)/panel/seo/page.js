@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getSeoData, teClaus } from "../../../lib/search-console";
+import { getSeoData, teClaus } from "../../../../lib/search-console";
 
 export const metadata = {
   title: "Cerca a Google",

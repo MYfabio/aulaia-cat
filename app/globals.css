@@ -599,3 +599,7 @@ a { color: inherit; text-decoration: none; }
 .rel-graella { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-bottom: 2.5rem; }
 @media (max-width: 760px) { .rel-graella { grid-template-columns: 1fr; } }
 .rel-graella .app-fitxa-nom { font-size: 1.05rem; }
+
+/* ---- Selector d'idioma ---- */
+.nav-idioma { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; border: 1px solid var(--rule); border-radius: 999px; padding: 0.25em 0.7em; text-decoration: none; }
+.nav-idioma:hover { border-color: var(--deep); }

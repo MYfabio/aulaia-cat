@@ -1,4 +1,4 @@
-import { getPanelData } from "../../lib/railway";
+import { getPanelData } from "../../../lib/railway";
 
 export const metadata = {
   title: "Panell de control",

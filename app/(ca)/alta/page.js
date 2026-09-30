@@ -1,5 +1,5 @@
 import Link from "next/link";
-import apps from "../../data/apps.json";
+import apps from "../../../data/apps.json";
 
 export const metadata = {
   title: "Sol·licita accés per al teu centre",

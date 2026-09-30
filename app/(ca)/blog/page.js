@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { llistarArticles } from "../../lib/blog";
-import apps from "../../data/apps.json";
+import { llistarArticles } from "../../../lib/blog";
+import apps from "../../../data/apps.json";
 
 const URL = "https://www.aulaia.cat/blog";
 

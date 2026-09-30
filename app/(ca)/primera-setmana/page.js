@@ -1,5 +1,5 @@
 import Link from "next/link";
-import apps from "../../data/apps.json";
+import apps from "../../../data/apps.json";
 
 const URL = "https://www.aulaia.cat/primera-setmana";
 const TITOL = "Recursos per a la primera setmana de curs";

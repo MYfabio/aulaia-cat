@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { llegirArticle, llistarArticles } from "../../../lib/blog";
-import apps from "../../../data/apps.json";
+import { llegirArticle, llistarArticles } from "../../../../lib/blog";
+import apps from "../../../../data/apps.json";
 
 export function generateStaticParams() {
   return llistarArticles().map(a => ({ slug: a.slug }));

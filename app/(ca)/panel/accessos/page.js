@@ -1,6 +1,6 @@
 import Link from "next/link";
-import accessos from "../../../data/accessos.json";
-import apps from "../../../data/apps.json";
+import accessos from "../../../../data/accessos.json";
+import apps from "../../../../data/apps.json";
 
 export const metadata = {
   title: "Accessos d'administració",

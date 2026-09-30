@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { llistarSolicituds, comptarPerEstat } from "../../../lib/db";
+import { llistarSolicituds, comptarPerEstat } from "../../../../lib/db";
 import { BotoEnviarResum } from "./client";
-import apps from "../../../data/apps.json";
+import apps from "../../../../data/apps.json";
 
 export const metadata = {
   title: "Altes de centres",

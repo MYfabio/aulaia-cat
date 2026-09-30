@@ -1,0 +1,963 @@
+{
+  "radio-escolar": {
+    "categoria": "Radio y pódcast escolar",
+    "estatText": "En producción y abierto a cualquier escuela",
+    "resum": "Estudio de radio y pódcast en línea: el alumnado graba con efectos de sonido, edita con IA y publica en el muro de la clase con supervisión docente.",
+    "descripcio": "Ràdio Escolar es un estudio de radio que funciona directamente en el navegador, sin instalar nada ni crear ninguna cuenta para empezar. El alumnado elige una plantilla (entrevista, noticias, ficción), sigue una guía paso a paso y graba con efectos de sonido en directo. Con un solo clic, la inteligencia artificial recorta los silencios, transcribe la voz y propone un título, un resumen y los capítulos del programa. El profesorado dispone de un panel de revisión donde escucha cada pódcast, deja un comentario privado y decide cuándo se publica. El resultado aparece en el muro de la clase con carátula propia, dentro de un espacio que por defecto es privado de la escuela.",
+    "seoLlarg": "La radio escolar es una de las actividades más completas que se pueden hacer en el aula: trabaja a la vez la expresión oral, la comprensión lectora, el trabajo en equipo y el pensamiento crítico. El problema histórico siempre ha sido el mismo: la barrera técnica. Ràdio Escolar elimina esa barrera: no hace falta micrófono profesional, ni programa de edición, ni conocimientos de sonido. Funciona en el navegador y el alumnado puede grabar sin necesidad de crear ninguna cuenta, lo que simplifica enormemente la gestión de datos en primaria. La inteligencia artificial se utiliza como ayudante de edición y no como sustituto de la voz del alumnado: recorta silencios y propone metadatos, pero el contenido es siempre suyo. El control editorial del profesorado es previo a la publicación, de modo que nada sale al muro sin revisión. Apta para proyectos de lengua, de comunicación audiovisual y de tutoría en Primaria y Secundaria.",
+    "funcionalitats": [
+      "Grabación en el navegador sin instalar nada ni crear cuenta",
+      "Plantillas y guiones guiados: entrevista, noticias, ficción",
+      "Galería de sonidos y efectos compartida con toda la clase",
+      "Edición automática con IA: recorte de silencios, transcripción, título, resumen y capítulos",
+      "Panel de revisión docente: escuchar, comentar y aprobar antes de publicar",
+      "Clases con código de invitación y etiquetado por grupo",
+      "Muro privado de la escuela por defecto, con control de visibilidad",
+      "Carátulas con plantilla de Canva"
+    ],
+    "faq": [
+      {
+        "p": "¿Hay que crear una cuenta para grabar?",
+        "r": "No. El alumnado puede grabar y publicar sin ninguna cuenta. Solo hay que iniciar sesión con Google si se quiere tener una clase propia o el espacio personal para gestionar los pódcasts y los favoritos."
+      },
+      {
+        "p": "¿Quién decide qué se publica?",
+        "r": "El profesorado. Cada pódcast pasa por un panel de revisión donde se puede escuchar, dejar un comentario privado al alumno y aprobar o no su publicación en el muro."
+      },
+      {
+        "p": "¿Hay que instalar algún programa de edición?",
+        "r": "No. Todo funciona en el navegador, incluida la edición con IA. No hace falta ninguna herramienta externa ni configuración técnica previa."
+      },
+      {
+        "p": "¿El muro de la clase es público?",
+        "r": "Por defecto es privado de la escuela. El centro decide si lo abre al exterior o lo mantiene restringido."
+      }
+    ],
+    "idiomes": [
+      "Catalán"
+    ],
+    "nivells": [
+      "Primaria",
+      "ESO"
+    ],
+    "materies": [
+      "Lengua",
+      "Comunicación oral"
+    ],
+    "seo": {
+      "title": "Radio escolar y pódcast educativo para escuelas",
+      "description": "Estudio de radio y pódcast escolar en el navegador. El alumnado graba con efectos, edita con IA y publica con supervisión docente. Gratis y sin instalar nada.",
+      "keywords": "radio escolar, pódcast educativo, radio escolar Cataluña, estudio de radio para escuelas, pódcast en el aula, radioescolar.cat"
+    }
+  },
+  "dictats": {
+    "categoria": "Ortografía y lengua catalana",
+    "estatText": "En producción, con plan gratuito",
+    "resum": "Dictados en catalán generados con IA y adaptados al nivel, del A1 al C2, con corrección automática que explica cada falta y adaptaciones NEE.",
+    "descripcio": "dictats.cat convierte una de las tareas docentes más costosas, la corrección manual de dictados, en un diagnóstico instantáneo. La plataforma genera dictados nuevos cada semana ajustados a una regla ortográfica concreta (l·l, b/v, diéresis y muchas más) y al curso del alumnado. El alumno escucha el dictado con voz catalana, lo escribe con el teclado o a mano, y en este segundo caso le hace una fotografía: el OCR lo transcribe y la IA lo corrige automáticamente. Cada falta viene explicada, y los dictados siguientes se generan a partir de los errores cometidos. El profesorado dispone de paneles con los errores ortográficos más frecuentes de cada clase y la evolución individual de cada alumno a lo largo del curso.",
+    "seoLlarg": "La ortografía catalana se aprende con práctica constante y corrección inmediata, pero la corrección manual de dictados consume horas de trabajo docente y llega tarde para que el alumno pueda aprender del error. dictats.cat resuelve las dos cosas a la vez. La generación por IA permite trabajar una regla ortográfica exacta con material nuevo y adaptado, en lugar de materiales genéricos repetidos año tras año. El escaneo OCR hace que el dictado pueda seguir siendo manuscrito, algo pedagógicamente relevante en primaria, sin que eso suponga trabajo manual de corrección. Las adaptaciones para necesidades educativas especiales vienen integradas de serie: tipografía OpenDyslexic, alto contraste y fragmentación del texto en frases cortas para facilitar el ritmo de lectura al alumnado con TDAH. El contenido sigue el currículo de Cataluña y cubre los niveles del A1 al C2, lo que lo hace útil tanto para el aula como para la preparación de los certificados oficiales de catalán.",
+    "funcionalitats": [
+      "Generación de dictados con IA por curso y regla ortográfica concreta",
+      "Niveles del A1 al C2 según el currículo de Cataluña",
+      "Escaneo OCR: fotografía del dictado manuscrito y corrección automática",
+      "Corrección que explica cada falta, no solo la marca",
+      "Dictados adaptativos generados a partir de los errores previos del alumno",
+      "Adaptaciones NEE: OpenDyslexic, alto contraste y ritmo para TDAH",
+      "Panel docente con los errores más frecuentes por clase y evolución individual",
+      "Voz catalana para escuchar los dictados"
+    ],
+    "faq": [
+      {
+        "p": "¿Están protegidos los datos del alumnado?",
+        "r": "Sí. La plataforma sigue el RGPD educativo y no comparte datos del alumnado con terceros."
+      },
+      {
+        "p": "¿Cómo funciona la corrección por foto?",
+        "r": "El alumno hace el dictado a mano, lo fotografía y el sistema transcribe el texto con OCR. La IA lo compara con el original y explica cada falta, sin trabajo manual del docente."
+      },
+      {
+        "p": "¿Qué adaptaciones NEE incluye?",
+        "r": "Tipografía OpenDyslexic, alto contraste y fragmentación del texto en frases cortas para adaptar el ritmo de lectura al alumnado con TDAH o dislexia."
+      },
+      {
+        "p": "¿Hay una versión para centros?",
+        "r": "Sí. Para escuelas e institutos hay panel de coordinación, grupos clase, adaptaciones NEE y facturación a nombre del centro."
+      }
+    ],
+    "idiomes": [
+      "Catalán"
+    ],
+    "nivells": [
+      "Primaria",
+      "ESO"
+    ],
+    "materies": [
+      "Lengua catalana"
+    ],
+    "seo": {
+      "title": "Dictados en catalán con IA y corrección automática para escuelas",
+      "description": "Dictados en catalán del A1 al C2 generados con IA por regla ortográfica. Corrección por foto que explica cada falta, con adaptaciones para dislexia y TDAH.",
+      "keywords": "dictados en catalán, dictados catalán online, ortografía catalana, ejercicios ortografía catalana, dictados con IA, nivel C1 catalán, dictats.cat"
+    }
+  },
+  "matescac": {
+    "categoria": "Ajedrez 3D y matemáticas",
+    "estatText": "En producción, accesible para la Escola Industrial",
+    "resum": "Plataforma escolar de ajedrez 3D, pensamiento computacional y competencia matemática alineada con el Decreto 175/2022.",
+    "descripcio": "MatEscac une el tablero de ajedrez con el currículo de matemáticas de la Generalitat: vectores, algoritmos, invariantes y pensamiento computacional, jugando. El alumnado juega en 3D, aprende la notación algebraica como coordenadas cartesianas, programa bots con lógica de bloques y depura partidas como si fueran código. Los docentes crean liguillas, consultan las competencias por índice y exportan informes de grupo e individuales. Accesible para la Escola Industrial con cuenta de Google Classroom.",
+    "seoLlarg": "El ajedrez es una herramienta clásica para desarrollar el pensamiento lógico, pero rara vez se integra en el currículo académico de forma estructurada. MatEscac cambia esta premisa conectando el juego directamente con las competencias matemáticas de la Generalitat. El tablero es un plano cartesiano (64 casillas = 8x8), cada movimiento es un vector y la lógica del juego se enseña como si fuera programación. Esto permite trabajar tres competencias en paralelo: geometría y vectores, pensamiento computacional y álgebra con invariantes. La interfaz 3D es una herramienta de comprensión profunda, no solo algo cosmético. Los docentes disponen de un panel para crear liguillas automáticas entre grupos, medir competencias con índices 0-100 y exportar informes académicos. Pensado especialmente para centros comprometidos con la exigencia matemática y el juego como herramienta pedagógica.",
+    "funcionalitats": [
+      "Tablero 3D interactivo con sombras, cámara orbital y selección de piezas",
+      "Notación algebraica como sistema de coordenadas cartesianas",
+      "Programación de bots con bloques: condicionales, secuencias y bucles",
+      "Depuración de partidas para identificar imprecisiones y estrategia",
+      "Liguillas automáticas de todos contra todos por grupo",
+      "Índices 0-100 por competencia: pensamiento computacional, geometría y álgebra",
+      "Medallas y clasificaciones por participación, precisión y velocidad",
+      "Espectadores: docentes y administradores observan partidas en directo",
+      "Informes de grupo e individuales en CSV para la evaluación académica",
+      "Acceso con código de aula o cuenta de Google Classroom"
+    ],
+    "faq": [
+      {
+        "p": "¿Para qué cursos está pensado?",
+        "r": "Para primaria y secundaria, especialmente allí donde se trabaja geometría, vectores y pensamiento computacional. Alineado con el Decreto 175/2022 de la Generalitat."
+      },
+      {
+        "p": "¿Hay que saber jugar al ajedrez previamente?",
+        "r": "No. MatEscac tiene un centro de aprendizaje donde se puede aprender el movimiento de cada pieza, la notación y los conceptos tácticos en 3D."
+      },
+      {
+        "p": "¿Podemos hacer torneos entre escuelas?",
+        "r": "De momento, los torneos son por grupo dentro de cada centro. La futura arquitectura permitirá liguillas entre escuelas."
+      },
+      {
+        "p": "¿Cómo se conecta con Google Classroom?",
+        "r": "El alumnado entra con su cuenta @escolaindustrial.org (o equivalente) y se pueden importar grupos de Google Classroom automáticamente."
+      },
+      {
+        "p": "¿Hay adaptaciones NEAE?",
+        "r": "Sí. Tiempo extra, niveles de dificultad configurables por alumno y más intentos sin penalización. Las adaptaciones se hacen por alumno y no dejan marca en el trabajo."
+      }
+    ],
+    "idiomes": [
+      "Catalán",
+      "Castellano",
+      "Inglés"
+    ],
+    "nivells": [
+      "Primaria",
+      "ESO"
+    ],
+    "materies": [
+      "Matemáticas"
+    ],
+    "seo": {
+      "title": "MatEscac: ajedrez 3D, vectores y pensamiento computacional",
+      "description": "Plataforma de ajedrez 3D que trabaja vectores, algoritmos e invariantes del Decreto 175/2022. Tablero 3D, bots programables y liguillas automáticas.",
+      "keywords": "ajedrez educativo, vectores matemáticas, pensamiento computacional escuela, programación de bots, ajedrez 3D, matescac.aulaia.cat"
+    }
+  },
+  "aules-sostenibles": {
+    "categoria": "Educación ambiental",
+    "estatText": "En producción, acceso de lanzamiento gratuito",
+    "resum": "Talleres, auditorías y recursos de educación ambiental para que docentes y centros pasen de las ideas a resultados ambientales medibles.",
+    "descripcio": "Aules Sostenibles conecta el currículo con los retos ambientales cotidianos y convierte cada actividad en una mejora visible en el centro. La plataforma trabaja en dos niveles complementarios: el aula, con talleres y recursos pedagógicos listos para usar que llevan los ODS a clase sin empezar de cero; y el centro, con un panel global de sostenibilidad, auditorías e indicadores ambientales que permiten coordinar acciones y explicar el impacto de toda la escuela. El ciclo es siempre el mismo: se elige un reto, el alumnado observa, propone mejoras y documenta las acciones, y finalmente se mide la evolución y se comparten los resultados con equipos, familias y comunidad.",
+    "seoLlarg": "La educación ambiental deja de ser una declaración de intenciones cuando se puede medir. Aules Sostenibles propone un marco completo para trabajar la sostenibilidad de forma transversal, con datos reales del propio centro como punto de partida y con un resultado tangible al final de cada actividad. Las auditorías guiadas cubren energía, residuos, agua y hábitos, y generan el diagnóstico que da sentido a todo lo que viene después. El registro de evidencias permite documentar acciones y aprendizajes sin recoger datos sensibles del alumnado. Los rankings positivos y las insignias hacen visible el progreso y reconocen la constancia, en lugar de premiar solo el resultado final. Los informes salen preparados para compartir con el equipo directivo, las familias y la comunidad, algo especialmente útil para centros que quieren obtener o renovar el distintivo Escola Verda de Cataluña. Alineado con los Objetivos de Desarrollo Sostenible y disponible en catalán y castellano.",
+    "funcionalitats": [
+      "Retos de aula con un objetivo ambiental claro y un resultado tangible",
+      "Auditorías guiadas de energía, residuos, agua y hábitos",
+      "Registro de evidencias sin datos sensibles del alumnado",
+      "Rankings positivos e insignias para hacer visible el progreso",
+      "Panel global de sostenibilidad para la coordinación del centro",
+      "Informes preparados para compartir con familias y comunidad",
+      "Recursos pedagógicos listos para usar, por nivel",
+      "Alineado con los ODS y disponible en catalán y castellano"
+    ],
+    "faq": [
+      {
+        "p": "¿Es realmente gratuito?",
+        "r": "Durante la fase de lanzamiento el acceso es gratuito y no requiere tarjeta ni permanencia. Más adelante habrá un Plan Docente y un Plan Centro con condiciones explicadas con claridad."
+      },
+      {
+        "p": "¿Para qué niveles está pensado?",
+        "r": "Para Primaria y Secundaria, con actividades aplicables a distintos niveles y áreas del currículo."
+      },
+      {
+        "p": "¿Hay que ser Escola Verda para utilizarlo?",
+        "r": "No. Es útil para cualquier centro, pero encaja especialmente bien con los centros que quieren obtener o renovar el distintivo Escola Verda."
+      },
+      {
+        "p": "¿Se recogen datos del alumnado?",
+        "r": "El registro de evidencias está diseñado para documentar acciones y aprendizajes sin recoger datos sensibles del alumnado."
+      },
+      {
+        "p": "¿Qué incluye una auditoría guiada?",
+        "r": "Diagnóstico de energía, residuos, agua y hábitos. El resultado es el punto de partida que da sentido a las acciones que vienen después."
+      },
+      {
+        "p": "¿Cómo funciona el ciclo de trabajo?",
+        "r": "Siempre igual: se elige un reto, el alumnado observa, propone mejoras y documenta las acciones, y finalmente se mide la evolución y se comparten los resultados."
+      },
+      {
+        "p": "¿Sirve para un centro entero o solo para un aula?",
+        "r": "Para ambos. El aula trabaja con talleres y recursos listos para usar; la coordinación del centro tiene un panel global con auditorías e indicadores para explicar el impacto de toda la escuela."
+      },
+      {
+        "p": "¿Cómo se accede?",
+        "r": "Con la cuenta autorizada del centro. No hace falta gestionar contraseñas."
+      }
+    ],
+    "idiomes": [
+      "Catalán",
+      "Castellano"
+    ],
+    "nivells": [
+      "Primaria",
+      "ESO"
+    ],
+    "materies": [
+      "Ciencias",
+      "Sostenibilidad"
+    ],
+    "seo": {
+      "title": "Educación ambiental y sostenibilidad para escuelas e institutos",
+      "description": "Talleres, auditorías y recursos de sostenibilidad para Primaria y Secundaria. El alumnado diagnostica, actúa y mide el impacto ambiental real del centro.",
+      "keywords": "educación ambiental escuela, aulas sostenibles, escola verda Cataluña, ODS en el aula, auditoría ambiental centro educativo, aulessostenibles.cat"
+    }
+  },
+  "pla-lector": {
+    "categoria": "Biblioteca escolar y competencia lectora",
+    "estatText": "En producción, con demostración gratuita para centros",
+    "resum": "Software de biblioteca escolar y seguimiento lector: catálogo de las bibliotecas de aula, historial de lectura de cada alumno y estadísticas para el claustro.",
+    "descripcio": "El Pla Lector cubre la parte práctica del plan lector de centro: qué libros hay, quién lee qué y cómo evoluciona la competencia lectora del alumnado. Cada ejemplar se cataloga con el grupo o el aula donde está físicamente, de modo que el alumnado encuentra los libros que tiene a mano y no solo los de la biblioteca central. El acceso se hace con la cuenta de Google del centro, sin crear contraseñas nuevas, y solo entran las personas dadas de alta previamente. El fondo y las listas de usuarios se importan desde una hoja de cálculo con una plantilla, así que un centro con el inventario en Excel puede tener el catálogo cargado el mismo día.",
+    "seoLlarg": "La competencia lectora es la base de todo el aprendizaje, pero el plan lector de un centro a menudo se queda en un documento que nadie consulta. El Pla Lector ataca la parte operativa: el catálogo real, los préstamos reales y los datos reales de lectura. La decisión de diseño que más lo define es qué ve el profesorado y qué no: puede consultar qué ha leído cada alumno, la valoración y la opinión que ha escrito, y el alumno lo sabe cuando la escribe; los compañeros no la ven nunca. Es una elección deliberada para que la opinión sea una conversación con el docente y no una exposición ante el grupo. En privacidad, cada centro tiene su propia instalación y su propia base de datos, y el acceso queda restringido al dominio de correo del centro: los datos de un centro no se mezclan con los de otro. Pensado para escuelas de primaria, institutos de secundaria y equipos de biblioteca escolar.",
+    "funcionalitats": [
+      "Catálogo de las bibliotecas de aula, no solo de la biblioteca central",
+      "Cada ejemplar asociado al grupo o aula donde está físicamente",
+      "Historial de lectura individual de cada alumno",
+      "Estadísticas de lectura para el claustro",
+      "Acceso con la cuenta de Google del centro, sin contraseñas nuevas",
+      "Importación del fondo y de los usuarios desde una hoja de cálculo",
+      "Las opiniones del alumnado las lee el profesorado, y el alumno lo sabe al escribirlas; los compañeros no las ven",
+      "Instalación y base de datos independientes para cada centro"
+    ],
+    "faq": [
+      {
+        "p": "¿Sirve para las bibliotecas de aula, no solo para la del centro?",
+        "r": "Sí. Cada ejemplar se cataloga con el grupo o aula donde está físicamente, de modo que el alumnado encuentra los libros que tiene a mano."
+      },
+      {
+        "p": "¿Cómo accede el alumnado?",
+        "r": "Con la cuenta de Google del centro. No se crean contraseñas nuevas y solo acceden las personas dadas de alta previamente por el centro."
+      },
+      {
+        "p": "¿Quién puede ver qué ha leído un alumno?",
+        "r": "El profesorado ve qué ha leído cada alumno, la valoración y la opinión que ha escrito, y el alumno lo sabe cuando escribe: el formulario lo indica. Los compañeros no ven nunca las opiniones de los demás."
+      },
+      {
+        "p": "¿Cuánto se tarda en ponerlo en marcha?",
+        "r": "El fondo y las listas de usuarios se importan desde una hoja de cálculo con la plantilla que os damos. Un centro con su inventario en Excel puede tener el catálogo cargado el mismo día."
+      },
+      {
+        "p": "¿Los datos de mi centro se mezclan con los de otros?",
+        "r": "No. Cada centro tiene su propia instalación y su propia base de datos, y el acceso queda restringido al dominio de correo del centro."
+      }
+    ],
+    "idiomes": [
+      "Catalán"
+    ],
+    "nivells": [
+      "Primaria",
+      "ESO",
+      "Centro"
+    ],
+    "materies": [
+      "Lengua",
+      "Biblioteca"
+    ],
+    "seo": {
+      "title": "Biblioteca escolar digital y seguimiento lector para centros",
+      "description": "Software de biblioteca escolar para escuelas e institutos: catálogo de las bibliotecas de aula, seguimiento lector de cada alumno y estadísticas del claustro.",
+      "keywords": "biblioteca escolar digital, software biblioteca escuela, seguimiento lector alumnado, plan lector de centro, catálogo biblioteca de aula, elplalector.cat"
+    }
+  },
+  "typeedu": {
+    "categoria": "Mecanografía educativa",
+    "estatText": "En producción, multiidioma",
+    "resum": "Mecanografía educativa y accesible: práctica guiada con teclado ISO, feedback inmediato y adaptaciones para el aula.",
+    "descripcio": "TypeEdu acompaña al alumnado a dominar el teclado físico con práctica guiada, feedback inmediato y objetivos adaptados a su ritmo. Muestra teclas, manos y dedos en pantalla para que se aprenda a escribir sin mirar el teclado, y traduce el progreso en métricas comprensibles: precisión, velocidad y una recomendación clara sobre cuál es el siguiente paso. Está pensado desde el principio para centros educativos, con herramientas diferenciadas para alumnado, profesorado y coordinación, y con privacidad desde el diseño. La capa de accesibilidad incluye lectura más legible, modo foco, microprácticas y controles visuales configurables: el centro puede proponer ajustes y cada alumno mantiene el control de sus preferencias.",
+    "seoLlarg": "La mecanografía sigue siendo una competencia digital básica y a menudo la gran olvidada: se da por hecho que el alumnado aprenderá a escribir solo, y el resultado es una escritura lenta que lastra el resto de tareas digitales durante toda la escolaridad. TypeEdu la trabaja de forma explícita y estructurada, con teclado ISO español y práctica guiada visual. La principal diferencia respecto a las herramientas genéricas de mecanografía es el enfoque educativo e inclusivo: el diseño contempla adaptaciones para alumnado con necesidades diferentes (lectura más legible, modo foco, microprácticas y apoyo al ritmo) y da al centro herramientas de coordinación, no solo ejercicios individuales. Disponible en castellano, catalán, inglés y euskera, lo que lo hace utilizable en centros de todo el Estado y en programas plurilingües.",
+    "funcionalitats": [
+      "Práctica guiada con teclas, manos y dedos visibles",
+      "Teclado ISO español y feedback inmediato",
+      "Progreso comprensible: precisión, velocidad y siguiente recomendación",
+      "Herramientas diferenciadas para alumnado, profesorado y coordinación",
+      "Accesibilidad: lectura legible, modo foco y microprácticas",
+      "Ajustes propuestos por el centro y controlados por cada alumno",
+      "Privacidad desde el diseño",
+      "Disponible en castellano, catalán, inglés y euskera"
+    ],
+    "faq": [
+      {
+        "p": "¿En qué idiomas está disponible?",
+        "r": "En castellano, catalán, inglés y euskera, con teclado ISO español."
+      },
+      {
+        "p": "¿Sirve para alumnado con necesidades educativas especiales?",
+        "r": "Sí. Incorpora lectura más legible, modo foco, microprácticas y controles visuales configurables. El centro puede proponer ajustes y cada alumno mantiene el control de sus preferencias."
+      },
+      {
+        "p": "¿Qué ve el profesorado?",
+        "r": "Hay herramientas diferenciadas para alumnado, profesorado y coordinación, con el progreso de precisión y velocidad y recomendaciones del siguiente paso."
+      }
+    ],
+    "idiomes": [
+      "Castellano",
+      "Catalán",
+      "Inglés",
+      "Euskera"
+    ],
+    "nivells": [
+      "Primaria",
+      "ESO",
+      "FP"
+    ],
+    "materies": [
+      "Competencia digital"
+    ],
+    "seo": {
+      "title": "TypeEdu: mecanografía educativa y accesible para centros",
+      "description": "Aprendizaje de mecanografía con práctica guiada, teclado ISO, feedback inmediato y adaptaciones para el aula. En castellano, catalán, inglés y euskera.",
+      "keywords": "mecanografía educativa, aprender a escribir con teclado, mecanografía escuela, mecanografía educativa accesible, competencia digital teclado, typeedu.com"
+    }
+  },
+  "diedric3d": {
+    "categoria": "Dibujo técnico y visión espacial",
+    "estatText": "En producción, disponible para ESO y Bachillerato",
+    "resum": "Editor de piezas con bloques en el que el alumnado ve el alzado, la planta y el perfil cambiar en tiempo real mientras construye.",
+    "descripcio": "Diedric3D ataca el momento en que se atasca mucha gente con el sistema diédrico: pasar del dibujo plano a imaginar el volumen que representa. En lugar de explicarlo, deja construir. El alumnado monta una pieza con bloques y ve las tres vistas actualizarse al lado mientras lo hace, así que la relación entre el cuerpo y sus proyecciones deja de ser una regla que se aprende de memoria y pasa a ser algo que se ha visto suceder. Los retos van del reconocimiento al dibujo, y cada uno tiene una solución comprobable: el validador es determinista y siempre dice por qué una respuesta no encaja.",
+    "seoLlarg": "El sistema diédrico es una de las partes del dibujo técnico donde más alumnado se queda por el camino, y casi siempre por el mismo motivo: se le pide que deduzca un volumen a partir de tres dibujos planos sin haberlo podido girar nunca. Diedric3D invierte el orden. Primero se construye la pieza con bloques, y el alzado, la planta y el perfil se dibujan solos al lado mientras se coloca cada cubo. Cuando después toca hacer el camino inverso —del dibujo al volumen— ya se ha visto la relación decenas de veces.\n\nLos retos cubren desde reconocer qué pieza corresponde a unas vistas hasta dibujarlas a partir del cuerpo, pasando por las cuñas rampa. Cada reto tiene una comprobación determinista: no hay una inteligencia artificial decidiendo si una respuesta es buena. Cuando una pieza no encaja, la aplicación dice exactamente qué falla.\n\nPara el profesorado, el objetivo es que no genere trabajo. Los grupos se importan de Google Classroom con un clic, o se reparte un código de seis caracteres. El seguimiento muestra lo mismo que ve cada alumno, y no hay rankings ni notas automáticas: la valoración se queda en el centro. También se puede imprimir una hoja con un código QR que lleva directamente a un reto concreto, para usarlo en papel.\n\nLas adaptaciones para alumnado con necesidades específicas —tiempo extra, trabajar sin cronómetro, más intentos, pistas que no penalizan— se configuran por alumno, son privadas y no dejan ninguna marca en su trabajo. Se guarda el parámetro, nunca el motivo.\n\nPensado para la ESO y el Bachillerato, y disponible en catalán, castellano e inglés.",
+    "funcionalitats": [
+      "Editor de piezas con bloques, con el alzado, la planta y el perfil en tiempo real",
+      "Retos de reconocimiento y de dibujo, con cuñas rampa",
+      "Validación determinista: cuando una respuesta no encaja, dice por qué",
+      "Importación de grupos desde Google Classroom, o código de aula de seis caracteres",
+      "Seguimiento que muestra lo mismo que ve el alumno, sin rankings",
+      "Adaptaciones por alumno, privadas y sin marca en el trabajo",
+      "Hoja imprimible con código QR hacia un reto concreto",
+      "Disponible en catalán, castellano e inglés"
+    ],
+    "faq": [
+      {
+        "p": "¿Para qué cursos está pensado?",
+        "r": "Para la ESO y el Bachillerato, allí donde se trabaja el sistema diédrico y las vistas. También encaja en ciclos de dibujo técnico."
+      },
+      {
+        "p": "¿La inteligencia artificial corrige los ejercicios?",
+        "r": "No. La comprobación es determinista y siempre da el mismo resultado. La inteligencia artificial sirve para proponer retos nuevos, que el profesorado aprueba antes de que lleguen al aula."
+      },
+      {
+        "p": "¿Cuánto trabajo supone para el docente?",
+        "r": "Importar el grupo de Google Classroom es un clic. Si no usáis Classroom, se reparte un código de seis caracteres y listo."
+      },
+      {
+        "p": "¿Hay rankings o notas automáticas?",
+        "r": "No, y es una decisión, no una carencia. El seguimiento muestra al docente lo mismo que ve cada alumno, y la valoración se queda en el centro."
+      },
+      {
+        "p": "¿Cómo funcionan las adaptaciones para alumnado con NEAE?",
+        "r": "Se configuran por alumno: tiempo extra, trabajar sin cronómetro, más intentos o pistas que no penalizan. Son privadas y no dejan ninguna marca en el trabajo. Se guarda el parámetro, nunca el motivo ni ningún diagnóstico."
+      },
+      {
+        "p": "¿Se puede usar sin ordenadores para todos?",
+        "r": "Sí. Hay una hoja imprimible con un código QR que lleva a un reto concreto, así que se puede trabajar en papel y dejar los dispositivos para el momento de construir."
+      }
+    ],
+    "idiomes": [
+      "Catalán",
+      "Castellano",
+      "Inglés"
+    ],
+    "nivells": [
+      "ESO",
+      "Bachillerato"
+    ],
+    "materies": [
+      "Dibujo técnico"
+    ],
+    "seo": {
+      "title": "Diedric3D: sistema diédrico con bloques para ESO y Bachillerato",
+      "description": "Construye piezas con bloques y mira cómo cambian alzado, planta y perfil en tiempo real. Corrección determinista, Google Classroom y adaptaciones por alumno.",
+      "keywords": "sistema diédrico, vistas alzado planta perfil, dibujo técnico ESO, visión espacial, diedric3d, geometría descriptiva bachillerato, proyecciones ortogonales"
+    }
+  },
+  "kiosko": {
+    "categoria": "Cartelería digital de centro",
+    "estatText": "En producción, gratuito para centros educativos",
+    "resum": "Convierte cualquier monitor del centro en un tablón de anuncios digital que se actualiza solo, gestionado desde el navegador por secretaría, departamentos y dirección.",
+    "descripcio": "El problema de las pantallas de un centro no suele ser técnico: es que acaban mostrando el mismo cartel durante semanas porque actualizarlas cuesta demasiado. Kiosko lo resuelve con paneles que se editan desde cualquier ordenador del centro. Un panel es una disposición completa de pantalla, con cabecera y bloques, y cada pantalla apunta a uno: el vestíbulo, el taller y la sala de profesorado pueden compartir uno o mostrar uno diferente. Cada bloque admite una ventana de publicación con fecha de inicio y de fin, de modo que un aviso aparece y caduca solo sin que nadie tenga que volver a tocarlo. Además del panel propio, cada pantalla puede rotar cualquier otra web del centro con los segundos que se le asignen. El reproductor consulta el servidor cada pocos minutos y no guarda nada.",
+    "seoLlarg": "La cartelería digital de un centro educativo suele acabar en uno de dos extremos: pantallas apagadas, o pantallas que llevan tres semanas mostrando lo mismo porque actualizarlas exige bajar al vestíbulo con un pendrive. Kiosko ataca exactamente este punto. Publicar es cuestión de un minuto desde el navegador, y la publicación programada hace el resto: se prepara la semana el lunes y cada aviso aparece y desaparece en la fecha que le toca.\n\nEl modelo de paneles separa el contenido de la pantalla física. Secretaría publica plazos de matrícula, los departamentos cuelgan sus salidas y sesiones de orientación sin pedir turno a nadie, y dirección ve de un vistazo qué muestra cada pantalla y cuándo se actualizó. La redacción asistida reescribe un texto para que se lea de lejos e incluye contador de caracteres, para que nadie publique un párrafo en un monitor que se mira de pasada.\n\nNo hace falta comprar hardware especial: sirve cualquier monitor o televisor con Android 8.0 o superior, y si el que hay no lo lleva, un reproductor Android conectado por HDMI hace el trabajo. La aplicación se instala desde un archivo descargable, también con un pendrive USB para pantallas sin navegador ni tienda de aplicaciones, y al abrirla solo pide la dirección de la pantalla. La cabecera puede mostrar contadores de agua, reciclaje, energía, árboles y CO₂, lo que da visibilidad diaria al proyecto ambiental del centro.",
+    "funcionalitats": [
+      "Paneles editables desde el navegador: cabecera y bloques con título, texto e imagen",
+      "Un panel por pantalla, o el mismo compartido entre varias",
+      "Publicación programada: cada bloque aparece y caduca solo por fecha de inicio y de fin",
+      "Rotación de contenidos: alterna el panel con cualquier otra web del centro, con los segundos de cada una",
+      "Redacción asistida que reescribe el texto para que se lea de lejos, con contador de caracteres",
+      "Indicadores de sostenibilidad en la cabecera: agua, reciclaje, energía, árboles y CO₂",
+      "Vista previa a tamaño real antes de publicar",
+      "Funciona en cualquier monitor o televisor con Android 8.0 o superior",
+      "Instalación por archivo descargable, también con un pendrive USB",
+      "Usuarios propios del centro con gestión desde el mismo tablero"
+    ],
+    "faq": [
+      {
+        "p": "¿Hay que comprar hardware especial?",
+        "r": "No. Sirve cualquier monitor o televisor con Android 8.0 o superior. Si el que tenéis no lo lleva, un reproductor Android conectado por HDMI ya hace el trabajo. Los paneles están pensados para pantalla vertical, pero también funcionan en horizontal."
+      },
+      {
+        "p": "¿Quién puede publicar?",
+        "r": "Los usuarios que el centro dé de alta en el tablero. La idea es que secretaría, cada departamento y dirección publiquen lo que les toca sin pedir turno a nadie."
+      },
+      {
+        "p": "¿Hay que ir a la pantalla para actualizarla?",
+        "r": "No. El reproductor consulta el servidor cada pocos minutos y se refresca solo. Una vez instalado, no hace falta volver nunca."
+      },
+      {
+        "p": "¿Se puede mostrar otra web en la misma pantalla?",
+        "r": "Sí. Cada pantalla tiene una lista ordenada de direcciones con los segundos de cada una, y puede mezclar el panel de Kiosko con cualquier otra web del centro."
+      },
+      {
+        "p": "¿Cómo empieza un centro?",
+        "r": "Solicita el alta desde esta web. Os creamos la cuenta del centro en el gestor y, a partir de ahí, vosotros mismos dais de alta al resto de usuarios y configuráis las pantallas."
+      },
+      {
+        "p": "¿Tiene coste?",
+        "r": "No. Es gratuito para centros educativos."
+      }
+    ],
+    "idiomes": [
+      "Catalán"
+    ],
+    "nivells": [
+      "Centro"
+    ],
+    "materies": [
+      "Gestión del centro"
+    ],
+    "seo": {
+      "title": "Kiosko: cartelería digital para escuelas e institutos",
+      "description": "Convierte los monitores del centro en tablones de anuncios digitales gestionados desde el navegador, con publicación programada y rotación de webs.",
+      "keywords": "cartelería digital escuela, pantallas informativas centro educativo, tablón de anuncios digital, digital signage escuela, kiosko.aulaia.cat"
+    }
+  },
+  "enfonsar-la-flota": {
+    "categoria": "Geometría en el espacio y dibujo técnico",
+    "estatText": "En producción, para 3.º y 4.º de ESO",
+    "resum": "El juego de hundir la flota de toda la vida, con profundidad: cada disparo es un punto (x, y, z), y las vistas del sistema diédrico aparecen en directo mientras se apunta.",
+    "descripcio": "Undirlaflota, la aplicación que hay detrás, convierte la cuadrícula clásica en un bloque de 10 por 10 por 5 niveles. Los aviones vuelan en los niveles de arriba, los barcos navegan en la superficie y los submarinos se esconden debajo; los torpedos llegan a la superficie y hacia abajo, los ataques aéreos a la superficie y hacia arriba. Con veinte torpedos y diez ataques aéreos para quinientas celdas, disparar al azar es perder, y la partida se convierte en un problema de patrones de búsqueda y de probabilidad. Dos visores en tres dimensiones muestran la flota propia con los impactos recibidos y el bloque de ataque con las coordenadas en directo; al lado, la planta, el alzado y el perfil de la celda apuntada. Se juega contra el ordenador, a dos en un mismo dispositivo o en línea con la clase, y hay un tutorial que no guarda nada. El alumnado entra con un código de clase y un nombre, sin contraseña.",
+    "seoLlarg": "En 3.º de ESO la cuadrícula ya se sabe. Lo que cuesta es el salto al espacio: aceptar que un punto tiene tres coordenadas, que una vista de un objeto pierde una y que con dos vistas se reconstruye lo que no se ve. Enfonsar la flota en 3D hace que este salto tenga consecuencias dentro de un juego que todo el mundo conoce. La tercera coordenada no es decorativa: decide qué arma sirve, qué nivel vale la pena explorar y qué hipótesis hay que tener sobre lo que hay debajo. Mientras el alumno apunta, las tres proyecciones del sistema diédrico se dibujan solas, así que la planta, el alzado y el perfil dejan de ser una convención de los planos y pasan a ser la manera de encontrar el submarino.\n\nLa munición limitada hace el resto. Un portaaviones ocupa cinco celdas en línea, y un patrón que dispare a una de cada cinco columnas lo encuentra seguro; las unidades de tres y de dos celdas piden patrones más densos. Cuántos disparos hacen falta para cubrir un plano, qué probabilidad tiene el primer disparo: son preguntas de recuento y de probabilidad que surgen de querer ganar, no de un enunciado. La pantalla final indica la precisión, las columnas exploradas, los niveles usados y si el patrón ha sido sistemático, exploratorio o mixto.\n\nEl proyecto incluye una secuencia de tres sesiones para Matemáticas y Educación Plástica y Visual, con consignas de libreta (anotar cada disparo como punto, dibujar planta y alzado a mano, deducir coordenadas a partir de dos vistas) y una rúbrica de cuatro niveles. Las evidencias automáticas se guardan por código de clase; la nota sale del trabajo del alumno. Alineado con el Decreto 175/2022 de Cataluña y disponible en catalán, castellano e inglés.",
+    "funcionalitats": [
+      "Bloque de 10 × 10 × 5 con tres capas: aviones en el aire, barcos en la superficie, submarinos bajo el agua",
+      "Diez unidades por flota: portaaviones, fragatas, submarinos, bombardero y cazas",
+      "Cada disparo es un punto (x, y, z); los torpedos y los ataques aéreos llegan a niveles diferentes",
+      "Munición limitada: veinte torpedos y diez ataques aéreos por partida",
+      "Dos visores 3D: la flota propia con los impactos recibidos y el bloque de ataque con coordenadas en directo",
+      "Planta, alzado y perfil de la celda apuntada, en directo, como en dibujo técnico",
+      "Modos: contra el ordenador, dos jugadores en el mismo dispositivo, en línea con la clase y tutorial",
+      "Pantalla de resultados con precisión, columnas exploradas, niveles usados y tipo de patrón de ataque",
+      "Ranking de la clase por código",
+      "Acceso con código de clase y nombre, sin contraseña; el tutorial no guarda nada",
+      "Secuencia didáctica de tres sesiones y rúbrica para Matemáticas y Dibujo técnico",
+      "Interfaz en catalán, castellano e inglés"
+    ],
+    "faq": [
+      {
+        "p": "¿Para qué cursos está pensado?",
+        "r": "Para 3.º y 4.º de ESO, donde se trabajan las coordenadas en el espacio y el sistema diédrico. También sirve en 2.º de ESO como primera aproximación y en 1.º de bachillerato tecnológico como repaso."
+      },
+      {
+        "p": "¿Hay que crear cuentas al alumnado?",
+        "r": "No. Se entra con un código de clase y un nombre, sin contraseña. El tutorial se abre sin nada y no guarda ningún dato."
+      },
+      {
+        "p": "¿Cómo empieza un centro?",
+        "r": "Solicita el alta desde esta web. Hoy el código de clase de vuestro grupo lo creamos nosotros y te avisamos cuando esté listo. Mientras tanto, el tutorial y las partidas contra el ordenador funcionan sin código."
+      },
+      {
+        "p": "¿Qué guarda de cada partida?",
+        "r": "Por código de clase: precisión, disparos, unidades hundidas, niveles usados y tipo de patrón de ataque. Nada más. La nota sale de la libreta, de la ficha de coordenadas y de la reflexión escrita, no del juego."
+      },
+      {
+        "p": "¿Cuánto tiempo requiere?",
+        "r": "La secuencia propuesta son tres sesiones: tutorial y partida contra el ordenador, partida a dos con vistas diédricas en la libreta, y análisis de resultados con un reto de estrategia."
+      },
+      {
+        "p": "¿Hay adaptaciones?",
+        "r": "Para refuerzo: tutorial sin límite de partidas, vistas diédricas siempre visibles y empezar con la altura fijada en cero. Para ampliación: calcular la probabilidad de acierto del primer disparo o justificar por qué el patrón de una de cada cinco columnas es el mínimo para un portaaviones."
+      }
+    ],
+    "idiomes": [
+      "Catalán",
+      "Castellano",
+      "Inglés"
+    ],
+    "nivells": [
+      "ESO",
+      "Bachillerato"
+    ],
+    "materies": [
+      "Matemáticas",
+      "Dibujo técnico"
+    ],
+    "seo": {
+      "title": "Hundir la flota en 3D: coordenadas y sistema diédrico en la ESO",
+      "description": "Hundir la flota en tres dimensiones para 3.º y 4.º de ESO. Cada disparo es un punto (x, y, z) y las vistas diédricas aparecen en directo mientras se apunta.",
+      "keywords": "hundir la flota 3D, coordenadas en el espacio ESO, sistema diédrico juego, batalla naval educativa, geometría en el espacio, dibujo técnico ESO, enfonsarlaflota.aulaia.cat"
+    }
+  },
+  "poetes-vives": {
+    "categoria": "Poesía y escritura creativa",
+    "estatText": "En producción · una instalación por centro, hoy en la Escola Industrial",
+    "resum": "Club de lectura y escritura de poesía para institutos: el alumnado escribe, publica sin firmar entre iguales y escucha el poema leído en voz alta. El profesorado revisa antes de que nada salga al muro.",
+    "descripcio": "El Club de les Poetes Vives parte de una constatación: a los quince años, firmar un poema sincero delante de la clase sale caro. Por eso el muro del centro publica con seudónimo, nunca con el nombre, y es privado del centro. El alumnado escribe en un editor limpio, con tipografía y disposición a elegir, empezando por una forma clásica (haiku, soneto, romance, acróstico, décima, caligrama) o desde cero. Una lectora atenta, hecha con inteligencia artificial, hace preguntas al margen: nunca reescribe ni corrige, y la decisión es siempre de quien escribe. Después se eligen la voz y el ritmo de lectura, porque decidir dónde respira un poema es entenderlo. El profesorado lee cada poema antes de que salga al muro; si hace falta una conversación, se hace con discreción. En el muro, el poema aparece como pieza gráfica con seudónimo y reproductor, y quien lo ha escrito puede retirarlo cuando quiera. En este club el femenino es el genérico: cuando se dice «las poetas», estamos todos.",
+    "seoLlarg": "Un taller de poesía en el instituto siempre choca con el mismo muro: el alumnado no escribe de verdad si sabe que lo leerá la clase con su nombre al lado. El Club de les Poetes Vives resuelve la tensión separando dos cosas que suelen ir juntas. Entre iguales, el anonimato es total: en el muro solo aparece el seudónimo, y ninguna pantalla pública dice nunca quién ha escrito qué. Para el sistema, en cambio, la autoría existe siempre: el profesorado puede consultarla cuando hace falta, y cada consulta queda registrada. Es la diferencia entre proteger a quien escribe y dejarlo solo.\n\nLa inteligencia artificial tiene un papel deliberadamente pequeño. Actúa como una lectora que hace preguntas al margen sobre la métrica, las repeticiones o la voz del poema, y no reescribe, no propone versiones ni corrige. Antes de la revisión, marca y ordena los poemas según lo que ve, pero quien aprueba es siempre una docente. Si detecta un riesgo alto, el poema no se rechaza en silencio: se escala a tutoría u orientación, y quien escribe solo ve «en revisión». La poesía oscura sigue el camino normal. Rechazar un poema exige una nota a quien lo ha escrito. A la IA solo va el texto del poema: ningún nombre, ningún correo, ningún dato de la persona, y con un límite de uso por persona y día. El contador de sílabas métricas es local y no pasa por ningún modelo.\n\nEl temario de formas poéticas incluye el haiku, el soneto, el romance, el acróstico, la décima, el caligrama y el verso libre, y los ejemplos que cita son todos de dominio público: Horacio, Whitman, Thoreau, Verdaguer, Maragall, Salvat-Papasseit. El resto de la poesía la pone el alumnado. Cada centro tiene su propia instalación, vinculada al dominio de Google Workspace del centro: ninguna otra cuenta puede entrar, y el muro no se comparte con nadie más.",
+    "funcionalitats": [
+      "Editor de poemas con tipografía, tamaño y disposición a elegir; siete formas como punto de partida o verso libre",
+      "Temario de formas poéticas: haiku, soneto, romance, acróstico, décima, caligrama y verso libre",
+      "Contador de sílabas métricas, local y sin IA",
+      "Una lectora con IA que solo hace preguntas al margen: nunca reescribe, propone versiones ni corrige",
+      "Voz y ritmo de lectura a elegir; el poema se escucha en el muro",
+      "Revisión del profesorado antes de publicar, con registro de quién aprueba qué y cuándo",
+      "Escalado a tutoría u orientación cuando hay riesgo alto; rechazar exige una nota a quien escribe",
+      "Muro privado del centro con seudónimo y reproductor, nunca con el nombre; el poema se puede retirar cuando se quiera",
+      "Ningún dato personal a la IA: solo el texto del poema, con límite de uso por persona y día",
+      "Acceso con la cuenta de Google del centro; roles de docente, tutoría y orientación desde coordinación",
+      "Preferencias de accesibilidad aplicadas en el servidor",
+      "Ejemplos de poesía solo de dominio público"
+    ],
+    "faq": [
+      {
+        "p": "¿Los poemas son anónimos?",
+        "r": "Entre iguales, sí: en el muro solo aparece el seudónimo. Para el sistema, no: la autoría existe siempre, el profesorado puede consultarla cuando hace falta, y cada consulta queda registrada."
+      },
+      {
+        "p": "¿La inteligencia artificial reescribe los poemas?",
+        "r": "No. Solo hace preguntas al margen. Antes de la revisión marca y ordena los poemas, pero quien aprueba es siempre una docente."
+      },
+      {
+        "p": "¿Qué pasa con un poema que preocupa?",
+        "r": "Si la IA ve un riesgo alto, se escala a tutoría u orientación; nunca se rechaza en silencio. Quien escribe ve «en revisión», como con cualquier otro poema. La poesía oscura sigue el camino normal."
+      },
+      {
+        "p": "¿Qué datos van a la IA?",
+        "r": "Solo el texto del poema. Ningún nombre, ningún correo, ningún dato de la persona. Hay un límite de uso por persona y día."
+      },
+      {
+        "p": "¿Cómo empieza un centro?",
+        "r": "Cada centro tiene su propia instalación, vinculada a su dominio de Google Workspace. Solicita el alta desde esta web y la preparamos; te avisamos cuando esté lista. Hoy la instalación en marcha es la de la Escola Industrial."
+      },
+      {
+        "p": "¿Por qué «las poetas»?",
+        "r": "En este club el femenino es el genérico. Cuando se dice «las poetas», estamos todas, todos y todes."
+      }
+    ],
+    "idiomes": [
+      "Catalán"
+    ],
+    "nivells": [
+      "ESO",
+      "Bachillerato"
+    ],
+    "materies": [
+      "Lengua y literatura"
+    ],
+    "seo": {
+      "title": "Club de les Poetes Vives: escribir y publicar poesía sin firmar",
+      "description": "Club de lectura y escritura de poesía para institutos. Una IA solo hace preguntas, el profesorado revisa y el poema sale al muro del centro con seudónimo y voz.",
+      "keywords": "poesía en el instituto, escritura creativa ESO, club de lectura poesía, taller de poesía secundaria, formas poéticas, poetes vives, aulaia.cat"
+    }
+  },
+  "eltaulell": {
+    "categoria": "Comunicación y acción tutorial",
+    "estatText": "En construcción · versión de pruebas en eltaulell.aulaia.cat",
+    "resum": "Plataforma multicentro para comunicar, escuchar al alumnado y mejorar el acompañamiento tutorial: un punto de encuentro para toda la comunidad educativa.",
+    "descripcio": "El Taulell recoge la vida del centro en un solo lugar y la hace accesible a toda la comunidad educativa. Nace de una constatación sencilla: la información de un centro vive dispersa entre grupos de mensajería, circulares en papel, correos y tablones de anuncios que nadie mira. El resultado es ruido para las familias e información que no llega a quien la tiene que recibir. La plataforma ordena esta comunicación por grupo y por rol, y le añade una capa de escucha del alumnado pensada para la acción tutorial: detectar antes para acompañar mejor. Cada perfil de la comunidad —alumnado, familias, tutorías, equipo directivo— tiene una experiencia diferente según lo que le toca ver y lo que le toca hacer.",
+    "seoLlarg": "La acción tutorial se juega en gran parte en la información que llega a tiempo. Un tutor que sabe cómo va un grupo antes de que el problema estalle puede acompañar; uno que se entera tarde solo puede reaccionar. El Taulell trabaja este terreno con dos pilares: comunicación ordenada por grupo y rol, que reduce el ruido para las familias y evita que los avisos se pierdan entre canales; y escucha del alumnado, que da a las tutorías señales para detectar situaciones antes. Al ser multicentro, permite que cada centro mantenga su realidad y su proyecto educativo sin compartir datos con los demás. Pensado para sumar al proyecto de centro existente, no para sustituirlo.",
+    "funcionalitats": [
+      "Tablón de centro con la información ordenada por grupo y por rol",
+      "Comunicación con las familias sin depender de grupos de mensajería",
+      "Escucha del alumnado orientada a la acción tutorial",
+      "Señales para detectar situaciones antes y acompañar mejor",
+      "Experiencias diferenciadas para alumnado, familias, tutorías y dirección",
+      "Arquitectura multicentro: cada centro mantiene su realidad"
+    ],
+    "faq": [
+      {
+        "p": "¿En qué punto está?",
+        "r": "Hay una versión de pruebas accesible en eltaulell.aulaia.cat, pero el producto todavía está en construcción y pendiente de dominio propio. Si quieres probarlo en tu centro, escríbenos."
+      },
+      {
+        "p": "¿Sustituye a los grupos de mensajería de las familias?",
+        "r": "Ese es precisamente el objetivo: ordenar la comunicación por grupo y rol para que la información llegue a quien corresponde sin el ruido de los grupos abiertos."
+      }
+    ],
+    "idiomes": [
+      "Catalán"
+    ],
+    "nivells": [
+      "Primaria",
+      "ESO"
+    ],
+    "materies": [
+      "Tutoría"
+    ],
+    "seo": {
+      "title": "El Taulell: comunicación de centro y acción tutorial",
+      "description": "Plataforma educativa multicentro para comunicarse con las familias, escuchar al alumnado y mejorar el acompañamiento tutorial. Menos ruido, más acompañamiento.",
+      "keywords": "comunicación centro educativo, acción tutorial, plataforma familias escuela, tablón de centro, acompañamiento tutorial, escucha alumnado"
+    }
+  },
+  "aulaacull": {
+    "categoria": "Aula de acogida y catalán para recién llegados",
+    "estatText": "En producción · el alta de cada centro y de su profesorado la hacemos nosotros",
+    "resum": "Aula virtual de acogida para alumnado recién llegado de ESO que aprende catalán: itinerario de unidades con instrucciones locutadas en la lengua puente de cada alumno y seguimiento para el docente de acogida.",
+    "descripcio": "AulaAcull.cat tiene dos zonas. El alumno entra con la cuenta de Google del centro y ve su itinerario: las unidades que el docente ha asignado al grupo, en orden, con actividades de léxico, relacionar, clasificar, escuchar y elegir, rellenar huecos, lectura, dictado, grabar la voz o juego de rol, entre veintidós tipos. Cada instrucción está en catalán, con pictograma y botón para escucharla, y también se puede escuchar en la lengua puente del alumno (castellano, árabe, amazige, inglés, francés, rumano, ucraniano, urdu, panyabí o chino); el contenido es siempre en catalán. El docente de aula de acogida ve su grupo con un semáforo de alerta por alumno (inactividad, caída de aciertos, tiempo, reintentos, evidencias pendientes), asigna unidades al grupo, consulta la ficha de cada alumno y corrige las tareas abiertas y de voz con una rúbrica de tres niveles: en proceso, logrado, consolidado. No hay nota numérica ni ningún ranking.",
+    "seoLlarg": "El aula de acogida recibe alumnado que llega a mitad de curso, con lenguas de origen diversas y niveles de alfabetización diferentes, y el docente tiene que atenderlos a la vez con material a menudo en papel. AulaAcull.cat lleva este trabajo a un itinerario digital que el alumno puede seguir solo desde el primer día: la instrucción le llega en catalán y, si lo necesita, locutada en su lengua puente, pero la respuesta es siempre en catalán, que es la lengua meta. Las veinte unidades actuales cubren los niveles A0 y A1 con doscientas actividades, pictogramas de ARASAAC y locuciones propias.\n\nLa accesibilidad es una regla de diseño, no una opción: todo lo que se puede arrastrar también se puede hacer con dos toques, todo funciona con teclado y lector de pantalla, el color nunca es el único indicador y el rojo nunca significa «mal». Las actividades de voz no se corrigen solas: el alumno se graba, se escucha y decide si repite; el audio no sale de su navegador.\n\nPara el docente, el semáforo de alerta ordena el grupo por urgencia a partir de señales concretas y visibles, y las observaciones que escribe son texto libre que no entra en ningún automatismo. Cada centro solo ve sus datos, se guarda lo mínimo (nombre, inicial del apellido, correo del centro, lengua puente, curso e intentos) y no hay ninguna etiqueta de procedencia. La aplicación no crea cuentas por sí sola: el alta la hace el centro.",
+    "funcionalitats": [
+      "Itinerario por alumno con las unidades que el docente asigna al grupo",
+      "Veintidós tipos de actividad: léxico, relacionar, clasificar, escuchar, rellenar huecos, lectura, dictado, voz, juego de rol y más",
+      "Instrucciones en catalán con pictograma y locución, y también locutadas en la lengua puente del alumno",
+      "Diez lenguas puente: castellano, árabe, amazige, inglés, francés, rumano, ucraniano, urdu, panyabí y chino",
+      "Semáforo de alerta por alumno: inactividad, caída de aciertos, tiempo, reintentos y evidencias pendientes",
+      "Cola de corrección con rúbrica en proceso / logrado / consolidado, sin nota numérica",
+      "Accesibilidad WCAG 2.2 AA: teclado, lector de pantalla, alternativa de un toque a todo arrastre",
+      "Acceso con la cuenta de Google Workspace del centro; ninguna contraseña propia",
+      "Datos mínimos por centro, sin rankings ni etiquetas de procedencia; la voz no se guarda"
+    ],
+    "faq": [
+      {
+        "p": "¿Cómo empieza un centro?",
+        "r": "Solicita el alta desde esta web. Nosotros damos de alta el centro, el docente de aula de acogida y su alumnado, y te avisamos cuando ya puedes entrar. La aplicación no crea cuentas por sí sola: si entras antes del alta, te dirá que tu cuenta todavía no está dada de alta."
+      },
+      {
+        "p": "¿En qué lengua trabaja el alumno?",
+        "r": "Siempre en catalán. La lengua puente solo acompaña las instrucciones y la ayuda, en texto y en audio, para que el alumno entienda qué tiene que hacer."
+      },
+      {
+        "p": "¿Pone notas?",
+        "r": "No. El docente corrige las tareas abiertas y de voz con tres niveles (en proceso, logrado, consolidado) y puede dejar un comentario. No hay nota numérica, ni ranking, ni comparación entre alumnos."
+      },
+      {
+        "p": "¿Cómo accede el alumnado?",
+        "r": "Con la cuenta de Google del Workspace del centro. La aplicación no crea cuentas: el centro da de alta a cada usuario con su correo."
+      },
+      {
+        "p": "¿Qué pasa con la voz que graba el alumno?",
+        "r": "No se guarda. El alumno se graba, se escucha y entrega; el docente solo ve que lo ha hecho."
+      }
+    ],
+    "idiomes": [
+      "Catalán"
+    ],
+    "nivells": [
+      "ESO"
+    ],
+    "materies": [
+      "Aula de acogida",
+      "Lengua catalana"
+    ],
+    "seo": {
+      "title": "AulaAcull.cat: aula virtual de acogida para recién llegados",
+      "description": "Aula virtual de acogida para aprender catalán: unidades A0-A1, instrucciones locutadas en diez lenguas puente, actividades accesibles y seguimiento docente.",
+      "keywords": "aula de acogida, alumnado recién llegado, aprender catalán ESO, catalán para recién llegados, aula de acogida digital, lengua puente, aulaacull.aulaia.cat"
+    }
+  },
+  "la-cantina": {
+    "categoria": "Emprendimiento y vida en el centro",
+    "estatText": "En construcción · propuesta educativa en desarrollo",
+    "resum": "Propuesta educativa para que sea el propio alumnado quien gestione el bar escolar del centro, y que esa gestión cuente como aprendizaje.",
+    "descripcio": "La Cantina convierte el bar del centro en un proyecto de aula. En lugar de ser un servicio externo que el alumnado solo consume, pasa a ser un negocio real que el alumnado planifica, gestiona y evalúa: qué se ofrece, a qué precio, con qué proveedores, con qué turnos y con qué margen. La diferencia con una simulación es que aquí las decisiones tienen consecuencias inmediatas y visibles —si el precio no cubre costes, se nota; si la oferta no encaja con lo que quiere el centro, no se vende— y eso es exactamente lo que hace que el aprendizaje se sostenga. La propuesta está en desarrollo e incluirá el marco metodológico, los roles y las herramientas de seguimiento para que el profesorado pueda llevarla sin montarlo todo desde cero.",
+    "seoLlarg": "Los proyectos de emprendimiento escolar suelen quedarse en el ejercicio ficticio: un plan de empresa que nadie ejecuta y unos números que nunca pasan por caja. La Cantina parte de un servicio que el centro ya tiene y que el alumnado ya utiliza cada día, y lo convierte en el objeto de aprendizaje. Este anclaje en lo real es lo que permite trabajar competencias que a menudo se quedan en teoría: la matemática aplicada de precios, márgenes y cambio; la alimentación saludable cuando hay que decidir qué se ofrece; la seguridad y la higiene alimentaria como requisito, no como tema; la atención al público y la gestión de conflictos con compañeros que también son clientes; y la sostenibilidad cuando se decide sobre envases, residuos y abastecimiento de proximidad. Especialmente adecuada para proyectos transversales en Secundaria y para Ciclos Formativos de las familias de Hostelería, Comercio y Administración.",
+    "funcionalitats": [
+      "Marco metodológico para llevar el bar escolar como proyecto de aula",
+      "Roles rotativos: compras, caja, atención, inventario y comunicación",
+      "Matemática aplicada: precios, márgenes, cambio y cierre de caja",
+      "Decisiones sobre alimentación saludable y oferta del centro",
+      "Higiene y seguridad alimentaria como requisito del proyecto",
+      "Sostenibilidad: envases, residuos y abastecimiento de proximidad",
+      "Seguimiento docente y evidencias para la evaluación competencial"
+    ],
+    "faq": [
+      {
+        "p": "¿En qué punto está?",
+        "r": "Es una propuesta educativa en desarrollo. Todavía no hay plataforma pública. Si a tu centro le interesa participar en la definición, escríbenos."
+      },
+      {
+        "p": "¿El centro tiene que tener bar propio?",
+        "r": "La propuesta está pensada para centros que gestionan su propio servicio o que pueden ceder su gestión al alumnado dentro de un marco educativo y con supervisión docente."
+      },
+      {
+        "p": "¿Quién asume la responsabilidad legal y sanitaria?",
+        "r": "El centro, siempre. La propuesta es pedagógica: organiza el aprendizaje en torno al servicio, pero la titularidad y las obligaciones legales siguen siendo del centro."
+      }
+    ],
+    "idiomes": [
+      "Catalán"
+    ],
+    "nivells": [
+      "ESO",
+      "FP"
+    ],
+    "materies": [
+      "Emprendimiento"
+    ],
+    "seo": {
+      "title": "La Cantina: el bar escolar gestionado por el alumnado",
+      "description": "Propuesta educativa para que el alumnado gestione el bar del centro como proyecto de aula: precios, márgenes, alimentación saludable, higiene y sostenibilidad.",
+      "keywords": "bar escolar alumnado, emprendimiento escolar, proyecto de aula cantina, aprendizaje servicio instituto, alimentación saludable centro educativo"
+    }
+  },
+  "kipuk": {
+    "categoria": "Educación física y cohesión",
+    "estatText": "En producción, abierto a centros con Google Workspace propio",
+    "resum": "Plataforma de centro para organizar actividad física, ligas, equipos y retos cooperativos en el patio, sin depender de los móviles del alumnado.",
+    "descripcio": "KIPUK convierte el patio y la Educación Física en un sistema inclusivo, visible y fácil de operar para el profesorado. Está diseñado para dos contextos que tienen que convivir: la preparación desde el aula con ordenador, y la operación rápida en el patio con un único iPad docente, tarjetas físicas y roles rotativos. El alumnado no necesita teléfono propio en ningún momento. El docente prepara una jornada en menos de diez minutos, crea equipos con reglas pedagógicas explicables y valida resultados en pocos toques; el alumnado sabe adónde ir, con quién está y qué rol tiene sin mirar ninguna pantalla.",
+    "seoLlarg": "La gestión de una jornada de Educación Física suele repartirse entre papel, memoria y mensajes: hacer grupos, pasar lista, controlar pistas y registrar resultados. KIPUK recoge todo este flujo en una sola herramienta pensada para funcionar en el patio, no en un despacho. La diferencia de fondo es el criterio pedagógico: la clasificación combina resultado, asistencia, cooperación, juego limpio y esfuerzo con reglas visibles y revisables, de modo que no solo cuente ganar. El sorteo de equipos genera una propuesta explicable que el docente puede ajustar, y nunca infiere atributos sensibles: no clasifica por género, capacidad, origen ni nivel. La inteligencia artificial puede proponer, pero nunca decidir ni sancionar; todo resultado o reconocimiento requiere validación humana. Los datos del alumnado no se publican ni se envían a ningún modelo de IA, y el panel de proyección nunca muestra información sensible. Incluye un creador de torneos escolares con plantillas, fases, calendario, pistas y panel de recinto imprimible.",
+    "funcionalitats": [
+      "Sorteo pedagógico de equipos con propuesta explicable y ajustable por el docente",
+      "Jornada de patio con un solo iPad: asistencia, control de pista, marcador y validación",
+      "Creador de torneos: liga, copa con consolación, grupos y festival cooperativo",
+      "Panel de proyección y tarjetas imprimibles, sin datos sensibles",
+      "Reconocimientos de juego limpio, participación, cuidado y cohesión",
+      "Importación controlada de grupos desde Google Classroom",
+      "Roles rotativos y puntos de encuentro para que el alumnado no necesite dispositivo",
+      "Informes de participación agregada, con auditoría de quién accede y cuándo"
+    ],
+    "faq": [
+      {
+        "p": "¿El alumnado necesita móvil?",
+        "r": "No. El flujo principal de patio funciona con colores, tarjetas, puntos de encuentro y roles. El iPad del docente coordina, pero ningún alumno necesita teléfono, cuenta ni registro propio."
+      },
+      {
+        "p": "¿Cómo se hacen los equipos?",
+        "r": "El docente elige los parámetros (número de equipos, evitar repeticiones, mezclar aulas, parejas de apoyo) y el sistema genera una propuesta explicable que se puede modificar antes de confirmar. No clasifica por género, capacidad, origen ni nivel."
+      },
+      {
+        "p": "¿Qué pasa con los datos del alumnado?",
+        "r": "No se publican ni se envían a ningún modelo de IA. El acceso es por rol, las listas no son públicas y queda registro de cada acción sensible, con retención definida."
+      },
+      {
+        "p": "¿Cómo empieza un centro?",
+        "r": "Solicita el alta desde esta web y registramos el dominio de vuestro Google Workspace. A partir de ahí, quien entra en kipuk.cat con la cuenta del centro queda dado de alta automáticamente; los roles de docente y coordinación los asigna el centro desde su propio panel de usuarios."
+      }
+    ],
+    "idiomes": [
+      "Castellano"
+    ],
+    "nivells": [
+      "Primaria",
+      "ESO"
+    ],
+    "materies": [
+      "Educación física"
+    ],
+    "seo": {
+      "title": "KIPUK: actividad física, juegos y cohesión en el patio escolar",
+      "description": "Plataforma de centro para organizar Educación Física, ligas, equipos y retos cooperativos en el patio, sin móviles del alumnado y con criterios de inclusión.",
+      "keywords": "educación física escuela, torneos escolares, cohesión en el patio, app educación física, juegos cooperativos escuela, KIPUK, kipuk.cat"
+    }
+  },
+  "chefboss": {
+    "categoria": "Simulación de negocio",
+    "estatText": "En producción y abierto a centros de Formación Profesional",
+    "resum": "Simulador educativo de restauración para Formación Profesional: 10 sesiones para crear y gestionar un restaurante, tomar decisiones y alcanzar objetivos de aprendizaje.",
+    "descripcio": "Chef Boss es un simulador educativo de gestión de restaurantes pensado para Formación Profesional. Cada equipo abre su restaurante y lo gestiona durante 10 sesiones, tomando decisiones reales sobre escandallos, costes, proveedores y clientes. La plataforma incorpora situaciones del sector como inspecciones sanitarias, bajas laborales o malas reseñas, e integra la inteligencia artificial como herramienta de análisis. Resuelve el problema del aprendizaje abstracto: costes, márgenes y presupuestos cobran sentido cuando hay un negocio en juego. El alumnado accede con un código de aula y un seudónimo de equipo, sin introducir datos personales.",
+    "seoLlarg": "La enseñanza de la gestión empresarial en los Ciclos Formativos de Hostelería y Turismo a menudo se percibe como abstracta y poco motivadora. Chef Boss pone al alumnado en la piel de un empresario real: cada equipo abre su restaurante y lo gestiona durante diez sesiones, decidiendo escandallos, proveedores, precios y personal con las consecuencias a la vista. La gamificación, la competición sana entre equipos y la proyección en directo del marcador generan un nivel de participación muy superior al de las metodologías tradicionales.\n\nLo que distingue a Chef Boss de un juego, sin embargo, es el panel del profesorado. Desde allí se preparan las sesiones, se sigue a cada equipo en directo y se recogen las evidencias del proceso, no solo el resultado final: objetivos de cada sesión, cuestionarios sorpresa con puntos formativos, rúbricas, coevaluación entre equipos y un dosier final. La sesión se abre, se pausa y se reanuda cuando el docente lo decide, de modo que el ritmo lo marca el aula y no el programa.\n\nLa propuesta de calificación es transparente, configurable y siempre revisable. La inteligencia artificial está como apoyo de análisis y de retorno formativo, nunca como juez: el criterio académico se queda en el centro. Todo se puede exportar a Excel y PDF para incorporarlo a la documentación del módulo.\n\nLa accesibilidad no es una pestaña de configuración: texto ampliado, contraste alto, tipografía legible, movimiento reducido y tareas segmentadas en objetivo, decisión, resultado y reflexión. Son apoyos de acceso, y las adaptaciones educativas siguen bajo criterio del centro y del profesorado.\n\nApta para CFGM y CFGS de Hostelería, Turismo y Administración. El alumnado entra con un código de aula y un seudónimo de equipo, sin introducir datos personales.",
+    "funcionalitats": [
+      "Simulación de restaurante por equipos durante 10 sesiones",
+      "Escandallos y costes: el margen deja de ser un concepto abstracto",
+      "Decisiones reales sobre proveedores, clientes y situaciones de crisis",
+      "Trabaja emprendimiento, trabajo en equipo y seguridad alimentaria",
+      "Acceso con código de aula y seudónimo de equipo, sin datos personales",
+      "Adaptaciones NEAE: texto grande, alto contraste, tipografía legible y movimiento reducido",
+      "Marcador en directo para proyectar en el aula",
+      "IA integrada como herramienta de análisis, nunca para poner notas"
+    ],
+    "faq": [
+      {
+        "p": "¿Chef Boss pone notas automáticamente?",
+        "r": "No. Organiza evidencias y puede ofrecer una propuesta explicable, pero el profesorado conserva la interpretación del proceso y la decisión final."
+      },
+      {
+        "p": "¿Cómo facilita la participación del alumnado con NEAE?",
+        "r": "Ofrece objetivos visibles, tareas segmentadas, ritmo marcado por el docente y preferencias de texto grande, contraste alto, tipografía legible y movimiento reducido."
+      },
+      {
+        "p": "¿Hay que introducir datos personales?",
+        "r": "No. El alumnado accede con un código de aula y un seudónimo de equipo."
+      },
+      {
+        "p": "¿Cuánto dura una experiencia completa?",
+        "r": "Diez sesiones. Cada equipo abre el restaurante en la primera y lo gestiona hasta el final, con un dosier que recoge todo el proceso."
+      },
+      {
+        "p": "¿Qué ve el profesorado mientras el alumnado juega?",
+        "r": "El panel muestra los equipos activos en directo, el porcentaje de evidencias recogidas y el objetivo de la sesión. La sesión se abre, se pausa y se reanuda cuando el docente lo decide."
+      },
+      {
+        "p": "¿Se puede evaluar con rúbricas?",
+        "r": "Sí. El panel reúne rúbricas, coevaluación entre equipos y el dosier final. La propuesta de calificación es configurable y siempre revisable por el profesorado."
+      },
+      {
+        "p": "¿Se pueden exportar los resultados?",
+        "r": "Sí, a Excel y a PDF, para incorporarlos a la documentación del módulo."
+      },
+      {
+        "p": "¿Hay que instalar algo?",
+        "r": "No. Funciona en el navegador. El alumnado entra con el código de aula que le da el docente."
+      }
+    ],
+    "idiomes": [
+      "Catalán"
+    ],
+    "nivells": [
+      "FP"
+    ],
+    "materies": [
+      "Economía y empresa"
+    ],
+    "seo": {
+      "title": "Chef Boss: simulador educativo de restauración para FP",
+      "description": "Simulador de gestión de restaurantes para Formación Profesional: 10 sesiones para abrir un restaurante, trabajar escandallos y costes y tomar decisiones.",
+      "keywords": "simulador restauración FP, simulación de negocio escuela, escandallos y costes, gestión de restaurantes formación profesional, Chef Boss, chefboss.es"
+    }
+  },
+  "ciutatviva": {
+    "categoria": "Aprendizaje-servicio",
+    "estatText": "En presentación a centros",
+    "resum": "Plataforma de aprendizaje-servicio: el alumnado detecta necesidades reales de su entorno, propone soluciones y hace su seguimiento como proyecto educativo.",
+    "descripcio": "CiutatViva es una plataforma participativa que conecta al alumnado, las entidades y las administraciones locales para construir entornos más justos y habitables. El alumnado puede reportar una necesidad u oportunidad de mejora en su barrio con geolocalización, la comunidad debate y valida las propuestas, y las que tienen suficiente apoyo suben a la agenda municipal con plazos concretos de respuesta. Todo el proceso es abierto y rinde cuentas: cada participante recibe actualizaciones de sus propuestas. Apta para proyectos de aprendizaje-servicio (ApS) en ESO y Bachillerato.",
+    "seoLlarg": "El aprendizaje-servicio (ApS) es una de las metodologías más potentes para desarrollar la competencia ciudadana y el compromiso cívico del alumnado. CiutatViva ofrece el marco digital para que los proyectos de ApS tengan impacto real más allá del aula. El alumnado aprende a identificar problemas complejos, a argumentar propuestas y a negociar con instituciones reales, mientras desarrolla competencias digitales, sociales y de pensamiento crítico. La conexión con los ayuntamientos y las entidades locales convierte cada proyecto en una experiencia auténtica de ciudadanía activa.",
+    "funcionalitats": [
+      "Mapa colaborativo de propuestas de mejora con geolocalización",
+      "Debate y validación comunitaria de cada propuesta",
+      "Conexión con ayuntamientos y entidades locales",
+      "Seguimiento abierto y rendición de cuentas",
+      "Portafolio de proyecto para la evaluación competencial"
+    ],
+    "faq": [],
+    "idiomes": [
+      "Catalán"
+    ],
+    "nivells": [
+      "ESO",
+      "Bachillerato"
+    ],
+    "materies": [
+      "Aprendizaje-servicio"
+    ],
+    "seo": {
+      "title": "CiutatViva: plataforma de aprendizaje-servicio para institutos",
+      "description": "Herramienta digital para proyectos de aprendizaje-servicio (ApS) en ESO y Bachillerato. El alumnado propone mejoras reales en su entorno al ayuntamiento.",
+      "keywords": "aprendizaje-servicio, ApS digital, proyecto ciudadanía escuela, participación ciudadana alumnado, competencia ciudadana ESO"
+    }
+  },
+  "museu-apagat": {
+    "categoria": "Educación plástica y visual",
+    "estatText": "En producción · 1.º de ESO, en uso en la Escola Industrial de Sabadell",
+    "resum": "Catorce misiones para aprender los elementos del lenguaje visual (punto, línea, forma, textura, color y composición) con apps de dibujo que se corrigen solas. Sin cuentas ni servidor: todo queda en el navegador de cada alumno.",
+    "descripcio": "El Museo de la ciudad ha sufrido un apagón visual: las obras han perdido los contornos, las luces, los colores y las texturas. ARCA, un pequeño robot restaurador, recluta a la clase como aprendices de restauración. Cada sesión es una misión con nombre propio: recomponer una silueta con puntos, conseguir un gris variando la densidad, dar volumen a una esfera con tramas, recrear una composición geométrica, construir figuras con formas básicas, clasificar texturas, crear un patrón sin costuras, mezclar luces RGB y pigmentos CMY, colocar los colores en el círculo cromático o descubrir los engaños de la percepción. Todas las apps dan respuesta inmediata con texto e icono, nunca solo con color. Cada misión termina con un cuestionario corto autocorregido, una autoevaluación y un sello en el Carnet de Restaurador/a. En la misión final el alumnado crea una obra con un elemento de cada categoría, la cuelga en la Galería del museo y se lleva el dosier en PDF como diploma. El profesorado importa este PDF, recibe una propuesta de rúbrica de cuatro niveles por criterio con la evidencia encontrada, la revisa, la confirma y genera el documento de evaluación. Cada sesión trae una pista recuperada del museo: una obra de dominio público (Seurat, Van Gogh, Mondrian, Kandinsky, Cézanne, Morris, Gauguin) con una breve biografía.",
+    "seoLlarg": "Los elementos del lenguaje visual son el primer bloque de Educación Plástica y Visual en la ESO y, a la vez, el más difícil de hacer tangible: se puede explicar qué es la densidad de un punto o el contraste simultáneo, pero cuesta que el alumnado lo experimente. El Museu Apagat convierte cada concepto en una herramienta de dibujo con un reto concreto y una corrección automática que dice qué falta («la zona de luz tiene demasiada trama», «más verde, menos azul»). Los retos técnicos se corrigen solos; los expresivos y el proyecto final solo comprueban requisitos, y el juicio estético queda siempre en manos del docente.\n\nLa privacidad viene de serie: no hay servidor, ni cuentas, ni ningún dato que salga del navegador. El progreso de cada alumno se guarda en su dispositivo y viaja hacia el docente dentro de un PDF que la app sabe volver a leer. El profesorado puede decidir, misión a misión, si el reto obligatorio se hace dentro de la app o en papel, y en ese caso lo valora desde una tabla o importando un CSV. La vista de evolución del grupo muestra lo completado por misión, la distribución de niveles por criterio, quién va por debajo del ritmo y si cada alumno se sobrevalora o se infravalora respecto a lo que realmente hace. Las notas orientativas de todo el grupo se exportan en CSV y se vuelcan en la hoja de cálculo del centro.\n\nPensada para catorce sesiones de 55 minutos en 1.º de ESO, funciona en ordenador, Chromebook y tableta, con tipografía grande, contraste AA y ningún estado comunicado solo con color. Cada sesión tiene un botón para compartirla en Google Classroom y enlaces a plantillas de Canva para la portada del dosier y el diploma.",
+    "funcionalitats": [
+      "Catorce misiones con hilo narrativo y Carnet de Restaurador/a con sellos",
+      "Trece apps de dibujo con autocorrección: puntos, densidad, línea expresiva, tramas, composición, formas, detective de formas, texturas, patrón seamless, RGB, CMY y círculo cromático, contrastes",
+      "Editor de composición final con lista de comprobación de los seis elementos y Galería del museo",
+      "Cuestionario autocorregido y autoevaluación estructurada en cada sesión",
+      "Retos en papel valorables por el docente, con foto de evidencia",
+      "Dosier del alumno en PDF que el docente importa para evaluar",
+      "Rúbrica de cuatro niveles por criterio con evidencia, comentario y aspecto a mejorar, nota orientativa y confirmación manual",
+      "Evolución del grupo con gráficos, alumnos por debajo del ritmo y autopercepción frente a rendimiento",
+      "Exportación de notas orientativas del grupo en CSV",
+      "Trece obras de arte de dominio público como pistas recuperadas",
+      "Botón «Compartir en Classroom» y plantillas de Canva",
+      "Sin servidor ni cuentas: todos los datos se quedan en el navegador"
+    ],
+    "faq": [
+      {
+        "p": "¿Hay que crear cuentas?",
+        "r": "No. La app no tiene servidor ni registro. Cada alumno trabaja en su navegador y entrega el dosier en PDF al docente."
+      },
+      {
+        "p": "¿Cómo evalúa el docente?",
+        "r": "Importa el PDF de cada alumno en el Modo Docente. La app detecta el nombre, propone un nivel por criterio con la evidencia encontrada y una nota orientativa; el docente la revisa y la confirma."
+      },
+      {
+        "p": "¿La app evalúa la calidad artística?",
+        "r": "No. Solo corrige retos técnicos (cobertura, densidad, posiciones, colores). Los retos expresivos y la obra final solo comprueban requisitos; la estética la valora el docente."
+      },
+      {
+        "p": "¿Se puede hacer parte del trabajo en papel?",
+        "r": "Sí. Cada misión tiene una versión manual. El docente elige cuáles se hacen en papel y las valora desde una tabla o importando un CSV."
+      },
+      {
+        "p": "¿Dónde están los datos de los alumnos?",
+        "r": "En el navegador de cada alumno y en el del docente. Ningún dato se envía a ningún servidor; conviene hacer copias de seguridad desde la app."
+      },
+      {
+        "p": "¿Para qué curso es?",
+        "r": "Está adaptada a 1.º de ESO (14 sesiones de 55 minutos), pero los contenidos sirven para toda la ESO."
+      }
+    ],
+    "idiomes": [
+      "Catalán"
+    ],
+    "nivells": [
+      "ESO"
+    ],
+    "materies": [
+      "Educación plástica y visual",
+      "Ciencias sociales"
+    ],
+    "seo": {
+      "title": "El Museu Apagat: lenguaje visual en 1.º de ESO con apps de dibujo",
+      "description": "Catorce misiones de Plástica: punto, línea, forma, textura, color y composición con apps autocorregidas, dosier en PDF y rúbrica. Sin cuentas ni servidor.",
+      "keywords": "lenguaje visual ESO, educación plástica 1.º ESO, punto línea forma textura color, puntillismo app, círculo cromático interactivo, rúbrica educación plástica, aulaia.cat"
+    }
+  },
+  "la-claqueta": {
+    "categoria": "Cultura audiovisual y revista escolar",
+    "estatText": "En producción en el Institut Escola Industrial, con alumnado",
+    "resum": "La redacción de tu instituto: el alumnado de Cultura Audiovisual de bachillerato hace la revista y el pódcast del centro, y el docente programa, evalúa con rúbrica y sigue el aula.",
+    "descripcio": "La Claqueta convierte al alumnado de Cultura Audiovisual de bachillerato en la redacción del instituto. Publican una revista escolar que cuenta la vida del centro y llevan un canal de radio en radioescolar.cat, pensados para lectores de ESO y bachillerato. Todo lo que publican cuenta como evidencia de la materia: no es trabajo añadido. El profesorado programa las semanas, evalúa con rúbrica y sigue el trabajo de cada grupo. Se entra con la cuenta de Google del centro y los grupos se pueden importar de Google Classroom.",
+    "funcionalitats": [
+      "Revista escolar publicada por el alumnado, en catalán y castellano",
+      "Canal de pódcast en radioescolar.cat",
+      "Programación de la materia y evaluación con rúbrica",
+      "Encuestas y buzón para los lectores del centro",
+      "Importación de grupos desde Google Classroom"
+    ],
+    "idiomes": [
+      "Catalán",
+      "Castellano"
+    ],
+    "nivells": [
+      "ESO",
+      "Bachillerato"
+    ],
+    "materies": [
+      "Cultura audiovisual"
+    ],
+    "seo": {
+      "title": "La Claqueta · Revista escolar y Cultura Audiovisual",
+      "description": "Plataforma de Cultura Audiovisual: el alumnado de bachillerato hace la revista y el pódcast del instituto y el docente evalúa con rúbrica.",
+      "keywords": [
+        "revista escolar",
+        "cultura audiovisual",
+        "bachillerato",
+        "pódcast escolar",
+        "periodismo escolar"
+      ]
+    }
+  }
+}
