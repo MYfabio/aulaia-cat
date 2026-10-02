@@ -749,11 +749,11 @@
     "slug": "eltaulell",
     "nom": "El Taulell",
     "categoria": "Comunicació i acció tutorial",
-    "estat": "construccio",
-    "estatText": "En construcció · versió de proves a eltaulell.aulaia.cat",
+    "estat": "produccio",
+    "estatText": "En línia, amb demostració oberta del taulell d'alumne",
     "icona": "📌",
     "domini": "eltaulell.aulaia.cat",
-    "url": null,
+    "url": "https://eltaulell.aulaia.cat",
     "idiomes": [
       "Català"
     ],
