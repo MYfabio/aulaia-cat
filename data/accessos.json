@@ -57,7 +57,7 @@
   },
   {
     "slug": "poetes-vives",
-    "url": "https://web-production-531662.up.railway.app/coordinacio",
+    "url": "https://poetes.aulaia.cat/coordinacio",
     "tipus": "ruta",
     "acces": "Google Workspace del centre (només escolaindustrial.org) o correu de SUPERADMIN_EMAILS",
     "nota": "Una instal·lació per centre: el domini de Google és a src/lib/siteConfig.ts. La coordinació dona els rols de docent, tutoria i orientació a /coordinacio. poetes.aulaia.cat és el domini del servei a Railway però no té CNAME a Cloudflare: de moment només respon l'adreça de Railway."
@@ -99,9 +99,9 @@
   },
   {
     "slug": "pauta",
-    "url": "https://fpsegura-production.up.railway.app/entrar",
+    "url": "https://pauta.aulaia.cat/entrar",
     "tipus": "dins",
     "acces": "Correu i contrasenya (pilot)",
-    "nota": "Repo MYfabio/FPSegura, carpeta APPS/FPSegura. Pilot amb dades de demostració. pauta.aulaia.cat encara no té DNS."
+    "nota": "Repo MYfabio/FPSegura, carpeta APPS/FPSegura. Servei Railway al projecte angelic-vibrancy (el projecte gentle-unity amb fpsegura-production.up.railway.app és una còpia antiga)."
   }
 ]
