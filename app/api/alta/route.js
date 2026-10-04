@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { crearSolicitud } from "../../../lib/db";
 import apps from "../../../data/apps.json";
 import { enviarTransaccional } from "../../../lib/correu-central";
+import { validarRateLimit, extraerIp, validarEmailReal } from "../../../lib/rate-limit";
 
 /** URL publica real: dins del contenidor request.url apunta a localhost. */
 function baseUrl(request) {
@@ -128,13 +129,25 @@ async function altaJson(request, origen) {
  * Dos correus: l avis intern (que aixo arribi sol es tot el sentit d aixo) i
  * l acusament de rebuda a qui l ha demanada.
  */
-async function avisar(dades) {
+async function avisar(dades, tokenVerif, baseUrl) {
   const intern = process.env.AVIS_ALTES_EMAIL || "fabio.martinez@escolaindustrial.org";
-  const comu = { app: dades.app, dades: { nom: dades.contacteNom, centre: dades.centre, correu: dades.contacteEmail } };
+  const enlacVerif = `${baseUrl}/api/verif?token=${tokenVerif}`;
+
+  const comu = {
+    app: dades.app,
+    dades: { nom: dades.contacteNom, centre: dades.centre, correu: dades.contacteEmail },
+  };
 
   const resultats = await Promise.allSettled([
+    // Email de verificación al usuario
+    enviarTransaccional({
+      tipus: "alta-verif",
+      per: dades.contacteEmail,
+      ...comu,
+      enlac: enlacVerif,
+    }),
+    // Aviso interno
     enviarTransaccional({ tipus: "alta-avis-intern", per: intern, ...comu }),
-    enviarTransaccional({ tipus: "alta-rebuda", per: dades.contacteEmail, ...comu }),
   ]);
 
   for (const r of resultats) {
@@ -162,13 +175,29 @@ export async function POST(request) {
     return tornar(request, { error: motiu, ...(dades.app ? { app: dades.app } : {}) });
   }
 
+  // Rate limiting: verificar IP y email
+  const ip = extraerIp(request);
+  const rateLimit = await validarRateLimit(ip, dades.contacteEmail);
+  if (!rateLimit.ok) {
+    console.warn(`Rate limit exceeded for IP ${ip} or email ${dades.contacteEmail}`);
+    return tornar(request, { error: "limit", app: dades.app });
+  }
+
+  // Validar email real (no temporales)
+  if (!validarEmailReal(dades.contacteEmail)) {
+    console.warn(`Temporary email detected: ${dades.contacteEmail}`);
+    return tornar(request, { error: "email", app: dades.app });
+  }
+
+  let solicitud;
   try {
-    await crearSolicitud(dades);
+    solicitud = await crearSolicitud(dades);
   } catch (e) {
     console.error("No s ha pogut desar la sol·licitud:", e.message);
     return tornar(request, { error: "desar", app: dades.app });
   }
 
-  await avisar(dades);
+  const baseUrl_str = baseUrl(request);
+  await avisar(dades, solicitud.tokenVerif, baseUrl_str);
   return tornar(request, { enviat: "1" });
 }

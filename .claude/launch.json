@@ -106,15 +106,6 @@
       "port": 3220
     },
     {
-      "name": "chefboss-api",
-      "runtimeExecutable": "node",
-      "runtimeArgs": [
-        "--env-file=C:/Users/super/Desktop/APPS/Chefboss/backend/.env.local",
-        "C:/Users/super/Desktop/APPS/Chefboss/backend/src/server.js"
-      ],
-      "port": 3100
-    },
-    {
       "name": "chefboss-web",
       "runtimeExecutable": "npm",
       "runtimeArgs": [
@@ -124,6 +115,49 @@
         "C:/Users/super/Desktop/APPS/Chefboss/frontend"
       ],
       "port": 5173
+    },
+    {
+      "name": "pla-lector",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev",
+        "--prefix",
+        "C:/Users/super/Desktop/APPS/pla_lector"
+      ],
+      "port": 3241
+    },
+    {
+      "name": "plalector-landing",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "C:/Users/super/Desktop/APPS/plalector-landing/server.js"
+      ],
+      "port": 4173
+    },
+    {
+      "name": "chefboss-api-dev",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "C:/Users/super/Desktop/APPS/Chefboss/backend/src/server.js"
+      ],
+      "env": {
+        "PORT": "3100",
+        "DEV_LOGIN": "1",
+        "DATABASE_URL": ""
+      },
+      "port": 3100
+    },
+    {
+      "name": "aules",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "serve",
+        "C:/Users/super/Desktop/APPS/aules-sostenibles/apps/web/dist",
+        "-l",
+        "3250"
+      ],
+      "port": 3250
     }
   ]
 }

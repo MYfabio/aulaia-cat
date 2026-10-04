@@ -61,7 +61,11 @@ export default async function AltaPage({ searchParams }) {
           {error === "camps"
             ? "Falten camps obligatoris. Revisa el formulari."
             : error === "email"
-            ? "L adreça de correu no sembla vàlida."
+            ? "L adreça de correu no sembla vàlida o és temporal (tempmail, etc.)."
+            : error === "limit"
+            ? "S ha enviat massa sol·licituds recentment. Torna-ho a provar en una hora."
+            : error === "token"
+            ? "L enllaç de verificació no és vàlid o ha caducat."
             : "No hem pogut desar la sol·licitud. Torna-ho a provar en uns minuts."}
         </p>
       )}

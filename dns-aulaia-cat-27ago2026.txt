@@ -85,5 +85,22 @@ TIPUS  NOM                     VALOR                                            
 CNAME  museu                   g39i3vt8.up.railway.app                                                           Auto
 TXT    _railway-verify.museu   "railway-verify=0046489fe241d4b22ebf4a5cc624f2dd97cde6cb3f2c3566ff9db6ec988c8f8f"   Auto
 
-Despres: railway domain status (railway domain list --service museu-apagat) (des de la carpeta
+Despres: railway domain status museu.aulaia.cat --service museu-apagat (des de la carpeta
 APPS/VIP) fins que digui Verified.
+
+20 de setembre de 2026: comprovat que els registres ENCARA NO existien a Cloudflare
+(museu.aulaia.cat -> NXDOMAIN) i que Railway continuava "Verified: no". Els valors de dalt
+segueixen sent els correctes (confirmats amb railway domain status).
+
+FET el 20 de setembre de 2026 (des de Claude, amb el Chrome de l'usuari): creats a Cloudflare
+els dos registres de dalt (CNAME museu i TXT _railway-verify.museu), tots dos "Solo DNS".
+La zona passa a tenir 18 registres.
+
+21 de setembre de 2026: Railway va quedar 9 h a "validating ownership" tot i que el DNS era
+correcte (veia el CNAME propagat pero no donava per bo el TXT). Solucio: esborrar i tornar a
+donar d'alta el domini a Railway (railway domain delete / railway domain museu.aulaia.cat).
+El domini nou (ID cf0a4884-d813-42ed-bbdc-c84d3718cdfe) surt "Verified: yes" de seguida i
+nomes demana el CNAME; el valor CANVIA:
+
+CNAME  museu   fhgamx2p.up.railway.app   (Solo DNS)   <- valor vigent
+El TXT _railway-verify.museu ja no cal (es pot deixar o esborrar).
