@@ -960,11 +960,11 @@
       ]
     }
   },
-  "pauta": {
+  "fpsegura": {
     "categoria": "Seguridad y aprendizaje en el taller",
     "estatText": "En producción, en fase piloto en el Institut Escola Industrial de Sabadell",
     "resum": "La seguridad del taller de FP y PFI sin papeleo: comprobaciones de equipos, incidencias hasta su cierre, actividades ligadas al currículo y evidencias del alumnado, desde el móvil.",
-    "descripcio": "Pauta es para los docentes de talleres y laboratorios de FP y PFI. Las comprobaciones de equipos se hacen en un minuto desde el móvil (conforme, no conforme o no aplica), con foto y medida correctora. Las incidencias se registran en el taller y se siguen hasta que se resuelven, con evidencia. No hace falta tener el inventario hecho para empezar: se arranca con equipos genéricos y la marca y el modelo se añaden cuando se quiera. Las actividades se ligan a los resultados de aprendizaje y criterios de cada grupo, y el alumnado solo ve sus actividades y evidencias, que pueden ser digitales o fichas en papel que vuelven a la actividad con autoría y fecha. Pauta ayuda a hacer el seguimiento, pero no sustituye una evaluación profesional de riesgos, y ningún indicador promete un «cumplimiento del 100 %».",
+    "descripcio": "FPSegura es para los docentes de talleres y laboratorios de FP y PFI. Las comprobaciones de equipos se hacen en un minuto desde el móvil (conforme, no conforme o no aplica), con foto y medida correctora. Las incidencias se registran en el taller y se siguen hasta que se resuelven, con evidencia. No hace falta tener el inventario hecho para empezar: se arranca con equipos genéricos y la marca y el modelo se añaden cuando se quiera. Las actividades se ligan a los resultados de aprendizaje y criterios de cada grupo, y el alumnado solo ve sus actividades y evidencias, que pueden ser digitales o fichas en papel que vuelven a la actividad con autoría y fecha. FPSegura ayuda a hacer el seguimiento, pero no sustituye una evaluación profesional de riesgos, y ningún indicador promete un «cumplimiento del 100 %».",
     "funcionalitats": [
       "Comprobaciones de equipos en un minuto: conforme, no conforme o no aplica, con foto y medida correctora",
       "Incidencias registradas en el taller y seguidas hasta su cierre, con evidencia",
@@ -977,7 +977,7 @@
     "faq": [
       {
         "p": "¿Sustituye la evaluación de riesgos del centro?",
-        "r": "No. Pauta ayuda a hacer el seguimiento de comprobaciones e incidencias, pero la evaluación de riesgos la hace quien es competente para hacerla."
+        "r": "No. FPSegura ayuda a hacer el seguimiento de comprobaciones e incidencias, pero la evaluación de riesgos la hace quien es competente para hacerla."
       },
       {
         "p": "¿Hace falta tener el inventario del taller hecho?",
@@ -989,7 +989,9 @@
       }
     ],
     "idiomes": [
-      "Catalán"
+      "Catalán",
+      "Castellano",
+      "Euskera"
     ],
     "nivells": [
       "FP",
@@ -1000,7 +1002,7 @@
       "Talleres y laboratorios"
     ],
     "seo": {
-      "title": "Pauta · Seguridad y aprendizaje en los talleres de FP y PFI",
+      "title": "FPSegura · Seguridad y aprendizaje en los talleres de FP y PFI",
       "description": "Comprobaciones de equipos, incidencias, actividades y evidencias de los talleres de FP y PFI en un solo lugar, desde el móvil y sin papeleo.",
       "keywords": "seguridad taller FP, prevención riesgos taller, comprobaciones equipos, incidencias taller, PFI, evidencias alumnado FP"
     }

@@ -26,7 +26,7 @@ nova de Claude Code.
 | El Museu Apagat | `VIP` | **— (sense git)** | museu.aulaia.cat | producció · Railway `museu-apagat` (web + Postgres), desplega amb `railway up`; una instal·lació per centre |
 | KIPUK | `Kipuk` | MYfabio/kipuk | kipuk.cat (serveix per www.kipuk.cat) | producció · Railway `kipuk`/servei `kipuk`; **corregit 28/09/2026: aquesta és l'app real, no una demo obsoleta** (kipuk-es ja no existeix al disc) |
 | El Taulell | `eltaulell` (mogut de `Documents\Codex` el 29/09/2026) | MYfabio/eltaulell | eltaulell.aulaia.cat | en línia amb demo pública · Railway `eltaulell` (web + Postgres + bucket `eltaulell-files`), desplega per `main`; fet amb Codex, ~20 branques `agent/*`, algunes sense fusionar (p. ex. `agent/vertex-gemini-cookies`) |
-| Pauta (FPSegura) | `FPSegura` | MYfabio/FPSegura | pauta.aulaia.cat (encara sense DNS); viu a fpsegura-production.up.railway.app | producció pilot · Next.js + Drizzle, entrada amb correu i contrasenya, dades de demostració |
+| FPSegura (abans Pauta) | `FPSegura` | MYfabio/FPSegura | fpsegura.aulaia.cat | producció pilot · Next.js + Drizzle, entrada amb correu i contrasenya, dades de demostració |
 | La Claqueta | `claqueta` (treball a `claqueta-wt`, branca `assets-v2`) | MYfabio/claqueta | laclaqueta.aulaia.cat | producció (amb alumnat) · Railway `laclaqueta`; Google OAuth propi, superadmins per `SUPERADMIN_EMAILS` |
 
 Altres carpetes a `APPS` sense fitxa encara: `Aula de acollida`, `diedrico`,

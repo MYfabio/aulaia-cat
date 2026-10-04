@@ -98,10 +98,10 @@
     "nota": "Superadmins per la variable SUPERADMIN_EMAILS de Railway (projecte laclaqueta). Un usuari nou d un domini conegut entra com a lector; docent i alumnat els dona la importació de Classroom/CSV o l admin de centre."
   },
   {
-    "slug": "pauta",
-    "url": "https://pauta.aulaia.cat/entrar",
+    "slug": "fpsegura",
+    "url": "https://fpsegura.aulaia.cat/entrar",
     "tipus": "dins",
     "acces": "Correu i contrasenya (pilot)",
-    "nota": "Repo MYfabio/FPSegura, carpeta APPS/FPSegura. Servei Railway al projecte angelic-vibrancy (el projecte gentle-unity amb fpsegura-production.up.railway.app és una còpia antiga)."
+    "nota": "Abans «Pauta». Repo MYfabio/FPSegura, carpeta APPS/FPSegura, servei Railway al projecte angelic-vibrancy."
   }
 ]

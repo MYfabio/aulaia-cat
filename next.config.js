@@ -32,6 +32,8 @@ const nextConfig = {
     return [
       { source: "/apps/undirlaflota", destination: "/apps/enfonsar-la-flota", permanent: true },
       { source: "/apps/la-cantiana", destination: "/apps/la-cantina", permanent: true },
+      { source: "/apps/pauta", destination: "/apps/fpsegura", permanent: true },
+      { source: "/es/apps/pauta", destination: "/es/apps/fpsegura", permanent: true },
     ];
   },
   async headers() {
