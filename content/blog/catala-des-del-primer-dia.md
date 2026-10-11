@@ -7,6 +7,7 @@ etiquetes: [Aula d'acollida, Llengua catalana, Inclusió, ESO]
 apps: [aulaacull, dictats, museu-apagat]
 imatge: /blog/catala-des-del-primer-dia.jpg
 imatgeAlt: Una docent assenyala la pantalla d'un portàtil on dos alumnes, un nen i una nena amb hijab, exploren activitats en una aula decorada amb cartells en català
+esborrany: true
 imatgeCredit: Imatge generada amb intel·ligència artificial
 ---
 

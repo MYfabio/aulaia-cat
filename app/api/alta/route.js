@@ -42,8 +42,8 @@ export async function OPTIONS(request) {
   return new NextResponse(null, { status: Object.keys(caps).length ? 204 : 403, headers: caps });
 }
 
-function tornar(request, params) {
-  const url = new URL("/alta", baseUrl(request));
+function tornar(request, params, lang = "ca") {
+  const url = new URL(lang === "es" ? "/es/alta" : "/alta", baseUrl(request));
   for (const [k, v] of Object.entries(params)) url.searchParams.set(k, v);
   return NextResponse.redirect(url, { status: 303 });
 }
@@ -169,10 +169,11 @@ export async function POST(request) {
     return tornar(request, { error: "desar" });
   }
 
+  const lang = f.get("idioma") === "es" ? "es" : "ca";
   const dades = retallar(llegir(k => f.get(k)));
   const motiu = validar(dades);
   if (motiu) {
-    return tornar(request, { error: motiu, ...(dades.app ? { app: dades.app } : {}) });
+    return tornar(request, { error: motiu, ...(dades.app ? { app: dades.app } : {}) }, lang);
   }
 
   // Rate limiting: verificar IP y email
@@ -180,13 +181,13 @@ export async function POST(request) {
   const rateLimit = await validarRateLimit(ip, dades.contacteEmail);
   if (!rateLimit.ok) {
     console.warn(`Rate limit exceeded for IP ${ip} or email ${dades.contacteEmail}`);
-    return tornar(request, { error: "limit", app: dades.app });
+    return tornar(request, { error: "limit", app: dades.app }, lang);
   }
 
   // Validar email real (no temporales)
   if (!validarEmailReal(dades.contacteEmail)) {
     console.warn(`Temporary email detected: ${dades.contacteEmail}`);
-    return tornar(request, { error: "email", app: dades.app });
+    return tornar(request, { error: "email", app: dades.app }, lang);
   }
 
   let solicitud;
@@ -194,10 +195,10 @@ export async function POST(request) {
     solicitud = await crearSolicitud(dades);
   } catch (e) {
     console.error("No s ha pogut desar la sol·licitud:", e.message);
-    return tornar(request, { error: "desar", app: dades.app });
+    return tornar(request, { error: "desar", app: dades.app }, lang);
   }
 
   const baseUrl_str = baseUrl(request);
   await avisar(dades, solicitud.tokenVerif, baseUrl_str);
-  return tornar(request, { enviat: "1" });
+  return tornar(request, { enviat: "1" }, lang);
 }

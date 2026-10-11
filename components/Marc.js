@@ -27,8 +27,8 @@ export default function Marc({ lang, children }) {
         <nav className="nav-links">
           <Link href={b + "/#apps"}>{t.nav.projectes}</Link>
           <Link href={b + "/#per-a-qui"}>{t.nav.perAQui}</Link>
-          <Link href="/blog">{t.nav.blog}</Link>
-          <Link href="/contacte">{t.nav.contacte}</Link>
+          <Link href={b + "/blog"}>{t.nav.blog}</Link>
+          <Link href={b + "/alta"}>{t.nav.contacte}</Link>
           <a href={t.canviIdioma.href} className="nav-idioma" hrefLang={lang === "ca" ? "es" : "ca"} title={t.canviIdioma.etiqueta}>
             {t.canviIdioma.curt}
           </a>
@@ -41,8 +41,8 @@ export default function Marc({ lang, children }) {
           <div className="footer-links">
             <strong>{t.peu.navegacio}</strong>
             <Link href={b + "/#apps"}>{t.nav.projectes}</Link>
-            <Link href="/blog">{t.nav.blog}</Link>
-            <Link href="/contacte">{t.peu.demo}</Link>
+            <Link href={b + "/blog"}>{t.nav.blog}</Link>
+            <Link href={b + "/alta"}>{t.peu.demo}</Link>
             <Link href="/privacitat">{t.peu.privacitat}</Link>
             <a href={t.canviIdioma.href} hrefLang={lang === "ca" ? "es" : "ca"}>{t.canviIdioma.etiqueta}</a>
           </div>

@@ -7,6 +7,7 @@ etiquetes: [Ciències Socials, Història, Antic Egipte, ESO]
 apps: [museu-apagat, diedric3d, la-claqueta]
 imatge: /blog/la-maledicio-del-sarcofag.jpg
 imatgeAlt: ARCA, el robot restaurador del Museu Apagat, amb salacot i fanal, observa amb una lupa les piràmides de Gizeh al capvespre, amb el Nil i els palmerars al fons
+esborrany: true
 imatgeCredit: Imatge generada amb intel·ligència artificial
 ---
 

@@ -26,7 +26,7 @@ export default function Inici({ lang }) {
         <p>{t.intro}</p>
         <div className="hero-actions">
           <Link href={b + "/#apps"} className="btn btn-primary">{t.veure}</Link>
-          <Link href="/contacte" className="btn btn-outline">{t.demo}</Link>
+          <Link href={b + "/alta"} className="btn btn-outline">{t.demo}</Link>
         </div>
         <div className="hero-badges">
           {t.badges(enLinia.length).map(x => <span key={x} className="badge">{x}</span>)}
@@ -65,7 +65,7 @@ export default function Inici({ lang }) {
         <div className="landing-final-cta">
           <p className="landing-final-title">{t.ctaTitol}</p>
           <p className="landing-final-sub">{t.ctaText}</p>
-          <Link href="/contacte" className="btn btn-primary">{t.ctaBoto}</Link>
+          <Link href={b + "/alta"} className="btn btn-primary">{t.ctaBoto}</Link>
         </div>
       </section>
     </>

@@ -103,8 +103,8 @@ export default function FitxaApp({ lang, slug }) {
       </div>
 
       <div className="landing-cta-bar">
-        <Link href={"/alta?app=" + app.slug} className="btn btn-primary">{t.alta}</Link>
-        <Link href={"/contacte?app=" + encodeURIComponent(app.nom)} className="btn btn-outline">{t.dubtes}</Link>
+        <Link href={b + "/alta?app=" + app.slug} className="btn btn-primary">{t.alta}</Link>
+        <a href={"mailto:hola@aulaia.cat?subject=" + encodeURIComponent(app.nom)} className="btn btn-outline">{t.dubtes}</a>
       </div>
 
       <h2>{t.funcionalitats}</h2>
@@ -151,7 +151,7 @@ export default function FitxaApp({ lang, slug }) {
       <div className="landing-final-cta">
         <p className="landing-final-title">{t.ctaTitol(app.nom)}</p>
         <p className="landing-final-sub">{t.ctaText}</p>
-        <Link href={"/alta?app=" + app.slug} className="btn btn-primary" style={{ fontSize: "1rem", padding: ".75rem 2rem" }}>{t.ctaBoto(app.nom)}</Link>
+        <Link href={b + "/alta?app=" + app.slug} className="btn btn-primary" style={{ fontSize: "1rem", padding: ".75rem 2rem" }}>{t.ctaBoto(app.nom)}</Link>
       </div>
     </div>
   );
