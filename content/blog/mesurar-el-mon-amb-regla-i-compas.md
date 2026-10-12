@@ -5,6 +5,9 @@ data: 2026-10-12
 autor: Fabio Martínez
 etiquetes: [Matemàtiques, Visual i Plàstica, Geometria, ESO]
 apps: [museu-apagat, diedric3d, matescac]
+imatge: /blog/mesurar-el-mon-amb-regla-i-compas.jpg
+imatgeAlt: ARCA, el robot restaurador del Museu Apagat, i un home de la Grècia antiga mesuren el terreny amb una corda de nusos tensada entre dues estaques, amb l'Acròpolis i el mar al fons
+imatgeCredit: Imatge generada amb intel·ligència artificial
 ---
 
 Com es mesura allò que no pots tocar? L'alçada d'una piràmide, la mida de la Terra, la façana d'un temple. Els grecs s'ho van preguntar fa més de dos mil anys i ho van resoldre amb ombres, angles i un compàs.

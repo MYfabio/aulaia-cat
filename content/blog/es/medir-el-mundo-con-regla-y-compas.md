@@ -5,6 +5,9 @@ data: 2026-10-12
 autor: Fabio Martínez
 etiquetes: [Matemáticas, Educación Plástica y Visual, Geometría, ESO]
 apps: [museu-apagat, diedric3d, matescac]
+imatge: /blog/mesurar-el-mon-amb-regla-i-compas.jpg
+imatgeAlt: ARCA, el robot restaurador del Museu Apagat, y un hombre de la Grecia antigua miden el terreno con una cuerda de nudos tensada entre dos estacas, con la Acrópolis y el mar al fondo
+imatgeCredit: Imagen generada con inteligencia artificial
 original: mesurar-el-mon-amb-regla-i-compas
 ---
 
