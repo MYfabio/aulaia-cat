@@ -131,21 +131,23 @@ async function altaJson(request, origen) {
  */
 async function avisar(dades, tokenVerif, baseUrl) {
   const intern = process.env.AVIS_ALTES_EMAIL || "fabio.martinez@escolaindustrial.org";
-  const enlacVerif = `${baseUrl}/api/verif?token=${tokenVerif}`;
+  const dadesComunes = { nom: dades.contacteNom, centre: dades.centre, correu: dades.contacteEmail };
+  const comu = { app: dades.app, dades: dadesComunes };
 
-  const comu = {
-    app: dades.app,
-    dades: { nom: dades.contacteNom, centre: dades.centre, correu: dades.contacteEmail },
-  };
+  // Amb token (formulari d aulaia.cat) es demana verificar l adreça. Sense token
+  // (altes que arriben des del formulari d una altra app) nomes s acusa la
+  // rebuda: abans el correu sortia amb l enllaç buit.
+  const alUsuari = tokenVerif && baseUrl
+    ? enviarTransaccional({
+        tipus: "alta-verif",
+        per: dades.contacteEmail,
+        app: dades.app,
+        dades: { ...dadesComunes, enllac: `${baseUrl}/api/verif?token=${tokenVerif}` },
+      })
+    : enviarTransaccional({ tipus: "alta-rebuda", per: dades.contacteEmail, ...comu });
 
   const resultats = await Promise.allSettled([
-    // Email de verificación al usuario
-    enviarTransaccional({
-      tipus: "alta-verif",
-      per: dades.contacteEmail,
-      ...comu,
-      enlac: enlacVerif,
-    }),
+    alUsuari,
     // Aviso interno
     enviarTransaccional({ tipus: "alta-avis-intern", per: intern, ...comu }),
   ]);
