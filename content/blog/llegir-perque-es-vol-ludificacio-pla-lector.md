@@ -5,6 +5,9 @@ data: 2026-10-18
 autor: Fabio Martínez
 etiquetes: [Ludificació, Lectura, Motivació, Pla lector, ESO]
 apps: [pla-lector]
+imatge: /blog/llegir-perque-es-vol.jpg
+imatgeAlt: Quatre adolescents llegeixen llibres en una biblioteca d'aula lluminosa, amb prestatgeries, plantes i una tauleta sobre la taula.
+imatgeCredit: Imatge generada amb intel·ligència artificial
 ---
 
 Quan un institut diu que vol fomentar la lectura, normalment ho fa amb un pla lector escrit i amb la promesa que «s'hi dedicaran uns minuts cada dia». El que costa és saber, al cap d'unes setmanes, si l'alumnat llegeix de debò, qui s'ha quedat enrere i si el que s'ha fet serveix de res.

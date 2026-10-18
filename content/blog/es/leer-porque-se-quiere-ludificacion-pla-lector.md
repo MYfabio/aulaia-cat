@@ -6,6 +6,9 @@ autor: Fabio Martínez
 etiquetes: [Ludificación, Lectura, Motivación, Plan lector, ESO]
 apps: [pla-lector]
 original: llegir-perque-es-vol-ludificacio-pla-lector
+imatge: /blog/llegir-perque-es-vol.jpg
+imatgeAlt: Cuatro adolescentes leen libros en una biblioteca de aula luminosa, con estanterías, plantas y una tableta sobre la mesa.
+imatgeCredit: Imagen generada con inteligencia artificial
 ---
 
 Cuando un instituto dice que quiere fomentar la lectura, suele hacerlo con un plan lector escrito y con la promesa de que «se dedicarán unos minutos cada día». Lo difícil es saber, al cabo de unas semanas, si el alumnado lee de verdad, quién se ha quedado atrás y si lo que se ha hecho sirve de algo.
