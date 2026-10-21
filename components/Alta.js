@@ -107,6 +107,11 @@ export async function Alta({ lang, searchParams }) {
 
       <form method="POST" action="/api/alta" className="alta-form">
         <input type="hidden" name="idioma" value={lang} />
+        {/* Camp trampa: una persona no el veu ni el llegeix, un bot l'omple. */}
+        <div aria-hidden="true" style={{ position: "absolute", left: "-10000px", width: 1, height: 1, overflow: "hidden" }}>
+          <label htmlFor="web">No ompliu aquest camp</label>
+          <input id="web" name="web" type="text" tabIndex={-1} autoComplete="off" />
+        </div>
         <fieldset>
           <legend>{t.aplicacio}</legend>
           <div className="form-group">

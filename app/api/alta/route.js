@@ -3,6 +3,7 @@ import { crearSolicitud } from "../../../lib/db";
 import apps from "../../../data/apps.json";
 import { enviarTransaccional } from "../../../lib/correu-central";
 import { validarRateLimit, extraerIp, validarEmailReal } from "../../../lib/rate-limit";
+import { motiuSpam } from "../../../lib/anti-spam";
 
 /** URL publica real: dins del contenidor request.url apunta a localhost. */
 function baseUrl(request) {
@@ -113,6 +114,13 @@ async function altaJson(request, origen) {
   const motiu = validar(dades);
   if (motiu) return json({ ok: false, error: motiu }, 400);
 
+  // Spam: es descarta sense desar ni avisar, i es respon com si fos bona.
+  const spam = motiuSpam(dades);
+  if (spam) {
+    console.warn("Alta descartada per spam (json): " + spam);
+    return json({ ok: true }, 201);
+  }
+
   try {
     await crearSolicitud(dades);
   } catch (e) {
@@ -173,6 +181,16 @@ export async function POST(request) {
 
   const lang = f.get("idioma") === "es" ? "es" : "ca";
   const dades = retallar(llegir(k => f.get(k)));
+
+  // Spam: el camp "web" és invisible per a una persona i un bot l'omple. Es
+  // descarta sense desar ni avisar, i es respon com si fos bona perquè el bot
+  // no en provi una altra variant.
+  const spam = motiuSpam(dades, { honeypot: f.get("web") });
+  if (spam) {
+    console.warn("Alta descartada per spam: " + spam);
+    return tornar(request, { enviat: "1" }, lang);
+  }
+
   const motiu = validar(dades);
   if (motiu) {
     return tornar(request, { error: motiu, ...(dades.app ? { app: dades.app } : {}) }, lang);
