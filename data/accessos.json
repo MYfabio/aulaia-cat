@@ -78,7 +78,7 @@
   },
   {
     "slug": "kipuk",
-    "url": "https://kipuk.cat/admin/usuaris",
+    "url": "https://www.kipuk.cat/admin/usuaris",
     "tipus": "ruta",
     "acces": "Google Workspace del centre",
     "nota": "Qui entra amb un compte del domini registrat es dona d'alta sol com a alumne. Els rols de docent i coordinació s'assignen des d'aquesta ruta."
