@@ -14,6 +14,8 @@ export default function sitemap() {
     { url: base + "/primera-setmana", lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: base + "/alta", lastModified: now, changeFrequency: "monthly", priority: 0.8, alternates: { languages: { es: base + "/es/alta" } } },
     { url: base + "/es/alta", lastModified: now, changeFrequency: "monthly", priority: 0.7, alternates: { languages: { ca: base + "/alta" } } },
+    { url: base + "/contacte", lastModified: now, changeFrequency: "monthly", priority: 0.6, alternates: { languages: { es: base + "/es/contacte" } } },
+    { url: base + "/es/contacte", lastModified: now, changeFrequency: "monthly", priority: 0.5, alternates: { languages: { ca: base + "/contacte" } } },
     { url: base + "/privacitat", lastModified: now, changeFrequency: "yearly", priority: 0.3 },
     ...(articles.length
       ? [{ url: base + "/blog", lastModified: now, changeFrequency: "weekly", priority: 0.8, alternates: { languages: { es: base + "/es/blog" } } }]
