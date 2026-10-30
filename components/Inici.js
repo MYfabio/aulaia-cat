@@ -48,8 +48,29 @@ export default async function Inici({ lang }) {
   const apps = appsEn(lang);
   const enLinia = apps.filter(a => a.estat === "produccio");
 
+  const llista = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: lang === "es" ? "Aplicaciones educativas gratuitas de aulaia.cat" : "Aplicacions educatives gratuïtes d'aulaia.cat",
+    itemListElement: enLinia.map((a, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      item: {
+        "@type": "SoftwareApplication",
+        name: a.nom,
+        url: a.url,
+        applicationCategory: "EducationalApplication",
+        operatingSystem: "Web",
+        description: a.resum,
+        inLanguage: lang,
+        offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },
+      },
+    })),
+  };
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(llista) }} />
       <section className="hero">
         <span className="hero-tag">{t.tag}</span>
         <h1>{t.h1a}<span>{t.h1b}</span></h1>

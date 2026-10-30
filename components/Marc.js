@@ -12,6 +12,9 @@ const orgJsonld = {
   description: "Apps educatives creades des de dins de l'aula per docents en actiu.",
   address: { "@type": "PostalAddress", addressLocality: "Sabadell", addressCountry: "ES" },
   areaServed: "ES",
+  founder: { "@type": "Person", name: "Fabio Martínez", jobTitle: "Docent", worksFor: { "@type": "EducationalOrganization", name: "Institut Escola Industrial de Sabadell", url: "https://www.escolaindustrial.org" } },
+  parentOrganization: { "@type": "EducationalOrganization", name: "Institut Escola Industrial de Sabadell", url: "https://www.escolaindustrial.org" },
+  sameAs: ["https://www.escolaindustrial.org"],
   brand: ["radioescolar.cat", "dictats.cat", "aulessostenibles.cat", "elplalector.cat", "typeedu.com"],
 };
 
