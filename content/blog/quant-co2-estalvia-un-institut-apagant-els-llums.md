@@ -5,6 +5,9 @@ data: 2026-10-11
 autor: Fabio Martínez
 etiquetes: [Sostenibilitat, Energia, Educació ambiental, ESO]
 apps: [aules-sostenibles, kiosko]
+imatge: /blog/quant-co2-estalvia-un-institut-apagant-els-llums.jpg
+imatgeAlt: Una aula buida amb els llums apagats i la llum del sol entrant per les finestres.
+imatgeCredit: Imatge generada amb intel·ligència artificial
 ---
 
 A totes les escoles hi ha el mateix cartell al costat de l'interruptor: «Apaga el llum en sortir». I a totes les escoles hi ha aules buides amb els llums encesos a l'hora del pati. El problema no és que l'alumnat no ho sàpiga. És que ningú no ho veu, ningú no ho compta i, per tant, no importa.

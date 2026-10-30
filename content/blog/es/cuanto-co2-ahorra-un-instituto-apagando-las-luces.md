@@ -5,6 +5,9 @@ data: 2026-10-11
 autor: Fabio Martínez
 etiquetes: [Sostenibilidad, Energía, Educación ambiental, ESO]
 apps: [aules-sostenibles, kiosko]
+imatge: /blog/quant-co2-estalvia-un-institut-apagant-els-llums.jpg
+imatgeAlt: Un aula vacía con las luces apagadas y la luz del sol entrando por las ventanas.
+imatgeCredit: Imagen generada con inteligencia artificial
 original: quant-co2-estalvia-un-institut-apagant-els-llums
 ---
 
