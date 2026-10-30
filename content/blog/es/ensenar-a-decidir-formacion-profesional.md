@@ -5,8 +5,9 @@ data: 2026-08-27
 autor: Fabio Martínez
 etiquetes: [Formación Profesional, Toma de decisiones, Simulación educativa]
 apps: [chefboss]
-imatge: /blog/ensenyar-a-decidir-formacio-professional.png
-imatgeAlt: Una línea de tiempo entre una decisión y su consecuencia, separadas
+imatge: /blog/ensenyar-a-decidir-formacio-professional.jpg
+imatgeAlt: Alumnado de cocina con chaquetilla y el docente ante unas hojas de datos y un portátil, en el obrador.
+imatgeCredit: Imagen generada con inteligencia artificial
 original: ensenyar-a-decidir-formacio-professional
 ---
 

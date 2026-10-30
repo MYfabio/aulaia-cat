@@ -5,8 +5,9 @@ data: 2026-08-28
 autor: Fabio Martínez
 etiquetes: [Ortografía, Inteligencia artificial, Inicio de curso]
 apps: [dictats]
-imatge: /blog/la-ia-escriu-el-dictat.png
-imatgeAlt: Una norma ortográfica escrita a mano junto a un texto generado, sobre fondo de papel
+imatge: /blog/la-ia-escriu-el-dictat.jpg
+imatgeAlt: Tres alumnos y el docente repasan una norma en un libro abierto, con un portátil y hojas de dictado sobre la mesa.
+imatgeCredit: Imagen generada con inteligencia artificial
 original: la-ia-escriu-el-dictat-la-norma-no
 ---
 

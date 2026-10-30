@@ -5,8 +5,9 @@ data: 2026-08-27
 autor: Fabio Martínez
 etiquetes: [Coordinación digital, Privacidad, Google Workspace]
 apps: [dictats, typeedu, radio-escolar]
-imatge: /blog/cap-app-demana-contrasenya.png
-imatgeAlt: Una lista de contraseñas de alumnos tachada, junto a la cuenta del centro
+imatge: /blog/cap-app-demana-contrasenya.jpg
+imatgeAlt: Dos docentes ante un portátil con seis iconos de aplicaciones, sin ninguna pantalla de acceso con contraseña.
+imatgeCredit: Imagen generada con inteligencia artificial
 original: cap-app-demana-contrasenya
 ---
 

@@ -5,8 +5,9 @@ data: 2026-08-28
 autor: Fabio Martínez
 etiquetes: [Ortografia, Intel·ligència artificial, Inici de curs]
 apps: [dictats]
-imatge: /blog/la-ia-escriu-el-dictat.png
-imatgeAlt: Una norma ortogràfica escrita a mà al costat d'un text generat, sobre fons de paper
+imatge: /blog/la-ia-escriu-el-dictat.jpg
+imatgeAlt: Tres alumnes i el docent repassen una norma en un llibre obert, amb un portàtil i fulls de dictat a la taula.
+imatgeCredit: Imatge generada amb intel·ligència artificial
 ---
 
 Les primeres setmanes de curs són les de fer inventari. Qui ha tornat com va marxar, qui s'ha oxidat i qui arrossega la mateixa falta des de fa dos cursos. Un dictat és una de les maneres més barates de saber-ho, i per això al setembre en tornen a caure uns quants.
