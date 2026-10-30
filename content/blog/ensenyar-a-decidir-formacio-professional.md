@@ -5,8 +5,9 @@ data: 2026-08-27
 autor: Fabio Martínez
 etiquetes: [Formació Professional, Presa de decisions, Simulació educativa]
 apps: [chefboss]
-imatge: /blog/ensenyar-a-decidir-formacio-professional.png
-imatgeAlt: Una línia de temps entre una decisió i la seva conseqüència, separades
+imatge: /blog/ensenyar-a-decidir-formacio-professional.jpg
+imatgeAlt: Alumnat de cuina amb jaqueta i el docent davant d'uns fulls de dades i un portàtil, a l'obrador.
+imatgeCredit: Imatge generada amb intel·ligència artificial
 ---
 
 Qualsevol docent de cicles ho ha vist: expliques un escandall, l'alumnat el segueix, aprova l'examen — i tres setmanes després munta una carta on el plat estrella dóna pèrdues. No és que no ho hagin entès. És que entendre un concepte i **decidir amb ell al davant** són dues coses diferents.

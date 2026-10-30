@@ -1,0 +1,153 @@
+# Inventari d'aplicacions — còpia de context
+
+Revisió: 31/08/2026. Aixecat llegint el codi de cada carpeta de
+`C:\Users\super\Desktop\APPS`. Aquest document és la còpia de seguretat del
+context: si es perd una conversa, es recupera des d'aquí.
+
+Cada projecte té a més el seu `docs/PROMPT-INICIO.md` per arrencar una sessió
+nova de Claude Code.
+
+## Aplicacions
+
+| Projecte | Carpeta | Repositori | Domini | Estat |
+| --- | --- | --- | --- | --- |
+| aulaia.cat | `aulaia-cat` | — (sense git) | aulaia.cat | producció · paraigua de tota la resta |
+| Ràdio Escolar | `Radio` | MYfabio/radio-industrial-jove | radioescolar.cat | producció · **connectat a Lovable** |
+| dictats.cat | `ditat` | MYfabio/ditat | dictats.cat | producció |
+| Pla Lector | `pla_lector` | MYfabio/biblioteca-pla-lector | (app interna, fora de cercadors) | producció |
+| Landing Pla Lector | `plalector-landing` | — | elplalector.cat | producció |
+| Chef Boss | `Chefboss` | MYfabio/chefboss | chefboss.es | producció (1.9.0), 1.10.0 en local |
+| Aules Sostenibles | `aules-sostenibles` | MYfabio/aules-sostenibles | aulessostenibles.cat | MVP en curs (fase 4, iteració I1) |
+| MatEscac | `Matescac` | MYfabio/matescac | matescac.aulaia.cat | producció · Railway `matescac` (web + Postgres), desplega per GitHub `main` |
+| AulaAcull.cat | `Aula de acollida/aula_acollida_pack_20260829/ava` | MYfabio/aulaacull | aulaacull.aulaia.cat | construcció · Railway `aulaacull` (web), desplega per `main`; centre de demostració |
+| Kiosko (abans «Pantalles») | `Pantallas_web` | MYfabio/pantalles | kiosko.aulaia.cat | producció · Railway `pantalles`, desplega per `main`; login propi amb contrasenya |
+| Enfonsar la flota (Undirlaflota) | `Undirlaflota` | MYfabio/undirlaflota | enfonsarlaflota.aulaia.cat | producció · Railway `undirlaflota`, desplega per `main`; codis de classe a la BD o a DEMO_CLASS_CODES; undirlaflota.cat no resol |
+| El Club de les Poetes Vives | `clubpoetasvius` | **— (sense git)** | poetes.aulaia.cat (a Railway, sense DNS); viu a web-production-531662.up.railway.app | producció · Railway `clubpoetesvives` (web + Postgres), desplega amb `railway up`; una instal·lació per centre (domini a siteConfig.ts) |
+| El Museu Apagat | `VIP` | **— (sense git)** | museu.aulaia.cat | producció · Railway `museu-apagat` (web + Postgres), desplega amb `railway up`; una instal·lació per centre |
+| KIPUK | `Kipuk` | MYfabio/kipuk | kipuk.cat (serveix per www.kipuk.cat) | producció · Railway `kipuk`/servei `kipuk`; **corregit 28/09/2026: aquesta és l'app real, no una demo obsoleta** (kipuk-es ja no existeix al disc) |
+| El Taulell | `eltaulell` (mogut de `Documents\Codex` el 29/09/2026) | MYfabio/eltaulell | eltaulell.aulaia.cat | en línia amb demo pública · Railway `eltaulell` (web + Postgres + bucket `eltaulell-files`), desplega per `main`; fet amb Codex, ~20 branques `agent/*`, algunes sense fusionar (p. ex. `agent/vertex-gemini-cookies`) |
+| FPSegura (abans Pauta) | `FPSegura` | MYfabio/FPSegura | fpsegura.aulaia.cat | producció pilot · Next.js + Drizzle, entrada amb correu i contrasenya, dades de demostració |
+| La Claqueta | `claqueta` (treball a `claqueta-wt`, branca `assets-v2`) | MYfabio/claqueta | laclaqueta.aulaia.cat | producció (amb alumnat) · Railway `laclaqueta`; Google OAuth propi, superadmins per `SUPERADMIN_EMAILS` |
+
+Altres carpetes a `APPS` sense fitxa encara: `Aula de acollida`, `diedrico`,
+`Ecool`, `mecanografia`, `modulo radio`, `recursos-pla-lector`, `tetris3d`.
+
+## Tecnologia per projecte
+
+- **aulaia.cat** — Next.js (JS). `data/apps.json` (catàleg públic),
+  `data/accessos.json`, `lib/railway.js` (API de Railway), `lib/search-console.js`,
+  `lib/correu*.js`, `app/panel`, `app/alta`. Encàrrec de gestió a
+  `docs/rol-agent-gestor.md`.
+- **Ràdio Escolar** — TanStack Start (React 19, SSR amb Nitro) + Vite +
+  Supabase + Postgres. El centre es configura a `src/lib/siteConfig.ts`.
+- **dictats.cat** — Next.js 16 + Prisma + Postgres + Auth.js (Google i Entra ID)
+  + Claude + Google Vision (OCR) + Gemini/OpenAI TTS + Stripe.
+- **Pla Lector** — Node + Express 4 (CommonJS) + Postgres + Passport Google,
+  domini restringit a `escolaindustrial.org`. Frontend pla a `public/`.
+- **Chef Boss** — monorepo `frontend` (React + Vite, prerender) i `backend`
+  (Express 4 ESM) + Postgres + Gemini. Context viu a `PROJECT_CONTEXT.md`.
+- **Aules Sostenibles** — monorepo npm (web PWA React, Cloud Functions 2a gen,
+  shared) sobre Firebase. Regles amb denegació per defecte.
+- **KIPUK.ES** — Next.js + `node:sqlite` + OAuth de Google Classroom (només
+  lectura) + Gemini rere flag. Migració prevista a PostgreSQL.
+- **Pantalles** — Next.js 14 + Prisma + NextAuth + Gemini + Vercel Blob.
+
+## Regles comunes a tots els projectes
+
+- Mai dades reals d'alumnat en desenvolupament: dades sintètiques o de seed.
+- Les claus d'IA viuen només al servidor; a la IA només hi va el mínim.
+- Cap secret al repositori: variables d'entorn a Railway, Firebase o GitHub.
+- L'autorització es comprova al servidor, no amagant botons.
+- Tot ha de seguir funcionant sense claus d'IA (motor local o mode sandbox).
+
+## Feina feta el 31/08/2026
+
+- `docs/PROMPT-INICIO.md` a Kipuk, Chef Boss, Pla Lector, dictats, Ràdio,
+  Aules Sostenibles i Pantalles.
+- `kipuk-es`: tot el MVP estava sense versionar amb un únic commit inicial.
+  Commit fet (`MVP del dossier: sorteig, calendari, classificacio, Classroom i
+  auditoria`). **Segueix sense remot: cal crear el repositori a GitHub.**
+- `Pantalles`: hi havia un token d'accés personal de GitHub incrustat a la URL
+  del remot. Tret del `.git/config`. **Cal revocar-lo a GitHub.**
+- `Pantalles`: credencials d'administrador tretes del README (segueixen a
+  l'historial de git: cal canviar la contrasenya, no només esborrar-la).
+- `.gitignore` ampliat a Ràdio (zip i .dc.html) i Chef Boss (.tmp_doc_review).
+- Comprovat que cap `.env` real està seguit per git en cap projecte.
+
+## Avisos d'alta (31/08/2026)
+
+`/api/alta` desava la sol·licitud a Postgres i no enviava cap correu: ni l'avís
+intern ni l'acusament de rebuda. Les plantilles `alta-avis-intern` i
+`alta-rebuda` existien a `lib/correu-central.js` però només les cridava
+`/api/correu`, que és per a les altres apps. Per això no arribava mai cap avís
+d'alta nova: calia mirar `/panel/altes` a mà.
+
+Arreglat a `app/api/alta/route.js`: després de desar es criden els dos correus
+amb `Promise.allSettled`, de manera que un error de correu no tomba l'alta.
+L'adreça interna surt de `AVIS_ALTES_EMAIL` (per defecte, la de Fabio).
+**Cal desplegar-ho i comprovar que `RESEND_API_KEY` i `RESEND_FROM` hi són a
+Railway.**
+
+## Pendent
+
+1. ~~Crear el repositori de `kipuk-es` a GitHub~~ — la carpeta ja no existeix al disc; l'app real és `Kipuk` (repo MYfabio/kipuk, ja amb remot).
+2. Revocar el token de GitHub exposat i canviar la contrasenya d'admin de Pantalles.
+3. Registre operatiu a aulaia.cat: repositori, servei de Railway, entorns,
+   variables crítiques, estat i última revisió per app — el que demana
+   `docs/rol-agent-gestor.md` i que `apps.json` no conté.
+4. Tasca programada per a l'informe diari (avui el document l'assumeix però no
+   s'executa sol).
+5. Consolidar carpetes duplicades: `Radio`/`modulo radio`,
+   `pla_lector`/`plalector-landing`/`recursos-pla-lector`. (`Kipuk`/`kipuk-es` ja consolidat: `kipuk-es` no existeix.)
+6. Fer una prova real del formulari d'alta. (L'arreglada es va desplegar el
+   04/09/2026 amb `railway up`; `RESEND_FROM` encara no és a Railway, així que
+   els correus surten des de `onboarding@resend.dev` fins que s'afegeixi.)
+7. `aulaia-cat` té git local però cap remot: cal crear-lo **privat** a GitHub
+   (conté `data/accessos.json`).
+8. `clubpoetasvius` no té git: cal `git init` i repositori **privat** a GitHub. Codi en una sola còpia.
+9. Crear el CNAME `poetes` → Railway a Cloudflare (DNS only) i el TXT de verificació; després canviar `AUTH_URL`, el redirect URI de Google i la `url` de la fitxa al catàleg.
+
+## Feina feta el 04/09/2026
+
+- Railway CLI instal·lada i enllaçada a `aulaia-cat` (servei `aulaia-cat`).
+  aulaia.cat es desplega amb `railway up` (no té remot git).
+- MatEscac: secció de lligues i torneigs a la landing (ca/es/en), desplegada
+  per push a `main`; afegida al catàleg `data/apps.json`.
+- KIPUK passa de "construcció" a "presentació" al catàleg, amb kipuk.cat en línia.
+
+## Feina feta el 22/09/2026
+
+- Kiosko (`Pantallas_web`): el text dels blocs es pinta línia a línia; model de
+  Gemini actualitzat (`gemini-3.6-flash`, sobreescrivible amb `GEMINI_MODEL`);
+  editor refet en mòduls plegables amb previsualització fixa; aparença per
+  panell (`themePrimary`, `themeDark`, `fontScale`, migració additiva); vídeo
+  curt als blocs (`videoUrl`, `/api/upload-video`, `/api/media/<id>` amb Range).
+  Tot provat a la BD local `kiosko_dev` i fusionat a `main`. **Pendent humà:**
+  comprovar al monitor Android que el vídeo arrenca; canviar la contrasenya
+  d'admin (el seed la porta escrita) i el secret de sessió de NextAuth.
+- Proposta de disseny de l'editor (maqueta): https://claude.ai/artifact/T1WE4nYpNYAePFCNRkYBmd
+
+## Feina feta el 28/09/2026
+
+- Search Console: verificades i donades d'alta les dues propietats que faltaven, diedric3d.com (https://www.diedric3d.com) i kipuk.cat (https://www.kipuk.cat, no https://kipuk.cat: aquest no respon per HTTPS, només redirigeix per HTTP). Etiqueta HTML (`verification.google` a `metadata` de Next.js), no fitxer ni DNS. Compte de servei `aulaia-panell-seo@...` afegit com a usuari a totes dues; el panell `/panel/seo` d'aulaia.cat ja hauria de mostrar-les a la propera consulta.
+- **Correcció d'inventari:** la carpeta `Kipuk` (repo MYfabio/kipuk, servei Railway `kipuk`) és l'app real que serveix kipuk.cat, no una demo obsoleta com deia aquest document. La carpeta `kipuk-es` que hi havia com a pendent ja no existeix al disc.
+
+## Feina feta el 29/09/2026
+
+- Panell: la consulta de serveis de Railway passava del límit d'amplada (500) i el panell no carregava; ara es demana per lots de 10.
+- Portada: el llistat de projectes passa a targetes amb captura (`public/captures/<slug>.jpg`, fetes amb Chrome headless a 1280×800) i filtres per etapa i matèria. Camps nous a `apps.json`: `nivells` (Primària, ESO, Batxillerat, FP, Centre) i `materies`. Per refer una captura, tornar a fer-la i desar-la amb el mateix nom.
+- Catàleg: alta de La Claqueta (producció, ja amb alumnat).
+- Blog: article de l'expedició «La maledicció del sarcòfag» del Museu Apagat.
+- El Taulell: carpeta moguda a `APPS\eltaulell`; `main` al dia i les branques locals de la còpia de Codex (`Documents\Codex\2026-07-28\...\eltaulell-implementation`) importades com a `codex-local/*`. Aquella còpia no s'ha esborrat.
+- Avís per a totes les apps: Railway deixa d'acceptar `railway.toml`/`railway.json` el 01/12/2026 (cal `railway config migrate`).
+
+## Tasques programades
+
+- **Informe diari** (dilluns a divendres, 7:30): salut de les webs, feina sense
+  commitejar i pendents oberts. Només lectura.
+- **Revisió de seguretat setmanal** (dilluns, 8:00): secrets exposats,
+  dependències vulnerables, autorització a les rutes noves, higiene de
+  `.gitignore` i exposició pública (robots). Només lectura, sense proves
+  intrusives.
+
+Totes dues arriben per avís al mòbil i per correu.

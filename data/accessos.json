@@ -42,6 +42,34 @@
     "nota": "No hi ha panell separat: el rol de docent obre la gestió de l'aula."
   },
   {
+    "slug": "kiosko",
+    "url": "https://kiosko.aulaia.cat/dashboard",
+    "tipus": "ruta",
+    "acces": "Correu i contrasenya propis de Kiosko",
+    "nota": "L'única app que no va amb el compte de Google: les pantalles no estan lligades a cap persona. Els usuaris del centre es gestionen al mateix tauler."
+  },
+  {
+    "slug": "enfonsar-la-flota",
+    "url": "https://enfonsarlaflota.aulaia.cat/login",
+    "tipus": "dins",
+    "acces": "Codi de classe i nom, sense contrasenya",
+    "nota": "No hi ha panell de docent. Els codis de classe es creen a la taula classroom_codes de Postgres o a la variable DEMO_CLASS_CODES del servei web a Railway (projecte undirlaflota). L'entrada amb Google no està activada a producció."
+  },
+  {
+    "slug": "poetes-vives",
+    "url": "https://poetes.aulaia.cat/coordinacio",
+    "tipus": "ruta",
+    "acces": "Google Workspace del centre (només escolaindustrial.org) o correu de SUPERADMIN_EMAILS",
+    "nota": "Una instal·lació per centre: el domini de Google és a src/lib/siteConfig.ts. La coordinació dona els rols de docent, tutoria i orientació a /coordinacio. poetes.aulaia.cat és el domini del servei a Railway però no té CNAME a Cloudflare: de moment només respon l'adreça de Railway."
+  },
+  {
+    "slug": "museu-apagat",
+    "url": "https://museu.aulaia.cat/docent",
+    "tipus": "ruta",
+    "acces": "Google Workspace del centre (escolaindustrial.org); docents pels correus de TEACHER_EMAILS",
+    "nota": "Una instal·lació per centre: domini i correus de docents a les variables del servei a Railway (projecte museu-apagat). La correcció d'escanejats amb IA només funciona si hi ha ANTHROPIC_API_KEY. La carpeta local es diu VIP i no té git."
+  },
+  {
     "slug": "eltaulell",
     "url": "https://eltaulell.aulaia.cat",
     "tipus": "construccio",
@@ -50,9 +78,30 @@
   },
   {
     "slug": "kipuk",
-    "url": "https://kipuk-production.up.railway.app",
-    "tipus": "construccio",
-    "acces": "Encara sense definir",
-    "nota": "En construcció i encara sense domini propi."
+    "url": "https://www.kipuk.cat/admin/usuaris",
+    "tipus": "ruta",
+    "acces": "Google Workspace del centre",
+    "nota": "Qui entra amb un compte del domini registrat es dona d'alta sol com a alumne. Els rols de docent i coordinació s'assignen des d'aquesta ruta."
+  },
+  {
+    "slug": "aulaacull",
+    "url": "https://aulaacull.aulaia.cat/docent",
+    "tipus": "dins",
+    "acces": "Google Workspace del centre",
+    "nota": "No hi ha pantalla d'administració: l'alta del centre, del docent i de l'alumnat es fa a la base de dades. Qui no hi consta no pot entrar."
+  },
+  {
+    "slug": "la-claqueta",
+    "url": "https://laclaqueta.aulaia.cat",
+    "tipus": "dins",
+    "acces": "Google Workspace del centre",
+    "nota": "Superadmins per la variable SUPERADMIN_EMAILS de Railway (projecte laclaqueta). Un usuari nou d un domini conegut entra com a lector; docent i alumnat els dona la importació de Classroom/CSV o l admin de centre."
+  },
+  {
+    "slug": "fpsegura",
+    "url": "https://fpsegura.aulaia.cat/entrar",
+    "tipus": "dins",
+    "acces": "Correu i contrasenya (pilot)",
+    "nota": "Abans «Pauta». Repo MYfabio/FPSegura, carpeta APPS/FPSegura, servei Railway al projecte angelic-vibrancy."
   }
 ]

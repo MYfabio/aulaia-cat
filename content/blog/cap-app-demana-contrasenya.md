@@ -5,8 +5,9 @@ data: 2026-08-27
 autor: Fabio Martínez
 etiquetes: [Coordinació digital, Privacitat, Google Workspace]
 apps: [dictats, typeedu, radio-escolar]
-imatge: /blog/cap-app-demana-contrasenya.png
-imatgeAlt: Una llista de contrasenyes d'alumnat ratllada, al costat del compte del centre
+imatge: /blog/cap-app-demana-contrasenya.jpg
+imatgeAlt: Dos docents davant d'un portàtil amb sis icones d'aplicacions, sense cap pantalla d'accés amb contrasenya.
+imatgeCredit: Imatge generada amb intel·ligència artificial
 ---
 
 Cada setembre passa el mateix a molts centres. S'estrena una eina nova, algú prepara un full de càlcul amb el nom i el correu de cent seixanta alumnes, es generen contrasenyes, s'imprimeixen en paperetes i es reparteixen per les aules. Al desembre, la meitat s'han perdut. Al març, ja ningú recorda qui té accés a què.

@@ -1,0 +1,163 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "kiosko",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev",
+        "--prefix",
+        "C:/Users/super/Desktop/APPS/Pantallas_web",
+        "--",
+        "-p",
+        "3240"
+      ],
+      "port": 3240
+    },
+    {
+      "name": "aulaia",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev",
+        "--",
+        "-p",
+        "3230"
+      ],
+      "port": 3230
+    },
+    {
+      "name": "ava",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev",
+        "--prefix",
+        "C:/Users/super/Desktop/APPS/AULADE~1/aula_acollida_pack_20260829/ava"
+      ],
+      "port": 3000
+    },
+    {
+      "name": "diedric3d-web-3212",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": [
+        "-C",
+        "C:/Users/super/Desktop/APPS/diedrico/diedric3d/apps/web",
+        "exec",
+        "next",
+        "dev",
+        "-p",
+        "3212"
+      ],
+      "port": 3212
+    },
+    {
+      "name": "dictatsia",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev",
+        "--prefix",
+        "C:/Users/super/Desktop/APPS/ditat",
+        "--",
+        "-p",
+        "3210"
+      ],
+      "port": 3210
+    },
+    {
+      "name": "dictatsia-3216",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev",
+        "--prefix",
+        "C:/Users/super/Desktop/APPS/ditat",
+        "--",
+        "-p",
+        "3216"
+      ],
+      "port": 3216
+    },
+    {
+      "name": "matescac",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev",
+        "--prefix",
+        "C:/Users/super/Desktop/APPS/Matescac"
+      ],
+      "port": 3214
+    },
+    {
+      "name": "typeedu",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev",
+        "--prefix",
+        "C:/Users/super/Desktop/APPS/mecanografia/typeedu",
+        "--",
+        "--port",
+        "3220"
+      ],
+      "port": 3220
+    },
+    {
+      "name": "chefboss-web",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev",
+        "--prefix",
+        "C:/Users/super/Desktop/APPS/Chefboss/frontend"
+      ],
+      "port": 5173
+    },
+    {
+      "name": "pla-lector",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev",
+        "--prefix",
+        "C:/Users/super/Desktop/APPS/pla_lector"
+      ],
+      "port": 3241
+    },
+    {
+      "name": "plalector-landing",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "C:/Users/super/Desktop/APPS/plalector-landing/server.js"
+      ],
+      "port": 4173
+    },
+    {
+      "name": "chefboss-api-dev",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "C:/Users/super/Desktop/APPS/Chefboss/backend/src/server.js"
+      ],
+      "env": {
+        "PORT": "3100",
+        "DEV_LOGIN": "1",
+        "DATABASE_URL": ""
+      },
+      "port": 3100
+    },
+    {
+      "name": "aules",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "serve",
+        "C:/Users/super/Desktop/APPS/aules-sostenibles/apps/web/dist",
+        "-l",
+        "3250"
+      ],
+      "port": 3250
+    }
+  ]
+}

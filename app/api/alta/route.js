@@ -1,6 +1,9 @@
 import { NextResponse } from "next/server";
 import { crearSolicitud } from "../../../lib/db";
 import apps from "../../../data/apps.json";
+import { enviarTransaccional } from "../../../lib/correu-central";
+import { validarRateLimit, extraerIp, validarEmailReal } from "../../../lib/rate-limit";
+import { motiuSpam } from "../../../lib/anti-spam";
 
 /** URL publica real: dins del contenidor request.url apunta a localhost. */
 function baseUrl(request) {
@@ -40,8 +43,8 @@ export async function OPTIONS(request) {
   return new NextResponse(null, { status: Object.keys(caps).length ? 204 : 403, headers: caps });
 }
 
-function tornar(request, params) {
-  const url = new URL("/alta", baseUrl(request));
+function tornar(request, params, lang = "ca") {
+  const url = new URL(lang === "es" ? "/es/alta" : "/alta", baseUrl(request));
   for (const [k, v] of Object.entries(params)) url.searchParams.set(k, v);
   return NextResponse.redirect(url, { status: 303 });
 }
@@ -111,13 +114,56 @@ async function altaJson(request, origen) {
   const motiu = validar(dades);
   if (motiu) return json({ ok: false, error: motiu }, 400);
 
+  // Spam: es descarta sense desar ni avisar, i es respon com si fos bona.
+  const spam = motiuSpam(dades);
+  if (spam) {
+    console.warn("Alta descartada per spam (json): " + spam);
+    return json({ ok: true }, 201);
+  }
+
   try {
     await crearSolicitud(dades);
   } catch (e) {
     console.error("No s ha pogut desar la sol·licitud:", e.message);
     return json({ ok: false, error: "desar" }, 500);
   }
+  await avisar(dades, undefined, undefined, cos?.idioma === "es" ? "es" : "ca");
   return json({ ok: true }, 201);
+}
+
+/**
+ * Avisos d una alta nova. Es fan despres de desar i mai poden tombar l alta:
+ * si el correu falla, la sol·licitud ja es a la base i es veu a /panel/altes.
+ * Dos correus: l avis intern (que aixo arribi sol es tot el sentit d aixo) i
+ * l acusament de rebuda a qui l ha demanada.
+ */
+async function avisar(dades, tokenVerif, baseUrl, idioma = "ca") {
+  const intern = process.env.AVIS_ALTES_EMAIL || "fabio.martinez@escolaindustrial.org";
+  const dadesComunes = { nom: dades.contacteNom, centre: dades.centre, correu: dades.contacteEmail, idioma };
+  const comu = { app: dades.app, dades: dadesComunes };
+
+  // Amb token (formulari d aulaia.cat) es demana verificar l adreça. Sense token
+  // (altes que arriben des del formulari d una altra app) nomes s acusa la
+  // rebuda: abans el correu sortia amb l enllaç buit.
+  const alUsuari = tokenVerif && baseUrl
+    ? enviarTransaccional({
+        tipus: "alta-verif",
+        per: dades.contacteEmail,
+        app: dades.app,
+        dades: { ...dadesComunes, enllac: `${baseUrl}/api/verif?token=${tokenVerif}` },
+      })
+    : enviarTransaccional({ tipus: "alta-rebuda", per: dades.contacteEmail, ...comu });
+
+  const resultats = await Promise.allSettled([
+    alUsuari,
+    // Aviso interno
+    enviarTransaccional({ tipus: "alta-avis-intern", per: intern, ...comu }),
+  ]);
+
+  for (const r of resultats) {
+    if (r.status === "rejected") console.error("Avis d alta: " + r.reason?.message);
+    else if (!r.value?.ok) console.error("Avis d alta no enviat: " + r.value?.motiu);
+  }
 }
 
 export async function POST(request) {
@@ -133,18 +179,46 @@ export async function POST(request) {
     return tornar(request, { error: "desar" });
   }
 
+  const lang = f.get("idioma") === "es" ? "es" : "ca";
   const dades = retallar(llegir(k => f.get(k)));
+
+  // Spam: el camp "web" és invisible per a una persona i un bot l'omple. Es
+  // descarta sense desar ni avisar, i es respon com si fos bona perquè el bot
+  // no en provi una altra variant.
+  const spam = motiuSpam(dades, { honeypot: f.get("web") });
+  if (spam) {
+    console.warn("Alta descartada per spam: " + spam);
+    return tornar(request, { enviat: "1" }, lang);
+  }
+
   const motiu = validar(dades);
   if (motiu) {
-    return tornar(request, { error: motiu, ...(dades.app ? { app: dades.app } : {}) });
+    return tornar(request, { error: motiu, ...(dades.app ? { app: dades.app } : {}) }, lang);
   }
 
+  // Rate limiting: verificar IP y email
+  const ip = extraerIp(request);
+  const rateLimit = await validarRateLimit(ip, dades.contacteEmail);
+  if (!rateLimit.ok) {
+    console.warn(`Rate limit exceeded for IP ${ip} or email ${dades.contacteEmail}`);
+    return tornar(request, { error: "limit", app: dades.app }, lang);
+  }
+
+  // Validar email real (no temporales)
+  if (!validarEmailReal(dades.contacteEmail)) {
+    console.warn(`Temporary email detected: ${dades.contacteEmail}`);
+    return tornar(request, { error: "email", app: dades.app }, lang);
+  }
+
+  let solicitud;
   try {
-    await crearSolicitud(dades);
+    solicitud = await crearSolicitud(dades);
   } catch (e) {
     console.error("No s ha pogut desar la sol·licitud:", e.message);
-    return tornar(request, { error: "desar", app: dades.app });
+    return tornar(request, { error: "desar", app: dades.app }, lang);
   }
 
-  return tornar(request, { enviat: "1" });
+  const baseUrl_str = baseUrl(request);
+  await avisar(dades, solicitud.tokenVerif, baseUrl_str, lang);
+  return tornar(request, { enviat: "1" }, lang);
 }
