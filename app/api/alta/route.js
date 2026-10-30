@@ -127,7 +127,7 @@ async function altaJson(request, origen) {
     console.error("No s ha pogut desar la sol·licitud:", e.message);
     return json({ ok: false, error: "desar" }, 500);
   }
-  await avisar(dades);
+  await avisar(dades, undefined, undefined, cos?.idioma === "es" ? "es" : "ca");
   return json({ ok: true }, 201);
 }
 
@@ -137,9 +137,9 @@ async function altaJson(request, origen) {
  * Dos correus: l avis intern (que aixo arribi sol es tot el sentit d aixo) i
  * l acusament de rebuda a qui l ha demanada.
  */
-async function avisar(dades, tokenVerif, baseUrl) {
+async function avisar(dades, tokenVerif, baseUrl, idioma = "ca") {
   const intern = process.env.AVIS_ALTES_EMAIL || "fabio.martinez@escolaindustrial.org";
-  const dadesComunes = { nom: dades.contacteNom, centre: dades.centre, correu: dades.contacteEmail };
+  const dadesComunes = { nom: dades.contacteNom, centre: dades.centre, correu: dades.contacteEmail, idioma };
   const comu = { app: dades.app, dades: dadesComunes };
 
   // Amb token (formulari d aulaia.cat) es demana verificar l adreça. Sense token
@@ -219,6 +219,6 @@ export async function POST(request) {
   }
 
   const baseUrl_str = baseUrl(request);
-  await avisar(dades, solicitud.tokenVerif, baseUrl_str);
+  await avisar(dades, solicitud.tokenVerif, baseUrl_str, lang);
   return tornar(request, { enviat: "1" }, lang);
 }
