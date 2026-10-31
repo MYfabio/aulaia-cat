@@ -16,7 +16,7 @@ export const metadata = {
   metadataBase: new URL("https://www.aulaia.cat"),
   title: { default: t.titolSite, template: "%s | aulaia.cat" },
   description: t.descSite,
-  icons: { icon: "/favicon.svg", shortcut: "/favicon.svg", apple: "/favicon.svg" },
+  icons: { icon: [{ url: "/favicon.svg", type: "image/svg+xml" }, { url: "/favicon-32.png", sizes: "32x32", type: "image/png" }, { url: "/icon-192.png", sizes: "192x192", type: "image/png" }], shortcut: "/favicon.ico", apple: "/apple-touch-icon.png" },
   robots: { index: true, follow: true },
   alternates: { canonical: "/", languages: { ca: "/", es: "/es" } },
   openGraph: { type: "website", locale: t.locale, siteName: "aulaia.cat", url: "https://www.aulaia.cat", title: t.titolSite, description: t.descSite },
