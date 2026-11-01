@@ -9,6 +9,7 @@ const orgJsonld = {
   "@type": "Organization",
   name: "aulaia.cat",
   url: "https://www.aulaia.cat",
+  logo: "https://www.aulaia.cat/icon-512.png",
   email: "hola@aulaia.cat",
   description: "Apps educatives creades des de dins de l'aula per docents en actiu.",
   address: { "@type": "PostalAddress", addressLocality: "Sabadell", addressCountry: "ES" },
