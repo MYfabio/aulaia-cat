@@ -579,8 +579,8 @@ a { color: inherit; text-decoration: none; }
 @media (max-width: 600px) { .app-graella { grid-template-columns: 1fr; } }
 .app-fitxa { display: flex; flex-direction: column; color: inherit; text-decoration: none; background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; overflow: hidden; transition: transform .15s ease, box-shadow .15s ease; }
 .app-fitxa:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(11, 37, 64, 0.10); }
-.app-fitxa-imatge { display: flex; align-items: center; justify-content: center; aspect-ratio: 16 / 10; background: var(--paper-2); border-bottom: 1px solid var(--rule); overflow: hidden; }
-.app-fitxa-imatge img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
+.app-fitxa-imatge { position: relative; display: flex; align-items: center; justify-content: center; aspect-ratio: 16 / 10; background: var(--teal-light); border-bottom: 1px solid var(--rule); overflow: hidden; }
+.app-fitxa-imatge img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
 .app-fitxa-icona { font-size: 3rem; }
 .app-fitxa-cos { display: flex; flex-direction: column; gap: 0.45rem; padding: 1.1rem 1.2rem 1.2rem; flex: 1; }
 .app-fitxa-cat { font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; color: var(--muted); }

@@ -17,9 +17,8 @@ export function Fitxa({ app, captura, lang = "ca" }) {
   return (
     <Link href={base(lang) + "/apps/" + app.slug} className="app-fitxa">
       <span className="app-fitxa-imatge">
-        {captura
-          ? <img src={captura} alt={t.captura + app.nom} loading="lazy" width="800" height="500" />
-          : <span className="app-fitxa-icona" aria-hidden="true">{app.icona}</span>}
+        <span className="app-fitxa-icona" aria-hidden="true">{app.icona}</span>
+        {captura && <img src={captura} alt={t.captura + app.nom} loading="lazy" width="800" height="500" />}
       </span>
       <span className="app-fitxa-cos">
         <span className="app-fitxa-cat">{app.categoria}</span>
