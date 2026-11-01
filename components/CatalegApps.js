@@ -54,7 +54,7 @@ export default function CatalegApps({ apps, captures, lang = "ca" }) {
   );
 
   return (
-    <>
+    <div className="cataleg-fons">
       <div className="cataleg-filtres section">
         <div className="cataleg-nivells" role="group" aria-label={t.etapa}>
           {["", ...NIVELLS].map(n => (
@@ -92,6 +92,6 @@ export default function CatalegApps({ apps, captures, lang = "ca" }) {
           </section>
         );
       })}
-    </>
+    </div>
   );
 }
