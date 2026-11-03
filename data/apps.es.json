@@ -675,47 +675,59 @@
   },
   "la-cantina": {
     "categoria": "Emprendimiento y vida en el centro",
-    "estatText": "En construcción · propuesta educativa en desarrollo",
-    "resum": "Propuesta educativa para que sea el propio alumnado quien gestione el bar escolar del centro, y que esa gestión cuente como aprendizaje.",
-    "descripcio": "La Cantina convierte el bar del centro en un proyecto de aula. En lugar de ser un servicio externo que el alumnado solo consume, pasa a ser un negocio real que el alumnado planifica, gestiona y evalúa: qué se ofrece, a qué precio, con qué proveedores, con qué turnos y con qué margen. La diferencia con una simulación es que aquí las decisiones tienen consecuencias inmediatas y visibles —si el precio no cubre costes, se nota; si la oferta no encaja con lo que quiere el centro, no se vende— y eso es exactamente lo que hace que el aprendizaje se sostenga. La propuesta está en desarrollo e incluirá el marco metodológico, los roles y las herramientas de seguimiento para que el profesorado pueda llevarla sin montarlo todo desde cero.",
-    "seoLlarg": "Los proyectos de emprendimiento escolar suelen quedarse en el ejercicio ficticio: un plan de empresa que nadie ejecuta y unos números que nunca pasan por caja. La Cantina parte de un servicio que el centro ya tiene y que el alumnado ya utiliza cada día, y lo convierte en el objeto de aprendizaje. Este anclaje en lo real es lo que permite trabajar competencias que a menudo se quedan en teoría: la matemática aplicada de precios, márgenes y cambio; la alimentación saludable cuando hay que decidir qué se ofrece; la seguridad y la higiene alimentaria como requisito, no como tema; la atención al público y la gestión de conflictos con compañeros que también son clientes; y la sostenibilidad cuando se decide sobre envases, residuos y abastecimiento de proximidad. Especialmente adecuada para proyectos transversales en Secundaria y para Ciclos Formativos de las familias de Hostelería, Comercio y Administración.",
+    "estatText": "Disponible · demostración para centros",
+    "resum": "Reservas de bocadillos desde el móvil, monedero digital sin efectivo en el patio y un negocio real que dirige el alumnado de emprendimiento con el apoyo del profesorado.",
+    "descripcio": "La Cantina es el ERP pedagógico para cantinas escolares. Las familias y el alumnado reservan el desayuno desde el móvil, pagan con un monedero digital (1 € = 1 punto) y recogen el pedido con un código de 4 letras, sin monedas en el patio. Detrás está el equipo de alumnado emprendedor, que diseña el catálogo, calcula costes y márgenes, hace el arqueo de caja y analiza las valoraciones de la clientela, mientras el profesorado supervisa y audita cada movimiento. Es un negocio de verdad convertido en situación de aprendizaje y en proyecto de Aprendizaje-Servicio. Está diseñada para menores: datos mínimos, sin publicidad ni seguimiento de terceros, y valoraciones visibles solo dentro del centro.",
+    "seoLlarg": "Los proyectos de emprendimiento escolar suelen quedarse en el ejercicio ficticio: un plan de empresa que nadie ejecuta y unos números que no llegan a pasar por caja. La Cantina parte de un servicio que el centro ya tiene y que el alumnado ya utiliza cada día, y lo convierte en el objeto de aprendizaje. El equipo emprendedor trabaja con fichas técnicas con coste, precio de venta y margen calculados automáticamente, hace el arqueo de caja comparando el efectivo esperado con el contado, consulta un panel de negocio con el beneficio neto en directo y dispone de un libro contable completo que se puede exportar a Excel. Para el centro, significa menos efectivo circulando por el patio y un proyecto transversal fácil de evaluar; para la AFA, transparencia total de recargas, ventas y saldo en circulación; y para las familias, saber qué come su hijo, poder reservar por él y recibir avisos de saldo bajo con un acceso por enlace al correo, sin contraseñas. Especialmente adecuada para proyectos transversales en Primaria, Secundaria y Ciclos Formativos, sobre todo de las familias de Hostelería, Comercio y Administración.",
     "funcionalitats": [
-      "Marco metodológico para llevar el bar escolar como proyecto de aula",
-      "Roles rotativos: compras, caja, atención, inventario y comunicación",
-      "Matemática aplicada: precios, márgenes, cambio y cierre de caja",
-      "Decisiones sobre alimentación saludable y oferta del centro",
-      "Higiene y seguridad alimentaria como requisito del proyecto",
-      "Sostenibilidad: envases, residuos y abastecimiento de proximidad",
-      "Seguimiento docente y evidencias para la evaluación competencial"
+      "Reserva de bocadillos desde el móvil, con ficha nutricional y alérgenos",
+      "Monedero digital sin efectivo en el patio (1 € = 1 punto) y recogida con un código de 4 letras",
+      "La cocina ve los pedidos en directo, agrupados por producto",
+      "Fichas técnicas con coste, precio de venta y margen calculado automáticamente",
+      "Arqueo de caja: efectivo esperado contra contado, con las diferencias registradas",
+      "Panel de negocio con beneficio neto en directo y ránking de productos",
+      "Libro contable completo, exportable a Excel",
+      "Valoraciones de 1 a 5 estrellas de la clientela",
+      "Acceso para familias con enlace al correo, sin contraseñas, y alta masiva de usuarios desde un Excel"
     ],
     "faq": [
       {
-        "p": "¿En qué punto está?",
-        "r": "Es una propuesta educativa en desarrollo. Todavía no hay plataforma pública. Si a tu centro le interesa participar en la definición, escríbenos."
+        "p": "¿Se paga con dinero en el patio?",
+        "r": "No. El alumno lleva el efectivo a la cantina o a secretaría, el equipo emprendedor lo registra en una caja abierta y se convierte en puntos en el monedero virtual (1 € = 1 punto). En el patio solo se paga con puntos."
       },
       {
-        "p": "¿El centro tiene que tener bar propio?",
+        "p": "¿Hace falta que el centro tenga bar propio?",
         "r": "La propuesta está pensada para centros que gestionan su propio servicio o que pueden ceder su gestión al alumnado dentro de un marco educativo y con supervisión docente."
       },
       {
+        "p": "¿Qué ven las familias y la AFA?",
+        "r": "Las familias saben qué come su hijo, pueden reservar por él y reciben avisos de saldo bajo. La AFA puede auditar recargas, ventas y saldo en circulación y recibir un resumen diario o semanal por correo."
+      },
+      {
+        "p": "¿Qué datos se guardan?",
+        "r": "Los mínimos. No hay publicidad ni seguimiento de terceros, y las valoraciones solo son visibles dentro del centro."
+      },
+      {
         "p": "¿Quién asume la responsabilidad legal y sanitaria?",
-        "r": "El centro, siempre. La propuesta es pedagógica: organiza el aprendizaje en torno al servicio, pero la titularidad y las obligaciones legales siguen siendo del centro."
+        "r": "El centro, siempre. La herramienta organiza el servicio y el aprendizaje a su alrededor, pero la titularidad y las obligaciones legales siguen siendo del centro."
       }
     ],
     "idiomes": [
       "Catalán"
     ],
     "nivells": [
+      "Primària",
       "ESO",
-      "FP"
+      "FP",
+      "Centre"
     ],
     "materies": [
       "Emprendimiento"
     ],
     "seo": {
       "title": "La Cantina: el bar escolar gestionado por el alumnado",
-      "description": "Propuesta educativa para que el alumnado gestione el bar del centro como proyecto de aula: precios, márgenes, alimentación saludable, higiene y sostenibilidad.",
-      "keywords": "bar escolar alumnado, emprendimiento escolar, proyecto de aula cantina, aprendizaje servicio instituto, alimentación saludable centro educativo"
+      "description": "Reservas de bocadillos desde el móvil, monedero digital sin efectivo y un negocio real de emprendimiento y Aprendizaje-Servicio para escuelas, institutos y FP.",
+      "keywords": "bar escolar alumnado, cantina escolar app, monedero digital escuela, emprendimiento escolar, aprendizaje servicio, reserva desayuno instituto"
     }
   },
   "kipuk": {
