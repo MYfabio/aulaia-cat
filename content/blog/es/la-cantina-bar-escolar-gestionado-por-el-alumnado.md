@@ -1,6 +1,6 @@
 ---
 titol: La Cantina: el bar del centro gestionado por el alumnado, sin efectivo en el patio
-resum: Reservas de bocadillos desde el móvil, un monedero digital y un negocio real que dirige el alumnado de emprendimiento con el apoyo del profesorado. Cómo funciona y qué se aprende.
+resum: Reservas de bocadillos desde la app escolar, un monedero digital y un negocio real que dirige el alumnado de emprendimiento con el apoyo del profesorado. Cómo funciona y qué se aprende.
 data: 2026-11-03
 autor: Fabio Martínez
 etiquetes: [Emprendimiento, Aprendizaje-Servicio, Cantina escolar]
@@ -16,7 +16,7 @@ Los proyectos de emprendimiento escolar suelen quedarse en el ejercicio: un plan
 ## Cómo funciona, en tres pasos
 
 1. **Recarga.** El alumno lleva dinero a la cantina o a secretaría. El equipo emprendedor lo registra en una caja abierta y se convierte en puntos en el monedero virtual: 1 € = 1 punto, con recibo en la pantalla.
-2. **Reserva desde el móvil.** Se elige el bocadillo a medida (tipo de pan, tamaño, con o sin tomate) o una cesta con fruta y zumo, se mira la ficha nutricional y los alérgenos y se paga con puntos antes de la hora límite. Las familias también pueden reservar para sus hijos.
+2. **Reserva desde la app escolar.** Se elige el bocadillo a medida (tipo de pan, tamaño, con o sin tomate) o una cesta con fruta y zumo, se mira la ficha nutricional y los alérgenos y se paga con puntos antes de la hora límite. Las familias también pueden reservar para sus hijos.
 3. **Recogida con un código.** La cocina ve los pedidos en directo, agrupados por producto. A la hora del patio, el alumno dice su código de 4 letras y se lleva el desayuno.
 
 En el patio no circula ninguna moneda.
