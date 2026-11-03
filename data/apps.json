@@ -890,11 +890,11 @@
       "Cicles Formatius"
     ],
     "centre": null,
-    "resum": "Reserves d'entrepans des del mòbil, moneder digital sense efectiu al pati i un negoci real que l'alumnat d'emprenedoria dirigeix amb el suport del professorat.",
-    "descripcio": "La Cantina és l'ERP pedagògic per a cantines escolars. Les famílies i l'alumnat reserven l'esmorzar des del mòbil, paguen amb un moneder digital (1 € = 1 punt) i recullen la comanda amb un codi de 4 lletres, sense monedes al pati. Darrere hi ha l'equip d'alumnat emprenedor, que dissenya el catàleg, calcula costos i marges, fa l'arqueig de caixa i analitza les valoracions de la clientela, mentre el professorat supervisa i audita cada moviment. És un negoci de veritat convertit en situació d'aprenentatge i en projecte d'Aprenentatge-Servei. Està dissenyada per a menors: dades mínimes, sense publicitat ni seguiment de tercers, i valoracions visibles només dins del centre.",
+    "resum": "Reserves d'entrepans des de l'app escolar, moneder digital sense efectiu al pati i un negoci real que l'alumnat d'emprenedoria dirigeix amb el suport del professorat.",
+    "descripcio": "La Cantina és l'ERP pedagògic per a cantines escolars. Les famílies i l'alumnat reserven l'esmorzar des de l'app escolar, paguen amb un moneder digital (1 € = 1 punt) i recullen la comanda amb un codi de 4 lletres, sense monedes al pati. Darrere hi ha l'equip d'alumnat emprenedor, que dissenya el catàleg, calcula costos i marges, fa l'arqueig de caixa i analitza les valoracions de la clientela, mentre el professorat supervisa i audita cada moviment. És un negoci de veritat convertit en situació d'aprenentatge i en projecte d'Aprenentatge-Servei. Està dissenyada per a menors: dades mínimes, sense publicitat ni seguiment de tercers, i valoracions visibles només dins del centre.",
     "seoLlarg": "Els projectes d'emprenedoria escolar solen quedar-se en l'exercici fictici: un pla d'empresa que ningú no executa i uns números que no arriben a passar per caixa. La Cantina parteix d'un servei que el centre ja té i que l'alumnat ja utilitza cada dia, i el converteix en l'objecte d'aprenentatge. L'equip emprenedor treballa amb fitxes tècniques amb cost, preu de venda i marge calculats automàticament, fa l'arqueig de caixa comparant l'efectiu esperat amb el comptat, consulta un panell de negoci amb el benefici net en directe i disposa d'un llibre comptable complet que es pot exportar a Excel. Per al centre, vol dir menys efectiu circulant pel pati i un projecte transversal fàcil d'avaluar; per a l'AFA, transparència total de recàrregues, vendes i saldo en circulació; i per a les famílies, saber què menja el seu fill, poder reservar per ell i rebre avisos de saldo baix amb un accés per enllaç al correu, sense contrasenyes. Especialment adequada per a projectes transversals a Primària, Secundària i Cicles Formatius, sobretot de les famílies d'Hoteleria, Comerç i Administració.",
     "funcionalitats": [
-      "Reserva d'entrepans des del mòbil, amb fitxa nutricional i al·lèrgens",
+      "Reserva d'entrepans des de l'app escolar, amb fitxa nutricional i al·lèrgens",
       "Moneder digital sense efectiu al pati (1 € = 1 punt) i recollida amb un codi de 4 lletres",
       "La cuina veu les comandes en directe, agrupades per producte",
       "Fitxes tècniques amb cost, preu de venda i marge calculat automàticament",
@@ -933,7 +933,7 @@
     ],
     "seo": {
       "title": "La Cantina: el bar escolar gestionat per l'alumnat",
-      "description": "Reserves d'entrepans des del mòbil, moneder digital sense efectiu i un negoci real d'emprenedoria i Aprenentatge-Servei per a escoles, instituts i FP.",
+      "description": "Reserves d'entrepans des de l'app escolar, moneder digital sense efectiu i un negoci real d'emprenedoria i Aprenentatge-Servei per a escoles, instituts i FP.",
       "keywords": "bar escolar alumnat, cantina escolar app, moneder digital escola, emprenedoria escolar, aprenentatge servei, reserva esmorzar institut"
     },
     "nivells": [

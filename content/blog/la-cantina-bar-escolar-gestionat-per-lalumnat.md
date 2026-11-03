@@ -1,6 +1,6 @@
 ---
 titol: La Cantina: el bar del centre gestionat per l'alumnat, sense efectiu al pati
-resum: Reserves d'entrepans des del mòbil, un moneder digital i un negoci real que l'alumnat d'emprenedoria dirigeix amb el suport del professorat. Com funciona i què s'hi aprèn.
+resum: Reserves d'entrepans des de l'app escolar, un moneder digital i un negoci real que l'alumnat d'emprenedoria dirigeix amb el suport del professorat. Com funciona i què s'hi aprèn.
 data: 2026-11-03
 autor: Fabio Martínez
 etiquetes: [Emprenedoria, Aprenentatge-Servei, Cantina escolar]
@@ -15,7 +15,7 @@ Els projectes d'emprenedoria escolar solen quedar-se en l'exercici: un pla d'emp
 ## Com funciona, en tres passos
 
 1. **Recàrrega.** L'alumne porta diners a la cantina o a secretaria. L'equip emprenedor els registra en una caixa oberta i es converteixen en punts al moneder virtual: 1 € = 1 punt, amb rebut a la pantalla.
-2. **Reserva des del mòbil.** Es tria l'entrepà a mida (tipus de pa, mida, amb o sense tomàquet) o un cistell amb fruita i suc, es mira la fitxa nutricional i els al·lèrgens i es paga amb punts abans de l'hora límit. Les famílies també poden reservar per als seus fills.
+2. **Reserva des de l'app escolar.** Es tria l'entrepà a mida (tipus de pa, mida, amb o sense tomàquet) o un cistell amb fruita i suc, es mira la fitxa nutricional i els al·lèrgens i es paga amb punts abans de l'hora límit. Les famílies també poden reservar per als seus fills.
 3. **Recollida amb un codi.** La cuina veu les comandes en directe, agrupades per producte. A l'hora del pati, l'alumne diu el seu codi de 4 lletres i se n'endú l'esmorzar.
 
 Al pati no hi circula cap moneda.

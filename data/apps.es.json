@@ -676,11 +676,11 @@
   "la-cantina": {
     "categoria": "Emprendimiento y vida en el centro",
     "estatText": "Disponible · demostración para centros",
-    "resum": "Reservas de bocadillos desde el móvil, monedero digital sin efectivo en el patio y un negocio real que dirige el alumnado de emprendimiento con el apoyo del profesorado.",
-    "descripcio": "La Cantina es el ERP pedagógico para cantinas escolares. Las familias y el alumnado reservan el desayuno desde el móvil, pagan con un monedero digital (1 € = 1 punto) y recogen el pedido con un código de 4 letras, sin monedas en el patio. Detrás está el equipo de alumnado emprendedor, que diseña el catálogo, calcula costes y márgenes, hace el arqueo de caja y analiza las valoraciones de la clientela, mientras el profesorado supervisa y audita cada movimiento. Es un negocio de verdad convertido en situación de aprendizaje y en proyecto de Aprendizaje-Servicio. Está diseñada para menores: datos mínimos, sin publicidad ni seguimiento de terceros, y valoraciones visibles solo dentro del centro.",
+    "resum": "Reservas de bocadillos desde la app escolar, monedero digital sin efectivo en el patio y un negocio real que dirige el alumnado de emprendimiento con el apoyo del profesorado.",
+    "descripcio": "La Cantina es el ERP pedagógico para cantinas escolares. Las familias y el alumnado reservan el desayuno desde la app escolar, pagan con un monedero digital (1 € = 1 punto) y recogen el pedido con un código de 4 letras, sin monedas en el patio. Detrás está el equipo de alumnado emprendedor, que diseña el catálogo, calcula costes y márgenes, hace el arqueo de caja y analiza las valoraciones de la clientela, mientras el profesorado supervisa y audita cada movimiento. Es un negocio de verdad convertido en situación de aprendizaje y en proyecto de Aprendizaje-Servicio. Está diseñada para menores: datos mínimos, sin publicidad ni seguimiento de terceros, y valoraciones visibles solo dentro del centro.",
     "seoLlarg": "Los proyectos de emprendimiento escolar suelen quedarse en el ejercicio ficticio: un plan de empresa que nadie ejecuta y unos números que no llegan a pasar por caja. La Cantina parte de un servicio que el centro ya tiene y que el alumnado ya utiliza cada día, y lo convierte en el objeto de aprendizaje. El equipo emprendedor trabaja con fichas técnicas con coste, precio de venta y margen calculados automáticamente, hace el arqueo de caja comparando el efectivo esperado con el contado, consulta un panel de negocio con el beneficio neto en directo y dispone de un libro contable completo que se puede exportar a Excel. Para el centro, significa menos efectivo circulando por el patio y un proyecto transversal fácil de evaluar; para la AFA, transparencia total de recargas, ventas y saldo en circulación; y para las familias, saber qué come su hijo, poder reservar por él y recibir avisos de saldo bajo con un acceso por enlace al correo, sin contraseñas. Especialmente adecuada para proyectos transversales en Primaria, Secundaria y Ciclos Formativos, sobre todo de las familias de Hostelería, Comercio y Administración.",
     "funcionalitats": [
-      "Reserva de bocadillos desde el móvil, con ficha nutricional y alérgenos",
+      "Reserva de bocadillos desde la app escolar, con ficha nutricional y alérgenos",
       "Monedero digital sin efectivo en el patio (1 € = 1 punto) y recogida con un código de 4 letras",
       "La cocina ve los pedidos en directo, agrupados por producto",
       "Fichas técnicas con coste, precio de venta y margen calculado automáticamente",
@@ -726,7 +726,7 @@
     ],
     "seo": {
       "title": "La Cantina: el bar escolar gestionado por el alumnado",
-      "description": "Reservas de bocadillos desde el móvil, monedero digital sin efectivo y un negocio real de emprendimiento y Aprendizaje-Servicio para escuelas, institutos y FP.",
+      "description": "Reservas de bocadillos desde la app escolar, monedero digital sin efectivo y un negocio real de emprendimiento y Aprendizaje-Servicio para escuelas, institutos y FP.",
       "keywords": "bar escolar alumnado, cantina escolar app, monedero digital escuela, emprendimiento escolar, aprendizaje servicio, reserva desayuno instituto"
     }
   },
