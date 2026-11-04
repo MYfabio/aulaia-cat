@@ -20,6 +20,18 @@ export default function CookieBanner() {
     setVisible(false);
   }
 
+  // Reserva l'espai del bàner al final de la pàgina perquè no tapi el contingut
+  useEffect(() => {
+    if (!visible) return;
+    const banner = document.querySelector(".cookie-banner");
+    if (!banner) return;
+    const ajusta = () => { document.body.style.paddingBottom = banner.offsetHeight + "px"; };
+    ajusta();
+    const observador = new ResizeObserver(ajusta);
+    observador.observe(banner);
+    return () => { observador.disconnect(); document.body.style.paddingBottom = ""; };
+  }, [visible]);
+
   if (!visible) return null;
 
   return (

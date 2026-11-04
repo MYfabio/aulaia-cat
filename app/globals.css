@@ -249,6 +249,8 @@ a { color: inherit; text-decoration: none; }
 .cookie-banner { position: fixed; bottom: 0; left: 0; right: 0; z-index: 200; background: var(--ink); color: var(--paper); padding: 1.15rem var(--pad); }
 .cookie-inner { max-width: 1120px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap; }
 .cookie-text { font-size: 0.88rem; color: rgba(243,248,252,0.8); }
+.cookie-text p { margin: 0; }
+@media (max-height: 700px) { .cookie-banner { padding: 0.7rem var(--pad); } .cookie-text { font-size: 0.8rem; } }
 .cookie-link { color: var(--paper); border-bottom: 1px solid rgba(243,248,252,0.4); }
 .cookie-actions { display: flex; gap: 0.6rem; }
 .cookie-btn-accept { background: var(--paper); color: var(--ink); border: none; padding: 0.6rem 1.3rem; border-radius: 2px; font-size: 0.85rem; font-weight: 600; cursor: pointer; font-family: var(--font); }
