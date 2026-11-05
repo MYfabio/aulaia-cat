@@ -76,6 +76,7 @@ a { color: inherit; text-decoration: none; }
 /* ---------- Hero editorial ---------- */
 /* Banda a tot l'ample: quadricula subtil + degradat turquesa/blau a la cantonada */
 .hero-fons {
+  position: relative;
   background:
     linear-gradient(rgba(11, 37, 64, 0.05) 1px, transparent 1px) 0 0 / 60px 60px,
     linear-gradient(90deg, rgba(11, 37, 64, 0.05) 1px, transparent 1px) 0 0 / 60px 60px,
@@ -93,6 +94,21 @@ a { color: inherit; text-decoration: none; }
 .hero-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
 .hero-badges { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-top: 3.5rem; padding-top: 1.5rem; border-top: 1px solid var(--rule); }
 .badge { font-size: 0.8rem; color: var(--muted); }
+
+/* Xarxa d'idees 3D: fons transparent, deixa passar la pàgina */
+.xarxa { max-width: 1120px; margin: 0 auto; padding: 0 var(--pad); display: grid; grid-template-columns: 1fr; gap: 0.5rem; }
+.xarxa-malla { position: relative; margin: 0; }
+.xarxa-malla figcaption { text-align: center; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.16em; color: var(--muted); }
+.xarxa-una { max-width: 620px; }
+.hero-xarxa { max-width: 520px; margin: 0 auto; padding-bottom: 1.5rem; }
+.hero-xarxa .xarxa { padding: 0; }
+.hero-xarxa .xarxa-canvas { height: clamp(300px, 70vw, 380px); }
+@media (min-width: 1400px) {
+  .hero-xarxa { position: absolute; top: 50%; transform: translateY(-50%); right: calc((100vw - 1120px) / 2 - 60px); width: 360px; margin: 0; padding: 0; }
+  .hero-xarxa .xarxa-canvas { height: 360px; }
+}
+.xarxa-canvas { display: block; width: 100%; height: clamp(320px, 62vw, 440px); background: transparent; cursor: grab; touch-action: pan-y; }
+.xarxa-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
 /* ---------- Blocs de text ---------- */
 .seo-intro { border-top: 1px solid var(--rule); background: var(--paper-2); }
@@ -592,6 +608,9 @@ a { color: inherit; text-decoration: none; }
 @media (max-width: 960px) { .app-graella { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 600px) { .app-graella { grid-template-columns: 1fr; } }
 .app-fitxa { display: flex; flex-direction: column; color: inherit; text-decoration: none; background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; overflow: hidden; transition: transform .15s ease, box-shadow .15s ease; }
+.app-fitxa-enllac { display: flex; flex-direction: column; flex: 1; color: inherit; text-decoration: none; }
+.app-fitxa-obre { display: block; text-align: center; padding: 0.65rem 1rem; font-size: 0.85rem; font-weight: 600; color: var(--deep); background: var(--paper); border-top: 1px solid var(--rule); text-decoration: none; }
+.app-fitxa-obre:hover { background: var(--teal-light); }
 .app-fitxa:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(11, 37, 64, 0.10); }
 .app-fitxa-imatge { position: relative; display: flex; align-items: center; justify-content: center; aspect-ratio: 16 / 10; background: var(--teal-light); border-bottom: 1px solid var(--rule); overflow: hidden; }
 .app-fitxa-imatge img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }

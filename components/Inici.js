@@ -4,6 +4,7 @@ import { mapaCaptures } from "../lib/captures";
 import { TEXTOS, base, appsEn } from "../lib/i18n";
 import { comptarCentres } from "../lib/db";
 import ComptadorCentres from "./ComptadorCentres";
+import XarxaIdees from "./XarxaIdees";
 
 export function metadataInici(lang) {
   const t = TEXTOS[lang].inici;
@@ -84,7 +85,10 @@ export default async function Inici({ lang }) {
           {t.badges(enLinia.length).map(x => <span key={x} className="badge">{x}</span>)}
         </div>
       </section>
+      <div className="hero-xarxa"><XarxaIdees lang={lang} quina={0} /></div>
       </div>
+
+      <XarxaIdees lang={lang} quina={1} />
 
       {nCentres > 0 && <ComptadorCentres n={nCentres} t={{ ...c, titol: c.titol(nCentres) }} href={b + "/alta"} />}
 
