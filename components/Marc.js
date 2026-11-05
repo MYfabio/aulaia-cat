@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Logo from "./Logo";
 import CookieBanner from "./CookieBanner";
+import Assistent from "./Assistent";
 import { TEXTOS, base, appsEn } from "../lib/i18n";
 import { llistarArticles } from "../lib/blog";
 
@@ -27,6 +28,10 @@ export default function Marc({ lang, children }) {
   // Enllaços interns reals i descriptius: cada app i els articles més nous, perquè el buscador (i les IA) arribin a tot.
   const appsPeu = appsEn(lang).filter(a => a.estat === "produccio");
   const articlesPeu = llistarArticles(lang).slice(0, 6);
+  // Les apps que un centre pot demanar avui o aviat, com al formulari d'alta.
+  const appsAssistent = appsEn(lang)
+    .filter(a => a.estat === "produccio" || a.estat === "construccio")
+    .map(a => ({ slug: a.slug, nom: a.nom, estat: a.estat }));
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonld) }} />
@@ -78,6 +83,7 @@ export default function Marc({ lang, children }) {
         </p>
       </footer>
       <CookieBanner />
+      <Assistent lang={lang} apps={appsAssistent} />
     </>
   );
 }

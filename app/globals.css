@@ -637,3 +637,43 @@ a { color: inherit; text-decoration: none; }
 @media (prefers-reduced-motion: reduce) {
   .comptador-punt { opacity: 1; transform: none; animation: none !important; }
 }
+
+/* ---------- Assistent d'ajuda (botons, sense IA) ---------- */
+/* --asst-baix és l'alçada del bàner de galetes (la posa el component): el botó queda a sobre seu. */
+.asst { position: fixed; right: 1rem; bottom: calc(var(--asst-baix, 0px) + 1rem); z-index: 150; display: flex; flex-direction: column; align-items: flex-end; gap: 0.6rem; font-family: var(--font); }
+.asst-boto { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--deep); color: var(--paper); border: 0; border-radius: 999px; padding: 0.75rem 1.1rem; font: inherit; font-size: 0.88rem; font-weight: 600; cursor: pointer; box-shadow: 0 6px 20px rgba(11, 37, 64, 0.28); transition: background 0.2s ease, transform 0.2s ease; }
+.asst-boto:hover { background: var(--ink); transform: translateY(-1px); }
+.asst-boto:focus-visible, .asst-opcio:focus-visible, .asst-chip:focus-visible, .asst-tanca:focus-visible { outline: 2px solid var(--teal); outline-offset: 2px; }
+.asst-panell { width: min(24rem, calc(100vw - 2rem)); max-height: min(36rem, calc(100vh - var(--asst-baix, 0px) - 6rem)); display: flex; flex-direction: column; background: var(--surface); border: 1px solid var(--border-accent); box-shadow: 0 16px 48px rgba(11, 37, 64, 0.25); }
+.asst-cap { display: flex; align-items: center; justify-content: space-between; padding: 0.8rem 1rem; background: var(--ink); color: var(--paper); font-size: 0.9rem; }
+.asst-tanca { background: transparent; border: 0; color: inherit; font-size: 1.5rem; line-height: 1; cursor: pointer; padding: 0 0.25rem; }
+.asst-cos { padding: 1rem; overflow-y: auto; font-size: 0.92rem; color: var(--ink); }
+.asst-q { font-size: 1.05rem; font-weight: 700; letter-spacing: -0.02em; margin: 0 0 0.85rem; outline: none; }
+.asst-nota { font-size: 0.8rem; color: var(--muted); margin: 0 0 1rem; line-height: 1.45; }
+.asst-opcions { display: flex; flex-direction: column; gap: 0.5rem; }
+.asst-opcio { text-align: left; background: var(--bg); color: var(--ink); border: 1px solid var(--rule); padding: 0.7rem 0.9rem; font: inherit; font-size: 0.9rem; cursor: pointer; transition: border-color 0.15s ease, background 0.15s ease; }
+.asst-opcio:hover { border-color: var(--ink); background: var(--teal-light); }
+.asst-chips { display: flex; flex-wrap: wrap; gap: 0.45rem; }
+.asst-chip { background: var(--bg); color: var(--ink); border: 1px solid var(--rule); border-radius: 999px; padding: 0.4rem 0.85rem; font: inherit; font-size: 0.82rem; font-weight: 600; cursor: pointer; }
+.asst-chip:hover { border-color: var(--ink); }
+.asst-chip.is-actiu { background: var(--deep); border-color: var(--deep); color: var(--paper); }
+.asst-accions { display: flex; gap: 0.5rem; margin-top: 1rem; }
+.asst-accions .btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.asst-form { position: relative; }
+.asst-form .form-group { margin-bottom: 0.9rem; }
+.asst-consent { display: flex; gap: 0.5rem; align-items: flex-start; font-size: 0.8rem; color: var(--muted); margin: 0.25rem 0 1rem; line-height: 1.4; }
+.asst-consent input { margin-top: 0.2rem; }
+.asst-consent a { color: var(--ink); border-bottom: 1px solid var(--rule); }
+.asst-form .btn-submit { width: 100%; }
+.asst-form .btn-submit:disabled { opacity: 0.6; cursor: wait; }
+.asst-peu { border-top: 1px solid var(--rule-soft); padding: 0.55rem 1rem; }
+.asst-enrere { background: transparent; border: 0; font: inherit; font-size: 0.82rem; color: var(--muted); cursor: pointer; padding: 0; }
+.asst-enrere:hover { color: var(--ink); }
+@media (max-width: 480px) {
+  .asst { right: 0.75rem; bottom: calc(var(--asst-baix, 0px) + 0.75rem); }
+  .asst-boto span { display: none; }
+  .asst-boto { padding: 0.85rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .asst-boto, .asst-opcio { transition: none; }
+}
