@@ -88,8 +88,6 @@ export default async function Inici({ lang }) {
       <div className="hero-xarxa"><XarxaIdees lang={lang} quina={0} /></div>
       </div>
 
-      <XarxaIdees lang={lang} quina={1} />
-
       {nCentres > 0 && <ComptadorCentres n={nCentres} t={{ ...c, titol: c.titol(nCentres) }} href={b + "/alta"} />}
 
       <CatalegApps apps={apps} captures={mapaCaptures(apps)} lang={lang} />

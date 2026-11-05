@@ -100,12 +100,13 @@ a { color: inherit; text-decoration: none; }
 .xarxa-malla { position: relative; margin: 0; }
 .xarxa-malla figcaption { text-align: center; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.16em; color: var(--muted); }
 .xarxa-una { max-width: 620px; }
-.hero-xarxa { max-width: 520px; margin: 0 auto; padding-bottom: 1.5rem; }
+.hero-xarxa { display: none; }
 .hero-xarxa .xarxa { padding: 0; }
-.hero-xarxa .xarxa-canvas { height: clamp(300px, 70vw, 380px); }
-@media (min-width: 1400px) {
-  .hero-xarxa { position: absolute; top: 50%; transform: translateY(-50%); right: calc((100vw - 1120px) / 2 - 60px); width: 360px; margin: 0; padding: 0; }
-  .hero-xarxa .xarxa-canvas { height: 360px; }
+.hero-xarxa .xarxa-canvas { height: 380px; }
+/* La xarxa va al costat del text; sota 1100px s'amaga (no cap sense tapar-lo) */
+@media (min-width: 1100px) {
+  .hero-xarxa { display: block; position: absolute; top: 50%; transform: translateY(-50%); right: max(1rem, calc((100vw - 1120px) / 2)); width: 380px; }
+  .hero h1 { font-size: clamp(2.6rem, 6vw, 4.2rem); }
 }
 .xarxa-canvas { display: block; width: 100%; height: clamp(320px, 62vw, 440px); background: transparent; cursor: grab; touch-action: pan-y; }
 .xarxa-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
