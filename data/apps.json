@@ -13,7 +13,8 @@
     ],
     "publics": [
       "Primària",
-      "Secundària"
+      "Secundària",
+      "Batxillerat"
     ],
     "centre": null,
     "resum": "Estudi de ràdio i pòdcast en línia: l'alumnat grava amb efectes de so, edita amb IA i publica al mur de la classe amb supervisió docent.",
@@ -59,14 +60,15 @@
     },
     "nivells": [
       "Primària",
-      "ESO"
+      "ESO",
+      "Batxillerat"
     ],
     "materies": [
       "Llengua",
       "Comunicació oral"
     ],
     "problema": "Fer ràdio a l'aula sol exigir equips, programes d'edició i molt de temps del docent. Aquí l'alumnat grava, edita amb IA i publica des del navegador, amb la supervisió del professorat.",
-    "perfil": "Docents de llengua i comunicació oral de Primària i ESO, i coordinacions de projectes de comunicació del centre."
+    "perfil": "Primària, Secundària i Batxillerat. Docents de llengua i comunicació oral, i coordinacions de projectes de comunicació del centre."
   },
   {
     "slug": "dictats",
@@ -1167,7 +1169,7 @@
       "Aprenentatge servei"
     ],
     "problema": "L'alumnat té poques vies reals per proposar millores del seu entorn. La plataforma d'aprenentatge servei permet detectar necessitats, proposar solucions i fer-ne el seguiment.",
-    "perfil": "Docents d'ESO i Batxillerat que treballen aprenentatge servei."
+    "perfil": "Alumnat de 3r i 4t d'ESO i els seus docents d'aprenentatge servei."
   },
   {
     "slug": "museu-apagat",
