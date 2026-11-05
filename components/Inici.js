@@ -71,6 +71,7 @@ export default async function Inici({ lang }) {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(llista) }} />
+      <div className="hero-fons">
       <section className="hero">
         <span className="hero-tag">{t.tag}</span>
         <h1>{t.h1a}<span>{t.h1b}</span></h1>
@@ -83,6 +84,7 @@ export default async function Inici({ lang }) {
           {t.badges(enLinia.length).map(x => <span key={x} className="badge">{x}</span>)}
         </div>
       </section>
+      </div>
 
       {nCentres > 0 && <ComptadorCentres n={nCentres} t={{ ...c, titol: c.titol(nCentres) }} href={b + "/alta"} />}
 
