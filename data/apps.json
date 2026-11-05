@@ -64,7 +64,9 @@
     "materies": [
       "Llengua",
       "Comunicació oral"
-    ]
+    ],
+    "problema": "Fer ràdio a l'aula sol exigir equips, programes d'edició i molt de temps del docent. Aquí l'alumnat grava, edita amb IA i publica des del navegador, amb la supervisió del professorat.",
+    "perfil": "Docents de llengua i comunicació oral de Primària i ESO, i coordinacions de projectes de comunicació del centre."
   },
   {
     "slug": "dictats",
@@ -131,7 +133,9 @@
     ],
     "materies": [
       "Llengua catalana"
-    ]
+    ],
+    "problema": "Preparar dictats adaptats a cada nivell i corregir-los un a un porta molta feina. L'app els genera en català del A1 al C2 i els corregeix explicant cada falta, amb adaptacions per a l'alumnat amb NEE.",
+    "perfil": "Docents de llengua catalana de Primària i ESO, aula d'acollida i educació d'adults."
   },
   {
     "slug": "matescac",
@@ -205,7 +209,9 @@
     ],
     "materies": [
       "Matemàtiques"
-    ]
+    ],
+    "problema": "Costa connectar el pensament lògic i la competència matemàtica amb una activitat motivadora. Els escacs 3D escolars ho fan alineats amb el Decret 175/2022.",
+    "perfil": "Docents de matemàtiques de Primària i ESO."
   },
   {
     "slug": "aules-sostenibles",
@@ -289,7 +295,9 @@
     "materies": [
       "Ciències",
       "Sostenibilitat"
-    ]
+    ],
+    "problema": "Moltes idees d'educació ambiental no arriben a resultats que es puguin mesurar. Tallers, auditories i recursos ajuden docents i centres a aconseguir-los.",
+    "perfil": "Docents de ciències i coordinacions de sostenibilitat de Primària i ESO."
   },
   {
     "slug": "pla-lector",
@@ -362,7 +370,9 @@
     "materies": [
       "Llengua",
       "Biblioteca"
-    ]
+    ],
+    "problema": "Les biblioteques d'aula i el seguiment lector solen anar en paper o dispersos. Aquí hi ha el catàleg, l'historial de lectura de cada alumne i estadístiques per al claustre.",
+    "perfil": "Docents de llengua, responsables de biblioteca i coordinació lectora de Primària i ESO."
   },
   {
     "slug": "typeedu",
@@ -429,7 +439,9 @@
     ],
     "materies": [
       "Competència digital"
-    ]
+    ],
+    "problema": "Aprendre mecanografia exigeix pràctica guiada i feedback immediat que el docent no pot donar a tothom alhora. L'app ho fa amb teclat ISO i adaptacions per a l'aula.",
+    "perfil": "Docents de Primària, ESO i Cicles Formatius que treballen la competència digital."
   },
   {
     "slug": "diedric3d",
@@ -505,7 +517,9 @@
     ],
     "materies": [
       "Dibuix tècnic"
-    ]
+    ],
+    "problema": "El sistema dièdric costa perquè cal imaginar l'espai a partir de dibuixos plans. L'editor mostra l'alçat, la planta i el perfil en temps real mentre l'alumnat construeix la peça.",
+    "perfil": "Docents de dibuix tècnic d'ESO i Batxillerat."
   },
   {
     "slug": "kiosko",
@@ -582,7 +596,9 @@
     ],
     "materies": [
       "Gestió del centre"
-    ]
+    ],
+    "problema": "Els avisos del centre es perden entre paper, correus i pantalles que ningú actualitza. Qualsevol monitor es converteix en un tauler digital que s'actualitza sol.",
+    "perfil": "Secretaria, departaments, direcció i coordinació TAC."
   },
   {
     "slug": "enfonsar-la-flota",
@@ -664,7 +680,9 @@
     "materies": [
       "Matemàtiques",
       "Dibuix tècnic"
-    ]
+    ],
+    "problema": "Entendre un punt de l'espai en 3D i les seves vistes és abstracte. Un joc de batalla naval amb coordenades (x, y, z) mostra les vistes del sistema dièdric en viu.",
+    "perfil": "Docents de matemàtiques i dibuix tècnic d'ESO i Batxillerat."
   },
   {
     "slug": "poetes-vives",
@@ -743,7 +761,9 @@
     ],
     "materies": [
       "Llengua i literatura"
-    ]
+    ],
+    "problema": "La poesia sovint es queda a la pàgina del llibre de text. Aquí l'alumnat escriu, publica sense signar entre iguals i escolta el poema en veu alta, amb revisió docent.",
+    "perfil": "Docents de llengua i literatura d'ESO i Batxillerat."
   },
   {
     "slug": "eltaulell",
@@ -799,7 +819,9 @@
     ],
     "materies": [
       "Tutoria"
-    ]
+    ],
+    "problema": "Comunicar-se amb l'alumnat i escoltar-lo requereix un espai propi del centre. Una plataforma multi-centre reuneix tota la comunitat educativa i millora l'acompanyament tutorial.",
+    "perfil": "Tutors i tutores, equips docents i coordinacions de Primària i ESO."
   },
   {
     "slug": "aulaacull",
@@ -870,7 +892,9 @@
     "materies": [
       "Aula d'acollida",
       "Llengua catalana"
-    ]
+    ],
+    "problema": "L'alumnat nouvingut d'ESO necessita aprendre català amb instruccions que entengui. L'aula virtual les dona locutades en la llengua pont de cada alumne, amb seguiment per al docent.",
+    "perfil": "Docents d'aula d'acollida i de llengua catalana d'ESO."
   },
   {
     "slug": "la-cantina",
@@ -944,7 +968,9 @@
     ],
     "materies": [
       "Emprenedoria"
-    ]
+    ],
+    "problema": "Els projectes d'emprenedoria acaben sent exercicis sense negoci real. Aquí l'alumnat dirigeix el bar del centre amb reserves, moneder digital i comptabilitat, supervisat pel professorat.",
+    "perfil": "Docents d'emprenedoria de Primària, ESO i Cicles Formatius, i equips directius."
   },
   {
     "slug": "kipuk",
@@ -1010,7 +1036,9 @@
     ],
     "materies": [
       "Educació física"
-    ]
+    ],
+    "problema": "Organitzar activitat física, lligues i equips al pati sol dependre dels mòbils de l'alumnat. La plataforma de centre ho gestiona sense necessitar-los.",
+    "perfil": "Docents d'educació física de Primària i ESO."
   },
   {
     "slug": "chefboss",
@@ -1090,7 +1118,9 @@
     ],
     "materies": [
       "Economia i empresa"
-    ]
+    ],
+    "problema": "A l'FP de restauració és difícil practicar la presa de decisions d'un negoci. El simulador ofereix 10 sessions per crear i gestionar un restaurant amb objectius d'aprenentatge.",
+    "perfil": "Docents de Cicles Formatius d'economia i empresa i d'hoteleria."
   },
   {
     "slug": "ciutatviva",
@@ -1135,7 +1165,9 @@
     ],
     "materies": [
       "Aprenentatge servei"
-    ]
+    ],
+    "problema": "L'alumnat té poques vies reals per proposar millores del seu entorn. La plataforma d'aprenentatge servei permet detectar necessitats, proposar solucions i fer-ne el seguiment.",
+    "perfil": "Docents d'ESO i Batxillerat que treballen aprenentatge servei."
   },
   {
     "slug": "museu-apagat",
@@ -1213,7 +1245,9 @@
     "materies": [
       "Educació visual i plàstica",
       "Ciències socials"
-    ]
+    ],
+    "problema": "Aprendre el llenguatge visual (punt, línia, forma, textura, color i composició) demana feedback constant. Catorze missions amb apps de dibuix que es corregeixen soles, sense comptes ni servidor.",
+    "perfil": "Docents d'educació visual i plàstica i de ciències socials d'ESO."
   },
   {
     "slug": "la-claqueta",
@@ -1265,7 +1299,9 @@
     ],
     "materies": [
       "Cultura audiovisual"
-    ]
+    ],
+    "problema": "Fer una revista i un pòdcast de centre requereix organitzar una redacció. Aquí l'alumnat de Cultura Audiovisual treballa i el docent programa, avalua amb rúbrica i segueix l'aula.",
+    "perfil": "Docents de Cultura Audiovisual d'ESO i Batxillerat."
   },
   {
     "slug": "fpsegura",
@@ -1328,6 +1364,8 @@
       "title": "FPSegura · Seguretat i aprenentatge als tallers d'FP i PFI",
       "description": "Comprovacions d'equips, incidències, activitats i evidències dels tallers d'FP i PFI en un sol lloc, des del mòbil i sense paperassa.",
       "keywords": "seguretat taller FP, prevenció riscos taller, comprovacions equips, incidències taller, PFI, evidències alumnat FP"
-    }
+    },
+    "problema": "La seguretat del taller d'FP i PFI sol dependre de paperassa. L'app gestiona comprovacions d'equips, incidències fins al tancament i evidències de l'alumnat.",
+    "perfil": "Docents de Cicles Formatius i PFI, responsables de tallers i laboratoris i equips directius."
   }
 ]
