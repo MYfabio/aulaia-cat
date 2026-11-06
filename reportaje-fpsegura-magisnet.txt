@@ -1,0 +1,39 @@
+Seguridad en el taller sin papeleo: así se usa FPSegura en un grupo de PFI
+
+En un taller de FP la seguridad no es un tema que se explica el primer día y se olvida. Es una rutina: comprobar que la máquina está en condiciones, saber quién puede usarla, anotar lo que falla y asegurarse de que se arregla. Casi siempre se hace con papel, hojas de cálculo y mucha memoria del docente. FPSegura nace para ordenar esa rutina sin añadir trabajo. Lo he desarrollado como docente en activo del Institut Escola Industrial de Sabadell y lo estamos usando ahora mismo con un grupo de PFI.
+
+Una comprobación, un minuto
+
+La pieza central es la comprobación de equipos. Antes de usar una máquina, el alumno o el docente la revisa desde el móvil: conforme, no conforme o no aplica. Si algo falla, se adjunta una foto y la medida correctora. No hay formularios largos, porque está pensada para hacerse con las manos ocupadas y en el propio taller.
+
+No hace falta tener el inventario hecho para empezar. Se arranca con equipos genéricos, como "torno" o "taladro de columna", y la marca y el modelo se añaden cuando se quiera. Es un detalle práctico importante: la herramienta se empieza a usar el primer día y no después de semanas de preparación.
+
+Del aviso al cierre
+
+Cuando una comprobación sale mal, se registra una incidencia. La clave es que no se queda en un aviso: se sigue hasta que se resuelve, con evidencia de que se ha resuelto. Quien entra al taller ve qué está pendiente y qué ya está cerrado. Lo mismo ocurre con las revisiones periódicas, como extintores o inspecciones: la aplicación avisa a la persona responsable en el Inicio y por correo cuando toca.
+
+El carnet de máquinas
+
+Otra función pensada para la formación: cada alumno tiene su carnet de máquinas. La teoría se comprueba con un cuestionario que se autocorrige, y la práctica la valida el docente. Así cada alumno sabe qué puede utilizar y qué todavía no, y el docente lo ve de un vistazo en lugar de recordarlo de memoria.
+
+Las actividades se ligan a los resultados de aprendizaje y a los criterios de evaluación de cada grupo, y cada alumno tiene su propio espacio, donde solo ve sus actividades y sus evidencias. Estas pueden ser digitales o fichas en papel que se imprimen en PDF y vuelven a la actividad con autoría y fecha. Es decir, el papel no desaparece: se integra.
+
+Qué hace la IA y qué no
+
+FPSegura incluye propuestas de IA, por ejemplo para localizar el manual oficial de una máquina o sugerir preguntas y tareas de mantenimiento a partir del PDF. Pero siempre las revisa una persona antes de que lleguen al alumnado. La IA propone y el docente decide.
+
+Lo que no promete
+
+Conviene ser claros, porque en prevención de riesgos la honestidad pesa más que cualquier funcionalidad. FPSegura ayuda a hacer el seguimiento de comprobaciones e incidencias, pero no sustituye una evaluación profesional de riesgos, que la hace quien es competente para hacerla. Tampoco hay indicadores que digan "cumplimiento del 100 %": cada cifra explica de dónde sale. El centro sigue siendo el responsable legal y la herramienta organiza la información.
+
+Qué pasa en el aula
+
+Con el grupo de PFI, el cambio más visible es que la seguridad se convierte en una parte normal de cada sesión y no en un trámite aparte. El alumnado ve que revisar una máquina es una tarea con sentido y no un papel que se firma, y el docente deja de acumular hojas para recuperar el rastro de cada incidencia.
+
+Cómo empezar
+
+Para un docente, el camino es sencillo: se da de alta el centro, se crean los grupos y se empieza con equipos genéricos. La plataforma está disponible en castellano y catalán, y los datos son los mínimos necesarios: sin publicidad ni seguimiento de terceros, algo imprescindible cuando se trabaja con menores.
+
+Los centros interesados pueden solicitar el alta en aulaia.cat/es/apps/fpsegura. Se valida a cada centro personalmente y se envían las instrucciones por correo.
+
+Fabio Martínez es docente del Institut Escola Industrial de Sabadell y creador de aulaia.cat.
