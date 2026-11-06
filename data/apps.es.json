@@ -48,7 +48,9 @@
       "title": "Radio escolar y pódcast educativo para escuelas",
       "description": "Estudio de radio y pódcast escolar en el navegador. El alumnado graba con efectos, edita con IA y publica con supervisión docente. Gratis y sin instalar nada.",
       "keywords": "radio escolar, pódcast educativo, radio escolar Cataluña, estudio de radio para escuelas, pódcast en el aula, radioescolar.cat"
-    }
+    },
+    "problema": "Hacer radio en el aula suele exigir equipos, programas de edición y mucho tiempo del docente. Aquí el alumnado graba, edita con IA y publica desde el navegador, con la supervisión del profesorado.",
+    "perfil": "Primaria, Secundaria y Bachillerato. Docentes de lengua y comunicación oral, y coordinaciones de proyectos de comunicación del centro."
   },
   "dictats": {
     "categoria": "Ortografía y lengua catalana",
@@ -98,7 +100,9 @@
       "title": "Dictados en catalán con IA y corrección automática para escuelas",
       "description": "Dictados en catalán del A1 al C2 generados con IA por regla ortográfica. Corrección por foto que explica cada falta, con adaptaciones para dislexia y TDAH.",
       "keywords": "dictados en catalán, dictados catalán online, ortografía catalana, ejercicios ortografía catalana, dictados con IA, nivel C1 catalán, dictats.cat"
-    }
+    },
+    "problema": "Preparar dictados adaptados a cada nivel y corregirlos uno a uno lleva mucho trabajo. La app los genera en catalán del A1 al C2 y los corrige explicando cada falta, con adaptaciones para el alumnado con NEE.",
+    "perfil": "Docentes de lengua catalana de Primaria y ESO, aula de acogida y educación de adultos."
   },
   "matescac": {
     "categoria": "Ajedrez 3D y matemáticas",
@@ -156,7 +160,9 @@
       "title": "MatEscac: ajedrez 3D, vectores y pensamiento computacional",
       "description": "Plataforma de ajedrez 3D que trabaja vectores, algoritmos e invariantes del Decreto 175/2022. Tablero 3D, bots programables y liguillas automáticas.",
       "keywords": "ajedrez educativo, vectores matemáticas, pensamiento computacional escuela, programación de bots, ajedrez 3D, matescac.aulaia.cat"
-    }
+    },
+    "problema": "Cuesta conectar el pensamiento lógico y la competencia matemática con una actividad motivadora. El ajedrez 3D escolar lo hace alineado con el Decreto 175/2022.",
+    "perfil": "Docentes de matemáticas de Primaria y ESO."
   },
   "aules-sostenibles": {
     "categoria": "Educación ambiental",
@@ -224,7 +230,9 @@
       "title": "Educación ambiental y sostenibilidad para escuelas e institutos",
       "description": "Talleres, auditorías y recursos de sostenibilidad para Primaria y Secundaria. El alumnado diagnostica, actúa y mide el impacto ambiental real del centro.",
       "keywords": "educación ambiental escuela, aulas sostenibles, escola verda Cataluña, ODS en el aula, auditoría ambiental centro educativo, aulessostenibles.cat"
-    }
+    },
+    "problema": "Muchas ideas de educación ambiental no llegan a resultados medibles. Talleres, auditorías y recursos ayudan a docentes y centros a conseguirlos.",
+    "perfil": "Docentes de ciencias y coordinaciones de sostenibilidad de Primaria y ESO."
   },
   "pla-lector": {
     "categoria": "Biblioteca escolar y competencia lectora",
@@ -280,7 +288,9 @@
       "title": "Biblioteca escolar digital y seguimiento lector para centros",
       "description": "Software de biblioteca escolar para escuelas e institutos: catálogo de las bibliotecas de aula, seguimiento lector de cada alumno y estadísticas del claustro.",
       "keywords": "biblioteca escolar digital, software biblioteca escuela, seguimiento lector alumnado, plan lector de centro, catálogo biblioteca de aula, elplalector.cat"
-    }
+    },
+    "problema": "Las bibliotecas de aula y el seguimiento lector suelen ir en papel o dispersos. Aquí están el catálogo, el historial de lectura de cada alumno y estadísticas para el claustro.",
+    "perfil": "Docentes de lengua, responsables de biblioteca y coordinación lectora de Primaria y ESO."
   },
   "typeedu": {
     "categoria": "Mecanografía educativa",
@@ -330,7 +340,9 @@
       "title": "TypeEdu: mecanografía educativa y accesible para centros",
       "description": "Aprendizaje de mecanografía con práctica guiada, teclado ISO, feedback inmediato y adaptaciones para el aula. En castellano, catalán, inglés y euskera.",
       "keywords": "mecanografía educativa, aprender a escribir con teclado, mecanografía escuela, mecanografía educativa accesible, competencia digital teclado, typeedu.com"
-    }
+    },
+    "problema": "Aprender mecanografía exige práctica guiada y feedback inmediato que el docente no puede dar a todos a la vez. La app lo hace con teclado ISO y adaptaciones para el aula.",
+    "perfil": "Docentes de Primaria, ESO y Ciclos Formativos que trabajan la competencia digital."
   },
   "diedric3d": {
     "categoria": "Dibujo técnico y visión espacial",
@@ -390,7 +402,9 @@
       "title": "Diedric3D: sistema diédrico con bloques para ESO y Bachillerato",
       "description": "Construye piezas con bloques y mira cómo cambian alzado, planta y perfil en tiempo real. Corrección determinista, Google Classroom y adaptaciones por alumno.",
       "keywords": "sistema diédrico, vistas alzado planta perfil, dibujo técnico ESO, visión espacial, diedric3d, geometría descriptiva bachillerato, proyecciones ortogonales"
-    }
+    },
+    "problema": "El sistema diédrico cuesta porque hay que imaginar el espacio a partir de dibujos planos. El editor muestra el alzado, la planta y el perfil en tiempo real mientras el alumnado construye la pieza.",
+    "perfil": "Docentes de dibujo técnico de ESO y Bachillerato."
   },
   "kiosko": {
     "categoria": "Cartelería digital de centro",
@@ -449,7 +463,9 @@
       "title": "Kiosko: cartelería digital para escuelas e institutos",
       "description": "Convierte los monitores del centro en tablones de anuncios digitales gestionados desde el navegador, con publicación programada y rotación de webs.",
       "keywords": "cartelería digital escuela, pantallas informativas centro educativo, tablón de anuncios digital, digital signage escuela, kiosko.aulaia.cat"
-    }
+    },
+    "problema": "Los avisos del centro se pierden entre papel, correos y pantallas que nadie actualiza. Cualquier monitor se convierte en un tablón digital que se actualiza solo.",
+    "perfil": "Secretaría, departamentos, dirección y coordinación TAC."
   },
   "enfonsar-la-flota": {
     "categoria": "Geometría en el espacio y dibujo técnico",
@@ -514,7 +530,9 @@
       "title": "Hundir la flota en 3D: coordenadas y sistema diédrico en la ESO",
       "description": "Hundir la flota en tres dimensiones para 3.º y 4.º de ESO. Cada disparo es un punto (x, y, z) y las vistas diédricas aparecen en directo mientras se apunta.",
       "keywords": "hundir la flota 3D, coordenadas en el espacio ESO, sistema diédrico juego, batalla naval educativa, geometría en el espacio, dibujo técnico ESO, enfonsarlaflota.aulaia.cat"
-    }
+    },
+    "problema": "Entender un punto del espacio en 3D y sus vistas es abstracto. Un juego de hundir la flota con coordenadas (x, y, z) muestra las vistas del sistema diédrico en vivo.",
+    "perfil": "Docentes de matemáticas y dibujo técnico de ESO y Bachillerato."
   },
   "poetes-vives": {
     "categoria": "Poesía y escritura creativa",
@@ -576,7 +594,9 @@
       "title": "Club de les Poetes Vives: escribir y publicar poesía sin firmar",
       "description": "Club de lectura y escritura de poesía para institutos. Una IA solo hace preguntas, el profesorado revisa y el poema sale al muro del centro con seudónimo y voz.",
       "keywords": "poesía en el instituto, escritura creativa ESO, club de lectura poesía, taller de poesía secundaria, formas poéticas, poetes vives, aulaia.cat"
-    }
+    },
+    "problema": "La poesía a menudo se queda en la página del libro de texto. Aquí el alumnado escribe, publica sin firmar entre iguales y escucha el poema en voz alta, con revisión docente.",
+    "perfil": "Docentes de lengua y literatura de ESO y Bachillerato."
   },
   "eltaulell": {
     "categoria": "Comunicación y acción tutorial",
@@ -616,7 +636,9 @@
       "title": "El Taulell: comunicación de centro y acción tutorial",
       "description": "Plataforma educativa multicentro para comunicarse con las familias, escuchar al alumnado y mejorar el acompañamiento tutorial. Menos ruido, más acompañamiento.",
       "keywords": "comunicación centro educativo, acción tutorial, plataforma familias escuela, tablón de centro, acompañamiento tutorial, escucha alumnado"
-    }
+    },
+    "problema": "Comunicarse con el alumnado y escucharlo requiere un espacio propio del centro. Una plataforma multicentro reúne a toda la comunidad educativa y mejora el acompañamiento tutorial.",
+    "perfil": "Tutores y tutoras, equipos docentes y coordinaciones de Primaria y ESO."
   },
   "aulaacull": {
     "categoria": "Aula de acogida y catalán para recién llegados",
@@ -671,7 +693,9 @@
       "title": "AulaAcull.cat: aula virtual de acogida para recién llegados",
       "description": "Aula virtual de acogida para aprender catalán: unidades A0-A1, instrucciones locutadas en diez lenguas puente, actividades accesibles y seguimiento docente.",
       "keywords": "aula de acogida, alumnado recién llegado, aprender catalán ESO, catalán para recién llegados, aula de acogida digital, lengua puente, aulaacull.aulaia.cat"
-    }
+    },
+    "problema": "El alumnado recién llegado de ESO necesita aprender catalán con instrucciones que entienda. El aula virtual las da locutadas en la lengua puente de cada alumno, con seguimiento para el docente.",
+    "perfil": "Docentes de aula de acogida y de lengua catalana de ESO."
   },
   "la-cantina": {
     "categoria": "Emprendimiento y vida en el centro",
@@ -728,7 +752,9 @@
       "title": "La Cantina: el bar escolar gestionado por el alumnado",
       "description": "Reservas de bocadillos desde la app escolar, monedero digital sin efectivo y un negocio real de emprendimiento y Aprendizaje-Servicio para escuelas, institutos y FP.",
       "keywords": "bar escolar alumnado, cantina escolar app, monedero digital escuela, emprendimiento escolar, aprendizaje servicio, reserva desayuno instituto"
-    }
+    },
+    "problema": "Los proyectos de emprendimiento acaban siendo ejercicios sin negocio real. Aquí el alumnado dirige el bar del centro con reservas, monedero digital y contabilidad, supervisado por el profesorado.",
+    "perfil": "Docentes de emprendimiento de Primaria, ESO y Ciclos Formativos, y equipos directivos."
   },
   "kipuk": {
     "categoria": "Educación física y cohesión",
@@ -778,7 +804,9 @@
       "title": "KIPUK: actividad física, juegos y cohesión en el patio escolar",
       "description": "Plataforma de centro para organizar Educación Física, ligas, equipos y retos cooperativos en el patio, sin móviles del alumnado y con criterios de inclusión.",
       "keywords": "educación física escuela, torneos escolares, cohesión en el patio, app educación física, juegos cooperativos escuela, KIPUK, kipuk.cat"
-    }
+    },
+    "problema": "Organizar actividad física, ligas y equipos en el patio suele depender de los móviles del alumnado. La plataforma de centro lo gestiona sin necesitarlos.",
+    "perfil": "Docentes de educación física de Primaria y ESO."
   },
   "chefboss": {
     "categoria": "Simulación de negocio",
@@ -843,11 +871,13 @@
       "title": "Chef Boss: simulador educativo de restauración para FP",
       "description": "Simulador de gestión de restaurantes para Formación Profesional: 10 sesiones para abrir un restaurante, trabajar escandallos y costes y tomar decisiones.",
       "keywords": "simulador restauración FP, simulación de negocio escuela, escandallos y costes, gestión de restaurantes formación profesional, Chef Boss, chefboss.es"
-    }
+    },
+    "problema": "En la FP de restauración es difícil practicar la toma de decisiones de un negocio. El simulador ofrece 10 sesiones para crear y gestionar un restaurante con objetivos de aprendizaje.",
+    "perfil": "Docentes de Ciclos Formativos de economía y empresa y de hostelería."
   },
   "ciutatviva": {
     "categoria": "Aprendizaje-servicio",
-    "estatText": "En presentación a centros",
+    "estatText": "Disponible · demostración para centros",
     "resum": "Plataforma de aprendizaje-servicio: el alumnado detecta necesidades reales de su entorno, propone soluciones y hace su seguimiento como proyecto educativo.",
     "descripcio": "CiutatViva es una plataforma participativa que conecta al alumnado, las entidades y las administraciones locales para construir entornos más justos y habitables. El alumnado puede reportar una necesidad u oportunidad de mejora en su barrio con geolocalización, la comunidad debate y valida las propuestas, y las que tienen suficiente apoyo suben a la agenda municipal con plazos concretos de respuesta. Todo el proceso es abierto y rinde cuentas: cada participante recibe actualizaciones de sus propuestas. Apta para proyectos de aprendizaje-servicio (ApS) en ESO y Bachillerato.",
     "seoLlarg": "El aprendizaje-servicio (ApS) es una de las metodologías más potentes para desarrollar la competencia ciudadana y el compromiso cívico del alumnado. CiutatViva ofrece el marco digital para que los proyectos de ApS tengan impacto real más allá del aula. El alumnado aprende a identificar problemas complejos, a argumentar propuestas y a negociar con instituciones reales, mientras desarrolla competencias digitales, sociales y de pensamiento crítico. La conexión con los ayuntamientos y las entidades locales convierte cada proyecto en una experiencia auténtica de ciudadanía activa.",
@@ -873,7 +903,9 @@
       "title": "CiutatViva: plataforma de aprendizaje-servicio para institutos",
       "description": "Herramienta digital para proyectos de aprendizaje-servicio (ApS) en ESO y Bachillerato. El alumnado propone mejoras reales en su entorno al ayuntamiento.",
       "keywords": "aprendizaje-servicio, ApS digital, proyecto ciudadanía escuela, participación ciudadana alumnado, competencia ciudadana ESO"
-    }
+    },
+    "problema": "El alumnado tiene pocas vías reales para proponer mejoras de su entorno. La plataforma de aprendizaje servicio permite detectar necesidades, proponer soluciones y hacer su seguimiento.",
+    "perfil": "Alumnado de 3.º y 4.º de ESO y sus docentes de aprendizaje servicio."
   },
   "museu-apagat": {
     "categoria": "Educación plástica y visual",
@@ -935,7 +967,9 @@
       "title": "El Museu Apagat: lenguaje visual en 1.º de ESO con apps de dibujo",
       "description": "Catorce misiones de Plástica: punto, línea, forma, textura, color y composición con apps autocorregidas, dosier en PDF y rúbrica. Sin cuentas ni servidor.",
       "keywords": "lenguaje visual ESO, educación plástica 1.º ESO, punto línea forma textura color, puntillismo app, círculo cromático interactivo, rúbrica educación plástica, aulaia.cat"
-    }
+    },
+    "problema": "Aprender el lenguaje visual (punto, línea, forma, textura, color y composición) pide feedback constante. Catorce misiones con apps de dibujo que se corrigen solas, sin cuentas ni servidor.",
+    "perfil": "Docentes de educación visual y plástica y de ciencias sociales de ESO."
   },
   "la-claqueta": {
     "categoria": "Cultura audiovisual y revista escolar",
@@ -970,7 +1004,9 @@
         "pódcast escolar",
         "periodismo escolar"
       ]
-    }
+    },
+    "problema": "Hacer una revista y un pódcast de centro requiere organizar una redacción. Aquí el alumnado de Cultura Audiovisual trabaja y el docente programa, evalúa con rúbrica y sigue el aula.",
+    "perfil": "Docentes de Cultura Audiovisual de ESO y Bachillerato."
   },
   "fpsegura": {
     "categoria": "Seguridad y aprendizaje en el taller",
@@ -1017,6 +1053,8 @@
       "title": "FPSegura · Seguridad y aprendizaje en los talleres de FP y PFI",
       "description": "Comprobaciones de equipos, incidencias, actividades y evidencias de los talleres de FP y PFI en un solo lugar, desde el móvil y sin papeleo.",
       "keywords": "seguridad taller FP, prevención riesgos taller, comprobaciones equipos, incidencias taller, PFI, evidencias alumnado FP"
-    }
+    },
+    "problema": "La seguridad del taller de FP y PFI suele depender de papeleo. La app gestiona comprobaciones de equipos, incidencias hasta el cierre y evidencias del alumnado.",
+    "perfil": "Docentes de Ciclos Formativos y PFI, responsables de talleres y laboratorios y equipos directivos."
   }
 }

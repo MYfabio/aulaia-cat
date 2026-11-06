@@ -73,6 +73,19 @@ export default function FitxaApp({ lang, slug }) {
       <h1>{app.nom}</h1>
       <p className="landing-desc">{app.descripcio}</p>
 
+      {app.problema && (
+        <>
+          <h2>{t.problema}</h2>
+          <p className="seo-text">{app.problema}</p>
+        </>
+      )}
+      {app.perfil && (
+        <>
+          <h2>{t.perfil}</h2>
+          <p className="seo-text">{app.perfil}</p>
+        </>
+      )}
+
       {app.url && (
         <div className={"live-banner" + (captura ? " amb-captura" : "")}>
           {captura && (

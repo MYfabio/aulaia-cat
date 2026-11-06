@@ -15,7 +15,8 @@ const SECCIONS = [
 export function Fitxa({ app, captura, lang = "ca" }) {
   const t = TEXTOS[lang].cataleg;
   return (
-    <Link href={base(lang) + "/apps/" + app.slug} className="app-fitxa">
+    <div className="app-fitxa">
+    <Link href={base(lang) + "/apps/" + app.slug} className="app-fitxa-enllac">
       <span className="app-fitxa-imatge">
         <span className="app-fitxa-icona" aria-hidden="true">{app.icona}</span>
         {captura && <img src={captura} alt={t.captura + app.nom} loading="lazy" width="800" height="500" />}
@@ -35,6 +36,10 @@ export function Fitxa({ app, captura, lang = "ca" }) {
         </span>
       </span>
     </Link>
+    {app.url && (
+      <a href={app.url} target="_blank" rel="noopener" className="app-fitxa-obre">{t.obre}</a>
+    )}
+    </div>
   );
 }
 
