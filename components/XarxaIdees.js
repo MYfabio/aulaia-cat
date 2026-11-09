@@ -203,6 +203,10 @@ function Malla({ frases, titol }) {
       if (c && mogut < 6) router.push(c.h2);
     };
     const onLeave = () => { sobre = -1; };
+    // En una pantalla tàctil, lliscar en vertical desplaça la pàgina: el navegador es
+    // queda el gest i envia pointercancel en lloc de pointerup. Sense això la xarxa
+    // es quedava «arrossegada» i no tornava a girar.
+    const onCancel = () => { arrossega = null; sobre = -1; };
 
     const ro = new ResizeObserver(mida);
     ro.observe(canvas);
@@ -211,6 +215,7 @@ function Malla({ frases, titol }) {
     canvas.addEventListener("pointerdown", onDown);
     canvas.addEventListener("pointermove", onMove);
     canvas.addEventListener("pointerup", onUp);
+    canvas.addEventListener("pointercancel", onCancel);
     canvas.addEventListener("pointerleave", onLeave);
     mida();
     raf = requestAnimationFrame(bucle);
@@ -221,6 +226,7 @@ function Malla({ frases, titol }) {
       canvas.removeEventListener("pointerdown", onDown);
       canvas.removeEventListener("pointermove", onMove);
       canvas.removeEventListener("pointerup", onUp);
+      canvas.removeEventListener("pointercancel", onCancel);
       canvas.removeEventListener("pointerleave", onLeave);
     };
   }, [frases, router]);

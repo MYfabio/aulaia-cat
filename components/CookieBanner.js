@@ -2,21 +2,35 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 
+const CLAU = "aulaia-cookies";
+
+// Amb «bloquejar totes les galetes» (Safari, Firefox, Chrome) el navegador llança
+// un SecurityError només de tocar localStorage. Sense aquesta protecció l'error
+// pujava fins al marc comú i tombava tota la pàgina.
+function llegeixConsentiment() {
+  try { return localStorage.getItem(CLAU); } catch { return "inaccessible"; }
+}
+
+function desaConsentiment(valor) {
+  try { localStorage.setItem(CLAU, valor); } catch {}
+}
+
 export default function CookieBanner() {
   const [visible, setVisible] = useState(false);
 
+  // Si no es pot llegir, tampoc es podria recordar la resposta: no es mostra el
+  // bàner, que si no tornaria a sortir a cada càrrega.
   useEffect(() => {
-    const consent = localStorage.getItem("aulaia-cookies");
-    if (!consent) setVisible(true);
+    if (!llegeixConsentiment()) setVisible(true);
   }, []);
 
   function accept() {
-    localStorage.setItem("aulaia-cookies", "accepted");
+    desaConsentiment("accepted");
     setVisible(false);
   }
 
   function reject() {
-    localStorage.setItem("aulaia-cookies", "rejected");
+    desaConsentiment("rejected");
     setVisible(false);
   }
 
