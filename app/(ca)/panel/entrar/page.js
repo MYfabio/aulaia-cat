@@ -6,6 +6,7 @@ export const metadata = {
 export default async function EntrarPage({ searchParams }) {
   const sp = await searchParams;
   const error = sp?.error === "1";
+  const limit = sp?.error === "limit";
   const seguent = typeof sp?.seguent === "string" && sp.seguent.startsWith("/") ? sp.seguent : "/panel";
 
   return (
@@ -20,6 +21,7 @@ export default async function EntrarPage({ searchParams }) {
           <input id="password" name="password" type="password" autoComplete="current-password" required autoFocus />
         </div>
         {error && <p className="panel-error">Contrasenya incorrecta. Torna-ho a provar.</p>}
+        {limit && <p className="panel-error">Massa intents fallits. Torna-ho a provar d&apos;aquí a un quart d&apos;hora.</p>}
         <button type="submit" className="btn-submit">Entrar</button>
       </form>
     </div>

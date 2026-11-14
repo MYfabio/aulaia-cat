@@ -1,7 +1,6 @@
 import { NextResponse } from "next/server";
 import { canviarEstat, esborrarSolicitud, llistarSolicituds } from "../../../../lib/db";
 import { enviarCorreuValidacio } from "../../../../lib/correu";
-import { crearUsuariAlApp, registrarProvisioning } from "../../../../lib/provisioning";
 
 function baseUrl(request) {
   const h = request.headers;
@@ -56,22 +55,16 @@ export async function POST(request) {
   }
   if (!fila) return tornar({ error: "nofound" });
 
-  // El correu i el provisioning no han de fer fallar la validacio:
-  // si no surten, l estat ja ha canviat i la solicitud es a la base.
+  // El correu no ha de fer fallar la validacio: si no surt, l estat ja ha
+  // canviat i la solicitud es a la base.
+  //
+  // Validar NO crea cap usuari a l app. Hi havia un esborrany que ho intentava
+  // (lib/provisioning.js) amb una sola clau per a totes les apps i enviant com
+  // a rol el carrec que algu escriu al formulari public; s ha tret abans que
+  // cap app el fes servir. L alta a cada app es fa al seu panell de superadmin
+  // (docs/superadmin-alta-baja-usuarios.md) i, si arriba, pel connector signat
+  // de docs/cambio-de-curso-automatizado.md.
   if (accio === "validar") {
-    // Intentar crear usuari a l app
-    try {
-      const resultProvisioning = await crearUsuariAlApp(fila);
-      await registrarProvisioning(id, fila.app, resultProvisioning);
-      if (!resultProvisioning.ok) {
-        console.warn(
-          `No s ha creat usuari a ${fila.app}: ${resultProvisioning.motiu}`
-        );
-      }
-    } catch (e) {
-      console.error("Error en provisioning:", e.message);
-    }
-
     // Enviar email de confirmacio
     try {
       await enviarCorreuValidacio(fila);

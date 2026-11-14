@@ -1,5 +1,20 @@
 import { NextResponse } from "next/server";
 import { COOKIE_NAME, COOKIE_MAX_AGE, createSessionValue } from "../../../../lib/panel-auth";
+import { potIntentar, anotarFallada, anotarEncert } from "../../../../lib/limit-intents.mjs";
+
+/**
+ * Adreça de qui crida, per al topall d intents. Railway hi posa x-real-ip;
+ * x-forwarded-for pot portar al davant el que hagi volgut enviar el client,
+ * i per aixo el topall te tambe un comptador global que no en depen.
+ */
+function ipClient(request) {
+  const h = request.headers;
+  return (
+    h.get("x-real-ip")?.trim() ||
+    h.get("x-forwarded-for")?.split(",")[0]?.trim() ||
+    "desconeguda"
+  ).slice(0, 64);
+}
 
 /** Comparacio en temps constant per no filtrar la contrasenya pel temps de resposta. */
 function safeEqual(a, b) {
@@ -47,12 +62,28 @@ export async function POST(request) {
     return NextResponse.json({ error: "Peticio invalida" }, { status: 400 });
   }
 
-  if (!safeEqual(password, expected)) {
+  const tornarAmbError = codi => {
     const url = new URL("/panel/entrar", base);
-    url.searchParams.set("error", "1");
+    url.searchParams.set("error", codi);
     if (seguent !== "/panel") url.searchParams.set("seguent", seguent);
     return NextResponse.redirect(url, { status: 303 });
+  };
+
+  // El topall es mira abans de comparar: un cop superat, ni la contrasenya bona
+  // entra fins que passi la finestra. Entre aquesta comprovacio i l anotacio de
+  // la fallada no hi ha cap await, aixi que peticions simultanies no se'l salten.
+  const ip = ipClient(request);
+  const limit = potIntentar(ip);
+  if (!limit.ok) {
+    console.warn("Panell: entrada aturada pel topall d'intents (" + limit.motiu + ")");
+    return tornarAmbError("limit");
   }
+
+  if (!safeEqual(password, expected)) {
+    anotarFallada(ip);
+    return tornarAmbError("1");
+  }
+  anotarEncert(ip);
 
   const response = NextResponse.redirect(new URL(seguent, base), { status: 303 });
   response.cookies.set(COOKIE_NAME, await createSessionValue(secret), {

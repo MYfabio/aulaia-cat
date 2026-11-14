@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { verificarEmail } from "../../../lib/db";
+import { escaparHtml } from "../../../lib/html.mjs";
 
 /**
  * Endpoint de verificación de email.
@@ -22,6 +23,12 @@ export async function GET(request) {
       // Token no válido o ya verificado
       return NextResponse.redirect(new URL("/alta?error=token", request.url), { status: 303 });
     }
+
+    // El nom del centre i el correu els ha escrit qui ha omplert el formulari
+    // public: sense escapar, un nom com <svg onload=...> s executaria en aquest
+    // domini, que es el mateix del panell.
+    const centre = escaparHtml(resultado.centre);
+    const correu = escaparHtml(resultado.contacte_email);
 
     // Éxito: mostrar página de confirmación
     return new NextResponse(
@@ -81,8 +88,8 @@ export async function GET(request) {
   <p>Gràcies per verificar la teva adreça.</p>
 
   <div class="info">
-    <strong>${resultado.centre}</strong><br>
-    ${resultado.contacte_email}
+    <strong>${centre}</strong><br>
+    ${correu}
   </div>
 
   <p>

@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { enviarTransaccional, potEnviar, TIPUS_VALIDS } from "../../../lib/correu-central";
+import { enviarTransaccional, motiuEnllac, potEnviar, TIPUS_VALIDS } from "../../../lib/correu-central";
 
 /**
  * Servei central de correu transaccional per a les apps del cataleg.
@@ -64,7 +64,8 @@ export async function POST(request) {
     return NextResponse.json({ ok: false, motiu: "cos-invalid" }, { status: 400 });
   }
 
-  const { tipus, per, app, dades } = cos;
+  const { tipus, per, app } = cos;
+  const dades = cos.dades && typeof cos.dades === "object" ? cos.dades : {};
   if (!TIPUS_VALIDS.includes(tipus)) {
     return NextResponse.json(
       { ok: false, motiu: "tipus-desconegut", valids: TIPUS_VALIDS },
@@ -74,6 +75,14 @@ export async function POST(request) {
 
   if (typeof per !== "string" || !/^[^\s@,;]+@[^\s@,;]+\.[^\s@,;]+$/.test(per)) {
     return NextResponse.json({ ok: false, motiu: "adreca-invalida" }, { status: 400 });
+  }
+
+  // L enllaç es l unica part lliure del correu: ha de ser https i del domini
+  // d aulaia.cat o de l app que diu que l envia. Amb la clau robada no s ha de
+  // poder enviar «el teu enllaç d acces» cap a una pagina de fora.
+  const motiu = motiuEnllac({ tipus, app, dades });
+  if (motiu) {
+    return NextResponse.json({ ok: false, motiu }, { status: 400 });
   }
 
   if (!potEnviar()) {

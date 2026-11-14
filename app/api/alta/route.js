@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { crearSolicitud } from "../../../lib/db";
 import apps from "../../../data/apps.json";
-import { enviarTransaccional } from "../../../lib/correu-central";
+import { enviarTransaccional, baseDeCorreu } from "../../../lib/correu-central";
 import { validarRateLimit, extraerIp, validarEmailReal } from "../../../lib/rate-limit";
 import { motiuSpam } from "../../../lib/anti-spam";
 
@@ -150,7 +150,8 @@ async function avisar(dades, tokenVerif, baseUrl, idioma = "ca") {
         tipus: "alta-verif",
         per: dades.contacteEmail,
         app: dades.app,
-        dades: { ...dadesComunes, enllac: `${baseUrl}/api/verif?token=${tokenVerif}` },
+        // La base ve de capçaleres de la peticio: si no es un host nostre, la canonica.
+        dades: { ...dadesComunes, enllac: `${baseDeCorreu(baseUrl)}/api/verif?token=${tokenVerif}` },
       })
     : enviarTransaccional({ tipus: "alta-rebuda", per: dades.contacteEmail, ...comu });
 
