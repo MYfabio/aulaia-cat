@@ -1,4 +1,8 @@
 import { getPanelData } from "../../../../lib/railway";
+import { canviEurUsd } from "../../../../lib/canvi.mjs";
+import { appDelProjecte } from "../../../../lib/noms-projectes.mjs";
+import cataleg from "../../../../data/apps.json";
+import accessos from "../../../../data/accessos.json";
 
 export const metadata = {
   title: "Infraestructura",
@@ -36,19 +40,41 @@ function fmtData(iso) {
   return d.toLocaleDateString("ca-ES", { day: "2-digit", month: "short" });
 }
 
-/** Numero llegible sense inventar-nos conversions d unitats. */
-function num(v, dec = 1) {
+/** Dia i mes, per dir de quan a quan va el cicle de facturacio. */
+function fmtDia(iso) {
+  // «16 de nov.» porta el seu punt, i darrere sovint n hi va un altre: es treu.
+  return new Date(iso).toLocaleDateString("ca-ES", { day: "numeric", month: "short", timeZone: "Europe/Madrid" }).replace(/\.$/, "");
+}
+
+function import2(v) {
+  return v.toLocaleString("ca-ES", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+}
+
+/** Import en dolars, que es com factura Railway. */
+function usd(v) {
   if (v == null) return "—";
-  if (v === 0) return "0";
-  if (v < 0.01) return "<0,01";
-  return v.toLocaleString("ca-ES", { minimumFractionDigits: dec, maximumFractionDigits: dec });
+  return import2(v) + " $";
+}
+
+/** Import en euros. */
+function eur(v) {
+  if (v == null) return "—";
+  return import2(v) + " €";
+}
+
+/** Memoria en MB sencers: es com la mostra Railway a cada servei. */
+function mb(gb) {
+  if (gb == null) return "—";
+  return Math.round(gb * 1024).toLocaleString("ca-ES") + " MB";
 }
 
 export default async function PanellPage() {
   let dades = null;
+  let canvi = null;
   let error = null;
   try {
-    dades = await getPanelData();
+    // canviEurUsd no llança mai: si el BCE no respon torna null i tot va en dolars.
+    [dades, canvi] = await Promise.all([getPanelData({ ambCost: true }), canviEurUsd()]);
   } catch (e) {
     error = e.message;
   }
@@ -70,7 +96,7 @@ export default async function PanellPage() {
     );
   }
 
-  const { apps, workspace, generatedAt } = dades;
+  const { apps, workspace, generatedAt, cost } = dades;
   const totalServeis = apps.reduce((n, a) => n + a.services.length, 0);
   const totalBd = apps.reduce((n, a) => n + a.databases, 0);
   const ambProblema = apps.filter(a =>
@@ -84,23 +110,41 @@ export default async function PanellPage() {
     )
   );
 
-  // Rànquing de consum: qui gasta mes recursos del periode en curs.
-  const consum = apps
-    .filter(a => a.usage)
-    .map(a => ({
-      name: a.name,
-      cpu: a.usage.CPU_USAGE ?? 0,
-      mem: a.usage.MEMORY_USAGE_GB ?? 0,
-      disc: a.usage.DISK_USAGE_GB ?? 0,
-      xarxa: a.usage.NETWORK_TX_GB ?? 0,
-    }))
-    .sort((a, b) => b.mem - a.mem);
+  // Cost per projecte, del que mes costa al que menys.
+  const files = cost
+    ? apps
+        .filter(a => a.cost)
+        .map(a => {
+          const adreces = a.services.flatMap(s => [
+            ...(s.customDomains || []).map(d => d.domain),
+            ...(s.serviceDomains || []),
+          ]);
+          return { a, adreces };
+        })
+        .map(({ a, adreces }) => ({
+          id: a.id,
+          name: a.name,
+          // El nom amb que es coneix l app, tret de les seves adreces; a Railway
+          // el projecte porta el nom del dia que es va crear.
+          app: appDelProjecte(adreces, cataleg, accessos)?.nom || null,
+          adreca: (a.services.flatMap(s => (s.customDomains || []).map(d => d.domain))[0]) || null,
+          ...a.cost,
+          // Un projecte amb serveis i cap adreça sol ser una copia creada per error.
+          senseDomini:
+            a.services.length > 0 &&
+            a.services.every(s => !s.customDomains?.length && !s.serviceDomains?.length),
+          gros: a.cost.serveis.some(s => (s.gb || 0) > 1),
+        }))
+        .sort((a, b) => b.previst - a.previst)
+    : [];
+  const previstMax = Math.max(...files.map(f => f.previst), 0.01);
+  const costMemoria = files.reduce((n, f) => n + f.desglos.memoria, 0);
+  const pesMemoria = cost && cost.actual > 0 ? Math.round((costMemoria / cost.actual) * 100) : null;
 
-  const totals = consum.reduce(
-    (t, c) => ({ cpu: t.cpu + c.cpu, mem: t.mem + c.mem, disc: t.disc + c.disc, xarxa: t.xarxa + c.xarxa }),
-    { cpu: 0, mem: 0, disc: 0, xarxa: 0 }
-  );
-  const memMax = Math.max(...consum.map(c => c.mem), 1);
+  // Railway factura en dolars. Si se sap el canvi del dia, la taula va en euros
+  // i els dolars queden a la fila de sota, que es la que quadra amb la factura.
+  const taxa = canvi?.eurPerUsd || null;
+  const diners = v => (v == null ? "—" : taxa ? eur(v * taxa) : usd(v));
 
   return (
     <div className="panel">
@@ -126,6 +170,20 @@ export default async function PanellPage() {
         <div className={"pstat" + (certsPendents.length ? " is-wait" : "")}>
           <span className="pstat-n">{certsPendents.length}</span><span className="pstat-k">Certificats pendents</span>
         </div>
+        {cost && (
+          <div className={"pstat" + (cost.avis != null && cost.factura > cost.avis ? " is-wait" : "")}>
+            <span className="pstat-n">{taxa ? `${Math.round(cost.factura * taxa)} €` : `${Math.round(cost.factura)} $`}</span>
+            <span className="pstat-k">Factura prevista</span>
+          </div>
+        )}
+        {cost && !cost.senseMemoria && (
+          <div className="pstat">
+            <span className="pstat-n">
+              {cost.memoriaAra.toLocaleString("ca-ES", { minimumFractionDigits: 1, maximumFractionDigits: 1 })} GB
+            </span>
+            <span className="pstat-k">Memoria ocupada</span>
+          </div>
+        )}
       </div>
 
       {certsPendents.length > 0 && (
@@ -142,57 +200,105 @@ export default async function PanellPage() {
         </div>
       )}
 
-      {/* ---------- Consum ---------- */}
-      {consum.length > 0 && (
+      {/* ---------- Cost ---------- */}
+      {cost && (
         <section className="panel-sec">
           <div className="panel-sec-head">
-            <h2>Consum del periode</h2>
+            <h2>Cost per projecte</h2>
             <a href="https://railway.com/workspace/usage" target="_blank" rel="noopener" className="btn-ghost">
               Veure la factura a Railway
             </a>
           </div>
 
           <p className="panel-nota">
-            Railway no exposa l import en euros per API: nomes el consum. Aquests valors son els que
-            reporta com a acumulat del periode de facturacio en curs, i serveixen per veure{" "}
-            <b>quin projecte gasta mes</b>, no quant costa. La xifra en euros es a la seva pagina de facturacio.
+            {cost.cicle
+              ? <>Cicle de facturacio del {fmtDia(cost.cicle.start)} al {fmtDia(cost.cicle.end)}. </>
+              : <>Cicle de facturacio en curs. </>}
+            {taxa
+              ? <>Railway factura en dolars; aqui va <b>en euros</b>, al canvi de referencia del Banc Central
+                Europeu{canvi.data ? <> del {fmtDia(canvi.data)}</> : null} (1 $ = {taxa.toLocaleString("ca-ES", { minimumFractionDigits: 3, maximumFractionDigits: 3 })} €).
+                El banc hi aplica el seu canvi i la seva comissio, aixi que el carrec real pot variar una mica. </>
+              : <>Imports en dolars: no s ha pogut llegir el canvi a euros d avui. </>}
+            Railway dona el consum de cada projecte i no l import: aqui es multiplica pels preus del
+            pla Pro. La xifra oficial es la de la seva pagina d Usage.
+            {pesMemoria != null && <> <b>La memoria es el {pesMemoria} % del cost</b>: cada GB ocupat tot el mes
+            son uns {diners(10)}, encara que no hi entri ningu.</>}{" "}
+            «Si segueix aixi» es el que costaria durant un mes sencer la memoria que el projecte ocupa ara mateix.
+            {cost.avis != null && <> Hi ha un avis de despesa posat a <b>{cost.avis} $</b>{taxa ? <> (uns {Math.round(cost.avis * taxa)} €)</> : null}{cost.tall != null ? <> i un tall a <b>{cost.tall} $</b></> : <>, sense tall</>}.</>}
+            {cost.senseFacturacio && <> No s ha pogut llegir la facturacio del workspace: el total no inclou el que
+            hagin gastat aquest cicle els projectes esborrats.</>}
           </p>
 
           <div className="scrollx">
             <table className="ptable">
               <thead>
                 <tr>
-                  <th>Projecte</th>
-                  <th className="r">CPU</th>
-                  <th className="r">Memoria</th>
-                  <th className="r">Disc</th>
-                  <th className="r">Xarxa sortint</th>
-                  <th className="w">Pes relatiu</th>
+                  {/* La primera columna porta el desglos per servei: li cal amplada. */}
+                  <th style={{ width: "38%" }}>Projecte</th>
+                  <th className="r">Fins ara</th>
+                  <th className="r">Previst al tancament</th>
+                  <th className="r">Memoria ara</th>
+                  <th className="r">Si segueix aixi</th>
+                  <th style={{ width: "12%" }}>Pes relatiu</th>
                 </tr>
               </thead>
               <tbody>
-                {consum.map(c => (
-                  <tr key={c.name}>
-                    <td>{c.name}</td>
-                    <td className="r n">{num(c.cpu, 2)}</td>
-                    <td className="r n">{num(c.mem)}</td>
-                    <td className="r n">{num(c.disc)}</td>
-                    <td className="r n">{num(c.xarxa, 3)}</td>
-                    <td className="w">
-                      <span className="bar" style={{ width: `${Math.round((c.mem / memMax) * 100)}%` }} />
+                {files.map(f => (
+                  <tr key={f.id}>
+                    <td>
+                      {f.app || f.name}
+                      {(f.app || f.adreca) && (
+                        <span style={{ color: "var(--muted)", fontSize: "0.82rem" }}>
+                          {" · "}{f.app ? f.name : f.adreca}
+                        </span>
+                      )}
+                      {f.gros && <> <span className="pbadge bad">Mes d 1 GB</span></>}
+                      {f.senseDomini && <> <span className="pbadge wait">Sense domini</span></>}
+                      {!cost.senseMemoria && f.serveis.length > 0 && (
+                        <div className="papp-desc">
+                          {f.serveis.map(s => `${s.name} ${mb(s.gb)}`).join(" · ")}
+                        </div>
+                      )}
+                    </td>
+                    <td className="r n">{diners(f.actual)}</td>
+                    <td className="r n">{diners(f.previst)}</td>
+                    <td className="r n">{cost.senseMemoria ? "—" : mb(f.memoriaAra)}</td>
+                    <td className="r n">{cost.senseMemoria ? "—" : `${diners(f.ritmeMes)} / mes`}</td>
+                    <td>
+                      <span className="bar" style={{ width: `${Math.round((f.previst / previstMax) * 100)}%` }} />
                     </td>
                   </tr>
                 ))}
+                {cost.esborrats > 0.005 && (
+                  <tr>
+                    <td>Projectes esborrats aquest cicle</td>
+                    <td className="r n">{diners(cost.esborrats)}</td>
+                    <td className="r n">{diners(cost.esborrats)}</td>
+                    <td className="r n">—</td>
+                    <td className="r n">—</td>
+                    <td />
+                  </tr>
+                )}
               </tbody>
               <tfoot>
                 <tr>
                   <td>Total</td>
-                  <td className="r n">{num(totals.cpu, 2)}</td>
-                  <td className="r n">{num(totals.mem)}</td>
-                  <td className="r n">{num(totals.disc)}</td>
-                  <td className="r n">{num(totals.xarxa, 3)}</td>
+                  <td className="r n">{diners(cost.actual)}</td>
+                  <td className="r n">{diners(cost.previst)}</td>
+                  <td className="r n">{cost.senseMemoria ? "—" : mb(cost.memoriaAra)}</td>
+                  <td className="r n">{cost.senseMemoria ? "—" : `${diners(cost.ritmeMes)} / mes`}</td>
                   <td />
                 </tr>
+                {taxa && (
+                  <tr>
+                    <td>Total en dolars, que es el que cobra Railway</td>
+                    <td className="r n">{usd(cost.actual)}</td>
+                    <td className="r n">{usd(cost.previst)}</td>
+                    <td />
+                    <td className="r n">{cost.senseMemoria ? "—" : `${usd(cost.ritmeMes)} / mes`}</td>
+                    <td />
+                  </tr>
+                )}
               </tfoot>
             </table>
           </div>
