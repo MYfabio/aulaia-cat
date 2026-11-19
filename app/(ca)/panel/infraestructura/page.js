@@ -1,8 +1,7 @@
-import { getPanelData } from "../../../../lib/railway";
+import { getPanelData, llegirAccessos } from "../../../../lib/panell-fonts";
 import { canviEurUsd } from "../../../../lib/canvi.mjs";
 import { appDelProjecte } from "../../../../lib/noms-projectes.mjs";
 import cataleg from "../../../../data/apps.json";
-import accessos from "../../../../data/accessos.json";
 
 export const metadata = {
   title: "Infraestructura",
@@ -72,6 +71,7 @@ export default async function PanellPage() {
   let dades = null;
   let canvi = null;
   let error = null;
+  const accessos = await llegirAccessos();
   try {
     // canviEurUsd no llança mai: si el BCE no respon torna null i tot va en dolars.
     [dades, canvi] = await Promise.all([getPanelData({ ambCost: true }), canviEurUsd()]);

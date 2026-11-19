@@ -27,6 +27,8 @@ const capçaleresSeguretat = [
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // No anunciar a cada resposta amb quin framework (i quina versio) esta fet el web.
+  poweredByHeader: false,
   // /apps/undirlaflota va ser una fitxa duplicada del mateix joc: porta a la bona.
   async redirects() {
     return [

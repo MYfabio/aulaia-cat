@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { COOKIE_NAME, COOKIE_MAX_AGE, createSessionValue } from "../../../../lib/panel-auth";
+import { COOKIE_NAME, COOKIE_MAX_AGE, createSessionValue, clauDemoConfigurada } from "../../../../lib/panel-auth";
 import { potIntentar, anotarFallada, anotarEncert } from "../../../../lib/limit-intents.mjs";
 
 /**
@@ -79,14 +79,27 @@ export async function POST(request) {
     return tornarAmbError("limit");
   }
 
-  if (!safeEqual(password, expected)) {
+  // Dues contrasenyes, dos rols. La de la demo nomes existeix si hi ha
+  // PANEL_DEMO_PASSWORD, i mai pot ser la mateixa que la de l administrador.
+  // Es comparen totes dues sempre, perque el temps de resposta no digui quina ha fallat.
+  const clauDemo = clauDemoConfigurada();
+  const esAdmin = safeEqual(password, expected);
+  const esDemo = safeEqual(password, clauDemo || "") && Boolean(clauDemo);
+
+  if (!esAdmin && !esDemo) {
     anotarFallada(ip);
     return tornarAmbError("1");
   }
   anotarEncert(ip);
 
-  const response = NextResponse.redirect(new URL(seguent, base), { status: 303 });
-  response.cookies.set(COOKIE_NAME, await createSessionValue(secret), {
+  // La demo entra sempre pel Resum: no ha de quedar a mitges d una ruta que no pot fer servir.
+  const desti = esAdmin ? seguent : "/panel";
+  const sessio = esAdmin
+    ? await createSessionValue(secret)
+    : await createSessionValue(secret, "demo", clauDemo);
+
+  const response = NextResponse.redirect(new URL(desti, base), { status: 303 });
+  response.cookies.set(COOKIE_NAME, sessio, {
     httpOnly: true,
     secure: process.env.NODE_ENV === "production",
     sameSite: "lax",

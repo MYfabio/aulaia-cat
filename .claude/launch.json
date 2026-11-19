@@ -28,6 +28,48 @@
       "port": 3230
     },
     {
+      "name": "aulaia-correus-prova",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev",
+        "--",
+        "-p",
+        "3231"
+      ],
+      "env": {
+        "RESEND_PANEL_KEY": "clau-falsa-de-prova",
+        "RESEND_API_BASE": "http://localhost:3239",
+        "PANEL_PASSWORD": "prova-local-correus",
+        "PANEL_SECRET": "prova-local-correus-0123456789abcdef"
+      },
+      "port": 3231
+    },
+    {
+      "name": "aulaia-demo",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev",
+        "--",
+        "-p",
+        "3232"
+      ],
+      "env": {
+        "PANEL_PASSWORD": "prova-local-admin-demo",
+        "PANEL_SECRET": "prova-local-demo-0123456789abcdef",
+        "PANEL_DEMO_PASSWORD": "prova-local-visita",
+        "DATABASE_URL": "",
+        "RAILWAY_API_TOKEN": "",
+        "RESEND_API_KEY": "",
+        "RESEND_PANEL_KEY": "",
+        "ANTHROPIC_ADMIN_KEY": "",
+        "GOOGLE_SA_EMAIL": "",
+        "GOOGLE_SA_PRIVATE_KEY": ""
+      },
+      "port": 3232
+    },
+    {
       "name": "ava",
       "runtimeExecutable": "npm",
       "runtimeArgs": [
@@ -158,6 +200,76 @@
         "3250"
       ],
       "port": 3250
+    },
+    {
+      "name": "memoria",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev",
+        "--prefix",
+        "C:/Users/super/Desktop/APPS/memoria"
+      ],
+      "port": 3217
+    },
+    {
+      "name": "bird",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "C:/Users/super/Desktop/APPS/bird/server.mjs"
+      ],
+      "env": {
+        "PORT": "3262"
+      },
+      "port": 3262
+    },
+    {
+      "name": "pla-lector-prestecs",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "start",
+        "--prefix",
+        "C:/Users/super/Desktop/APPS/pla_lector-prestecs"
+      ],
+      "env": {
+        "PORT": "3243"
+      },
+      "port": 3243
+    },
+    {
+      "name": "pla-lector-demo",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "start",
+        "--prefix",
+        "C:/Users/super/Desktop/APPS/pla_lector-demo"
+      ],
+      "env": {
+        "PORT": "3244"
+      },
+      "port": 3244
+    },
+    {
+      "name": "pla-lector-demo-apagada",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "start",
+        "--prefix",
+        "C:/Users/super/Desktop/APPS/pla_lector-demo"
+      ],
+      "env": {
+        "PORT": "3245",
+        "DEMO_MODE": "false",
+        "DEMO_PASSWORD": "",
+        "GOOGLE_CLIENT_ID": "prova-local",
+        "GOOGLE_CLIENT_SECRET": "prova-local",
+        "APP_URL": "http://localhost:3245",
+        "MISSATGERIA_RELLOTGE": "off"
+      },
+      "port": 3245
     }
   ]
 }

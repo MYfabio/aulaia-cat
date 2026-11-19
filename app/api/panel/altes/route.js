@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { nomesAdmin } from "../../../../lib/panell-rol";
 import { canviarEstat, esborrarSolicitud, llistarSolicituds } from "../../../../lib/db";
 import { enviarCorreuValidacio } from "../../../../lib/correu";
 
@@ -15,6 +16,9 @@ function baseUrl(request) {
  * proxy ja protegeix amb la cookie de sessio.
  */
 export async function POST(request) {
+  // Nomes l administrador: la demostracio no desa, no envia ni exporta res.
+  const rebuig = await nomesAdmin();
+  if (rebuig) return rebuig;
   const base = baseUrl(request);
   const tornar = params => {
     const url = new URL("/panel/altes", base);

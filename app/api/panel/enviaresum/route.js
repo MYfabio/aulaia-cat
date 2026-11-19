@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { nomesAdmin } from "../../../../lib/panell-rol";
 import { llistarSolicituds } from "../../../../lib/db";
 import { enviarCorreu } from "../../../../lib/correu";
 import apps from "../../../../data/apps.json";
@@ -6,6 +7,9 @@ import apps from "../../../../data/apps.json";
 const nomApp = slug => apps.find(a => a.slug === slug)?.nom || slug;
 
 export async function POST(request) {
+  // Nomes l administrador: la demostracio no desa, no envia ni exporta res.
+  const rebuig = await nomesAdmin();
+  if (rebuig) return rebuig;
   // Protecció: només accept peticions del propi panel
   const auth = request.headers.get("authorization");
   if (!auth || !auth.startsWith("Bearer ")) {

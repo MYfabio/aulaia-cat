@@ -743,6 +743,12 @@ a { color: inherit; text-decoration: none; }
 .pl-top-titol { font-weight: 700; letter-spacing: -0.02em; }
 .pl-top-web { margin-left: auto; font-size: .8rem; color: var(--muted); border-bottom: 1px solid var(--rule); }
 .pl-burger { display: none; background: none; border: 0; color: var(--ink); cursor: pointer; padding: 2px; }
+/* Marca de la demostracio: sempre a la vista, a totes les pantalles del panell. */
+.pl-demo-marca { margin-left: auto; font-size: .68rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; padding: .22em .6em; border-radius: 3px; background: var(--avis); color: #241700; }
+.pl-demo-marca + .pl-top-web { margin-left: 0; }
+.pl-demo { margin: 0; padding: .5rem 1.5rem; font-size: .84rem; line-height: 1.45; color: var(--ink-soft); background: color-mix(in srgb, var(--avis) 13%, var(--surface)); border-bottom: 1px solid color-mix(in srgb, var(--avis) 45%, var(--rule)); }
+.pl-demo b { color: var(--ink); }
+.pl-demo.is-aturat { background: color-mix(in srgb, var(--avis) 30%, var(--surface)); color: var(--ink); }
 .pl-main { flex: 1; overflow-y: auto; }
 .pl-main-sol { width: 100%; }
 .pl-vel { display: none; }
@@ -809,6 +815,37 @@ a.kpi:hover { border-color: var(--teal); transform: translateY(-1px); }
 .avis-punt { width: 10px; height: 10px; border-radius: 50%; flex: none; background: var(--muted); }
 .avis-fila.bad .avis-punt { background: var(--mal); }
 .avis-fila.wait .avis-punt { background: var(--avis); }
+.avis-fila.ok .avis-punt { background: var(--ok); }
+
+/* ---------- Panell: cost d IA ---------- */
+.ia-dies { display: flex; align-items: flex-end; gap: 3px; height: 140px; padding: .6rem .6rem 0; border: 1px solid var(--rule); border-radius: 10px; background: var(--surface); }
+.ia-dia { flex: 1; height: 100%; min-width: 4px; display: flex; align-items: flex-end; }
+.ia-dia-barra { display: block; width: 100%; background: var(--deep); border-radius: 2px 2px 0 0; }
+.ia-dia:hover .ia-dia-barra { background: var(--teal); }
+.ia-dies-peu { display: flex; justify-content: space-between; gap: 1rem; margin-top: .4rem; font-size: .76rem; color: var(--muted); }
+
+/* ---------- Panell: fonaments ---------- */
+.fon-de { font-size: .9rem; font-weight: 600; color: var(--muted); letter-spacing: 0; }
+.fon-taula { min-width: 980px; }
+.fon-taula td, .fon-taula th { vertical-align: top; }
+.fon-taula tbody th { position: sticky; left: 0; z-index: 1; background: var(--paper); font-size: .9rem; font-weight: 600; text-transform: none; letter-spacing: 0; color: var(--ink); white-space: nowrap; }
+.fon-taula tbody th a { border-bottom: 1px solid var(--rule); }
+.fon-etiqueta { display: block; margin-top: .2rem; font-size: .62rem; font-weight: 600; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); }
+.fon-cel { display: grid; gap: .3rem; justify-items: start; }
+.fon-cel small { max-width: 26ch; font-size: .76rem; line-height: 1.35; color: var(--muted); }
+.fon-detalls { display: grid; gap: .5rem; }
+.fon-detall { border: 1px solid var(--rule); border-radius: 10px; background: var(--surface); scroll-margin-top: 1rem; }
+.fon-detall:target { border-color: var(--teal); }
+.fon-detall summary { cursor: pointer; list-style: none; display: flex; align-items: center; justify-content: space-between; gap: .5rem 1rem; flex-wrap: wrap; padding: .75rem 1rem; }
+.fon-detall summary::-webkit-details-marker { display: none; }
+.fon-detall-nom { font-weight: 600; }
+.fon-detall-badges { display: flex; gap: .3rem; flex-wrap: wrap; }
+.fon-detall-cos { padding: 0 1rem 1rem; border-top: 1px solid var(--rule-soft); }
+.fon-meta { margin-top: .75rem; font-size: .8rem; color: var(--muted); overflow-wrap: anywhere; }
+.fon-detall dl { margin: .25rem 0 0; display: grid; gap: .5rem; }
+.fon-detall dt { display: flex; align-items: center; gap: .5rem; margin-top: .6rem; font-size: .8rem; font-weight: 600; }
+.fon-detall dd { margin: .25rem 0 0; }
+.fon-detall dd ul { margin: 0; padding-left: 1.1rem; font-size: .85rem; color: var(--ink-soft); overflow-wrap: anywhere; }
 .avis-text { flex: 1; min-width: 0; }
 .avis-etiq { font-size: .72rem; font-weight: 600; padding: .25em .7em; border: 1px solid var(--rule); border-radius: 6px; color: var(--muted); white-space: nowrap; }
 .avis-etiq:hover { color: var(--ink); border-color: var(--muted); }

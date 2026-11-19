@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { nomesAdmin } from "../../../../lib/panell-rol";
 import {
   afegirContacte, esborrarContacte, llistarContactes, registrarEventContacte, eventsDeContactes,
 } from "../../../../lib/db";
@@ -30,6 +31,9 @@ function csv(valor) {
 
 /** Exportacio: respecta els filtres de la pantalla. */
 export async function GET(request) {
+  // Nomes l administrador: la demostracio no desa, no envia ni exporta res.
+  const rebuig = await nomesAdmin();
+  if (rebuig) return rebuig;
   const sp = new URL(request.url).searchParams;
   const filtre = {
     estat: ESTATS.includes(sp.get("estat")) ? sp.get("estat") : null,
@@ -79,6 +83,9 @@ async function importar(comarca) {
 }
 
 export async function POST(request) {
+  // Nomes l administrador: la demostracio no desa, no envia ni exporta res.
+  const rebuig = await nomesAdmin();
+  if (rebuig) return rebuig;
   const base = baseUrl(request);
   let f;
   try {

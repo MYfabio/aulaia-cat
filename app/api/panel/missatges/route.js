@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { nomesAdmin } from "../../../../lib/panell-rol";
 import { canviarEstatMissatge, esborrarMissatge } from "../../../../lib/db";
 
 const ESTATS = ["pendent", "respost", "arxivat"];
@@ -18,6 +19,9 @@ function baseUrl(request) {
  * el proxy ja protegeix amb la cookie de sessio.
  */
 export async function POST(request) {
+  // Nomes l administrador: la demostracio no desa, no envia ni exporta res.
+  const rebuig = await nomesAdmin();
+  if (rebuig) return rebuig;
   const base = baseUrl(request);
   let f;
   try {

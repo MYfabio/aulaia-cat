@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { llistarSolicituds, comptarPerEstat } from "../../../../lib/db";
+import { llistarSolicituds, comptarPerEstat } from "../../../../lib/panell-fonts";
+import { esDemo } from "../../../../lib/panell-rol";
 import { BotoEnviarResum } from "./client";
 import apps from "../../../../data/apps.json";
 
@@ -34,6 +35,7 @@ export default async function AltesPage({ searchParams }) {
   const filtreEstat = ["pendent", "validada", "rebutjada"].includes(sp?.estat) ? sp.estat : null;
   const filtreApp = sp?.app && apps.find(a => a.slug === sp.app) ? sp.app : null;
 
+  const demo = await esDemo();
   let solicituds = [];
   let comptes = { pendent: 0, validada: 0, rebutjada: 0 };
   let comptesApp = {};
@@ -75,7 +77,7 @@ export default async function AltesPage({ searchParams }) {
           <p className="panel-sub">Sol·licituds rebudes des del formulari únic</p>
         </div>
         <div style={{ display: "flex", gap: "0.5rem" }}>
-          <BotoEnviarResum comptesPendent={comptes.pendent} />
+          <BotoEnviarResum comptesPendent={comptes.pendent} demo={demo} />
           <Link href="/panel" className="btn btn-outline">Tornar al panell</Link>
         </div>
       </div>

@@ -13,6 +13,10 @@ Per a funcionalitat completa (formulari i panell), cal:
 - `DATABASE_URL` amb connexió a PostgreSQL (crea la taula automàticament)
 - `RESEND_API_KEY` per a enviament de correus
 - `PANEL_PASSWORD` + `PANEL_SECRET` pel panell administratiu
+- `PANEL_DEMO_PASSWORD` (opcional) per obrir la demostració del panell: qui entra amb aquesta contrasenya veu totes les seccions amb dades inventades (`lib/demo/`) i no pot desar ni enviar res. Sense la variable, la demo no existeix; ha de tenir 8 caràcters o més i no pot ser la mateixa que `PANEL_PASSWORD`. Canviar-la o treure-la tanca a l'instant les sessions de demo obertes. Prova local: configuració `aulaia-demo` de `.claude/launch.json` i `node --test scripts/demo/proves.mjs`
+- `ANTHROPIC_ADMIN_KEY` perquè `/panel/ia` pugui llegir el cost d'Anthropic (clau d'administrador de l'organització, només lectura; prova local amb `node scripts/cost-ia/provar.mjs`)
+- `RESEND_PANEL_KEY` perquè `/panel/correus` pugui llistar els enviaments de Resend per app (clau amb accés complet, perquè Resend no en té de només lectura; aquí només es llegeix; prova local amb `node scripts/correus/provar.mjs`)
+- `ACTIVITAT_CLAUS` perquè les apps puguin enviar el seu informe d'activitat a `/api/activitat` (JSON slug → empremta SHA-256 de la clau; `docs/informe-activitat.md`)
 
 ## Estructura
 
@@ -54,6 +58,7 @@ components/           # Components reutilitzables
 
 ## Coses que NO fer mai
 
+- No demanar dades des d'una pàgina de `/panel` directament a `lib/db`, `lib/railway`, `lib/search-console`, `lib/anthropic-admin`, `lib/resend-panel` ni `data/accessos.json`: sempre per `lib/panell-fonts.js`, que és on es decideix si qui mira és l'administrador o la demostració. Una secció nova del panell necessita la seva font a `lib/panell-fonts.js` i les seves dades inventades a `lib/demo/`; si no, la demo ensenyaria dades reals. Les rutes d'`/api/panel` que desen, envien o exporten comencen per `nomesAdmin()`.
 - No afegir lògica de validació al client sense al servidor.
 - No canviar dominis ni secrets en codi: sempre per variables d'entorn.
 - No deixar variables d'entorn per defecte en producció (ex: contraseya buida).

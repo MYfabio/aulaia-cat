@@ -1,5 +1,5 @@
 import Link from "next/link";
-import accessos from "../../../../data/accessos.json";
+import { llegirAccessos } from "../../../../lib/panell-fonts";
 import apps from "../../../../data/apps.json";
 
 export const metadata = {
@@ -15,7 +15,8 @@ const TIPUS = {
   construccio: { text: "En construcció", cls: "off" },
 };
 
-export default function AccessosPage() {
+export default async function AccessosPage() {
+  const accessos = await llegirAccessos();
   const fila = accessos
     .map(a => ({ ...a, app: apps.find(x => x.slug === a.slug) }))
     .filter(a => a.app);

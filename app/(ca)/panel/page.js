@@ -1,7 +1,5 @@
 import Link from "next/link";
-import { getPanelData } from "../../../lib/railway";
-import { comptarPerEstat, comptarMissatges, comptarContactes } from "../../../lib/db";
-import { getSeoData, teClaus } from "../../../lib/search-console";
+import { getPanelData, comptarPerEstat, comptarMissatges, comptarContactes, getSeoData, teClaus } from "../../../lib/panell-fonts";
 import { Anell, Mini } from "./grafics";
 
 export const metadata = {
@@ -60,12 +58,13 @@ function Mini3({ valor, titol, canvi }) {
 }
 
 export default async function ResumPage() {
+  const ambCerca = await teClaus();
   const [railway, altes, missatges, contactes, seo] = await Promise.all([
     intenta(getPanelData),
     intenta(comptarPerEstat),
     intenta(comptarMissatges),
     intenta(comptarContactes),
-    intenta(() => (teClaus() ? getSeoData(28) : null)),
+    intenta(() => (ambCerca ? getSeoData(28) : null)),
   ]);
 
   // ---------- Infraestructura ----------
@@ -108,7 +107,7 @@ export default async function ResumPage() {
   for (const l of seo?.llocs?.filter(l => l.error) ?? []) avisos.push({ nivell: "bad", etiqueta: "Cerca", text: `Search Console no respon per a ${l.siteUrl}`, href: "/panel/seo" });
   if (!railway) avisos.push({ nivell: "bad", etiqueta: "Infraestructura", text: "No s han pogut llegir les dades de Railway", href: "/panel/infraestructura" });
   if (!altes) avisos.push({ nivell: "bad", etiqueta: "Gestio", text: "No hi ha connexio amb la base de dades", href: "/panel/altes" });
-  if (!teClaus()) avisos.push({ nivell: "info", etiqueta: "Cerca", text: "Search Console encara no esta connectat", href: "/panel/seo" });
+  if (!ambCerca) avisos.push({ nivell: "info", etiqueta: "Cerca", text: "Search Console encara no esta connectat", href: "/panel/seo" });
 
   const contactesTotal = contactes ? Object.values(contactes).reduce((a, b) => a + b, 0) : null;
 

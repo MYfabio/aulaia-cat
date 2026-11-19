@@ -10,6 +10,9 @@ out/
 # Local de l'eina, no del projecte
 .claude/settings.local.json
 
+# Sortida de l'agent de fonaments (es regenera a cada revisio)
+scripts/fonaments/sortida/
+
 # Registres i temporals
 *.log
 npm-debug.log*

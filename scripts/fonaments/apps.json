@@ -1,0 +1,207 @@
+[
+  {
+    "slug": "aulaia",
+    "nom": "aulaia.cat",
+    "carpeta": "aulaia-cat",
+    "railway": [{ "projecte": "aulaia-cat", "servei": "aulaia-cat" }],
+    "bd": "postgres",
+    "menors": false,
+    "nota": "Guarda dades d'adults: contactes dels centres que demanen accés."
+  },
+  {
+    "slug": "radio-escolar",
+    "nom": "Ràdio Escolar",
+    "carpeta": "Radio",
+    "railway": [{ "projecte": "radioescolar", "servei": "radio-industrial-jove" }],
+    "bd": "postgres",
+    "menors": true
+  },
+  {
+    "slug": "dictats",
+    "nom": "dictats.cat",
+    "carpeta": "ditat",
+    "railway": [{ "projecte": "dictats", "servei": "ditat" }],
+    "bd": "postgres",
+    "menors": true
+  },
+  {
+    "slug": "matescac",
+    "nom": "MatEscac",
+    "carpeta": "Matescac",
+    "railway": [{ "projecte": "matescac", "servei": "web" }],
+    "bd": "postgres",
+    "menors": true
+  },
+  {
+    "slug": "aules-sostenibles",
+    "nom": "Aules Sostenibles",
+    "carpeta": "aules-sostenibles",
+    "railway": [
+      { "projecte": "aules-sostenibles", "servei": "aules-sostenibles" },
+      { "projecte": "aules-web", "servei": "@aules/web" }
+    ],
+    "bd": "firebase",
+    "menors": null,
+    "nota": "Les dades són a Firebase. Per confirmar si guarda res per alumne o només per grup."
+  },
+  {
+    "slug": "pla-lector",
+    "nom": "El Pla Lector",
+    "carpeta": "pla_lector",
+    "railway": [{ "projecte": "biblioteca-pla-lector", "servei": "biblioteca-pla-lector" }],
+    "bd": "postgres",
+    "menors": true
+  },
+  {
+    "slug": "plalector-landing",
+    "nom": "Pla Lector (landing)",
+    "carpeta": "plalector-landing",
+    "railway": [{ "projecte": "plalector-landing", "servei": "web" }],
+    "bd": null,
+    "menors": false,
+    "nota": "Pàgina de presentació d'elplalector.cat, sense dades."
+  },
+  {
+    "slug": "typeedu",
+    "nom": "TypeEdu",
+    "carpeta": "mecanografia/typeedu",
+    "railway": [{ "projecte": "typeedu", "servei": "typeedu" }],
+    "bd": "postgres",
+    "menors": true
+  },
+  {
+    "slug": "diedric3d",
+    "nom": "Diedric3D",
+    "carpeta": "diedrico/diedric3d",
+    "railway": [
+      { "projecte": "diedric3d", "servei": "web" },
+      { "projecte": "diedric3d", "servei": "api" }
+    ],
+    "bd": "postgres",
+    "menors": true
+  },
+  {
+    "slug": "kiosko",
+    "nom": "Kiosko",
+    "carpeta": "Pantallas_web",
+    "railway": [{ "projecte": "pantalles", "servei": "pantalles" }],
+    "bd": "postgres",
+    "menors": false,
+    "nota": "Contingut de pantalles del centre; els usuaris són docents."
+  },
+  {
+    "slug": "enfonsar-la-flota",
+    "nom": "Enfonsar la flota",
+    "carpeta": "Undirlaflota",
+    "railway": [{ "projecte": "undirlaflota", "servei": "web" }],
+    "bd": "postgres",
+    "menors": true
+  },
+  {
+    "slug": "poetes-vives",
+    "nom": "El Club de les Poetes Vives",
+    "carpeta": "clubpoetasvius",
+    "railway": [{ "projecte": "clubpoetesvives", "servei": "web" }],
+    "bd": "postgres",
+    "menors": true
+  },
+  {
+    "slug": "eltaulell",
+    "nom": "El Taulell",
+    "carpeta": "eltaulell",
+    "railway": [{ "projecte": "eltaulell", "servei": "eltaulell" }],
+    "bd": "postgres",
+    "menors": true,
+    "nota": "Prototip amb demo pública."
+  },
+  {
+    "slug": "aulaacull",
+    "nom": "AulaAcull.cat",
+    "carpeta": "Aula de acollida/aula_acollida_pack_20260829/ava",
+    "railway": [{ "projecte": "aulaacull", "servei": "web" }],
+    "bd": "postgres",
+    "menors": true
+  },
+  {
+    "slug": "la-cantina",
+    "nom": "La Cantina",
+    "carpeta": "lacantina",
+    "railway": [{ "projecte": "la-cantina", "servei": "web" }],
+    "bd": "postgres",
+    "menors": true
+  },
+  {
+    "slug": "kipuk",
+    "nom": "KIPUK",
+    "carpeta": "Kipuk",
+    "railway": [{ "projecte": "kipuk", "servei": "kipuk" }],
+    "bd": "postgres",
+    "menors": true
+  },
+  {
+    "slug": "chefboss",
+    "nom": "Chef Boss",
+    "carpeta": "Chefboss",
+    "railway": [{ "projecte": "chefboss", "servei": "chef-boss" }],
+    "bd": "postgres",
+    "menors": true
+  },
+  {
+    "slug": "ciutatviva",
+    "nom": "CiutatViva",
+    "carpeta": "ciutatviva",
+    "railway": [{ "projecte": "ciutatviva", "servei": "ciutatviva" }],
+    "bd": "postgres",
+    "menors": true
+  },
+  {
+    "slug": "museu-apagat",
+    "nom": "El Museu Apagat",
+    "carpeta": "VIP",
+    "railway": [{ "projecte": "museu-apagat", "servei": "museu-apagat" }],
+    "bd": "postgres",
+    "menors": true
+  },
+  {
+    "slug": "la-claqueta",
+    "nom": "La Claqueta",
+    "carpeta": "claqueta",
+    "railway": [{ "projecte": "laclaqueta", "servei": "laclaqueta" }],
+    "bd": "postgres",
+    "menors": true
+  },
+  {
+    "slug": "fpsegura",
+    "nom": "FPSegura",
+    "carpeta": "FPSegura",
+    "railway": [{ "projecte": "FP-segura", "servei": "FPSegura" }],
+    "bd": "postgres",
+    "menors": true
+  },
+  {
+    "slug": "memoria",
+    "nom": "Memòria",
+    "carpeta": "memoria",
+    "railway": [{ "projecte": "memoria", "servei": "web" }],
+    "bd": "postgres",
+    "menors": true
+  },
+  {
+    "slug": "matricula",
+    "nom": "Matrícula Online (demo)",
+    "carpeta": "matricula-demo",
+    "railway": [{ "projecte": "matricula-demo", "servei": "matricula-demo" }],
+    "bd": null,
+    "menors": false,
+    "nota": "Prototip sense base de dades ni login."
+  },
+  {
+    "slug": "iacentre",
+    "nom": "IA Centre",
+    "carpeta": null,
+    "railway": [],
+    "bd": null,
+    "menors": false,
+    "nota": "Web externa: el codi no és en aquest ordinador. Revisar-la a mà amb qui la desenvolupa."
+  }
+]

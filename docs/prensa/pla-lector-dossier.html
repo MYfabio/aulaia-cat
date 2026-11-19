@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>El Pla Lector · Dossier</title>
+<style>
+  @page { size: A4; margin: 18mm 17mm 18mm 17mm; }
+  :root { --tinta:#1f2a37; --suau:#5b6675; --linia:#e3e6ea; --acc:#2f6f4f; --acc2:#e8f2ec; }
+  * { box-sizing: border-box; }
+  body { font-family: "Segoe UI", Arial, sans-serif; color: var(--tinta); font-size: 10.5pt; line-height: 1.5; margin: 0; }
+  h1 { font-size: 24pt; margin: 0 0 4pt; letter-spacing: -0.3pt; }
+  h2 { font-size: 13.5pt; margin: 18pt 0 6pt; color: var(--acc); border-bottom: 1px solid var(--linia); padding-bottom: 3pt; }
+  h3 { font-size: 11pt; margin: 10pt 0 3pt; }
+  p { margin: 0 0 7pt; }
+  .sub { font-size: 12pt; color: var(--suau); margin-bottom: 12pt; }
+  .meta { font-size: 9pt; color: var(--suau); border-top: 3px solid var(--acc); padding-top: 6pt; margin-bottom: 14pt; }
+  .xifres { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8pt; margin: 10pt 0 6pt; }
+  .xifra { background: var(--acc2); border-radius: 6pt; padding: 8pt 9pt; }
+  .xifra b { display: block; font-size: 19pt; color: var(--acc); line-height: 1.1; }
+  .xifra span { font-size: 8.5pt; color: var(--suau); }
+  table { width: 100%; border-collapse: collapse; margin: 6pt 0 8pt; font-size: 9.8pt; }
+  th, td { text-align: left; padding: 4pt 6pt; border-bottom: 1px solid var(--linia); }
+  th { font-size: 8.8pt; color: var(--suau); font-weight: 600; }
+  td.n { text-align: right; font-variant-numeric: tabular-nums; }
+  ul { margin: 0 0 8pt; padding-left: 15pt; }
+  li { margin-bottom: 3pt; }
+  .barres { display: flex; align-items: flex-end; gap: 7pt; height: 110pt; margin: 8pt 0 2pt; padding: 0 2pt; border-bottom: 1px solid var(--suau); }
+  .barra { flex: 1; background: var(--acc); border-radius: 3pt 3pt 0 0; position: relative; }
+  .barra.parcial { background: repeating-linear-gradient(45deg, var(--acc) 0 4pt, #6fa58a 4pt 8pt); }
+  .barra i { position: absolute; top: -13pt; width: 100%; text-align: center; font-style: normal; font-size: 8.5pt; color: var(--tinta); }
+  .etiq { display: flex; gap: 7pt; padding: 0 2pt; font-size: 8pt; color: var(--suau); }
+  .etiq span { flex: 1; text-align: center; }
+  .nota { font-size: 8.8pt; color: var(--suau); }
+  .caixa { border-left: 3px solid var(--acc); background: #f7f8f9; padding: 7pt 10pt; margin: 8pt 0; }
+  table, .caixa, .barres, li { break-inside: avoid; }
+  h2, h3 { break-after: avoid; }
+  .dues { display: grid; grid-template-columns: 1fr 1fr; gap: 14pt; }
+  footer { margin-top: 16pt; font-size: 9pt; color: var(--suau); border-top: 1px solid var(--linia); padding-top: 6pt; }
+</style>
+</head>
+<body>
+
+<div class="meta">Dossier para prensa · Noviembre de 2026 · Datos agregados y anónimos</div>
+<h1>El Pla Lector</h1>
+<p class="sub">Una herramienta digital para que se lea más en papel, y para saber, con datos, qué pasa con la lectura en un instituto.</p>
+
+<p>El Pla Lector lo diseñamos y desarrollamos en el Institut Escola Industrial de Sabadell. Lo usa todo el alumnado de ESO del centro desde el 16 de septiembre de 2026. No tiene libros digitales: los libros son de papel y están en las bibliotecas de cada aula. Lo que la herramienta digitaliza es todo lo demás. Dónde está cada libro, quién lo lee, qué le ha parecido, cómo se lee en clase y qué grupos se quedan atrás.</p>
+
+<p>Ha crecido mucho en dos meses. Empezó siendo un catálogo de las bibliotecas de aula y hoy incluye el seguimiento de la lectura, el registro diario en el aula, retos semanales, recomendaciones entre compañeros y un módulo de pruebas de comprensión lectora para un estudio de cuatro años.</p>
+
+<div class="xifres">
+  <div class="xifra"><b>446</b><span>alumnos de 1.º a 4.º de ESO</span></div>
+  <div class="xifra"><b>983</b><span>libros terminados en 8 semanas</span></div>
+  <div class="xifra"><b>6.765</b><span>registros de lectura en el aula</span></div>
+  <div class="xifra"><b>60</b><span>docentes registran la lectura en su aula</span></div>
+</div>
+<p class="nota">Periodo: del 16 de septiembre al 12 de noviembre de 2026. Todas las cifras son recuentos o medias de grupo: no aparece ningún alumno.</p>
+
+<h2>Qué hace</h2>
+<div class="dues">
+<div>
+<h3>Para el alumnado</h3>
+<ul>
+  <li><b>Su biblioteca.</b> Apunta qué lee, qué deja y qué termina. Ver el propio recorrido ya motiva.</li>
+  <li><b>Valoración y opinión.</b> Al terminar un libro le pone de 1 a 5 monedas y escribe qué le ha parecido. No es una nota.</li>
+  <li><b>Reto semanal.</b> Se marca un objetivo de minutos. Se suman los de clase y los de casa, y al final explica cómo le ha ido.</li>
+  <li><b>Recomendar a un compañero.</b> Sin texto libre, para que no se convierta en un chat.</li>
+  <li><b>Libros de casa.</b> También cuenta lo que lee fuera del fondo del centro.</li>
+  <li><b>Nivel con gomets.</b> Cada libro tiene un color de dificultad para encontrar lecturas adecuadas.</li>
+</ul>
+</div>
+<div>
+<h3>Para el profesorado y el centro</h3>
+<ul>
+  <li><b>Aprovechamiento en el aula.</b> En segundos por alumno, el docente marca cada día cómo ha leído: con atención, se distrae, le cuesta, no lee o ausente. El alumno ve su propio historial.</li>
+  <li><b>Estadísticas por grupo y nivel.</b> Libros por alumno (no totales), tendencia mensual y aprovechamiento por grupo.</li>
+  <li><b>Catálogo vivo.</b> El libro pertenece al aula, no al grupo. En septiembre se cambian unas treinta líneas en lugar de cientos de fichas.</li>
+  <li><b>Libros perdidos y "hospital".</b> Constan los libros perdidos, con el curso, y los que se están reparando.</li>
+  <li><b>Préstamos de la biblioteca pública</b> en depósito, con fecha de devolución.</li>
+  <li><b>Pruebas de comprensión lectora</b> en catalán y castellano, con hoja de respuestas anónima.</li>
+  <li><b>Comunicación con las familias</b> con envíos programados (en preparación).</li>
+</ul>
+</div>
+</div>
+
+<div class="caixa"><b>Una decisión de diseño:</b> nada de esto cuenta para la nota. No hay puntos ni rankings de alumnos. Queremos que se lea porque se quiere, no porque se puntúa.</div>
+
+<h2>Ocho semanas de datos</h2>
+
+<h3>Lectura</h3>
+<table>
+  <tr><th>Indicador</th><th style="text-align:right">Valor</th></tr>
+  <tr><td>Alumnos en la plataforma (1.º a 4.º de ESO)</td><td class="n">446</td></tr>
+  <tr><td>Alumnos que han terminado al menos un libro</td><td class="n">198</td></tr>
+  <tr><td>Libros terminados</td><td class="n">983</td></tr>
+  <tr><td>Valoración media de los libros terminados</td><td class="n">4,2 / 5</td></tr>
+  <tr><td>Libros terminados con opinión escrita</td><td class="n">591 (60 %)</td></tr>
+  <tr><td>Recomendaciones entre compañeros (aceptadas)</td><td class="n">112 (48)</td></tr>
+</table>
+
+<h3>1.º de ESO, el nivel que empezó primero</h3>
+<p>1.º de ESO es el único nivel en el que el plan lector se aplica de forma completa desde septiembre. De sus 135 alumnos, <b>112 (83 %) ya han terminado al menos un libro</b>, con una media de <b>6 libros por alumno</b> en ocho semanas. En el primer mes la media era de 3,2.</p>
+<table>
+  <tr><th>Nivel</th><th style="text-align:right">Alumnos</th><th style="text-align:right">Han terminado algún libro</th><th style="text-align:right">Libros terminados</th></tr>
+  <tr><td>1.º ESO</td><td class="n">135</td><td class="n">112</td><td class="n">814</td></tr>
+  <tr><td>2.º ESO</td><td class="n">89</td><td class="n">10</td><td class="n">26</td></tr>
+  <tr><td>3.º ESO</td><td class="n">124</td><td class="n">33</td><td class="n">65</td></tr>
+  <tr><td>4.º ESO</td><td class="n">98</td><td class="n">43</td><td class="n">78</td></tr>
+</table>
+<p class="nota">De 2.º a 4.º el alumnado está dado de alta, pero el uso se está extendiendo ahora: sus cifras no se pueden comparar todavía con las de 1.º.</p>
+
+<h3>Libros terminados por semana</h3>
+<div class="barres">
+  <div class="barra" style="height:17.7%"><i>39</i></div>
+  <div class="barra" style="height:36.4%"><i>80</i></div>
+  <div class="barra" style="height:35%"><i>77</i></div>
+  <div class="barra" style="height:100%"><i>220</i></div>
+  <div class="barra" style="height:69.5%"><i>153</i></div>
+  <div class="barra" style="height:68.2%"><i>150</i></div>
+  <div class="barra" style="height:92.7%"><i>204</i></div>
+  <div class="barra parcial" style="height:27.3%"><i>60</i></div>
+</div>
+<div class="etiq"><span>21 sep</span><span>28 sep</span><span>5 oct</span><span>12 oct</span><span>19 oct</span><span>26 oct</span><span>2 nov</span><span>9 nov*</span></div>
+<p class="nota">Semana que empieza el lunes indicado. *Semana incompleta (datos hasta el 12 de noviembre).</p>
+
+<div class="dues">
+<div>
+<h3>Cómo se lee en el aula</h3>
+<table>
+  <tr><th>Registro del docente</th><th style="text-align:right">%</th></tr>
+  <tr><td>Lee con atención</td><td class="n">88,3 %</td></tr>
+  <tr><td>Se distrae a ratos</td><td class="n">4,0 %</td></tr>
+  <tr><td>Le cuesta mantener la lectura</td><td class="n">1,8 %</td></tr>
+  <tr><td>No lee</td><td class="n">3,6 %</td></tr>
+  <tr><td>Ausente</td><td class="n">2,4 %</td></tr>
+</table>
+<p class="nota">6.765 registros en 39 días lectivos.</p>
+</div>
+<div>
+<h3>Reto semanal</h3>
+<table>
+  <tr><td>Alumnos que participan</td><td class="n">103</td></tr>
+  <tr><td>Retos semanales registrados</td><td class="n">264</td></tr>
+  <tr><td>Objetivo medio</td><td class="n">114 min/sem</td></tr>
+  <tr><td>Minutos de lectura en casa declarados (media)</td><td class="n">110 min/sem</td></tr>
+  <tr><td>Dicen que la semana ha ido «muy bien» o «bien»</td><td class="n">48 de 52</td></tr>
+</table>
+</div>
+</div>
+
+<h3>Biblioteca</h3>
+<p>1.922 libros catalogados en las bibliotecas de aula. 856 libros de casa registrados por el alumnado. 50 libros en depósito de la biblioteca pública. 261 libros perdidos en cursos anteriores, que antes no constaban en ningún sitio, y 26 en reparación.</p>
+
+<h2>Qué dicen estas cifras, y qué no</h2>
+<p>Las cifras muestran una participación alta en 1.º de ESO y una lectura atenta en el aula en casi nueve de cada diez registros. Pero <b>no demuestran que la herramienta mejore la lectura</b>:</p>
+<ul>
+  <li><b>No hay punto de comparación.</b> No tenemos datos del curso anterior ni de un grupo sin la herramienta.</li>
+  <li><b>Parte de los datos son declarados.</b> Los minutos de casa los explica el alumno, y el registro de aula lo hace el docente.</li>
+  <li><b>Es un solo centro, y solo ocho semanas.</b></li>
+</ul>
+<p>Lo que sí cambia es que por primera vez se <b>ve</b> lo que pasa: qué grupos avanzan, quién se ha quedado atrás y cuándo baja la atención.</p>
+
+<h2>Lo que viene: un estudio de cuatro años</h2>
+<p>Queremos responder con rigor a una pregunta sencilla: <b>¿leer más mejora la comprensión lectora?</b> Para eso, del curso 2026-27 al 2029-30 seguiremos a cada alumno con un código anónimo y cruzaremos las horas de lectura y los libros terminados con pruebas de comprensión. Habrá cuatro pruebas por curso, en catalán y en castellano. Las hojas de respuestas llevan solo un código y las respuestas marcadas, sin nombre. La corrección se apoya en IA y la valida siempre un docente.</p>
+
+<h2>Privacidad del alumnado</h2>
+<ul>
+  <li>Cada centro tiene su propia instalación y su propia base de datos. Los datos de un centro no se mezclan con los de otro.</li>
+  <li>Solo entran las cuentas de Google del centro.</li>
+  <li>Los compañeros nunca ven las opiniones de los demás. El profesorado sí las lee, y el alumno lo sabe cuando escribe.</li>
+  <li>Las comparaciones entre grupos se hacen por alumno y nunca se enseñan al alumnado.</li>
+  <li>El envío de las hojas de respuestas anónimas al servicio de IA tiene el visto bueno de protección de datos.</li>
+</ul>
+
+<h2>Quién está detrás</h2>
+<p><b>Fabio Martínez</b>, docente de Educación Visual y Plástica y coordinador de innovación del Institut Escola Industrial de Sabadell, con más de 23 años en educación. Diseña y desarrolla con IA herramientas educativas para su centro, y las valida en el aula con un equipo de docentes. Forman parte del ecosistema <b>aulaia.cat</b>.</p>
+
+<footer>
+  Contacto: Fabio Martínez · 672 284 553 · aulaia.cat · elplalector.cat<br>
+  Más datos: aulaia.cat/es/blog/leer-porque-se-quiere-ludificacion-pla-lector
+</footer>
+
+</body>
+</html>

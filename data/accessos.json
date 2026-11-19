@@ -103,5 +103,26 @@
     "tipus": "dins",
     "acces": "Correu i contrasenya (pilot)",
     "nota": "Abans «Pauta». Repo MYfabio/FPSegura, carpeta APPS/FPSegura, servei Railway al projecte angelic-vibrancy."
+  },
+  {
+    "slug": "matricula",
+    "url": "https://matricula-demo-production.up.railway.app",
+    "tipus": "dins",
+    "acces": "Sense accés: prototip obert",
+    "nota": "Prototip sense login ni dades. Repo MYfabio/matricula-demo, carpeta APPS/matricula-demo, servei a Railway."
+  },
+  {
+    "slug": "iacentre",
+    "url": "https://iacentre.cat/login",
+    "tipus": "dins",
+    "acces": "Per sol·licitud",
+    "nota": "Web externa a aulaia.cat. La web bloqueja l'accés automatitzat: revisar-la a mà."
+  },
+  {
+    "slug": "bitacola",
+    "url": "https://bitacola.aulaia.cat",
+    "tipus": "ruta",
+    "acces": "Encara no desplegada",
+    "nota": "En disseny. Guia tècnica: https://claude.ai/artifact/1wjdjwgaoddG15gZkMcoVG"
   }
 ]

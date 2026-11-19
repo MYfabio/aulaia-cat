@@ -27,6 +27,9 @@ nova de Claude Code.
 | KIPUK | `Kipuk` | MYfabio/kipuk | kipuk.cat (serveix per www.kipuk.cat) | producció · Railway `kipuk`/servei `kipuk`; **corregit 28/09/2026: aquesta és l'app real, no una demo obsoleta** (kipuk-es ja no existeix al disc) |
 | El Taulell | `eltaulell` (mogut de `Documents\Codex` el 29/09/2026) | MYfabio/eltaulell | eltaulell.aulaia.cat | en línia amb demo pública · Railway `eltaulell` (web + Postgres + bucket `eltaulell-files`), desplega per `main`; fet amb Codex, ~20 branques `agent/*`, algunes sense fusionar (p. ex. `agent/vertex-gemini-cookies`) |
 | FPSegura (abans Pauta) | `FPSegura` | MYfabio/FPSegura | fpsegura.aulaia.cat | producció pilot · Next.js + Drizzle, entrada amb correu i contrasenya, dades de demostració |
+| Matrícula Online (demo) | `matricula-demo` | MYfabio/matricula-demo | matricula-demo-production.up.railway.app | desenvolupament · prototip navegable Vite, sense BD, login ni pagaments; dades d'exemple |
+| IA Centre | (web externa, sense carpeta local) | — | iacentre.cat | desenvolupament · accés per sol·licitud; la web bloqueja l'accés automatitzat |
+| Bitàcola | (encara no creada; prevista `bitacola`) | — | bitacola.aulaia.cat (no desplegada) | disseny · transparència de l'ús de la IA al TR; encàrrec a `docs/bitacola-encarrec-code.md` |
 | La Claqueta | `claqueta` (treball a `claqueta-wt`, branca `assets-v2`) | MYfabio/claqueta | laclaqueta.aulaia.cat | producció (amb alumnat) · Railway `laclaqueta`; Google OAuth propi, superadmins per `SUPERADMIN_EMAILS` |
 
 Altres carpetes a `APPS` sense fitxa encara: `Aula de acollida`, `diedrico`,

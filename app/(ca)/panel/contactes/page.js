@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { llistarContactes, comptarContactes, comarquesDeContactes, eventsDeContactes } from "../../../../lib/db";
+import { llistarContactes, comptarContactes, comarquesDeContactes, eventsDeContactes } from "../../../../lib/panell-fonts";
 
 export const metadata = {
   title: "Contactes",
@@ -92,6 +92,7 @@ export default async function ContactesPage({ searchParams }) {
           <p className="panel-sub">CRP, serveis educatius i centres als quals presentem el projecte</p>
         </div>
         <div style={{ display: "flex", gap: "0.5rem" }}>
+          <Link href="/panel/contactes/enviar" className="btn btn-primary">Enviar tanda</Link>
           <a href={"/api/panel/contactes" + tornar} className="btn btn-outline">Exportar CSV</a>
           <Link href="/panel" className="btn btn-outline">Tornar al panell</Link>
         </div>

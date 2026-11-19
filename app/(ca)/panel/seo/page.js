@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getSeoData, teClaus } from "../../../../lib/search-console";
+import { getSeoData, teClaus } from "../../../../lib/panell-fonts";
 
 export const metadata = {
   title: "Cerca a Google",
@@ -103,7 +103,7 @@ function SenseClaus() {
 }
 
 export default async function SeoPage({ searchParams }) {
-  if (!teClaus()) return <SenseClaus />;
+  if (!(await teClaus())) return <SenseClaus />;
 
   const sp = await searchParams;
   const dies = PERIODES.some(p => String(p.dies) === sp?.dies) ? Number(sp.dies) : 28;

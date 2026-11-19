@@ -1,16 +1,18 @@
 Seguridad en el taller sin papeleo: así se usa FPSegura en un grupo de PFI
 
-En un taller de FP la seguridad no es un tema que se explica el primer día y se olvida. Es una rutina: comprobar que la máquina está en condiciones, saber quién puede usarla, anotar lo que falla y asegurarse de que se arregla. Casi siempre se hace con papel, hojas de cálculo y mucha memoria del docente. FPSegura nace para ordenar esa rutina sin añadir trabajo. Lo he desarrollado como docente en activo del Institut Escola Industrial de Sabadell y lo estamos usando ahora mismo con un grupo de PFI.
+En un taller de FP la seguridad no es un tema que se explica el primer día y se olvida. Es una rutina: comprobar que la máquina está en condiciones, saber quién puede usarla, anotar lo que falla y asegurarse de que se arregla. Casi siempre se hace con papel y mucha memoria del docente. FPSegura nace para ordenar esa rutina sin añadir trabajo. Lo he desarrollado como docente en activo de la Escuela Industrial de Sabadell y lo estamos usando ahora mismo con un grupo de PFI.
+
+La prevención de riesgos forma parte de la formación del alumnado de FP, y en un taller con maquinaria no es un contenido teórico más: es lo que permite trabajar con seguridad desde el primer día. El reto de un centro es convertir esa formación en algo que el alumno comprenda, que el docente pueda comprobar y que quede registrado, sin más papeleo del necesario.
 
 Una comprobación, un minuto
 
-La pieza central es la comprobación de equipos. Antes de usar una máquina, el alumno o el docente la revisa desde el móvil: conforme, no conforme o no aplica. Si algo falla, se adjunta una foto y la medida correctora. No hay formularios largos, porque está pensada para hacerse con las manos ocupadas y en el propio taller.
+La pieza central es la comprobación de equipos. Antes de usar una máquina, el alumno o el docente la revisa desde el móvil: conforme, no conforme o no aplica. Si algo falla, se adjunta una foto y la medida correctora. Sin formularios largos: está pensada para hacerse con las manos ocupadas.
 
-No hace falta tener el inventario hecho para empezar. Se arranca con equipos genéricos, como "torno" o "taladro de columna", y la marca y el modelo se añaden cuando se quiera. Es un detalle práctico importante: la herramienta se empieza a usar el primer día y no después de semanas de preparación.
+No hace falta tener el inventario hecho para empezar. Se arranca con equipos genéricos, como "torno" o "taladro de columna", y la marca y el modelo se añaden cuando se quiera. Así la herramienta se usa desde el primer día y no tras semanas de preparación.
 
 Del aviso al cierre
 
-Cuando una comprobación sale mal, se registra una incidencia. La clave es que no se queda en un aviso: se sigue hasta que se resuelve, con evidencia de que se ha resuelto. Quien entra al taller ve qué está pendiente y qué ya está cerrado. Lo mismo ocurre con las revisiones periódicas, como extintores o inspecciones: la aplicación avisa a la persona responsable en el Inicio y por correo cuando toca.
+Cuando una comprobación sale mal, se registra una incidencia. La clave es que no se queda en un aviso: se sigue hasta que se resuelve, con evidencia de que se ha resuelto. Lo mismo ocurre con las revisiones periódicas, como extintores o inspecciones: la aplicación avisa a la persona responsable en el Inicio y por correo cuando toca.
 
 El carnet de máquinas
 
@@ -24,16 +26,23 @@ FPSegura incluye propuestas de IA, por ejemplo para localizar el manual oficial 
 
 Lo que no promete
 
-Conviene ser claros, porque en prevención de riesgos la honestidad pesa más que cualquier funcionalidad. FPSegura ayuda a hacer el seguimiento de comprobaciones e incidencias, pero no sustituye una evaluación profesional de riesgos, que la hace quien es competente para hacerla. Tampoco hay indicadores que digan "cumplimiento del 100 %": cada cifra explica de dónde sale. El centro sigue siendo el responsable legal y la herramienta organiza la información.
+Conviene ser claros, porque en prevención de riesgos la honestidad pesa más que cualquier funcionalidad. FPSegura ayuda a hacer el seguimiento de comprobaciones e incidencias, pero no sustituye una evaluación profesional de riesgos, que la hace quien es competente para hacerla. Tampoco hay indicadores del tipo "cumplimiento del 100 %". El centro sigue siendo el responsable legal y la herramienta organiza la información.
 
 Qué pasa en el aula
 
-Con el grupo de PFI, el cambio más visible es que la seguridad se convierte en una parte normal de cada sesión y no en un trámite aparte. El alumnado ve que revisar una máquina es una tarea con sentido y no un papel que se firma, y el docente deja de acumular hojas para recuperar el rastro de cada incidencia.
+En el grupo de PFI de madera, la formación en FPSegura termina cuando el docente valida la teoría en la aplicación. Después, ya en el taller y junto a la máquina, Xavi Franco, profesor del grupo, repasa con los alumnos las instrucciones de uso antes de la práctica.
+
+«Los carnets, visibles en el dispositivo, facilitan al alumnado el acceso a la maquinaria y lo hacen partícipe de su aprendizaje. Ahora controlamos las revisiones y el seguimiento del taller desde un único dispositivo. Alumnado, docentes y coordinadores de taller compartimos un mismo entorno de trabajo, que no está solo en el taller: también en la aplicación», explica Xavi Franco.
+
+Menos papel, más rastro
+
+En muchos talleres, cada formación en seguridad deja una hoja firmada que alguien tiene que archivar y localizar después. Aquí la teoría, la validación del docente y la fecha quedan registradas en la aplicación, con autoría. El docente ve de un vistazo quién puede utilizar cada máquina, sin perseguir firmas ni buscar carpetas.
+
 
 Cómo empezar
 
-Para un docente, el camino es sencillo: se da de alta el centro, se crean los grupos y se empieza con equipos genéricos. La plataforma está disponible en castellano y catalán, y los datos son los mínimos necesarios: sin publicidad ni seguimiento de terceros, algo imprescindible cuando se trabaja con menores.
+Para un docente, el camino es sencillo: se da de alta el centro, se crean los grupos y se empieza con equipos genéricos. La plataforma está disponible en castellano y catalán, y los datos son los mínimos necesarios: sin publicidad ni seguimiento de terceros.
 
 Los centros interesados pueden solicitar el alta en aulaia.cat/es/apps/fpsegura. Se valida a cada centro personalmente y se envían las instrucciones por correo.
 
-Fabio Martínez es docente del Institut Escola Industrial de Sabadell y creador de aulaia.cat.
+Fabio Martínez es docente de la Escuela Industrial de Sabadell y creador de aulaia.cat.

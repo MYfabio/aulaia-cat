@@ -1369,5 +1369,134 @@
     },
     "problema": "La seguretat del taller d'FP i PFI sol dependre de paperassa. L'app gestiona comprovacions d'equips, incidències fins al tancament i evidències de l'alumnat.",
     "perfil": "Docents de Cicles Formatius i PFI, responsables de tallers i laboratoris i equips directius."
+  },
+  {
+    "slug": "iacentre",
+    "nom": "IA Centre",
+    "categoria": "IA educativa per al professorat",
+    "estat": "desenvolupament",
+    "estatText": "En desenvolupament: accés per sol·licitud",
+    "icona": "🧠",
+    "domini": "iacentre.cat",
+    "url": "https://iacentre.cat",
+    "idiomes": [
+      "Català"
+    ],
+    "publics": [
+      "Professorat",
+      "Equip directiu"
+    ],
+    "altaManual": true,
+    "nivells": [
+      "ESO",
+      "Batxillerat",
+      "FP",
+      "Centre"
+    ],
+    "materies": [
+      "Totes les matèries",
+      "Programació didàctica"
+    ],
+    "resum": "IA integrada al centre per reduir tasques repetitives del professorat: materials alineats amb el currículum, consulta dels documents del centre i exportació a Classroom i Moodle.",
+    "descripcio": "IA Centre ofereix eines d'intel·ligència artificial pensades per al professorat i l'equip directiu. Ajuda a generar materials (seqüències didàctiques, rúbriques, activitats i exàmens) alineats amb el currículum i editables pel docent, a consultar un repositori documental propi del centre, a preparar sessions i a adaptar activitats als criteris d'avaluació i competències. Es pot exportar a Google Classroom i Moodle, i l'equip directiu disposa d'informes d'ús. L'accés és per sol·licitud.",
+    "funcionalitats": [
+      "Generació de seqüències didàctiques, rúbriques, activitats i exàmens editables",
+      "Repositori documental propi del centre que la IA consulta per contextualitzar les respostes",
+      "Assistència pedagògica: dubtes normatius, adaptacions i preparació de sessions",
+      "Adaptació als criteris d'avaluació i competències del currículum",
+      "Exportació a Google Classroom i Moodle",
+      "Informes d'ús per a l'equip directiu"
+    ],
+    "faq": [
+      {
+        "p": "Substitueix el professorat?",
+        "r": "No. Redueix tasques repetitives perquè el docent tingui més temps per a l'alumnat, i el docent revisa i edita el que es genera."
+      },
+      {
+        "p": "Com s'hi accedeix?",
+        "r": "Per sol·licitud. Es demana l'accés al web i el centre rep les instruccions."
+      },
+      {
+        "p": "A quin idioma està?",
+        "r": "De moment, en català."
+      }
+    ],
+    "relacionats": [
+      "pla-lector",
+      "dictats",
+      "aulaacull"
+    ],
+    "seo": {
+      "title": "IA Centre · IA educativa integrada al centre per al professorat",
+      "description": "Materials alineats amb el currículum, repositori documental del centre i exportació a Classroom i Moodle, per reduir tasques repetitives del professorat.",
+      "keywords": "IA per al professorat, IA educativa centre, generar rúbriques amb IA, programacions amb IA, IA Classroom Moodle"
+    },
+    "problema": "El professorat dedica massa hores a tasques repetitives: materials, rúbriques i adaptacions. IA Centre les agilita perquè el docent dediqui més temps a l'alumnat.",
+    "perfil": "Professorat i equips directius d'ESO, Batxillerat i Cicles Formatius."
+  },
+  {
+    "slug": "bitacola",
+    "nom": "Bitàcola",
+    "categoria": "Transparència en l'ús de la IA",
+    "estat": "desenvolupament",
+    "estatText": "En desenvolupament: en fase de disseny",
+    "icona": "🧭",
+    "domini": "bitacola.aulaia.cat",
+    "url": "https://bitacola.aulaia.cat",
+    "idiomes": [
+      "Català",
+      "Castellà"
+    ],
+    "publics": [
+      "Alumnat",
+      "Professorat",
+      "Coordinació pedagògica"
+    ],
+    "altaManual": true,
+    "nivells": [
+      "ESO",
+      "Batxillerat",
+      "FP"
+    ],
+    "materies": [
+      "Treball de recerca",
+      "Totes les matèries"
+    ],
+    "resum": "Registre i revisió de l'ús de la IA als treballs llargs de l'alumnat, començant pel treball de recerca: l'alumnat documenta com fa servir la IA durant tot el projecte i el docent ho revisa amb criteris comuns.",
+    "descripcio": "Bitàcola ajuda els centres a gestionar l'ús de la intel·ligència artificial als treballs llargs de l'alumnat: el treball de recerca de batxillerat, els projectes i treballs de síntesi d'ESO i les memòries i projectes de FP. Es recomana començar pel treball de recerca. L'alumnat treballa a la seva carpeta de Google Drive del centre i registra les consultes que fa a la IA al llarg del projecte. Bitàcola recull el treball, la presentació i el registre sense que l'alumne hagi de pujar res, i prepara per al tutor un resum del procés: com ha crescut el treball, quines sessions d'IA hi ha declarades i quins punts caldria aclarir a la defensa oral. La IA només fa propostes; la valoració la decideix i la signa sempre el docent. No és un detector de text fet amb IA: fa visible el procés perquè l'alumne pugui demostrar com ha treballat.",
+    "funcionalitats": [
+      "Registre de les consultes a la IA durant tot el treball de recerca",
+      "Recollida automàtica del treball i la presentació des de la carpeta de Drive del centre",
+      "Seguiment del progrés per al tutor: creixement del treball i sessions d'IA declarades",
+      "Punts per aclarir amb data i cita, sense acusacions automàtiques",
+      "Rúbrica de transparència comuna i preguntes proposades per a la defensa oral",
+      "Vista de coordinació amb dades agregades i exportació a Excel"
+    ],
+    "faq": [
+      {
+        "p": "Detecta si un text està fet amb IA?",
+        "r": "No. Cap eina ho pot fer de manera fiable. Bitàcola fa visible el procés de treball perquè l'alumne pugui demostrar com ha fet servir la IA i el tutor en pugui parlar amb ell."
+      },
+      {
+        "p": "Qui decideix la valoració?",
+        "r": "Sempre el docent. La IA només proposa i el docent accepta, modifica o descarta cada proposta."
+      },
+      {
+        "p": "Ja es pot fer servir?",
+        "r": "Encara no. Està en fase de disseny i es provarà primer en un centre pilot."
+      }
+    ],
+    "relacionats": [
+      "la-claqueta",
+      "pla-lector",
+      "iacentre"
+    ],
+    "seo": {
+      "title": "Bitàcola · Transparència en l'ús de la IA als treballs de l'alumnat",
+      "description": "Registre i revisió de l'ús de la IA al treball de recerca i als treballs llargs d'ESO, batxillerat i FP, amb criteris comuns i la decisió sempre en mans del docent.",
+      "keywords": "IA treball de recerca, ús de la IA alumnat, transparència IA, declaració ús IA, projectes ESO IA, memòria FP IA"
+    },
+    "problema": "L'alumnat ja fa servir la IA als treballs i el docent no sap com. Els detectors no són fiables i cada docent aplica criteris diferents.",
+    "perfil": "Centres d'ESO, batxillerat i FP: alumnat, docents que segueixen treballs llargs i, al treball de recerca, la coordinació pedagògica."
   }
 ]

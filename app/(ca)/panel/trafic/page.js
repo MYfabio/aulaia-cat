@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getTrafficData } from "../../../../lib/railway";
+import { getTrafficData } from "../../../../lib/panell-fonts";
 
 export const metadata = {
   title: "Trafic",

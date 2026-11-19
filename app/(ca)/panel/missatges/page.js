@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { llistarMissatges, comptarMissatges } from "../../../../lib/db";
+import { llistarMissatges, comptarMissatges } from "../../../../lib/panell-fonts";
 import apps from "../../../../data/apps.json";
 
 export const metadata = {

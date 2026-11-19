@@ -1056,5 +1056,101 @@
     },
     "problema": "La seguridad del taller de FP y PFI suele depender de papeleo. La app gestiona comprobaciones de equipos, incidencias hasta el cierre y evidencias del alumnado.",
     "perfil": "Docentes de Ciclos Formativos y PFI, responsables de talleres y laboratorios y equipos directivos."
+  },
+  "iacentre": {
+    "categoria": "IA educativa para el profesorado",
+    "estatText": "En desarrollo: acceso por solicitud",
+    "resum": "IA integrada en el centro para reducir tareas repetitivas del profesorado: materiales alineados con el currículo, consulta de los documentos del centro y exportación a Classroom y Moodle.",
+    "descripcio": "IA Centre ofrece herramientas de inteligencia artificial pensadas para el profesorado y el equipo directivo. Ayuda a generar materiales (secuencias didácticas, rúbricas, actividades y exámenes) alineados con el currículo y editables por el docente, a consultar un repositorio documental propio del centro, a preparar sesiones y a adaptar actividades a los criterios de evaluación y competencias. Se puede exportar a Google Classroom y Moodle, y el equipo directivo dispone de informes de uso. El acceso es por solicitud.",
+    "funcionalitats": [
+      "Generación de secuencias didácticas, rúbricas, actividades y exámenes editables",
+      "Repositorio documental propio del centro que la IA consulta para contextualizar las respuestas",
+      "Asistencia pedagógica: dudas normativas, adaptaciones y preparación de sesiones",
+      "Adaptación a los criterios de evaluación y competencias del currículo",
+      "Exportación a Google Classroom y Moodle",
+      "Informes de uso para el equipo directivo"
+    ],
+    "faq": [
+      {
+        "p": "¿Sustituye al profesorado?",
+        "r": "No. Reduce tareas repetitivas para que el docente tenga más tiempo para el alumnado, y el docente revisa y edita lo que se genera."
+      },
+      {
+        "p": "¿Cómo se accede?",
+        "r": "Por solicitud. Se pide el acceso en la web y el centro recibe las instrucciones."
+      },
+      {
+        "p": "¿En qué idioma está?",
+        "r": "De momento, en catalán."
+      }
+    ],
+    "idiomes": [
+      "Catalán"
+    ],
+    "nivells": [
+      "ESO",
+      "Bachillerato",
+      "FP",
+      "Centro"
+    ],
+    "materies": [
+      "Todas las materias",
+      "Programación didáctica"
+    ],
+    "seo": {
+      "title": "IA Centre · IA educativa integrada en el centro para el profesorado",
+      "description": "Materiales alineados con el currículo, repositorio documental del centro y exportación a Classroom y Moodle, para reducir tareas repetitivas del profesorado.",
+      "keywords": "IA para el profesorado, IA educativa centro, generar rúbricas con IA, programaciones con IA, IA Classroom Moodle"
+    },
+    "problema": "El profesorado dedica demasiadas horas a tareas repetitivas: materiales, rúbricas y adaptaciones. IA Centre las agiliza para que el docente dedique más tiempo al alumnado.",
+    "perfil": "Profesorado y equipos directivos de ESO, Bachillerato y Ciclos Formativos."
+  },
+  "bitacola": {
+    "categoria": "Transparencia en el uso de la IA",
+    "estatText": "En desarrollo: en fase de diseño",
+    "resum": "Registro y revisión del uso de la IA en los trabajos largos del alumnado, empezando por el trabajo de investigación: el alumnado documenta cómo usa la IA durante todo el proyecto y el docente lo revisa con criterios comunes.",
+    "descripcio": "Bitàcola ayuda a los centros a gestionar el uso de la inteligencia artificial en los trabajos largos del alumnado: el trabajo de investigación de bachillerato, los proyectos y trabajos de síntesis de ESO y las memorias y proyectos de FP. Se recomienda empezar por el trabajo de investigación. El alumnado trabaja en su carpeta de Google Drive del centro y registra las consultas que hace a la IA a lo largo del proyecto. Bitàcola recoge el trabajo, la presentación y el registro sin que el alumno tenga que subir nada, y prepara para el tutor un resumen del proceso: cómo ha crecido el trabajo, qué sesiones de IA hay declaradas y qué puntos convendría aclarar en la defensa oral. La IA solo hace propuestas; la valoración la decide y la firma siempre el docente. No es un detector de texto hecho con IA: hace visible el proceso para que el alumno pueda demostrar cómo ha trabajado.",
+    "funcionalitats": [
+      "Registro de las consultas a la IA durante todo el trabajo de investigación",
+      "Recogida automática del trabajo y la presentación desde la carpeta de Drive del centro",
+      "Seguimiento del progreso para el tutor: crecimiento del trabajo y sesiones de IA declaradas",
+      "Puntos por aclarar con fecha y cita, sin acusaciones automáticas",
+      "Rúbrica de transparencia común y preguntas propuestas para la defensa oral",
+      "Vista de coordinación con datos agregados y exportación a Excel"
+    ],
+    "faq": [
+      {
+        "p": "¿Detecta si un texto está hecho con IA?",
+        "r": "No. Ninguna herramienta puede hacerlo de forma fiable. Bitàcola hace visible el proceso de trabajo para que el alumno pueda demostrar cómo ha usado la IA y el tutor pueda hablarlo con él."
+      },
+      {
+        "p": "¿Quién decide la valoración?",
+        "r": "Siempre el docente. La IA solo propone y el docente acepta, modifica o descarta cada propuesta."
+      },
+      {
+        "p": "¿Ya se puede usar?",
+        "r": "Todavía no. Está en fase de diseño y se probará primero en un centro piloto."
+      }
+    ],
+    "idiomes": [
+      "Catalán",
+      "Castellano"
+    ],
+    "nivells": [
+      "ESO",
+      "Bachillerato",
+      "FP"
+    ],
+    "materies": [
+      "Trabajo de investigación",
+      "Todas las materias"
+    ],
+    "seo": {
+      "title": "Bitàcola · Transparencia en el uso de la IA en los trabajos del alumnado",
+      "description": "Registro y revisión del uso de la IA en el trabajo de investigación y en los trabajos largos de ESO, bachillerato y FP, con criterios comunes y la decisión siempre en manos del docente.",
+      "keywords": "IA trabajo de investigación, uso de la IA alumnado, transparencia IA, declaración uso IA, proyectos ESO IA, memoria FP IA"
+    },
+    "problema": "El alumnado ya usa la IA en los trabajos y el docente no sabe cómo. Los detectores no son fiables y cada docente aplica criterios distintos.",
+    "perfil": "Centros de ESO, bachillerato y FP: alumnado, docentes que siguen trabajos largos y, en el trabajo de investigación, la coordinación pedagógica."
   }
 }
