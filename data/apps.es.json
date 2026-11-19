@@ -1152,5 +1152,60 @@
     },
     "problema": "El alumnado ya usa la IA en los trabajos y el docente no sabe cómo. Los detectores no son fiables y cada docente aplica criterios distintos.",
     "perfil": "Centros de ESO, bachillerato y FP: alumnado, docentes que siguen trabajos largos y, en el trabajo de investigación, la coordinación pedagógica."
+  },
+  "ullada": {
+    "categoria": "Diagnóstico de comprensión visual",
+    "estatText": "En fase piloto en el Institut Escola Industrial de Sabadell",
+    "resum": "Prueba diagnóstica de comprensión visual para ESO y Bachillerato: lectura de imágenes, razonamiento espacial y diédrico. Para decidir por dónde empezar, no para poner nota.",
+    "descripcio": "Ullada mide tres capacidades que el currículo suele dar por supuestas: leer imágenes con mirada crítica, pensar en el espacio (girar, plegar y comparar piezas) y pasar del 3D al 2D con el sistema diédrico. El docente crea la prueba para su curso, comparte un código de 6 caracteres y el alumnado la hace sin cuenta ni correo. El orden de las preguntas y de las respuestas cambia para cada alumno. Al terminar, cada alumno ve su informe y el docente tiene el panel del grupo con niveles por bloque, mapa de calor y comparación entre la prueba inicial y la de seguimiento. Está en fase piloto: los ítems son originales y los niveles, provisionales.",
+    "seoLlarg": "Ullada es una prueba diagnóstica de comprensión visual pensada para la ESO y el Bachillerato. Mide la lectura de imágenes, el razonamiento espacial y los sistemas de representación, y sirve para que el docente decida por dónde empezar con un grupo, no para calificar.\n\nEl alumnado entra con un código y un alias, sin cuenta ni correo, y no hay límite de tiempo. El docente puede importar la lista del grupo desde una hoja de cálculo o desde Google Classroom, y recibe un panel con la distribución de niveles, las medias por subcompetencia y la comparación entre la prueba inicial y la de seguimiento.\n\nLa prueba está en fase piloto. El panel calcula la dificultad y la discriminación de cada ítem y la fiabilidad de cada bloque para ir revisándola con datos. El docente decide qué valor da a los resultados.",
+    "funcionalitats": [
+      "Prueba inicial y de seguimiento con ítems distintos y la misma estructura",
+      "Tres bloques: lectura de imágenes, razonamiento espacial y diédrico",
+      "Alumnado sin cuenta: código de la prueba y alias",
+      "Orden de preguntas y respuestas distinto para cada alumno",
+      "Informe individual al terminar, sin compararse con nadie",
+      "Panel del grupo con niveles, mapa de calor y exportación CSV",
+      "Importación del grupo desde una hoja de cálculo o desde Google Classroom"
+    ],
+    "faq": [
+      {
+        "p": "¿Sirve para poner nota?",
+        "r": "No. Es una prueba diagnóstica para saber por dónde empezar con un grupo."
+      },
+      {
+        "p": "¿Está validada?",
+        "r": "Está en fase piloto. Los niveles son provisionales y el panel muestra los datos para revisar los ítems. El docente decide qué valor da a los resultados."
+      },
+      {
+        "p": "¿El alumnado necesita cuenta?",
+        "r": "No. Entra con el código de la prueba y un alias."
+      },
+      {
+        "p": "¿Es gratuita?",
+        "r": "Sí."
+      }
+    ],
+    "idiomes": [
+      "Catalán",
+      "Castellano",
+      "Inglés"
+    ],
+    "nivells": [
+      "ESO",
+      "Bachillerato"
+    ],
+    "materies": [
+      "Educación visual y plástica",
+      "Tecnología",
+      "Dibujo técnico"
+    ],
+    "seo": {
+      "title": "Ullada · Prueba diagnóstica de comprensión visual para ESO y Bachillerato",
+      "description": "Lectura de imágenes, razonamiento espacial y diédrico: una prueba diagnóstica gratuita para saber por dónde empezar con cada grupo.",
+      "keywords": "comprensión visual, razonamiento espacial, diédrico, prueba diagnóstica ESO, visualización espacial, lectura de imágenes"
+    },
+    "problema": "El currículo da por supuesto que el alumnado sabe leer imágenes y pensar en el espacio. Ullada lo mide en una sesión para que el docente sepa por dónde empezar.",
+    "perfil": "Docentes de ESO y Bachillerato de Educación visual y plástica, Tecnología y Dibujo técnico."
   }
 }

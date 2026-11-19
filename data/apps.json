@@ -1498,5 +1498,77 @@
     },
     "problema": "L'alumnat ja fa servir la IA als treballs i el docent no sap com. Els detectors no són fiables i cada docent aplica criteris diferents.",
     "perfil": "Centres d'ESO, batxillerat i FP: alumnat, docents que segueixen treballs llargs i, al treball de recerca, la coordinació pedagògica."
+  },
+  {
+    "slug": "ullada",
+    "nom": "Ullada",
+    "categoria": "Diagnòstic de comprensió visual",
+    "estat": "produccio",
+    "estatText": "En fase pilot a l'Institut Escola Industrial de Sabadell",
+    "icona": "👁️",
+    "domini": "ullada.aulaia.cat",
+    "url": "https://ullada.aulaia.cat",
+    "idiomes": [
+      "Català",
+      "Castellà",
+      "Anglès"
+    ],
+    "publics": [
+      "ESO",
+      "Batxillerat"
+    ],
+    "centre": "Institut Escola Industrial de Sabadell",
+    "altaManual": true,
+    "nivells": [
+      "ESO",
+      "Batxillerat"
+    ],
+    "materies": [
+      "Educació visual i plàstica",
+      "Tecnologia",
+      "Dibuix tècnic"
+    ],
+    "resum": "Prova diagnòstica de comprensió visual per a ESO i Batxillerat: lectura d'imatges, raonament espacial i dièdric. Per decidir per on començar, no per posar nota.",
+    "descripcio": "Ullada mesura tres capacitats que el currículum sol donar per suposades: llegir imatges amb mirada crítica, pensar en l'espai (girar, plegar i comparar peces) i passar del 3D al 2D amb el sistema dièdric. El docent crea la prova per al curs, comparteix un codi de 6 caràcters i l'alumnat la fa sense compte ni correu. L'ordre de les preguntes i de les respostes canvia per a cada alumne. En acabar, cada alumne veu el seu informe i el docent té el panell del grup amb nivells per bloc, mapa de calor i comparació entre la prova inicial i la de seguiment. Està en fase pilot: els ítems són originals i els nivells, provisionals.",
+    "seoLlarg": "Ullada és una prova diagnòstica de comprensió visual pensada per a l'ESO i el Batxillerat. Mesura la lectura d'imatges, el raonament espacial i els sistemes de representació, i serveix perquè el docent decideixi per on començar amb un grup, no per qualificar.\n\nL'alumnat entra amb un codi i un àlies, sense compte ni correu, i no hi ha límit de temps. El docent pot importar la llista del grup des d'un full de càlcul o des de Google Classroom, i rep un panell amb la distribució de nivells, les mitjanes per subcompetència i la comparació entre la prova inicial i la de seguiment.\n\nLa prova està en fase pilot. El panell calcula la dificultat i la discriminació de cada ítem i la fiabilitat de cada bloc per anar-la revisant amb dades. El docent decideix quin valor dona als resultats.",
+    "funcionalitats": [
+      "Prova inicial i de seguiment amb ítems diferents i la mateixa estructura",
+      "Tres blocs: lectura d'imatges, raonament espacial i dièdric",
+      "Alumnat sense compte: codi de la prova i àlies",
+      "Ordre de preguntes i respostes diferent per a cada alumne",
+      "Informe individual en acabar, sense comparar-se amb ningú",
+      "Panell del grup amb nivells, mapa de calor i exportació CSV",
+      "Importació del grup des d'un full de càlcul o de Google Classroom"
+    ],
+    "faq": [
+      {
+        "p": "Serveix per posar nota?",
+        "r": "No. És una prova diagnòstica per saber per on començar amb un grup."
+      },
+      {
+        "p": "Està validada?",
+        "r": "Està en fase pilot. Els nivells són provisionals i el panell mostra les dades per revisar els ítems. El docent decideix quin valor dona als resultats."
+      },
+      {
+        "p": "L'alumnat necessita compte?",
+        "r": "No. Entra amb el codi de la prova i un àlies."
+      },
+      {
+        "p": "És gratuïta?",
+        "r": "Sí."
+      }
+    ],
+    "relacionats": [
+      "diedric3d",
+      "matescac",
+      "typeedu"
+    ],
+    "seo": {
+      "title": "Ullada · Prova diagnòstica de comprensió visual per a ESO i Batxillerat",
+      "description": "Lectura d'imatges, raonament espacial i dièdric: una prova diagnòstica gratuïta per saber per on començar amb cada grup.",
+      "keywords": "comprensió visual, raonament espacial, dièdric, prova diagnòstica ESO, visualització espacial, lectura d'imatges"
+    },
+    "problema": "El currículum dona per suposat que l'alumnat sap llegir imatges i pensar en l'espai. Ullada ho mesura en una sessió perquè el docent sàpiga per on començar.",
+    "perfil": "Docents d'ESO i Batxillerat d'Educació visual i plàstica, Tecnologia i Dibuix tècnic."
   }
 ]

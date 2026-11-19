@@ -124,5 +124,12 @@
     "tipus": "ruta",
     "acces": "Encara no desplegada",
     "nota": "En disseny. Guia tècnica: https://claude.ai/artifact/1wjdjwgaoddG15gZkMcoVG"
+  },
+  {
+    "slug": "ullada",
+    "url": "https://ullada-production.up.railway.app/entrar",
+    "tipus": "dins",
+    "acces": "Google del centre; altres centres amb enllaç per correu",
+    "nota": "Repo MYfabio/ullada (privat), carpeta APPS/comprensio-visual, projecte Railway «ullada». Quan funcioni ullada.aulaia.cat, canvia aquesta url."
   }
 ]
