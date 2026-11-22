@@ -28,6 +28,7 @@ nova de Claude Code.
 | El Taulell | `eltaulell` (mogut de `Documents\Codex` el 29/09/2026) | MYfabio/eltaulell | eltaulell.aulaia.cat | en línia amb demo pública · Railway `eltaulell` (web + Postgres + bucket `eltaulell-files`), desplega per `main`; fet amb Codex, ~20 branques `agent/*`, algunes sense fusionar (p. ex. `agent/vertex-gemini-cookies`) |
 | FPSegura (abans Pauta) | `FPSegura` | MYfabio/FPSegura | fpsegura.aulaia.cat | producció pilot · Next.js + Drizzle, entrada amb correu i contrasenya, dades de demostració |
 | La Claqueta | `claqueta` (treball a `claqueta-wt`, branca `assets-v2`) | MYfabio/claqueta | laclaqueta.aulaia.cat | producció (amb alumnat) · Railway `laclaqueta`; Google OAuth propi, superadmins per `SUPERADMIN_EMAILS` |
+| Elements 3D | `elements3d` | MYfabio/elements3d (privat) | elements3d.aulaia.cat | construcció · Next.js + Postgres + WebSocket (servidor propi) a Railway `elements3d`, desplega per GitHub `main`; docents i alumnat amb Google del centre, alumnat també amb codi, àlies i PIN; Classroom (cursos, llista, tasca i notes); RV/RM amb WebXR |
 
 Altres carpetes a `APPS` sense fitxa encara: `Aula de acollida`, `diedrico`,
 `Ecool`, `mecanografia`, `modulo radio`, `recursos-pla-lector`, `tetris3d`.

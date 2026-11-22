@@ -1056,5 +1056,64 @@
     },
     "problema": "La seguridad del taller de FP y PFI suele depender de papeleo. La app gestiona comprobaciones de equipos, incidencias hasta el cierre y evidencias del alumnado.",
     "perfil": "Docentes de Ciclos Formativos y PFI, responsables de talleres y laboratorios y equipos directivos."
+  },
+  "elements3d": {
+    "categoria": "Tabla periódica y átomos en 3D",
+    "estatText": "En construcción: primera versión hecha, pendiente de probar en el aula con las gafas",
+    "resum": "Tabla periódica interactiva, átomos en 3D y realidad virtual para Física y Química de ESO y Bachillerato. Funciona en el navegador, en la tableta y en las gafas, sin instalar nada.",
+    "descripcio": "Elements 3D convierte la tabla periódica en algo que se puede tocar. El alumnado explora los 118 elementos, ve el átomo de cada uno en 3D (modelo de Bohr y nubes orbitales) y lo construye añadiendo protones, neutrones y electrones para descubrir qué elemento, ion o isótopo ha hecho. El docente prepara una práctica en dos minutos, comparte un código y recibe los resultados por alumno y por pregunta. Con gafas Meta Quest 3 o Pico Neo 3 Pro se hace en realidad virtual o mixta desde el navegador de las gafas, y el modo clase organiza un grupo de 30 con 15 gafas, por parejas y por turnos. El alumnado entra con un código, un alias y un PIN, sin cuenta ni correo; los centros que trabajan con Google Workspace pueden publicar la práctica en Classroom y enviar las notas.",
+    "seoLlarg": "Elements 3D es una web de Física y Química para la ESO y el Bachillerato (currículo LOMLOE de Cataluña). Reúne una tabla periódica interactiva, un visor del átomo en 3D y una herramienta para construir átomos partícula a partícula, con retos de tres niveles que se corrigen al instante.\n\nTodo lo que se ve sale de datos reales de cada elemento (PubChem y NIST): no hay vídeos ni dibujos fijos. La misma web funciona en el ordenador, en la tableta y en las gafas de realidad virtual, sin instalar nada.\n\nEl profesorado crea prácticas, las comparte con un código y ve los resultados por alumno y por pregunta. En el aula, el modo clase reparte 15 gafas entre 30 alumnos por parejas y turnos, y el docente lo sigue desde su panel. Se puede conectar con Google Classroom para importar la lista de clase, publicar la tarea y enviar las notas.",
+    "funcionalitats": [
+      "Tabla periódica interactiva con filtros, buscador y ficha de cada elemento",
+      "Átomo en 3D: modelo de Bohr animado y nubes orbitales s, p, d y f",
+      "«Construye el átomo»: elementos, iones e isótopos, partícula a partícula",
+      "Retos y prácticas con tres niveles y cinco tipos de pregunta",
+      "Resultados por alumno y por pregunta, exportables a CSV",
+      "Realidad virtual y mixta con Meta Quest 3 y Pico Neo 3 Pro, sin instalar nada",
+      "Modo clase: sala en directo, parejas, turnos y panel del profesor",
+      "Conexión con Google Classroom: lista de clase, tarea y notas",
+      "Catalán, castellano e inglés"
+    ],
+    "faq": [
+      {
+        "p": "¿Hace falta tener gafas de realidad virtual?",
+        "r": "No. Todo se puede hacer con ordenadores y tabletas. Las gafas añaden la realidad virtual y mixta."
+      },
+      {
+        "p": "¿El alumnado necesita cuenta?",
+        "r": "No. Entra con un código, un alias y un PIN. Si el centro quiere, también puede entrar con la cuenta de Google del centro."
+      },
+      {
+        "p": "¿Qué hay que instalar en las gafas?",
+        "r": "Nada. Se abre desde el navegador de las gafas."
+      },
+      {
+        "p": "¿Funciona con Google Classroom?",
+        "r": "Sí. El docente puede importar la lista de clase, publicar la práctica como tarea y enviar las notas cuando quiera."
+      },
+      {
+        "p": "¿Es gratuita?",
+        "r": "Sí."
+      }
+    ],
+    "idiomes": [
+      "Catalán",
+      "Castellano",
+      "Inglés"
+    ],
+    "nivells": [
+      "ESO",
+      "Bachillerato"
+    ],
+    "materies": [
+      "Física y Química"
+    ],
+    "seo": {
+      "title": "Elements 3D · Tabla periódica interactiva y átomos en 3D para ESO y Bachillerato",
+      "description": "Tabla periódica interactiva, átomos en 3D y realidad virtual para Física y Química. En el navegador, en la tableta y con gafas, sin instalar nada.",
+      "keywords": "tabla periódica interactiva, átomo 3D, modelo de Bohr, orbitales, física y química ESO, realidad virtual en el aula, WebXR, Meta Quest, Google Classroom"
+    },
+    "problema": "El átomo no se ve, y en el libro es un dibujo plano. Elements 3D deja que el alumnado lo haga girar y lo construya, y da al docente los resultados de cada práctica.",
+    "perfil": "Docentes de Física y Química de 2.º a 4.º de ESO y 1.º de Bachillerato."
   }
 }

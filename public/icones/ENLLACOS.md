@@ -23,6 +23,7 @@ Cada app tiene su icono y su juego de favicons. Los iconos usan la paleta de la 
 | `museu-apagat.svg` | El Museu Apagat | https://museu.aulaia.cat | https://www.aulaia.cat/apps/museu-apagat | produccio |
 | `la-claqueta.svg` | La Claqueta | https://laclaqueta.aulaia.cat | https://www.aulaia.cat/apps/la-claqueta | produccio |
 | `fpsegura.svg` | FPSegura | https://fpsegura.aulaia.cat | https://www.aulaia.cat/apps/fpsegura | produccio |
+| `elements3d.svg` | Elements 3D | https://elements3d.aulaia.cat | https://www.aulaia.cat/apps/elements3d | construccio |
 
 ## Favicons de cada app
 
