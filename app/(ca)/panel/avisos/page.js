@@ -49,6 +49,23 @@ export default async function AvisosPage() {
         </div>
       </div>
 
+      <section className="panel-sec">
+        <h2>Què són els avisos?</h2>
+        <p>
+          Els avisos són missatges automàtics que les apps d'aulaia.cat envien quan passa alguna cosa
+          important. Arriben al sistema d'automatitzacions (n8n), que els comprova i els guarda aquí.
+        </p>
+        <ul>
+          <li><strong>Altes de centres:</strong> quan un centre sol·licita l'alta a una app i quan se li valida.</li>
+          <li><strong>Canvis de rol:</strong> quan canvia el rol d'una persona dins d'una app.</li>
+          <li><strong>Errors:</strong> quan una app falla i ho notifica.</li>
+        </ul>
+        <p>
+          Si veus «Cap aviso encara», és normal: cap app ha enviat avisos encara. Els avisos apareixeran
+          quan les apps estiguin connectades i el flux d'avisos estigui activat.
+        </p>
+      </section>
+
       <p className="panel-nota">
         Aquesta pàgina només llegeix. No envia cap correu ni canvia res. Els avisos no mostren el contingut
         de les dades personals.
