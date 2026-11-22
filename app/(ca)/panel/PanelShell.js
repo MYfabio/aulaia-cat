@@ -13,6 +13,7 @@ const SECCIONS = [
   { href: "/panel/trafic", text: "Trafic", icona: "M4 20V10M10 20V4M16 20v-7M22 20H2" },
   { href: "/panel/activitat", text: "Activitat", icona: "M3 12h4l3-8 4 16 3-8h4" },
   { href: "/panel/seo", text: "Cerca a Google", icona: "M11 18a7 7 0 1 0 0-14 7 7 0 0 0 0 14M21 21l-5-5" },
+  { href: "/panel/avisos", text: "Avisos", icona: "M6 9a6 6 0 1 1 12 0c0 5 2 6 2 6H4s2-1 2-6M10 19a2 2 0 0 0 4 0" },
   { href: "/panel/infraestructura", text: "Infraestructura", icona: "M4 6h16v5H4zM4 13h16v5H4zM8 8.5h.01M8 15.5h.01" },
   { href: "/panel/ia", text: "Cost d'IA", icona: "M12 3v18M17 8c-1-1.5-2.7-2-5-2-2.5 0-4.5 1.2-4.5 3 0 4.5 9.5 2 9.5 6.5 0 2-2 3.5-5 3.5-2.5 0-4.2-.8-5-2.5" },
   { href: "/panel/fonaments", text: "Fonaments", icona: "M3 21h18M5 21V11M10 21V11M14 21V11M19 21V11M2 11l10-7 10 7z" },

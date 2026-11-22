@@ -14,6 +14,7 @@ import { createSessionValue, rolDeSessio, isValidSession, clauDemoConfigurada } 
 import * as gestio from "../../lib/demo/gestio.mjs";
 import * as infra from "../../lib/demo/infra.mjs";
 import * as mesures from "../../lib/demo/mesures.mjs";
+import * as avisos from "../../lib/demo/avisos.mjs";
 import { resumirActivitat, horaDeReferencia, diaLocal, sumarDies } from "../../lib/activitat.mjs";
 import { veredictes, ESTATS } from "../../lib/fonaments.mjs";
 
@@ -238,6 +239,17 @@ test("cost d'IA: trenta dies, cinc claus i imports amb sentit", () => {
   assert.ok(c.total > 5 && c.total < 200);
   assert.ok(c.avui > 0 && c.mes > c.avui);
   assert.ok(Math.abs(c.perModel.reduce((n, m) => n + m.usd, 0) - c.total) < 1e-6);
+});
+
+test("avisos: la demo té els tres grups i els comptadors quadren", () => {
+  const a = avisos.llegirAvisos({}, ARA);
+  assert.equal(a.disponible, true);
+  assert.ok(a.avisos.length > 0);
+  assert.equal(a.perGrup.altes + a.perGrup.rols + a.perGrup.errors, a.total);
+  for (const grup of ["altes", "rols", "errors"]) assert.ok(a.perGrup[grup] > 0, `falta el grup ${grup}`);
+  assert.ok(a.avisos.every(x => cataleg.some(c => c.slug === x.app)), "un aviso apunta a una app que no es al cataleg");
+  const text = JSON.stringify(a).toLowerCase();
+  for (const prohibit of ["escolaindustrial", "fabio", "railway.app"]) assert.equal(text.includes(prohibit), false, prohibit);
 });
 
 test("fonaments: hi ha de tot, i canvis respecte de la setmana anterior", () => {
