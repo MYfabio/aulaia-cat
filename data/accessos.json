@@ -131,5 +131,12 @@
     "tipus": "dins",
     "acces": "Google del centre; altres centres amb enllaç per correu",
     "nota": "Repo MYfabio/ullada (privat), carpeta APPS/comprensio-visual, projecte Railway «ullada». Quan funcioni ullada.aulaia.cat, canvia aquesta url."
+  },
+  {
+    "slug": "elements3d",
+    "url": "https://elements3d.aulaia.cat/entrar",
+    "tipus": "dins",
+    "acces": "Google del centre (docents i alumnat); l'alumnat també amb codi, àlies i PIN",
+    "nota": "Repo MYfabio/elements3d (privat), carpeta APPS/elements3d, projecte Railway «elements3d» (web + Postgres), desplega per GitHub main. Superadministració: correus de SUPERADMIN_EMAILS, a /admin. Guia: docs/DESPLEGAMENT.md del repo."
   }
 ]

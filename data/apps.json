@@ -1570,5 +1570,81 @@
     },
     "problema": "El currículum dona per suposat que l'alumnat sap llegir imatges i pensar en l'espai. Ullada ho mesura en una sessió perquè el docent sàpiga per on començar.",
     "perfil": "Docents d'ESO i Batxillerat d'Educació visual i plàstica, Tecnologia i Dibuix tècnic."
+  },
+  {
+    "slug": "elements3d",
+    "nom": "Elements 3D",
+    "categoria": "Taula periòdica i àtoms en 3D",
+    "estat": "construccio",
+    "estatText": "En construcció: primera versió feta, pendent de provar a l'aula amb les ulleres",
+    "icona": "⚛️",
+    "domini": "elements3d.aulaia.cat",
+    "url": "https://elements3d.aulaia.cat",
+    "idiomes": [
+      "Català",
+      "Castellà",
+      "Anglès"
+    ],
+    "publics": [
+      "ESO",
+      "Batxillerat"
+    ],
+    "centre": "Institut Escola Industrial de Sabadell",
+    "altaManual": true,
+    "nivells": [
+      "ESO",
+      "Batxillerat"
+    ],
+    "materies": [
+      "Física i Química"
+    ],
+    "resum": "Taula periòdica interactiva, àtoms en 3D i realitat virtual per a Física i Química d'ESO i Batxillerat. Funciona al navegador, a la tauleta i a les ulleres, sense instal·lar res.",
+    "descripcio": "Elements 3D converteix la taula periòdica en una cosa que es pot tocar. L'alumnat explora els 118 elements, veu l'àtom de cadascun en 3D (model de Bohr i núvols orbitals) i el construeix afegint protons, neutrons i electrons per descobrir quin element, ió o isòtop ha fet. El docent prepara una pràctica en dos minuts, comparteix un codi i rep els resultats per alumne i per pregunta. Amb ulleres Meta Quest 3 o Pico Neo 3 Pro es fa en realitat virtual o mixta des del navegador de les ulleres, i el mode classe organitza un grup de 30 amb 15 ulleres, per parelles i per torns. L'alumnat entra amb un codi, un àlies i un PIN, sense compte ni correu; els centres que treballen amb Google Workspace poden publicar la pràctica a Classroom i enviar-hi les notes.",
+    "seoLlarg": "Elements 3D és una web de Física i Química per a l'ESO i el Batxillerat (currículum LOMLOE de Catalunya). Reuneix una taula periòdica interactiva, un visor de l'àtom en 3D i una eina per construir àtoms partícula a partícula, amb reptes de tres nivells que es corregeixen a l'instant.\n\nTot el que es veu surt de dades reals de cada element (PubChem i NIST): no hi ha vídeos ni dibuixos fixos. La mateixa web funciona a l'ordinador, a la tauleta i a les ulleres de realitat virtual, sense instal·lar res.\n\nEl professorat crea pràctiques, les comparteix amb un codi i en veu els resultats per alumne i per pregunta. A l'aula, el mode classe reparteix 15 ulleres entre 30 alumnes per parelles i torns, i el docent ho segueix des del seu panell. Es pot connectar amb Google Classroom per importar la llista de classe, publicar la tasca i enviar les notes.",
+    "funcionalitats": [
+      "Taula periòdica interactiva amb filtres, cercador i fitxa de cada element",
+      "Àtom en 3D: model de Bohr animat i núvols orbitals s, p, d i f",
+      "«Construeix l'àtom»: elements, ions i isòtops, partícula a partícula",
+      "Reptes i pràctiques amb tres nivells i cinc tipus de pregunta",
+      "Resultats per alumne i per pregunta, exportables a CSV",
+      "Realitat virtual i mixta amb Meta Quest 3 i Pico Neo 3 Pro, sense instal·lar res",
+      "Mode classe: sala en directe, parelles, torns i panell del professor",
+      "Connexió amb Google Classroom: llista de classe, tasca i notes",
+      "Català, castellà i anglès"
+    ],
+    "faq": [
+      {
+        "p": "Cal tenir ulleres de realitat virtual?",
+        "r": "No. Tot es pot fer amb ordinadors i tauletes. Les ulleres hi afegeixen la realitat virtual i mixta."
+      },
+      {
+        "p": "L'alumnat necessita compte?",
+        "r": "No. Entra amb un codi, un àlies i un PIN. Si el centre ho vol, també pot entrar amb el compte de Google del centre."
+      },
+      {
+        "p": "Què cal instal·lar a les ulleres?",
+        "r": "Res. S'obre des del navegador de les ulleres."
+      },
+      {
+        "p": "Funciona amb Google Classroom?",
+        "r": "Sí. El docent pot importar la llista de classe, publicar la pràctica com a tasca i enviar-hi les notes quan vulgui."
+      },
+      {
+        "p": "És gratuïta?",
+        "r": "Sí."
+      }
+    ],
+    "relacionats": [
+      "diedric3d",
+      "matescac",
+      "typeedu"
+    ],
+    "seo": {
+      "title": "Elements 3D · Taula periòdica interactiva i àtoms en 3D per a ESO i Batxillerat",
+      "description": "Taula periòdica interactiva, àtoms en 3D i realitat virtual per a Física i Química. Al navegador, a la tauleta i amb ulleres, sense instal·lar res.",
+      "keywords": "taula periòdica interactiva, àtom 3D, model de Bohr, orbitals, física i química ESO, realitat virtual a l'aula, WebXR, Meta Quest, Google Classroom"
+    },
+    "problema": "L'àtom no es veu, i al llibre és un dibuix pla. Elements 3D deixa que l'alumnat el faci girar i el construeixi, i dona al docent els resultats de cada pràctica.",
+    "perfil": "Docents de Física i Química de 2n a 4t d'ESO i 1r de Batxillerat."
   }
 ]

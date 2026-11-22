@@ -32,6 +32,7 @@ nova de Claude Code.
 | IA Centre | (web externa, sense carpeta local) | — | iacentre.cat | desenvolupament · accés per sol·licitud; la web bloqueja l'accés automatitzat |
 | Bitàcola | (encara no creada; prevista `bitacola`) | — | bitacola.aulaia.cat (no desplegada) | disseny · transparència de l'ús de la IA al TR; encàrrec a `docs/bitacola-encarrec-code.md` |
 | La Claqueta | `claqueta` (treball a `claqueta-wt`, branca `assets-v2`) | MYfabio/claqueta | laclaqueta.aulaia.cat | producció (amb alumnat) · Railway `laclaqueta`; Google OAuth propi, superadmins per `SUPERADMIN_EMAILS` |
+| Elements 3D | `elements3d` | MYfabio/elements3d (privat) | elements3d.aulaia.cat | construcció · Next.js + Postgres + WebSocket (servidor propi) a Railway `elements3d`, desplega per GitHub `main`; docents i alumnat amb Google del centre, alumnat també amb codi, àlies i PIN; Classroom (cursos, llista, tasca i notes); RV/RM amb WebXR |
 
 Altres carpetes a `APPS` sense fitxa encara: `Aula de acollida`, `diedrico`,
 `Ecool`, `mecanografia`, `modulo radio`, `recursos-pla-lector`, `tetris3d`.

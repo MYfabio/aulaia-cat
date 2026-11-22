@@ -24,6 +24,7 @@ Cada app tiene su icono y su juego de favicons. Los iconos usan la paleta de la 
 | `la-claqueta.svg` | La Claqueta | https://laclaqueta.aulaia.cat | https://www.aulaia.cat/apps/la-claqueta | produccio |
 | `fpsegura.svg` | FPSegura | https://fpsegura.aulaia.cat | https://www.aulaia.cat/apps/fpsegura | produccio |
 | `ullada.svg` | Ullada | https://ullada.aulaia.cat (provisional: https://ullada-production.up.railway.app) | https://www.aulaia.cat/apps/ullada | produccio (pilot) |
+| `elements3d.svg` | Elements 3D | https://elements3d.aulaia.cat | https://www.aulaia.cat/apps/elements3d | construccio |
 
 ## Favicons de cada app
 
