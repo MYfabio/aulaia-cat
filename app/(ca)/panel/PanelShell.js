@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 const SECCIONS = [
   { href: "/panel", text: "Resum", icona: "M3 12 12 4l9 8M5 10v10h5v-6h4v6h5V10" },
   { href: "/panel/altes", text: "Altes de centres", icona: "M4 5h16v14H4zM4 9h16M8 14h4" },
+  { href: "/panel/altes-lot", text: "Altes en lot", icona: "M4 6h16M4 12h16M4 18h10" },
   { href: "/panel/missatges", text: "Missatges", icona: "M4 5h16v11H9l-5 4z" },
   { href: "/panel/contactes", text: "Contactes", icona: "M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M4 21c0-4 4-6 8-6s8 2 8 6" },
   { href: "/panel/correus", text: "Correus enviats", icona: "M3 6h18v12H3zM3 7l9 6 9-6" },

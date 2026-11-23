@@ -13,6 +13,8 @@ const PANELL = /^\/(api\/)?panel(\/|$)/;
 function aturarDemo(request, pathname) {
   const api = pathname.startsWith("/api/");
   if (api && pathname === "/api/panel/sortir") return null;
+  // La vista prèvia d'un lot només calcula i no desa res: la demo també la pot veure.
+  if (api && pathname === "/api/panel/altes-lot/vista") return null;
   if (!api && (request.method === "GET" || request.method === "HEAD")) return null;
 
   // Un formulari del panell: es torna a la pagina d on venia, amb l avis.

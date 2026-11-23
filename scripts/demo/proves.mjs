@@ -136,7 +136,8 @@ test("cap pagina del panell demana dades pel seu compte", () => {
 test("totes les rutes del panell que desen o envien son nomes per a l'administrador", () => {
   const rutes = fitxers(join(ARREL, "app", "api", "panel"), c => c.endsWith("route.js"))
     // Entrar, sortir i l entrada amb Google son el propi acces: no desen ni envien dades.
-    .filter(f => !/[\\/](entrar|sortir|google[\\/]inici|google[\\/]retorn)[\\/]route\.js$/.test(f));
+    // La vista prèvia d'un lot només calcula (no desa): la demo la pot fer servir.
+    .filter(f => !/[\\/](entrar|sortir|google[\\/]inici|google[\\/]retorn|altes-lot[\\/]vista)[\\/]route\.js$/.test(f));
   assert.ok(rutes.length >= 5);
   for (const f of rutes) {
     const codi = readFileSync(f, "utf8");
