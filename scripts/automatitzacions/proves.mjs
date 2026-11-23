@@ -17,10 +17,11 @@ test("cada flux té nom, funció, estat conegut i motiu", () => {
 test("les claus són úniques i els fluxos de la llista existeixen", () => {
   const claus = FLUXOS.map(f => f.clau);
   assert.equal(new Set(claus).size, claus.length);
-  assert.equal(estatFlux("altes-lot"), "apagat");
+  assert.equal(estatFlux("altes-lot"), "actiu");
   assert.equal(estatFlux("no-existeix"), null);
 });
 
-test("cap flux surt activat sense haver-ho decidit a mà", () => {
-  assert.ok(FLUXOS.every(f => f.estat === "apagat"));
+test("només hi ha encesos els fluxos que s'han encès a mà a n8n", () => {
+  const encesos = FLUXOS.filter(f => f.estat === "actiu").map(f => f.clau).sort();
+  assert.deepEqual(encesos, ["altes-lot", "avisos"]);
 });

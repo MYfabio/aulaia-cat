@@ -13,13 +13,9 @@ export default function AutomatitzacionsPage() {
       <div className="panel-head">
         <div>
           <h1>Automatitzacions</h1>
-          <p className="panel-sub">Els fluxos d'n8n que fa servir aulaia.cat</p>
+          <p className="panel-sub">Les feines que n8n fa soles</p>
         </div>
       </div>
-
-      <p className="panel-nota">
-        Aquesta llista es revisa a mà. No llegeix l'estat en directe d'n8n. Només es veu aquí; no es pot canviar des d'aquí.
-      </p>
 
       <section className="panel-sec">
         <div className="scrollx">
@@ -37,7 +33,7 @@ export default function AutomatitzacionsPage() {
                 <tr key={f.clau}>
                   <td>{f.pagina ? <a href={f.pagina}>{f.nom}</a> : f.nom}</td>
                   <td>{f.funcio}</td>
-                  <td><span className={`badge ${ESTATS_FLUX[f.estat].cls}`}>{ESTATS_FLUX[f.estat].text}</span></td>
+                  <td><span className={`pbadge ${ESTATS_FLUX[f.estat].cls}`}>{ESTATS_FLUX[f.estat].text}</span></td>
                   <td>{f.motiu}</td>
                 </tr>
               ))}
