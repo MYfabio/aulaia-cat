@@ -61,7 +61,10 @@ export async function proxy(request) {
   if (pathname === "/panel/entrar" || pathname === "/api/panel/entrar") {
     return NextResponse.next();
   }
-
+  // L entrada amb Google (anar a Google i tornar): tampoc te sessio abans d entrar.
+  if (pathname === "/api/panel/google/inici" || pathname === "/api/panel/google/retorn") {
+    return NextResponse.next();
+  }
   const secret = process.env.PANEL_SECRET;
   const cookie = request.cookies.get(COOKIE_NAME)?.value;
   const rol = await rolDeSessio(cookie, secret, clauDemoConfigurada());
