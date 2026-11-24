@@ -3,6 +3,15 @@ import { llistarSolicituds, comptarPerEstat } from "../../../../lib/panell-fonts
 import { esDemo } from "../../../../lib/panell-rol";
 import { BotoEnviarResum } from "./client";
 import apps from "../../../../data/apps.json";
+import { appAltaCompte } from "../../../../lib/alta-compte.mjs";
+
+// Resultat de demanar el compte a l'app, que torna la ruta a la tornada.
+const AVISOS_COMPTE = {
+  "creat": { cls: "ok", text: "Compte creat a l'app. El docent ha rebut el correu amb l'enllaç per entrar." },
+  "ja-existia": { cls: "ok", text: "Aquest docent ja tenia compte a l'app. No se li ha enviat res." },
+  "sense-correu": { cls: "wait", text: "Compte creat a l'app, però el correu d'accés no ha sortit. Pot entrar demanant l'enllaç a la pàgina d'accés de l'app." },
+  "error": { cls: "off", text: "L'app no ha pogut crear el compte. La sol·licitud queda validada: torna-ho a provar amb «Crear el compte a l'app»." },
+};
 
 export const metadata = {
   title: "Altes de centres",
@@ -81,6 +90,12 @@ export default async function AltesPage({ searchParams }) {
           <Link href="/panel" className="btn btn-outline">Tornar al panell</Link>
         </div>
       </div>
+
+      {AVISOS_COMPTE[sp?.compte] && (
+        <p className="alta-missatge" role="status">
+          <span className={"pbadge " + AVISOS_COMPTE[sp.compte].cls}>Compte</span> {AVISOS_COMPTE[sp.compte].text}
+        </p>
+      )}
 
       <div className="panel-stats">
         <div className={"pstat" + (comptes.pendent > 0 ? " is-wait" : "")}>
@@ -161,7 +176,19 @@ export default async function AltesPage({ searchParams }) {
               )}
 
               {s.estat !== "pendent" && s.resolta_el && (
-                <p className="alta-resolta">Resolta {quan(s.resolta_el)}</p>
+                <p className="alta-resolta">
+                  Resolta {quan(s.resolta_el)}
+                  {s.nota_interna ? ` · ${s.nota_interna}` : ""}
+                </p>
+              )}
+
+              {s.estat === "validada" && appAltaCompte(s.app) && !demo && !/: (creat i|ja existia)/.test(s.nota_interna || "") && (
+                <form method="POST" action="/api/panel/altes" className="alta-accions">
+                  <input type="hidden" name="id" value={s.id} />
+                  <button type="submit" name="accio" value="compte" className="btn btn-outline">
+                    Crear el compte a l&apos;app
+                  </button>
+                </form>
               )}
 
               <form method="POST" action="/api/panel/altes" className="alta-esborrar">
