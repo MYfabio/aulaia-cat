@@ -84,3 +84,24 @@ test("creua el catàleg amb Railway pel domini", () => {
   assert.deepEqual(r[1], { app: "ullada", url: "https://ullada.aulaia.cat", id: "d1", estat: "SUCCESS", creat: "2026-11-24T10:00:00Z", versio: "8e01312" });
   assert.equal(r[2].id, null);
 });
+
+test("fallades d'IA: motiu obligatori i conegut, model i vegades netejats", () => {
+  const r = llegirAvis(cos([{ app: "ullada", estat: "ia-falla", motiu: "cupo-dia", model: "gemini-2.5-flash", vegades: 5 }, { app: "ullada", estat: "ia-falla", motiu: "model", model: "<b>x</b>", vegades: -1 }]), ["ullada"], ARA);
+  assert.equal(r.ok, true);
+  assert.equal(r.canvis[0].model, "gemini-2.5-flash");
+  assert.equal(r.canvis[1].model, null);
+  assert.equal(r.canvis[1].vegades, null);
+  assert.equal(llegirAvis(cos([{ app: "ullada", estat: "ia-falla", motiu: "inventat" }]), ["ullada"], ARA).error, "canvi");
+  assert.equal(llegirAvis(cos([{ app: "ullada", estat: "ia-falla" }]), ["ullada"], ARA).error, "canvi");
+});
+
+test("el correu de la IA diu si és la quota del dia o del minut i què fer", () => {
+  const nom = s => ({ ullada: "Ullada" })[s];
+  const c = correuVigilancia([{ app: "ullada", estat: "ia-falla", motiu: "cupo-dia", model: "gemini-2.5-flash", vegades: 5 }], nom);
+  assert.match(c.assumpte, /IA amb problemes: Ullada/);
+  assert.match(c.text, /quota del dia: tornarà a funcionar demà/);
+  assert.match(c.text, /5 vegades en l'última hora, model gemini-2.5-flash/);
+  assert.match(c.text, /el docent pot fer la feina a mà/);
+  const m = correuVigilancia([{ app: "ullada", estat: "ia-falla", motiu: "cupo-minut" }], nom);
+  assert.match(m.text, /es resol sol esperant/);
+});
