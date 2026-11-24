@@ -32,7 +32,13 @@ Resposta de l'app: `{ "id_alta": "…", "resultat": "creat" | "reactivat" | "ja-
 |---|---|
 | Ullada | Connectada (24/11/2026). |
 | Enfonsar la Flota | Connectada (24/11/2026). |
-| El Pla Lector, Kiosko, Poetes Vives, Aulaacull, Museu Apagat, La Claqueta, FP Segura | Pendents. Abans cal que un docent d'un altre centre hi pugui entrar (avui només hi entra el Google del centre de la instal·lació o una llista de correus a mà). |
+| AulaAcull.cat | Connectada (24/11/2026). Cada alta crea un **centre nou i buit** amb el docent com a administració del centre; entra amb enllaç per correu. |
+| FPSegura | Connectada (24/11/2026). Igual: centre nou i buit, administració del centre, enllaç per correu. |
+| La Claqueta | Connectada (24/11/2026). Només s'hi entra amb el Google del centre: crea el centre amb el **domini del correu** i envia `compte-llest-google` (sense enllaç d'un sol ús). Un correu compartit (xtec.cat, gmail.com…) es rebutja amb 409: cal el correu del domini del centre. |
+| El Pla Lector, Museu Apagat, Poetes Vives | **No connectar tal com estan**: són instal·lacions d'un sol centre i un docent de fora veuria l'alumnat de l'Escola Industrial. Cal decisió del propietari (instal·lació a part per centre, o refer). |
+| Kiosko | Pendent: el codi no és en aquest ordinador. |
+
+Regla comuna de les apps amb centres separats: l'ordre **mai** fica ningú en un centre que ja existeix. Si el correu ja consta de baixa, o el seu domini ja el fa servir un centre, l'app respon 409 amb el motiu, el panell el desa a la nota de la sol·licitud i ho decideix l'administració d'aquell centre.
 
 ## Afegir una app
 
