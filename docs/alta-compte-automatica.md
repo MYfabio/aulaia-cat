@@ -31,7 +31,8 @@ Resposta de l'app: `{ "id_alta": "…", "resultat": "creat" | "reactivat" | "ja-
 | App | Estat |
 |---|---|
 | Ullada | Connectada (24/11/2026). |
-| El Pla Lector, Kiosko, Enfonsar la Flota, Poetes Vives, Aulaacull, Museu Apagat, La Claqueta, FP Segura | Pendents. Abans cal que un docent d'un altre centre hi pugui entrar (avui només hi entra el Google del centre de la instal·lació o una llista de correus a mà). |
+| Enfonsar la Flota | Connectada (24/11/2026). |
+| El Pla Lector, Kiosko, Poetes Vives, Aulaacull, Museu Apagat, La Claqueta, FP Segura | Pendents. Abans cal que un docent d'un altre centre hi pugui entrar (avui només hi entra el Google del centre de la instal·lació o una llista de correus a mà). |
 
 ## Afegir una app
 
