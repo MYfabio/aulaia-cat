@@ -120,6 +120,30 @@ export function metadataArticle(lang, slug) {
   };
 }
 
+// Transparència sobre l'ús d'IA a cada article: traducció amb Claude i imatges amb
+// OpenAI i Gemini, tot revisat per un humà. Només diu el que és cert d'aquell article.
+const NOTA_IA = {
+  ca: {
+    traduccio: "s'ha fet servir Claude per a la traducció al castellà, revisada per un humà",
+    imatges: "les imatges s'han fet amb OpenAI i Gemini i també les ha revisades un humà",
+  },
+  es: {
+    traduccio: "se ha usado Claude para la traducción, que ha sido revisada por un humano",
+    imatges: "las imágenes se han hecho con OpenAI y Gemini y también las ha revisado un humano",
+  },
+};
+
+function NotaIA({ lang, traduit, ambImatge }) {
+  const n = NOTA_IA[lang];
+  const text = [traduit && n.traduccio, ambImatge && n.imatges].filter(Boolean).join("; ");
+  if (!text) return null;
+  return (
+    <aside className="blog-nota-ia">
+      <strong>Nota:</strong> {text.charAt(0).toUpperCase() + text.slice(1)}.
+    </aside>
+  );
+}
+
 export function BlogArticle({ lang, slug }) {
   const t = T[lang];
   const b = base(lang);
@@ -176,6 +200,8 @@ export function BlogArticle({ lang, slug }) {
       )}
 
       <div className="blog-cos" dangerouslySetInnerHTML={{ __html: a.html }} />
+
+      <NotaIA lang={lang} traduit={lang === "es" ? !!a.original : !!altre} ambImatge={!!a.imatge} />
 
       {relacionades.length > 0 && (
         <section className="blog-relacionades">
