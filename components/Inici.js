@@ -5,13 +5,22 @@ import { TEXTOS, base, appsEn } from "../lib/i18n";
 import { comptarCentres } from "../lib/db";
 import ComptadorCentres from "./ComptadorCentres";
 import XarxaIdees from "./XarxaIdees";
+import { ID_ORG, ID_WEB } from "./Marc";
+
+const SITE = "https://www.aulaia.cat";
 
 export function metadataInici(lang) {
   const t = TEXTOS[lang].inici;
+  const url = SITE + (base(lang) || "/");
   return {
     title: t.metaTitol,
     description: t.metaDesc,
     alternates: { canonical: base(lang) || "/", languages: { ca: "/", es: "/es", "x-default": "/" } },
+    openGraph: {
+      type: "website", siteName: "aulaia.cat", locale: TEXTOS[lang].locale, url,
+      title: t.metaTitol, description: t.metaDesc,
+      images: [{ url: "/og-aulaia.png", width: 1200, height: 630, alt: "aulaia.cat" }],
+    },
   };
 }
 
@@ -49,29 +58,60 @@ export default async function Inici({ lang }) {
   const apps = appsEn(lang);
   const enLinia = apps.filter(a => a.estat === "produccio");
 
-  const llista = {
+  // Portada: la pàgina, la llista d'apps en línia i les preguntes freqüents, en un sol @graph.
+  // Tot el text surt del mateix lloc que el que es veu a pantalla (catàleg i TEXTOS).
+  const urlPagina = SITE + (b || "/");
+  const grafInici = {
     "@context": "https://schema.org",
-    "@type": "ItemList",
-    name: lang === "es" ? "Aplicaciones educativas gratuitas de aulaia.cat" : "Aplicacions educatives gratuïtes d'aulaia.cat",
-    itemListElement: enLinia.map((a, i) => ({
-      "@type": "ListItem",
-      position: i + 1,
-      item: {
-        "@type": "SoftwareApplication",
-        name: a.nom,
-        url: a.url,
-        applicationCategory: "EducationalApplication",
-        operatingSystem: "Web",
-        description: a.resum,
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": urlPagina + "#pagina",
+        url: urlPagina,
+        name: t.metaTitol,
+        description: t.metaDesc,
         inLanguage: lang,
-        offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },
+        isPartOf: { "@id": ID_WEB },
+        about: { "@id": ID_ORG },
+        mainEntity: { "@id": urlPagina + "#apps" },
       },
-    })),
+      {
+        "@type": "ItemList",
+        "@id": urlPagina + "#apps",
+        name: lang === "es" ? "Aplicaciones educativas gratuitas de aulaia.cat" : "Aplicacions educatives gratuïtes d'aulaia.cat",
+        numberOfItems: enLinia.length,
+        itemListElement: enLinia.map((a, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          item: {
+            "@type": "WebApplication",
+            "@id": SITE + b + "/apps/" + a.slug + "#app",
+            name: a.nom,
+            url: a.url,
+            applicationCategory: "EducationalApplication",
+            operatingSystem: "Web",
+            description: a.resum,
+            inLanguage: lang,
+            isAccessibleForFree: true,
+            offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },
+            audience: { "@type": "EducationalAudience", educationalRole: "teacher" },
+            provider: { "@id": ID_ORG },
+          },
+        })),
+      },
+      {
+        "@type": "FAQPage",
+        "@id": urlPagina + "#preguntes",
+        inLanguage: lang,
+        isPartOf: { "@id": urlPagina + "#pagina" },
+        mainEntity: t.faq.map(f => ({ "@type": "Question", name: f.p, acceptedAnswer: { "@type": "Answer", text: f.r } })),
+      },
+    ],
   };
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(llista) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(grafInici) }} />
       <div className="hero-fons">
       <section className="hero">
         <span className="hero-tag">{t.tag}</span>
@@ -92,9 +132,11 @@ export default async function Inici({ lang }) {
 
       <CatalegApps apps={apps} captures={mapaCaptures(apps)} lang={lang} />
 
-      <section className="seo-intro">
+      <section className="seo-intro" aria-labelledby="que-es">
         <div className="seo-intro-inner">
-          <h2>{t.seoTitol}</h2>
+          <h2 id="que-es">{t.seoTitol}</h2>
+          <p className="seo-intro-resposta">{t.seoResposta}</p>
+          <h3 className="seo-intro-lema">{t.seoLema}</h3>
           <p>{t.seoP1}</p>
           <p>{t.seoP2}</p>
           <div className="seo-intro-tags">
@@ -103,9 +145,9 @@ export default async function Inici({ lang }) {
         </div>
       </section>
 
-      <section className="section" id="per-a-qui">
+      <section className="section" id="per-a-qui" aria-labelledby="per-a-qui-titol">
         <div className="section-header">
-          <h2>{t.perAQuiTitol}</h2>
+          <h2 id="per-a-qui-titol">{t.perAQuiTitol}</h2>
           <p>{t.perAQuiText}</p>
         </div>
         <div className="who-grid">
@@ -114,6 +156,20 @@ export default async function Inici({ lang }) {
               <div className="who-card-icon">{w.n}</div>
               <h3>{w.title}</h3><p>{w.desc}</p>
             </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="section" id="preguntes" aria-labelledby="preguntes-titol" style={{ paddingTop: 0 }}>
+        <div className="section-header">
+          <h2 id="preguntes-titol">{t.faqTitol}</h2>
+        </div>
+        <div className="inici-faq">
+          {t.faq.map(f => (
+            <article key={f.p} className="inici-faq-item">
+              <h3>{f.p}</h3>
+              <p>{f.r}</p>
+            </article>
           ))}
         </div>
       </section>

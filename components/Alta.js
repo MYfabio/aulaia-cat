@@ -64,6 +64,11 @@ export function metadataAlta(lang) {
     title: t.metaTitol,
     description: t.metaDesc,
     alternates: { canonical: base(lang) + "/alta", languages: { ca: "/alta", es: "/es/alta", "x-default": "/alta" } },
+    openGraph: {
+      type: "website", siteName: "aulaia.cat", locale: lang === "es" ? "es_ES" : "ca_ES",
+      url: "https://www.aulaia.cat" + base(lang) + "/alta", title: t.metaTitol, description: t.metaDesc,
+      images: [{ url: "/og-aulaia.png", width: 1200, height: 630, alt: "aulaia.cat" }],
+    },
   };
 }
 

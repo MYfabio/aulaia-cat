@@ -1,11 +1,19 @@
 export const metadata = {
   title: "Política de privacitat i cookies",
   description: "Informació sobre el tractament de dades personals i l'us de cookies a aulaia.cat, d'acord amb el RGPD.",
+  // Sense aquesta línia heretaria l'adreça oficial de la portada.
+  alternates: { canonical: "/privacitat" },
+  openGraph: {
+    type: "website", siteName: "aulaia.cat", locale: "ca_ES", url: "https://www.aulaia.cat/privacitat",
+    title: "Política de privacitat i cookies | aulaia.cat",
+    description: "Informació sobre el tractament de dades personals i l'us de cookies a aulaia.cat, d'acord amb el RGPD.",
+    images: [{ url: "/og-aulaia.png", width: 1200, height: 630, alt: "aulaia.cat" }],
+  },
 };
 
 export default function Privacitat() {
   return (
-    <div style={{maxWidth:"720px",margin:"0 auto",padding:"3rem 2rem"}}>
+    <article style={{maxWidth:"720px",margin:"0 auto",padding:"3rem 2rem"}}>
       <h1 style={{fontSize:"1.8rem",fontWeight:600,marginBottom:"0.5rem",color:"var(--navy)"}}>Política de privacitat i cookies</h1>
       <p style={{color:"var(--muted)",marginBottom:"2rem",fontSize:"0.9rem"}}>Darrera actualització: agost 2026</p>
 
@@ -46,6 +54,6 @@ export default function Privacitat() {
 
       <h2 style={{fontSize:"1.15rem",fontWeight:600,margin:"2rem 0 0.75rem",color:"var(--navy)"}}>7. Conservació de les dades</h2>
       <p style={{color:"var(--muted)",lineHeight:1.8,marginBottom:"1rem"}}>Conservem les teves dades durant el temps necessari per atendre la teva consulta i, posteriorment, durant els terminis legals aplicables. Un cop transcorreguts, les dades s'eliminen de manera segura.</p>
-    </div>
+    </article>
   );
 }

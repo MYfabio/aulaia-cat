@@ -5,9 +5,13 @@ import Assistent from "./Assistent";
 import { TEXTOS, base, appsEn } from "../lib/i18n";
 import { llistarArticles } from "../lib/blog";
 
-const orgJsonld = {
-  "@context": "https://schema.org",
+const SITE = "https://www.aulaia.cat";
+export const ID_ORG = SITE + "/#organitzacio";
+export const ID_WEB = SITE + "/#web";
+
+const org = {
   "@type": "Organization",
+  "@id": ID_ORG,
   name: "aulaia.cat",
   url: "https://www.aulaia.cat",
   logo: "https://www.aulaia.cat/icon-512.png",
@@ -19,7 +23,29 @@ const orgJsonld = {
   parentOrganization: { "@type": "EducationalOrganization", name: "Institut Escola Industrial de Sabadell", url: "https://www.escolaindustrial.org" },
   sameAs: ["https://www.escolaindustrial.org"],
   brand: ["radioescolar.cat", "dictats.cat", "aulessostenibles.cat", "elplalector.cat", "typeedu.com"],
+  knowsLanguage: ["ca", "es"],
 };
+
+// Organització i web en un sol bloc (@graph), a totes les pàgines. Les pàgines hi
+// fan referència pels @id en lloc de repetir-les.
+function grafComu(lang, t) {
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      org,
+      {
+        "@type": "WebSite",
+        "@id": ID_WEB,
+        // Una sola web amb dues llengües: la mateixa entitat a /, /es i a totes les pàgines.
+        url: SITE,
+        name: "aulaia.cat",
+        description: t.descSite,
+        inLanguage: ["ca", "es"],
+        publisher: { "@id": ID_ORG },
+      },
+    ],
+  };
+}
 
 // Capçalera, peu i banner de galetes comuns als dos idiomes.
 export default function Marc({ lang, children }) {
@@ -34,7 +60,7 @@ export default function Marc({ lang, children }) {
     .map(a => ({ slug: a.slug, nom: a.nom, estat: a.estat }));
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonld) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(grafComu(lang, t)) }} />
       <header className="nav">
         <Link href={b || "/"} aria-label={t.nav.inici}><Logo size={34} /></Link>
         <nav className="nav-links">

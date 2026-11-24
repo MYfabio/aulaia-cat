@@ -3,6 +3,9 @@ import { notFound } from "next/navigation";
 import { Fitxa } from "./CatalegApps";
 import { capturaDe } from "../lib/captures";
 import { TEXTOS, base, appsEn } from "../lib/i18n";
+import { ID_ORG, ID_WEB } from "./Marc";
+
+const SITE = "https://www.aulaia.cat";
 
 // Relacionats triats a mà; si en falten, es completa amb els que comparteixen més etapes i matèries.
 function relacionatsDe(app, apps) {
@@ -38,20 +41,55 @@ export function metadataFitxa(lang, slug) {
   };
 }
 
+// Pàgina, app i preguntes en un sol @graph. Els textos són els que es veuen a la fitxa.
 function Jsonld({ app, lang }) {
-  const data = {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    name: app.nom,
-    applicationCategory: "EducationalApplication",
-    operatingSystem: "Web",
-    description: app.seo.description,
-    inLanguage: lang,
-    audience: { "@type": "EducationalAudience", educationalRole: "student" },
-    ...(app.url ? { url: app.url } : {}),
-    offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },
-    provider: { "@type": "Organization", name: "aulaia.cat", url: "https://www.aulaia.cat" },
-  };
+  const b = base(lang);
+  const urlFitxa = SITE + b + "/apps/" + app.slug;
+  const graf = [
+    {
+      "@type": "WebPage",
+      "@id": urlFitxa + "#pagina",
+      url: urlFitxa,
+      name: app.seo.title,
+      description: app.seo.description,
+      inLanguage: lang,
+      isPartOf: { "@id": ID_WEB },
+      mainEntity: { "@id": urlFitxa + "#app" },
+      breadcrumb: {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "aulaia.cat", item: SITE + (b || "/") },
+          { "@type": "ListItem", position: 2, name: app.nom, item: urlFitxa },
+        ],
+      },
+    },
+    {
+      "@type": "WebApplication",
+      "@id": urlFitxa + "#app",
+      name: app.nom,
+      applicationCategory: "EducationalApplication",
+      operatingSystem: "Web",
+      description: app.descripcio,
+      inLanguage: lang,
+      isAccessibleForFree: true,
+      audience: { "@type": "EducationalAudience", educationalRole: "teacher" },
+      ...(app._nivells?.length ? { educationalLevel: app._nivells } : {}),
+      ...(app.funcionalitats?.length ? { featureList: app.funcionalitats } : {}),
+      ...(app.url ? { url: app.url } : {}),
+      offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },
+      provider: { "@id": ID_ORG },
+    },
+  ];
+  if (app.faq?.length) {
+    graf.push({
+      "@type": "FAQPage",
+      "@id": urlFitxa + "#preguntes",
+      inLanguage: lang,
+      isPartOf: { "@id": urlFitxa + "#pagina" },
+      mainEntity: app.faq.map(f => ({ "@type": "Question", name: f.p, acceptedAnswer: { "@type": "Answer", text: f.r } })),
+    });
+  }
+  const data = { "@context": "https://schema.org", "@graph": graf };
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />;
 }
 
@@ -66,24 +104,26 @@ export default function FitxaApp({ lang, slug }) {
   const captura = capturaDe(app.slug);
 
   return (
-    <div className="landing">
+    <article className="landing">
       <Jsonld app={app} lang={lang} />
-      <Link href={b + "/#apps"} className="landing-back">{t.tots}</Link>
-      <span className="landing-tag">{app.categoria}</span>
-      <h1>{app.nom}</h1>
-      <p className="landing-desc">{app.descripcio}</p>
+      <nav aria-label={t.tots}><Link href={b + "/#apps"} className="landing-back">{t.tots}</Link></nav>
+      <header>
+        <span className="landing-tag">{app.categoria}</span>
+        <h1>{app.nom}</h1>
+        <p className="landing-desc">{app.descripcio}</p>
+      </header>
 
       {app.problema && (
-        <>
+        <section>
           <h2>{t.problema}</h2>
           <p className="seo-text">{app.problema}</p>
-        </>
+        </section>
       )}
       {app.perfil && (
-        <>
+        <section>
           <h2>{t.perfil}</h2>
           <p className="seo-text">{app.perfil}</p>
-        </>
+        </section>
       )}
 
       {app.url && (
@@ -120,22 +160,25 @@ export default function FitxaApp({ lang, slug }) {
         <a href={"mailto:hola@aulaia.cat?subject=" + encodeURIComponent(app.nom)} className="btn btn-outline">{t.dubtes}</a>
       </div>
 
-      <h2>{t.funcionalitats}</h2>
-      <ul className="features-list">
-        {app.funcionalitats.map(f => (
-          <li key={f} className="feature-item"><span className="feature-check">✓</span><span>{f}</span></li>
-        ))}
-      </ul>
+      <section>
+        <h2>{t.funcionalitats(app.nom)}</h2>
+        <p className="seo-text">{app.resum}</p>
+        <ul className="features-list">
+          {app.funcionalitats.map(f => (
+            <li key={f} className="feature-item"><span className="feature-check">✓</span><span>{f}</span></li>
+          ))}
+        </ul>
+      </section>
 
       {app.seoLlarg && (
-        <>
-          <h2>{t.mesInfo}{app.nom}</h2>
+        <section>
+          <h2>{t.mesInfo(app.nom)}</h2>
           <p className="seo-text">{app.seoLlarg}</p>
-        </>
+        </section>
       )}
 
       {app.faq?.length > 0 && (
-        <>
+        <section>
           <h2>{t.faq}</h2>
           <div className="faq-list">
             {app.faq.map(f => (
@@ -145,20 +188,16 @@ export default function FitxaApp({ lang, slug }) {
               </details>
             ))}
           </div>
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-            "@context": "https://schema.org", "@type": "FAQPage",
-            mainEntity: app.faq.map(f => ({ "@type": "Question", name: f.p, acceptedAnswer: { "@type": "Answer", text: f.r } })),
-          }) }} />
-        </>
+        </section>
       )}
 
       {relacionats.length > 0 && (
-        <>
+        <aside>
           <h2>{t.altres}</h2>
           <div className="app-graella rel-graella">
             {relacionats.map(r => <Fitxa key={r.slug} app={r} captura={capturaDe(r.slug)} lang={lang} />)}
           </div>
-        </>
+        </aside>
       )}
 
       <div className="landing-final-cta">
@@ -166,6 +205,6 @@ export default function FitxaApp({ lang, slug }) {
         <p className="landing-final-sub">{t.ctaText}</p>
         <Link href={b + "/alta?app=" + app.slug} className="btn btn-primary" style={{ fontSize: "1rem", padding: ".75rem 2rem" }}>{t.ctaBoto(app.nom)}</Link>
       </div>
-    </div>
+    </article>
   );
 }
