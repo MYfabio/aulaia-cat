@@ -349,14 +349,14 @@
     "estatText": "En producción, disponible para ESO y Bachillerato",
     "resum": "Editor de piezas con bloques en el que el alumnado ve el alzado, la planta y el perfil cambiar en tiempo real mientras construye.",
     "descripcio": "Diedric3D ataca el momento en que se atasca mucha gente con el sistema diédrico: pasar del dibujo plano a imaginar el volumen que representa. En lugar de explicarlo, deja construir. El alumnado monta una pieza con bloques y ve las tres vistas actualizarse al lado mientras lo hace, así que la relación entre el cuerpo y sus proyecciones deja de ser una regla que se aprende de memoria y pasa a ser algo que se ha visto suceder. Los retos van del reconocimiento al dibujo, y cada uno tiene una solución comprobable: el validador es determinista y siempre dice por qué una respuesta no encaja.",
-    "seoLlarg": "El sistema diédrico es una de las partes del dibujo técnico donde más alumnado se queda por el camino, y casi siempre por el mismo motivo: se le pide que deduzca un volumen a partir de tres dibujos planos sin haberlo podido girar nunca. Diedric3D invierte el orden. Primero se construye la pieza con bloques, y el alzado, la planta y el perfil se dibujan solos al lado mientras se coloca cada cubo. Cuando después toca hacer el camino inverso —del dibujo al volumen— ya se ha visto la relación decenas de veces.\n\nLos retos cubren desde reconocer qué pieza corresponde a unas vistas hasta dibujarlas a partir del cuerpo, pasando por las cuñas rampa. Cada reto tiene una comprobación determinista: no hay una inteligencia artificial decidiendo si una respuesta es buena. Cuando una pieza no encaja, la aplicación dice exactamente qué falla.\n\nPara el profesorado, el objetivo es que no genere trabajo. Los grupos se importan de Google Classroom con un clic, o se reparte un código de seis caracteres. El seguimiento muestra lo mismo que ve cada alumno, y no hay rankings ni notas automáticas: la valoración se queda en el centro. También se puede imprimir una hoja con un código QR que lleva directamente a un reto concreto, para usarlo en papel.\n\nLas adaptaciones para alumnado con necesidades específicas —tiempo extra, trabajar sin cronómetro, más intentos, pistas que no penalizan— se configuran por alumno, son privadas y no dejan ninguna marca en su trabajo. Se guarda el parámetro, nunca el motivo.\n\nPensado para la ESO y el Bachillerato, y disponible en catalán, castellano e inglés.",
+    "seoLlarg": "El sistema diédrico es una de las partes del dibujo técnico donde más alumnado se queda por el camino, y casi siempre por el mismo motivo: se le pide que deduzca un volumen a partir de tres dibujos planos sin haberlo podido girar nunca. Diedric3D invierte el orden. Primero se construye la pieza con bloques, y el alzado, la planta y el perfil se dibujan solos al lado mientras se coloca cada cubo. Cuando después toca hacer el camino inverso —del dibujo al volumen— ya se ha visto la relación decenas de veces.\n\nLos retos cubren desde reconocer qué pieza corresponde a unas vistas hasta dibujarlas a partir del cuerpo, pasando por las cuñas rampa. Cada reto tiene una comprobación determinista: no hay una inteligencia artificial decidiendo si una respuesta es buena. Cuando una pieza no encaja, la aplicación dice exactamente qué falla.\n\nPara el profesorado, el objetivo es que no genere trabajo. Los grupos se importan de Google Classroom con un clic, o se reparte un código de seis caracteres. El seguimiento muestra lo mismo que ve cada alumno, y no hay rankings ni notas automáticas: la valoración se queda en el centro. También se puede imprimir una hoja con un código QR que lleva directamente a un reto concreto, para usarlo en papel.\n\nPara el alumnado que lo necesite hay apoyos que cada uno puede activar: casillas numeradas, casillas grandes, modo foco y un fantasma de la pieza objetivo. También hay teclado completo y un editor 2D sin WebGL. Son privados y nunca cambian la puntuación.\n\nPensado para la ESO y el Bachillerato, y disponible en catalán, castellano e inglés.",
     "funcionalitats": [
       "Editor de piezas con bloques, con el alzado, la planta y el perfil en tiempo real",
       "Retos de reconocimiento y de dibujo, con cuñas rampa",
       "Validación determinista: cuando una respuesta no encaja, dice por qué",
       "Importación de grupos desde Google Classroom, o código de aula de seis caracteres",
       "Seguimiento que muestra lo mismo que ve el alumno, sin rankings",
-      "Adaptaciones por alumno, privadas y sin marca en el trabajo",
+      "Apoyos privados para el alumnado (casillas numeradas y grandes, modo foco, fantasma de la pieza), sin penalización",
       "Hoja imprimible con código QR hacia un reto concreto",
       "Disponible en catalán, castellano e inglés"
     ],
@@ -367,7 +367,7 @@
       },
       {
         "p": "¿La inteligencia artificial corrige los ejercicios?",
-        "r": "No. La comprobación es determinista y siempre da el mismo resultado. La inteligencia artificial sirve para proponer retos nuevos, que el profesorado aprueba antes de que lleguen al aula."
+        "r": "No. La comprobación es determinista y siempre da el mismo resultado: ninguna inteligencia artificial decide si una respuesta es buena ni pone ninguna nota."
       },
       {
         "p": "¿Cuánto trabajo supone para el docente?",
@@ -379,7 +379,7 @@
       },
       {
         "p": "¿Cómo funcionan las adaptaciones para alumnado con NEAE?",
-        "r": "Se configuran por alumno: tiempo extra, trabajar sin cronómetro, más intentos o pistas que no penalizan. Son privadas y no dejan ninguna marca en el trabajo. Se guarda el parámetro, nunca el motivo ni ningún diagnóstico."
+        "r": "Cada alumno puede activar apoyos privados: casillas numeradas, casillas grandes, modo foco y un fantasma de la pieza objetivo. También hay teclado completo y un editor 2D sin WebGL. Estos apoyos nunca cambian la puntuación."
       },
       {
         "p": "¿Se puede usar sin ordenadores para todos?",
@@ -400,7 +400,7 @@
     ],
     "seo": {
       "title": "Diedric3D: sistema diédrico con bloques para ESO y Bachillerato",
-      "description": "Construye piezas con bloques y mira cómo cambian alzado, planta y perfil en tiempo real. Corrección determinista, Google Classroom y adaptaciones por alumno.",
+      "description": "Construye piezas con bloques y mira cómo cambian alzado, planta y perfil en tiempo real. Corrección determinista, Google Classroom y apoyos privados para el alumnado.",
       "keywords": "sistema diédrico, vistas alzado planta perfil, dibujo técnico ESO, visión espacial, diedric3d, geometría descriptiva bachillerato, proyecciones ortogonales"
     },
     "problema": "El sistema diédrico cuesta porque hay que imaginar el espacio a partir de dibujos planos. El editor muestra el alzado, la planta y el perfil en tiempo real mientras el alumnado construye la pieza.",
@@ -877,7 +877,7 @@
   },
   "ciutatviva": {
     "categoria": "Aprendizaje-servicio",
-    "estatText": "Disponible · demostración para centros",
+    "estatText": "En construcción: primera versión hecha, pendiente de probar en el aula",
     "resum": "Plataforma de aprendizaje-servicio: el alumnado detecta necesidades reales de su entorno, propone soluciones y hace su seguimiento como proyecto educativo.",
     "descripcio": "CiutatViva es una plataforma participativa que conecta al alumnado, las entidades y las administraciones locales para construir entornos más justos y habitables. El alumnado puede reportar una necesidad u oportunidad de mejora en su barrio con geolocalización, la comunidad debate y valida las propuestas, y las que tienen suficiente apoyo suben a la agenda municipal con plazos concretos de respuesta. Todo el proceso es abierto y rinde cuentas: cada participante recibe actualizaciones de sus propuestas. Apta para proyectos de aprendizaje-servicio (ApS) en ESO y Bachillerato.",
     "seoLlarg": "El aprendizaje-servicio (ApS) es una de las metodologías más potentes para desarrollar la competencia ciudadana y el compromiso cívico del alumnado. CiutatViva ofrece el marco digital para que los proyectos de ApS tengan impacto real más allá del aula. El alumnado aprende a identificar problemas complejos, a argumentar propuestas y a negociar con instituciones reales, mientras desarrolla competencias digitales, sociales y de pensamiento crítico. La conexión con los ayuntamientos y las entidades locales convierte cada proyecto en una experiencia auténtica de ciudadanía activa.",
