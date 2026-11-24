@@ -1,5 +1,6 @@
+import Link from "next/link";
 import { llegirAvisos } from "../../../../lib/panell-fonts";
-import { GRUPS } from "../../../../lib/avisos.mjs";
+import { GRUPS, ORIGENS, filtrarOrigen } from "../../../../lib/avisos.mjs";
 
 export const metadata = {
   title: "Avisos",
@@ -16,16 +17,20 @@ function fmtDataHora(iso) {
   });
 }
 
-export default async function AvisosPage() {
-  let dades = null;
+export default async function AvisosPage({ searchParams }) {
+  const sp = await searchParams;
+  // Per defecte, l'Escola Industrial: és el que es mira cada dia.
+  const origen = ORIGENS.some(o => o.clau === sp?.origen) ? sp.origen : "escola";
+
+  let tots = null;
   let error = null;
   try {
-    dades = await llegirAvisos({ limit: 200 });
+    tots = await llegirAvisos({ limit: 200 });
   } catch (e) {
     error = e.message;
   }
 
-  if (error || !dades) {
+  if (error || !tots) {
     return (
       <div className="panel">
         <h1>Avisos</h1>
@@ -37,41 +42,27 @@ export default async function AvisosPage() {
     );
   }
 
+  const dades = filtrarOrigen(tots, origen);
+  const titolOrigen = ORIGENS.find(o => o.clau === origen).titol;
+
   return (
     <div className="panel">
       <div className="panel-head">
         <div>
           <h1>Avisos</h1>
-          <p className="panel-sub">Altes de centres, canvis de rol i errors que envien les apps via n8n</p>
+          <p className="panel-sub">Altes, canvis de rol i errors que envien les apps</p>
         </div>
         <div className="panel-accions">
-          <a href="/panel/avisos" className="btn btn-outline">Actualitzar</a>
+          <a href={`/panel/avisos?origen=${origen}`} className="btn btn-outline">Actualitzar</a>
         </div>
       </div>
 
-      <section className="panel-sec">
-        <h2>Què són els avisos?</h2>
-        <p>
-          Els avisos són missatges automàtics que les apps d'aulaia.cat envien quan passa alguna cosa
-          important. Arriben al sistema d'automatitzacions (n8n), que els comprova i els guarda aquí.
-        </p>
-        <ul>
-          <li><strong>Altes de centres:</strong> quan un centre sol·licita l'alta a una app i quan se li valida.</li>
-          <li><strong>Canvis de rol:</strong> quan canvia el rol d'una persona dins d'una app.</li>
-          <li><strong>Errors:</strong> quan una app falla i ho notifica.</li>
-        </ul>
-        <p>
-          Si veus «Cap aviso encara», és normal: cap app ha enviat avisos encara. Els avisos apareixeran
-          quan les apps estiguin connectades i el flux d'avisos estigui activat.
-        </p>
-      </section>
-
       <p className="panel-nota">
-        Aquesta pàgina només llegeix. No envia cap correu ni canvia res. Els avisos no mostren el contingut
-        de les dades personals.
+        Cada aviso diu l'app, el tipus i el centre (només la part del correu que va darrere de la @). Mai el nom
+        ni el correu de la persona. Aquesta pàgina només llegeix.
       </p>
 
-      {!dades.disponible && (
+      {!tots.disponible && (
         <div className="panel-avis">
           <strong>Encara no hi ha connexió amb la base de dades d'estat</strong>
           <ul>
@@ -80,11 +71,19 @@ export default async function AvisosPage() {
         </div>
       )}
 
+      <div className="periodes">
+        {ORIGENS.map(o => (
+          <Link
+            key={o.clau}
+            href={`/panel/avisos?origen=${o.clau}`}
+            className={"periode" + (o.clau === origen ? " is-actiu" : "")}
+          >
+            {o.titol} <span style={{ opacity: 0.6, fontSize: "0.85em" }}>({tots.perOrigen?.[o.clau] ?? 0})</span>
+          </Link>
+        ))}
+      </div>
+
       <div className="panel-stats">
-        <div className="pstat">
-          <span className="pstat-n">{dades.total}</span>
-          <span className="pstat-k">Avisos recents</span>
-        </div>
         {GRUPS.map(g => (
           <div className="pstat" key={g.clau}>
             <span className="pstat-n">{dades.perGrup[g.clau] ?? 0}</span>
@@ -95,44 +94,41 @@ export default async function AvisosPage() {
 
       {dades.total === 0 ? (
         <div className="panel-buit">
-          <p><strong>Cap aviso encara.</strong></p>
-          <p>Quan una app enviï una alta, un canvi de rol o un error, sortirà aquí.</p>
+          <p><strong>Cap aviso de «{titolOrigen}» encara.</strong></p>
+          <p>Quan una app enviï una alta, un canvi de rol o un error d'aquí, sortirà en aquesta pestanya.</p>
         </div>
       ) : (
         GRUPS.map(g => {
           const llista = dades.avisos.filter(a => a.grup === g.clau);
+          if (llista.length === 0) return null;
           return (
             <section className="panel-sec" key={g.clau}>
               <div className="panel-sec-head">
                 <h2>{g.titol}</h2>
                 <span className="panel-sub">{llista.length} {llista.length === 1 ? "aviso" : "avisos"}</span>
               </div>
-              {llista.length === 0 ? (
-                <div className="panel-buit"><p>Cap aviso d'aquest tipus.</p></div>
-              ) : (
-                <div className="scrollx">
-                  <table className="ptable">
-                    <thead>
-                      <tr>
-                        <th scope="col">Quan</th>
-                        <th scope="col">App</th>
-                        <th scope="col">Tipus</th>
-                        <th scope="col">Centre</th>
+              <div className="scrollx">
+                <table className="ptable">
+                  <thead>
+                    <tr>
+                      <th scope="col">Quan</th>
+                      <th scope="col">App</th>
+                      <th scope="col">Tipus</th>
+                      <th scope="col">Centre</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {llista.map(a => (
+                      <tr key={a.id}>
+                        <td className="n" style={{ whiteSpace: "nowrap" }}>{fmtDataHora(a.quan)}</td>
+                        <td>{a.app}</td>
+                        <td>{a.tipusText}</td>
+                        <td>{a.centre || "—"}</td>
                       </tr>
-                    </thead>
-                    <tbody>
-                      {llista.map(a => (
-                        <tr key={a.id}>
-                          <td className="n" style={{ whiteSpace: "nowrap" }}>{fmtDataHora(a.quan)}</td>
-                          <td>{a.app}</td>
-                          <td>{a.tipusText}</td>
-                          <td>{a.centre || "—"}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-              )}
+                    ))}
+                  </tbody>
+                </table>
+              </div>
             </section>
           );
         })
