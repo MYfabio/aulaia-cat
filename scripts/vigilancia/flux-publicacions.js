@@ -8,7 +8,7 @@
 // seguides abans d'avisar). Les publicacions que van bé no generen res.
 const crypto = require('crypto');
 const signa = cos => crypto.createHmac('sha256', $env.AULAIA_WEBHOOK_SECRET || '').update(cos).digest('hex');
-const envia = (url, cos) => this.helpers.httpRequest({ method: 'POST', url, body: cos, json: false, timeout: 30000, returnFullResponse: true, ignoreHttpStatusErrors: true, headers: { 'content-type': 'application/json', 'x-aulaia-signature': signa(cos) } });
+const envia = (url, cos) => this.helpers.httpRequest({ method: 'POST', url, body: cos, json: false, timeout: 55000, returnFullResponse: true, ignoreHttpStatusErrors: true, headers: { 'content-type': 'application/json', 'x-aulaia-signature': signa(cos) } });
 
 const r = await envia('https://www.aulaia.cat/api/vigilancia/publicacions', JSON.stringify({ data: new Date().toISOString() }));
 if (r.statusCode !== 200) throw new Error('aulaia.cat ha respost ' + r.statusCode);
