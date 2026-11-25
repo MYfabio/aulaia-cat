@@ -7,7 +7,7 @@ import assert from "node:assert/strict";
 import { FLUXOS, ESTATS_FLUX, estatFlux } from "../../lib/automatitzacions.mjs";
 
 test("cada flux té nom, funció, estat conegut i motiu", () => {
-  assert.equal(FLUXOS.length, 7);
+  assert.equal(FLUXOS.length, 8);
   for (const f of FLUXOS) {
     assert.ok(f.nom && f.funcio && f.motiu, f.clau);
     assert.ok(ESTATS_FLUX[f.estat], `estat desconegut a ${f.clau}`);
@@ -23,5 +23,5 @@ test("les claus són úniques i els fluxos de la llista existeixen", () => {
 
 test("només hi ha encesos els fluxos que s'han encès a mà a n8n", () => {
   const encesos = FLUXOS.filter(f => f.estat === "actiu").map(f => f.clau).sort();
-  assert.deepEqual(encesos, ["alta-compte", "altes-lot", "avisos", "fallades-ia", "publicacions", "vigilancia"]);
+  assert.deepEqual(encesos, ["alta-compte", "altes-lot", "avisos", "fallades-ia", "publicacions", "resum-setmanal", "vigilancia"]);
 });
